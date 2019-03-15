@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: node_app_test
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: node_app_test
+    spec:
+      containers:
+      - name: node_app_test
+        image: quay.etsycorp.com:443/mwahl/node_app_test:1.0
+        ports:
+          - containerPort: 1337
+      imagePullSecrets:
+      - name: <encrypted password from quqy>
