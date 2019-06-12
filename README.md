@@ -1,14 +1,14 @@
 # 🎨 A Quick Intro to K8s 🎨
 
-In this guide I show you how to spin a quick ```Node.js``` server in kubernetes and to grasp some of its main concepts.
+In this guide, I show you how to spin a quick ```Node.js``` server in kubernetes and to grasp some of its main concepts.
 
 ### Install kubectl
 
-First you will need to install [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) in your machine.
+First, you will need to install [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) in your machine.
 
-Make sure you have all the auths right, for instance, I do the follow:
+Make sure you have all the auths right, for instance, I do the following:
 
-1. Create a auth token and move to `~/.kube`
+1. Create an auth token and move to `~/.kube`
 2. Create a config file and move to `~/.kube`
 
 
