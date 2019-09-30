@@ -1,5 +1,7 @@
-# Resources and Examples to Learn Kubernetes
+# Resources for Kubernetes
 
+--------------
+# Tools
 
 ## Minikube
 
@@ -34,8 +36,13 @@ Get more information about a pod:
 $ kubectl describe pod --namespace=<ns-name> <pod name>
 ```
 
+## Other Tools
 
-## Examples in this repo
+* [AWS IAM authenticator](https://github.com/kubernetes-sigs/aws-iam-authenticator).
+
+-----
+
+## Learning Examples
 
 
 * [Spin up a node server example](https://github.com/bt3gl/Learning_Kubernetes/tree/master/node-server-example).
