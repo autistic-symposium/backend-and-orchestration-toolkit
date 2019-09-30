@@ -96,7 +96,7 @@ In this example, we’re going to create an overlay that includes a patch to cha
 
 The overlay should not be in the same directory as the base files, and in this case, we are using `$BASE/overlays/dev`.
 
-From `victoria` root directory, run:
+From the root directory, run:
 ```
 OVERLAY_HOME=($pwd)/overlays
 DEV_HOME=$OVERLAY_HOME/dev
