@@ -1,18 +1,16 @@
 # Resources for Kubernetes
 
-## What's K8s
+## Quick overview
 
-A Kubernetes cluster consists of **Nodes**, which can be equated to servers, be they bare-metal or virtual machines running in a cloud. 
+* A Kubernetes cluster consists of **Nodes** (simialr to servers)
 
-Nodes run **Pods**, which are collections of Docker containers. A Pod is the unit of deployment in Kubernetes. All containers in a Pod share the same network and can refer to each other as if they were running on the same host. There are many situations in which it is advantageous to run more than one container in a Pod. Typically, you will run your application container as the main one in the Pod, and if needed one or more so-called "sidecar" containers, for functionality such as logging or monitoring. One particular case of sidecar containers is an "init container" which is guaranteed to run first, and which can be used for housekeeping tasks, for example for running database migrations (12-factor principle: “Admin processes: Run admin/management tasks as one-off processes”)
+* Nodes run **Pods**, which are collections of Docker containers. Containers in a Pod share the same network.
 
-An application will typically use more than one Pod for fault tolerance and performance purposes. The Kubernetes object responsible for launching and maintaining the desired number of pods is called a **Deployment**. 
+* The Kubernetes object responsible for launching and maintaining the desired number of pods is called a **Deployment**. 
 
-For Pods to communicate with other Pods, Kubernetes provides another kind of object called a **Service**. Services are tied to Deployments through Selectors and Labels. Services are also exposed to external clients either by exposing a **NodePort** as a static port on each Kubernetes node or by creating a **LoadBalancer** object, corresponding to an actual load balancer if it is supported by the cloud provider running the Kubernetes cluster.
+* Kubernetes provides objects called a **Service** so thart Pods to communicate with other Pods. They are tied to Deployments through Selectors and Labels, and they can be exposed to external clients either by exposing a **NodePort** as a static port on each Kubernetes node or by creating a **LoadBalancer** object/
 
-For managing sensitive information such as passwords, API keys, and other credentials, Kubernetes provides the **Secret** object.
-
-For one-off tasks, Kubernetes provides the **Job** object. A Job can use the same ConfigMap and Secret objects already in place for regular Deployments and Pods. The Job will run a given Pod once, then stop.
+* Kubernetes provides the **Secret** object for managing sensitive information such as passwords, API keys, and other credentials.
 
 
 --------------
