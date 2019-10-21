@@ -1,7 +1,5 @@
 # Resources for Kubernetes
 
-## Quick overview
-
 * A Kubernetes cluster consists of **Nodes** (simialr to servers)
 
 * Nodes run **Pods**, which are collections of Docker containers. Containers in a Pod share the same network.
@@ -11,6 +9,14 @@
 * Kubernetes provides objects called a **Service** so thart Pods to communicate with other Pods. They are tied to Deployments through Selectors and Labels, and they can be exposed to external clients either by exposing a **NodePort** as a static port on each Kubernetes node or by creating a **LoadBalancer** object/
 
 * Kubernetes provides the **Secret** object for managing sensitive information such as passwords, API keys, and other credentials.
+
+
+-------------
+
+## In this Repository
+
+* [Spin up a node server example](https://github.com/bt3gl/Learning_Kubernetes/tree/master/node-server-example).
+* [Use kustomize to organize and combine YAML templates of your services and deployments](https://github.com/bt3gl/Learning_Kubernetes/tree/master/kustomize-example).
 
 
 --------------
@@ -49,13 +55,11 @@ Get more information about a pod:
 $ kubectl describe pod --namespace=<ns-name> <pod name>
 ```
 
-### AWS Tools
 
-* [AWS IAM authenticator](https://github.com/kubernetes-sigs/aws-iam-authenticator).
+--------
 
-
-### Learning Examples
+## Learning 
 
 
-* [Spin up a node server example](https://github.com/bt3gl/Learning_Kubernetes/tree/master/node-server-example).
-* [Use kustomize to organize and combine YAML templates of your services and deployments](https://github.com/bt3gl/Learning_Kubernetes/tree/master/kustomize-example).
+* [Google's K8s 101](https://techdevguide.withgoogle.com/paths/cloud/sequence-2/kubernetes-101-pods-nodes-containers-and-clusters/#!).
+
