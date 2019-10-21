@@ -63,3 +63,4 @@ $ kubectl describe pod --namespace=<ns-name> <pod name>
 
 * [Google's K8s 101](https://techdevguide.withgoogle.com/paths/cloud/sequence-2/kubernetes-101-pods-nodes-containers-and-clusters/#!).
 * [K8s Bootcamp](https://kubernetesbootcamp.github.io/kubernetes-bootcamp/).
+* [K8s the Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way#labs).
