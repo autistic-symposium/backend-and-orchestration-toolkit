@@ -1,4 +1,4 @@
-# Resources for Kubernetes
+# Learning Kubernetes
 
 * A Kubernetes cluster consists of **Nodes** (simialr to servers)
 
