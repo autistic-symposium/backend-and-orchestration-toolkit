@@ -1,6 +1,4 @@
-# Resources for Kubernetes
-
-## Quick overview
+# Learning Kubernetes
 
 * A Kubernetes cluster consists of **Nodes** (simialr to servers)
 
@@ -20,8 +18,6 @@
 * [Spin up a node server example](https://github.com/bt3gl/Learning_Kubernetes/tree/master/node-server-example).
 * [Use kustomize to organize and combine YAML templates of your services and deployments](https://github.com/bt3gl/Learning_Kubernetes/tree/master/kustomize-example).
 
-
---------------
 
 ## Tools
 
@@ -82,4 +78,11 @@ Get deployments:
 ### AWS Tools
 
 * [AWS IAM authenticator](https://github.com/kubernetes-sigs/aws-iam-authenticator).
+
+
+## References & Learning Resources
+
+* [Google's K8s 101](https://techdevguide.withgoogle.com/paths/cloud/sequence-2/kubernetes-101-pods-nodes-containers-and-clusters/#!).
+* [K8s Bootcamp](https://kubernetesbootcamp.github.io/kubernetes-bootcamp/).
+* [K8s the Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way#labs).
 
