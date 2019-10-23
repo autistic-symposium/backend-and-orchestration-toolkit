@@ -1,0 +1,90 @@
+#!/bin/bash
+#
+# Init file for suricata
+#
+#
+# chkconfig: 345 52 48
+# description: Network Intrusion Detection System
+#
+# processname: Suricata
+# pidfile: /var/run/suricata.pid
+
+source /etc/rc.d/init.d/functions
+
+
+### Read configuration
+[ -r "$SYSCONFIG" ] && source "$SYSCONFIG"
+
+RETVAL=0
+prog="suricata"
+desc="Suricata IDS"
+
+start() {
+    # Make sure the interfaces are up, or suricata won't start.
+    for interface in <% @interface.each do |int| -%><%= int %> <% end -%>
+    do
+        /sbin/ifconfig $interface up
+    done
+
+    echo -n $"Starting $desc ($prog): "
+    daemon "suricata -D -c /etc/suricata/suricata.yaml <% @interface.each do |int| -%> -i <%= int %> <% end -%> >> /var/log/suricata/suricata.log"
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && touch /var/lock/subsys/$prog
+    return $RETVAL
+}
+
+stop() {
+    echo -n $"Shutting down $desc ($prog): "
+    killproc $prog
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && rm -f /var/lock/subsys/$prog
+    return $RETVAL
+}
+
+restart() {
+    stop
+    start
+}
+
+reload() {
+    echo "Checking config before restarting"
+    suricata -T -c /etc/suricata/suricata.yaml >/dev/null 2>&1
+    RETVAL=$?
+    if [ $RETVAL -eq 0 ]
+    then
+        kill -USR2 $(cat /var/run/suricata.pid)
+    else
+        echo "Config broken, not reloading"
+    fi
+    return $RETVAL
+}
+
+case "$1" in
+  start)
+    start
+    ;;
+  stop)
+    stop
+    ;;
+  restart)
+    restart
+    ;;
+  reload)
+    reload
+    ;;
+  condrestart)
+    [ -e /var/lock/subsys/$prog ] && restart
+    RETVAL=$?
+    ;;
+  status)
+    status $prog
+    RETVAL=$?
+    ;;
+  *)
+    echo $"Usage: $0 {start|stop|restart|reload|condrestart|status}"
+    RETVAL=1
+esac
+
+exit $RETVAL

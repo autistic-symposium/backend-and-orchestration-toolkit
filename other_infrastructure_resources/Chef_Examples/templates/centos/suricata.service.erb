@@ -1,0 +1,12 @@
+[Unit]
+Description=Open Source Next Generation Intrusion Detection and Prevention Engine
+After=syslog.target network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/suricata -c /etc/suricata/suricata.yaml <% @interface.each do |int| -%> -i <%= int %> <% end -%>
+ExecReload=/bin/kill -HUP $MAINPID
+ExecStop=/bin/kill $MAINPID
+
+[Install]
+WantedBy=multi-user.target
