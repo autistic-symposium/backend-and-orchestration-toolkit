@@ -1,14 +1,9 @@
 # Curated Resources on Kubernetes
 
 ```
-A Kubernetes cluster consists of **Nodes** (similar to servers).
-
-Nodes run Pods, which are collections of Docker containers. 
-
-Containers in a Pod share the same network.
-
+A Kubernetes cluster consists of Nodes (similar to servers). Nodes run Pods, which 
+are collections of Docker containers. Containers in a Pod share the same network.
 Deployment is a Kubernetes object responsible for launching and maintaining pods.
-
 Services objects allow pods to communicate with other pods. 
 ```
 
