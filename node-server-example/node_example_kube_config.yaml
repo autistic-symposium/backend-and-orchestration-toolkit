@@ -15,4 +15,4 @@ spec:
         ports:
           - containerPort: 1337
       imagePullSecrets:
-      - name: <encrypted password your container registry>
+      - name: <encrypted password for your container registry>

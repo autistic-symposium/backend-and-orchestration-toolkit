@@ -1,5 +1,5 @@
 FROM node:4.4
-MAINTAINER "bt3" 
+MAINTAINER "Mia von Steinkirch" 
 
 EXPOSE 1337
 
