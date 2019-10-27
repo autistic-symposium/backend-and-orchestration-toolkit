@@ -9,11 +9,9 @@ Services objects allow pods to communicate with other pods.
 
 ## Examples in this repository
 
-* [Spin up a node server example](https://github.com/bt3gl/Learning_Kubernetes/tree/master/node-server-example).
-* [Use kustomize to organize and combine YAML templates of your services and deployments](https://github.com/bt3gl/Learning_Kubernetes/tree/master/kustomize-example).
+* [Spin up a node server example](https://github.com/bt3gl/Curated_Resources_on_Kubernete/tree/master/node-server-example).
+* [Using kustomize for deployment](https://github.com/bt3gl/Curated_Resources_on_Kubernetes/tree/master/kustomize-example).
 
-
--------------
 
 ## Tools
 
@@ -23,28 +21,18 @@ Services objects allow pods to communicate with other pods.
 - [kubectx](https://github.com/ahmetb/kubectx) is a tool to switch between k8s contexts.
 
 
-
-------
-
-## References 
-
-
-### Learning Resources
+## Tutorials
 
 * [Google's K8s 101](https://techdevguide.withgoogle.com/paths/cloud/sequence-2/kubernetes-101-pods-nodes-containers-and-clusters/#!).
 * [K8s Bootcamp](https://kubernetesbootcamp.github.io/kubernetes-bootcamp/).
 * [K8s the Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way#labs).
 * [Kubernetes Community Overview and Contributions Guide](https://docs.google.com/presentation/d/1JqcALpsg07eH665ZXQrIvOcin6SzzsIUjMRRVivrZMg/edit?usp=sharing).
-* [Are you Ready to Manage your Infrastructure like Google?](http://blog.jetstack.io/blog/k8s-getting-started-part1/).
-* [Google is years ahead when it comes to the cloud, but it's happy the world is catching up](http://www.businessinsider.in/Google-is-years-ahead-when-it-comes-to-the-cloud-but-its-happy-the-world-is-catching-up/articleshow/47793327.cms).
 * [An Intro to Google’s Kubernetes and How to Use It](http://www.ctl.io/developers/blog/post/what-is-kubernetes-and-how-to-use-it/).
 * [Getting Started on Kubernetes](http://containertutorials.com/get_started_kubernetes/index.html).
 * [Kubernetes: The Future of Cloud Hosting](https://github.com/meteorhacks/meteorhacks.github.io/blob/master/_posts/2015-04-22-learn-kubernetes-the-future-of-the-cloud.md).
 * [Kubernetes by Google](http://thevirtualizationguy.wordpress.com/tag/kubernetes/).
-* [Key Concepts](http://blog.arungupta.me/key-concepts-kubernetes/).
 * [Application Containers: Kubernetes and Docker from Scratch](http://keithtenzer.com/2015/06/01/application-containers-kubernetes-and-docker-from-scratch/).
 * [Learn the Kubernetes Key Concepts in 10 Minutes](http://omerio.com/2015/12/18/learn-the-kubernetes-key-concepts-in-10-minutes/).
-* [Top Reasons Businesses Should Move to Kubernetes Now](http://supergiant.io/blog/top-reasons-businesses-should-move-to-kubernetes-now) .
 * [The Children's Illustrated Guide to Kubernetes](https://kubernetes.io/blog/2016/06/illustrated-childrens-guide-to-kubernetes/).
 * [The ‘kubectl run’ command](http://medium.com/@mhausenblas/the-kubectl-run-command-27c68de5cb76#.mlwi5an7o) .
 * [Docker Kubernetes Lab Handbook](https://github.com/xiaopeng163/docker-k8s-lab).
@@ -60,6 +48,15 @@ Services objects allow pods to communicate with other pods.
 * [Kubernetes By Example by OpenShift Team](http://kubernetesbyexample.com)
 * [Kubernetes Tutorial by Tutorialspoint](http://www.tutorialspoint.com/kubernetes/)
 * [Imperative vs. Declarative — a Kubernetes Tutorial](https://medium.com/payscale-tech/imperative-vs-declarative-a-kubernetes-tutorial-4be66c5d8914).
-* [Learning Kubernetes, The Chinese Taoist Way](https://github.com/caicloud/kube-ladder)
+
+## MOOCs
+
 * [Scalable Microservices with Kubernetes at Udacity](http://in.udacity.com/course/scalable-microservices-with-kubernetes--ud615)
 * [Introduction to Kubernetes at edX](http://www.edx.org/course/introduction-kubernetes-linuxfoundationx-lfs158x)
+
+## Articles
+
+* [Digital Ocean: How we launched our marketplace using k8s](https://blog.digitalocean.com/how-we-launched-our-marketplace-using-digitalocean-kubernetes-part-1/).
+* [Are you Ready to Manage your Infrastructure like Google?](http://blog.jetstack.io/blog/k8s-getting-started-part1/).
+* [Google is years ahead when it comes to the cloud, but it's happy the world is catching up](http://www.businessinsider.in/Google-is-years-ahead-when-it-comes-to-the-cloud-but-its-happy-the-world-is-catching-up/articleshow/47793327.cms).
+* [Top Reasons Businesses Should Move to Kubernetes Now](http://supergiant.io/blog/top-reasons-businesses-should-move-to-kubernetes-now) .
