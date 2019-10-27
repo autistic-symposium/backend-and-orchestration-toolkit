@@ -1,15 +1,15 @@
-# Learning Kubernetes
+# Curated Resources on Kubernetes
 
 ```
-* A Kubernetes cluster consists of **Nodes** (simialr to servers)
+A Kubernetes cluster consists of **Nodes** (similar to servers).
 
-* Nodes run **Pods**, which are collections of Docker containers. Containers in a Pod share the same network.
+Nodes run Pods, which are collections of Docker containers. 
 
-* The Kubernetes object responsible for launching and maintaining the desired number of pods is called a **Deployment**. 
+Containers in a Pod share the same network.
 
-* Kubernetes provides objects called a **Service** so thart Pods to communicate with other Pods. They are tied to Deployments through Selectors and Labels, and they can be exposed to external clients either by exposing a **NodePort** as a static port on each Kubernetes node or by creating a **LoadBalancer** object/
+Deployment is a Kubernetes object responsible for launching and maintaining pods.
 
-* Kubernetes provides the **Secret** object for managing sensitive information such as passwords, API keys, and other credentials.
+Services objects allow pods to communicate with other pods. 
 ```
 
 ## Examples in this repository
