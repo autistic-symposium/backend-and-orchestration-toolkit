@@ -49,10 +49,12 @@ Services objects allow pods to communicate with other pods.
 * [Kubernetes Tutorial by Tutorialspoint](http://www.tutorialspoint.com/kubernetes/)
 * [Imperative vs. Declarative — a Kubernetes Tutorial](https://medium.com/payscale-tech/imperative-vs-declarative-a-kubernetes-tutorial-4be66c5d8914).
 
-## MOOCs
+## MOOCs & Learning Vidoes
 
-* [Scalable Microservices with Kubernetes at Udacity](http://in.udacity.com/course/scalable-microservices-with-kubernetes--ud615)
-* [Introduction to Kubernetes at edX](http://www.edx.org/course/introduction-kubernetes-linuxfoundationx-lfs158x)
+
+* [Learn Kubernetes Youtube series](https://www.youtube.com/playlist?list=PL34sAs7_26wNBRWM6BDhnonoA5FMERax0).
+* [Scalable Microservices with Kubernetes at Udacity](http://in.udacity.com/course/scalable-microservices-with-kubernetes--ud615).
+* [Introduction to Kubernetes at edX](http://www.edx.org/course/introduction-kubernetes-linuxfoundationx-lfs158x).
 
 ## Articles
 
