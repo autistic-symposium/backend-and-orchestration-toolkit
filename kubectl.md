@@ -1,7 +1,7 @@
 ## Kubectl Commands
 
 
-#### **Pods**
+### **Pods**
 
 Get pods:
 
@@ -21,7 +21,7 @@ Get pod's log:
     kubectl logs <podname>
 ```
 
-#### **Services**
+### **Services**
 
 Get services:
 
@@ -29,7 +29,7 @@ Get services:
     kubectl get services -n <namespace>
 ```
 
-#### **Deployments**
+### **Deployments**
 
 Get deployments:
 
@@ -37,25 +37,25 @@ Get deployments:
     kubectl get deployment -n <namespace>
 ```
 
-#### **Secrets**
+### **Secrets**
 
 ```
     kubectl get secret
 ```
 
-#### **Namespaces**
+### **Namespaces**
 
 ```
     kubectl get namespaces
 ```
 
-#### **Configmaps**
+### **Configmaps**
 
 ```
     kubectl get configmaps -n <namespace>
 ```
 
-#### **Ingress**
+### **Ingress**
 
 ```
     kubectl get ingress -n <namespace>
