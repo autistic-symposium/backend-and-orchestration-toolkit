@@ -75,7 +75,3 @@ $ kubectl delete service node-app-test
 $ kubectl delete deployment node-app-test
 ```
 
-
-## Some References:
-
-* [Dockerfiles good practices](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/#general-guidelines-and-recommendations).
