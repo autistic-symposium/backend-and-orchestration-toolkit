@@ -434,7 +434,7 @@ Another example of a patch is adding `serviceMonitorNamespaceSelector` and `serv
 
 **In short, the Kustomize patching mechanism is powerful, and it represents the main method for customizing manifests for a given environment while keeping intact the default manifests under the `base` directory.**
 
-## 10) Automated PR creation into reaction-gitops from example-storefront
+## Automated PR creation into reaction-gitops from example-storefront
 
 We added a job to the CircleCI workflow for `reactioncommerce/example-storefront` (`master` branch) to create a PR automatically against `reactioncommerce/reaction-gitops`. 
 
@@ -444,7 +444,7 @@ Details here:
 
 [https://github.com/reactioncommerce/example-storefront/blob/master/.circleci/config.yml#L101](https://github.com/reactioncommerce/example-storefront/blob/master/.circleci/config.yml#L101)
 
-## 11) Set up ElasticSearch and Fluentd for Kubernetes pod logging
+## Set up ElasticSearch and Fluentd for Kubernetes pod logging
 
 Create IAM policy and add it to EKS worker node role:
 
