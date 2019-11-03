@@ -1,4 +1,6 @@
-# Creating EKS cluster using the eksctl CLI
+# AWS EKS
+
+## Creating EKS cluster using the eksctl CLI
 
     eksctl create cluster \
     --name staging \
@@ -10,7 +12,7 @@
     --nodes-max 10 \
     --node-ami auto
 
-## Create RDS PostgreSQL instance
+### Create RDS PostgreSQL instance
 
 Create `hydra` database and `hydradbadmin` user/role in the database.
 
@@ -26,13 +28,13 @@ Create `hydra` database and `hydradbadmin` user/role in the database.
 
 DB connection string: `postgres://hydradbadmin:PASS@staging.cjwa4nveh3ws.us-west-2.rds.amazonaws.com:5432/hydra`
 
-## Create MongoDB database and user in Atlas
+### Create MongoDB database and user in Atlas
 
     MONGO_OPLOG_URL: mongodb://domain:PASS@cluster0-shard-00-02-gk3cz.mongodb.net.:27017,[cluster0-shard-00-01-gk3cz.mongodb.net](http://cluster0-shard-00-01-gk3cz.mongodb.net/).:27017,[cluster0-shard-00-00-gk3cz.mongodb.net](http://cluster0-shard-00-00-gk3cz.mongodb.net/).:27017/local?authSource=admin&gssapiServiceName=mongodb&replicaSet=Cluster0-shard-0&ssl=true
    
     MONGO_URL: mongodb://domain:PASS@cluster0-shard-00-02-gk3cz.mongodb.net.:27017,[cluster0-shard-00-01-gk3cz.mongodb.net](http://cluster0-shard-00-01-gk3cz.mongodb.net/).:27017,[cluster0-shard-00-00-gk3cz.mongodb.net](http://cluster0-shard-00-00-gk3cz.mongodb.net/).:27017/rc-staging?authSource=admin&gssapiServiceName=mongodb&replicaSet=Cluster0-shard-0&ssl=true
 
-## Generate kubeconfig files for administrator and developer roles
+### Generate kubeconfig files for administrator and developer roles
 
 Save the above file somewhere, then 
 
@@ -91,7 +93,7 @@ This was created in the EKS cluster with:
       name: k8s-developer-role
       apiGroup: rbac.authorization.k8s.io
 
-## Install nginx ingress controller and create ALB in front of nginx ingress service
+### Install nginx ingress controller and create ALB in front of nginx ingress service
 
 The `Service` type for the `ingress-nginx` service is `NodePort` and not `LoadBalancer` 
 because we don't want AWS to create a new Load Balancer every time we recreate the ingress. 
@@ -123,7 +125,7 @@ the EKS worker nodes (which is the `nodePort` in the manifest above for HTTP tra
 
 **NOTE**: need to add rule in EKS worker SG to allow SG of ALB to access port 30080.
 
-## Create Kubernetes Secret for DockerHub credentials (for pulling private images)
+### Create Kubernetes Secret for DockerHub credentials (for pulling private images)
 
     apiVersion: v1
     type: kubernetes.io/dockerconfigjson
@@ -137,7 +139,7 @@ the EKS worker nodes (which is the `nodePort` in the manifest above for HTTP tra
 
 This Secret was created in several namespaces (`default`, `staging`, `monitoring`, `logging`, `flux-system`)
 
-## Install and customize Flux for GitOps workflow
+### Install and customize Flux for GitOps workflow
 
 Flux is installed in its own `flux-system` namespace.
 
@@ -233,7 +235,7 @@ To redeploy a Flux container for example when the underlying Docker image change
     kustomize build overlays/staging | kubectl apply -f - 
 
 
-## Management of Kubernetes secrets
+### Management of Kubernetes secrets
 
 We use sops to encrypt secret values for environment variables representing credentials, database connections, etc.
 
@@ -287,7 +289,7 @@ The Flux container needs to be able to use the KMS key for decryption, so we had
         ]
     }
 
-## Kubernetes manifest generation with Kustomize
+### Kubernetes manifest generation with Kustomize
 
 We use Kustomize to generate Kubernetes manifests in YAML format. 
 There are several directories under the `kustomize` directory, one for each service to be deployed.
@@ -434,7 +436,7 @@ Another example of a patch is adding `serviceMonitorNamespaceSelector` and `serv
 
 **In short, the Kustomize patching mechanism is powerful, and it represents the main method for customizing manifests for a given environment while keeping intact the default manifests under the `base` directory.**
 
-## Automated PR creation into reaction-gitops from example-storefront
+### Automated PR creation into reaction-gitops from example-storefront
 
 We added a job to the CircleCI workflow for `reactioncommerce/example-storefront` (`master` branch) to create a PR automatically against `reactioncommerce/reaction-gitops`. 
 
@@ -444,7 +446,7 @@ Details here:
 
 [https://github.com/reactioncommerce/example-storefront/blob/master/.circleci/config.yml#L101](https://github.com/reactioncommerce/example-storefront/blob/master/.circleci/config.yml#L101)
 
-## Set up ElasticSearch and Fluentd for Kubernetes pod logging
+### Set up ElasticSearch and Fluentd for Kubernetes pod logging
 
 Create IAM policy and add it to EKS worker node role:
 
