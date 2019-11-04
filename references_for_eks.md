@@ -1,4 +1,10 @@
-# AWS EKS
+# AWS EKS 
+
+
+## Tutorials & Articles
+
+* [Provision a Kubernetes Cluster in Amazon EKS with Weaveworks eksctl and AWS CDK](https://blog.reactioncommerce.com/deploying-kubernetes-clusters-in-aws-eks-with-the-aws-cloud-development-kit/).
+
 
 ## Creating EKS cluster using the eksctl CLI
 

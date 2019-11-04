@@ -63,3 +63,9 @@ Services objects allow pods to communicate with other pods.
 * [Are you Ready to Manage your Infrastructure like Google?](http://blog.jetstack.io/blog/k8s-getting-started-part1/).
 * [Google is years ahead when it comes to the cloud, but it's happy the world is catching up](http://www.businessinsider.in/Google-is-years-ahead-when-it-comes-to-the-cloud-but-its-happy-the-world-is-catching-up/articleshow/47793327.cms).
 * [Top Reasons Businesses Should Move to Kubernetes Now](http://supergiant.io/blog/top-reasons-businesses-should-move-to-kubernetes-now) .
+
+
+## Prometheus Operator
+
+* [Monitor external services with the prometheus operator](https://jpweber.io/blog/monitor-external-services-with-the-prometheus-operator/).
+* [Prometheus Operator — How to monitor an external service](https://devops.college/prometheus-operator-how-to-monitor-an-external-service-3cb6ac8d5acb).
