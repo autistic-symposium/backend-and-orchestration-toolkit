@@ -1,0 +1,17 @@
+{
+  "app": "npx ts-node bin/example.ts",
+  "context": {
+    "env.type": "dev",
+    "vpc.cidr": "10.0.0.0/16",
+    "vpc.maxAzs": 3,
+    "msk.DevMskCluster": "MskCluster",
+    "msk.ClusterTag": "MSK cluster",
+    "msk.brokerNodeGroupBrokerAzDistribution": "DEFAULT",
+    "msk.enhancedMonitoring": "PER_BROKER",
+    "msk.brokerNodeGroupEBSVolumeSize": 100,
+    "msk.brokerNodeGroupInstanceType": "kafka.m5.large",
+    "msk.brokerPort": 9092,
+    "msk.kafkaVersion": "2.2.1",
+    "msk.numberOfBrokerNodes": 3
+  }
+}

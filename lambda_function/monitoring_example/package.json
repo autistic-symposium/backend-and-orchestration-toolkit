@@ -1,0 +1,10 @@
+{
+  "name": "monitoring",
+  "version": "1.0.0",
+  "description": "Lambda function that looks at its argument and just succeeds or fails based on the input.",
+  "main": "index.js",
+  "scripts": {
+    "locally": "node src/index.js"
+  },
+  "author": "Mia von Steinkirch"
+}
