@@ -14,6 +14,10 @@ Services objects allow pods to communicate with other pods.
 * [Using kustomize for deployment](https://github.com/bt3gl/Curated_Resources_on_Kubernetes/tree/master/kustomize-example).
 
 
+## Learning K8s
+
+* [Kubelabs](https://github.com/collabnix/kubelabs).
+
 ## Tools
 
 
