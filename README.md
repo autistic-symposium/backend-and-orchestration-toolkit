@@ -1,4 +1,4 @@
-# ✨ Resources on Cloud and Orchestration
+# ✨ Resources on Cloud and Orchestration ✨
 
 
 * [References for AWS and CDK](https://github.com/bt3gl/Curated_Cloud_and_Orchestration/blob/master/references_for_aws.md).
