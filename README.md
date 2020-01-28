@@ -10,8 +10,3 @@
 * [References for Golang](https://github.com/bt3gl/Curated_Cloud_and_Orchestration/blob/master/references_for_go.md).
 * [References for GCP](https://github.com/bt3gl/Curated_Cloud_and_Orchestration/blob/master/references_for_gcp.md).
 
-
-----
-
-This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
-
