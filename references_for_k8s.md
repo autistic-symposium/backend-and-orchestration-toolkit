@@ -24,6 +24,7 @@ Services objects allow pods to communicate with other pods.
 - [Minikube](https://github.com/kubernetes/minikube) implements a local Kubernetes cluster on macOS, Linux, and Windows. You can install it following [this instructions](https://minikube.sigs.k8s.io/docs/start/).
 - [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) is a command line interface for running commands against Kubernetes clusters.
 - [kubectx](https://github.com/ahmetb/kubectx) is a tool to switch between k8s contexts.
+- [k14s](https://k14s.io/): Kubernetes Tools that follow Unix philosophy to be simple, and composable.
 
 
 ## Tutorials
