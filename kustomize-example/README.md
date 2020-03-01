@@ -2,11 +2,12 @@
 
 [Kustomize](https://kustomize.io/) is a tool that lets you create an entire Kubernetes application out of individual pieces — without touching the YAML for the individual components.
 
-Kustomize traverses a Kubernetes manifest to add, remove or update configuration options without forking. It is available both as a standalone binary and as a native feature of kubectl.
+Kustomize traverses a Kubernetes manifest to add, remove, or update configuration options without forking. Kustomize is available both as a standalone binary and as a native feature of kubectl.
 
 Kustomize enables you to do that by creating a file that ties everything together, or optionally includes “overrides” for individual parameters.
 
-In this example, you will learn how to use Kustomize to setup a Wordpress Kubernetes clusters.
+In this example, you will learn how to use Kustomize to setup a Wordpress Kubernetes clusters. Please also check out [this article for a more deatailed explanation](https://medium.com/python-for-the-utopian/a-quick-introduction-to-kustomize-for-kubernetes-73490efa0966).
+
 
 ### Set Minukube
 
