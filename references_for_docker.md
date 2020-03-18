@@ -13,7 +13,7 @@ Removing some of the default shared folders can decrease CPU usage (e.g. remove 
 Check storage with:
 
 ```
-$ docker info |grep Storage
+docker info |grep Storage
 ```
 
 ### Performance
