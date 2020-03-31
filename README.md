@@ -1,6 +1,6 @@
 # ✨ Resources on Cloud and Orchestration ✨
 
-![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)
+![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) 
 
 
 * [References for AWS and CDK](https://github.com/bt3gl/Curated_Cloud_and_Orchestration/blob/master/references_for_aws.md).
