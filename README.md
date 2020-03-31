@@ -1,5 +1,7 @@
 # ✨ Resources on Cloud and Orchestration ✨
 
+![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)
+
 
 * [References for AWS and CDK](https://github.com/bt3gl/Curated_Cloud_and_Orchestration/blob/master/references_for_aws.md).
 * [References for Lambda Functions](https://github.com/bt3gl/Curated_Cloud_and_Orchestration/blob/master/references_for_lambda.md).
