@@ -53,12 +53,6 @@ If everything looks right, deploy:
 cdk deploy --profile <AWS PROFILE>
 ```
 
-These are the resources that will be created with this command:
-
-![vpc](https://github.com/bt3gl/AWS_Resources/blob/master/CDK_examples/VPC_example/imgs/vpc.png)
-
-
-
 To check all the stacks in the app:
 
 ```
