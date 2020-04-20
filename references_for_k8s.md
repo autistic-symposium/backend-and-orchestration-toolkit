@@ -17,6 +17,7 @@ Services objects allow pods to communicate with other pods.
 ## Learning K8s
 
 * [Kubelabs](https://github.com/collabnix/kubelabs).
+* [Scalable Microservices with Kubernetes MOOC](https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615).
 
 ## Tools
 
