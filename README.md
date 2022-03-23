@@ -1,4 +1,4 @@
-# ☁️  [Scratch Space] Cloud and Orchestration: code, resources, and notes 
+##  [Scratch Space] Cloud and Orchestration: code, resources, and notes 
 
 * Kubernetes
 * AWS
