@@ -1,6 +1,4 @@
-# ✨ Resources on Cloud and Orchestration ✨
-
-![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) 
+# ☁️ Scratch space: Cloud and Orchestration 
 
 
 * [References for AWS and CDK](https://github.com/bt3gl/Curated_Cloud_and_Orchestration/blob/master/references_for_aws.md).
@@ -10,7 +8,7 @@
 * [References for Docker](https://github.com/bt3gl/Curated_Cloud_and_Orchestration/blob/master/references_for_docker.md).
 * [References for K8s](https://github.com/bt3gl/Curated_Cloud_and_Orchestration/blob/master/references_for_k8s.md).
 * [References for kubectl](https://github.com/bt3gl/Curated_Cloud_and_Orchestration/blob/master/references_for_kubectl.md).
-* [References for Golang](https://github.com/bt3gl/Curated_Cloud_and_Orchestration/blob/master/references_for_go.md).
+
 
 
 
