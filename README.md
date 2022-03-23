@@ -5,6 +5,6 @@
 * [AWS](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/aws)
 * [GCP](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/gcp)
 * [Chef](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/chef)
-* [Docker](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/docker
+* [Docker](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/docker)
 
 
