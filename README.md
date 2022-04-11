@@ -1,4 +1,4 @@
-## ☁️✨ [Scratch Space] Cloud and Orchestration: code, resources, and notes 
+## ☁️✨ Cloud and Orchestration: code, resources, and notes 
 
 * [Kafka](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/kafka-and-streaming)
 * [Kubernetes](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/kubernetes)
