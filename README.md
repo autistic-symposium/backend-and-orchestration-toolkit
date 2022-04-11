@@ -1,4 +1,4 @@
-## ☁️✨ My personal notes on Cloud and Orchestration
+## ☁️✨ My code and notes on Cloud and Orchestration
 
 * [Kafka](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/kafka-and-streaming)
 * [Kubernetes](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/kubernetes)
