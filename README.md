@@ -1,5 +1,9 @@
-## ☁️✨ My code and notes on Cloud and Orchestration
+## ☁️✨ Snippets and resources on Cloud and Orchestration
 
+
+<br>
+
+### in this repo:
 
 <br>
 
