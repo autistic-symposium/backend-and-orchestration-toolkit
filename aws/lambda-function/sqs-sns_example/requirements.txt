@@ -20,7 +20,7 @@ autopep8==1.4
 appdirs==1.4.3
 packaging==16.8
 pep8==1.7.0
-py==1.4.33
+py==1.11.0
 pyaml==15.8.2
 pyparsing==2.2.0
 pytest==3.0.7
