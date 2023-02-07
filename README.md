@@ -1,4 +1,4 @@
-## ☁️✨ Resources on Cloud and Orchestration
+## ☁️✨ resources on cloud and orchestration
 
 
 <br>
@@ -7,11 +7,11 @@
 
 <br>
 
-* [Kafka](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/kafka-and-streaming)
-* [Kubernetes](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/kubernetes)
-* [AWS](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/aws)
-* [GCP](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/gcp)
-* [Chef](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/chef)
-* [Docker](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/docker)
+* [kafka](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/kafka-and-streaming)
+* [kubernetes](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/kubernetes)
+* [aws](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/aws)
+* [gcp](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/gcp)
+* [chef](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/chef)
+* [docker](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/docker)
 
 
