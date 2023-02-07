@@ -3,7 +3,7 @@
 
 <br>
 
-### in this repo:
+### in this repo
 
 <br>
 
@@ -14,4 +14,6 @@
 * [chef](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/chef)
 * [docker](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/docker)
 
+<br>
 
+### resources
