@@ -3,6 +3,10 @@
 
 <br>
 
+### in this repo
+
+<br>
+
 * [kafka](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/kafka-and-streaming)
 * [kubernetes](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/kubernetes)
 * [aws](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/aws)
@@ -18,4 +22,14 @@
 
 <br>
 
-* [saw, multi-purpose tool for aws cloudWatch logs](https://github.com/TylerBrock/saw)
+##### go-outside
+
+* [end-to-end pipeline for video edition on AWS SQS + lambda + SNS](https://github.com/go-outside-labs/aws-pipeline-py)
+
+
+<br>
+
+##### external
+
+
+* [saw, multi-purpose tool for aws cloudwatch logs](https://github.com/TylerBrock/saw)
