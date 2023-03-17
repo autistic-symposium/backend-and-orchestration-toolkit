@@ -1,4 +1,6 @@
-# Introduction to Kustomize - Wordpress Example
+## wordpress with cdk
+
+<br>
 
 [Kustomize](https://kustomize.io/) is a tool that lets you create an entire Kubernetes application out of individual pieces — without touching the YAML for the individual components.
 
@@ -8,6 +10,7 @@ Kustomize enables you to do that by creating a file that ties everything togethe
 
 In this example, you will learn how to use Kustomize to setup a Wordpress Kubernetes clusters. Please also check out [this article for a more deatailed explanation](https://medium.com/python-for-the-utopian/a-quick-introduction-to-kustomize-for-kubernetes-73490efa0966).
 
+<br>
 
 ### Set Minukube
 
@@ -19,6 +22,7 @@ Start your cluster:
 minikube start
 ```
 
+<br>
 
 ### Install Kustomize
 
@@ -87,6 +91,7 @@ Now, you can check that the services are up (you should see `mysql` and `wordpre
 kubectl get services
 ```
 
+<br>
 
 ### Applying Overlays
 
