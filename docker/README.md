@@ -1,24 +1,8 @@
-$# resources on docker 
+## resources on docker 
 
 <br>
 
-
-### resources
-
-* [Container Technology Wiki ](https://www.aquasec.com/wiki/display/containers/).
-* [250 Practice Questions for the DCA Exam](https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-the-dca-exam-84f3b9e8f5ce).
-
-
-
-<br>
-
----
-
-### tricks and notes
-
-<br>
-
-#### shared Folders
+#### shared folders
 
 Removing some of the default shared folders can decrease CPU usage (e.g. remove `/Volumes` and `/private`). 
 
@@ -37,7 +21,7 @@ docker run --rm=true -it --privileged --pid=host \
     <image name> /usr/bin/top
 ```
 
-#### cleaning Up
+#### cleaning up
 
 See disk space:
 
