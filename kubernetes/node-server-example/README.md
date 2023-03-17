@@ -1,32 +1,43 @@
-# Deploying a Node.js K8s Cluster with Kubectl
+## deploying a node.js K8s cluster with kubectl
+
+<br>
 
 
-Build the image:
+1. Build the image:
 
 ```
 make build:
 ```
+<br>
 
-Run the container:
+2. Run the container:
 
 ```
 make run
 ```
 
-Check whether the server worked
+<br>
+
+3. Check whether the server worked
 
 ```
 make curl
 ```
+<br>
 
-Check container's status
+4. Check container's status
 
 ```
 $ make status
 ```
 
+<br>
 
-#### Other useful commands
+---
+
+### useful commands
+
+<br>
 
 Exec inside the container:
 
@@ -40,8 +51,13 @@ Check images in disk:
 $ docker images
 ```
 
+<br>
 
-### Pushing the Registry to Kubernetes
+----
+
+### pushing the registry to kubernetes
+
+<br>
 
 In a real production system, we’ll want to build images in one place, then run these images in the Kubernetes cluster. 
 
@@ -66,7 +82,13 @@ Also, check out the service status with:
 $ kubectl get services
 ```
 
-### Clean up
+<br>
+
+---
+
+### cleanning up
+
+<br>
 
 Removing the service and the deployment when you are done:
 
