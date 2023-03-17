@@ -1,25 +1,50 @@
 
-# Kubernetes
+## resources on kubernetes
 
-```
-A Kubernetes cluster consists of Nodes (similar to servers). Nodes run Pods, which 
-are collections of Docker containers. Containers in a Pod share the same network.
-Deployment is a Kubernetes object responsible for launching and maintaining pods.
-Services objects allow pods to communicate with other pods. 
-```
+<br>
 
-## Examples in this repository
+### tl; dr
 
-* [Spin up a node server example](https://github.com/bt3gl/Curated_Resources_on_Kubernete/tree/master/node-server-example).
-* [Using kustomize for deployment](https://github.com/bt3gl/Curated_Resources_on_Kubernetes/tree/master/kustomize-example).
+<br>
+
+1. a **kubernetes cluster** consists of nodes (similar to servers) 
+2. **nodes** run **pods**, which are collections of **docker containers**
+3. **containers** in a pod share the same network
+4. **deployment** is a kubernetes object responsible for launching and maintaining pods
+6. **services** objects allow pods to communicate with other pods
 
 
-## Learning K8s
+<br>
+
+---
+
+### examples in this repository
+
+<br>
+
+* [spin up a node server example](node-server-example)
+* [using kustomize for deployment](kustomize)
+* [using python cdk for deployment](python-cdk)
+
+
+
+<br>
+
+---
+
+### external resources
+
+<br>
+
+##### learning K8s
 
 * [Kubelabs](https://github.com/collabnix/kubelabs).
 * [Scalable Microservices with Kubernetes MOOC](https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615).
 
-## Tools
+<br>
+
+
+##### tools
 
 
 - [Minikube](https://github.com/kubernetes/minikube) implements a local Kubernetes cluster on macOS, Linux, and Windows. You can install it following [this instructions](https://minikube.sigs.k8s.io/docs/start/).
@@ -27,8 +52,11 @@ Services objects allow pods to communicate with other pods.
 - [kubectx](https://github.com/ahmetb/kubectx) is a tool to switch between k8s contexts.
 - [k14s](https://k14s.io/): Kubernetes Tools that follow Unix philosophy to be simple, and composable.
 
+<br>
 
-## Tutorials
+
+##### tutorials
+
 
 * [Google's K8s 101](https://techdevguide.withgoogle.com/paths/cloud/sequence-2/kubernetes-101-pods-nodes-containers-and-clusters/#!).
 * [K8s Bootcamp](https://kubernetesbootcamp.github.io/kubernetes-bootcamp/).
@@ -56,14 +84,18 @@ Services objects allow pods to communicate with other pods.
 * [Kubernetes Tutorial by Tutorialspoint](http://www.tutorialspoint.com/kubernetes/)
 * [Imperative vs. Declarative — a Kubernetes Tutorial](https://medium.com/payscale-tech/imperative-vs-declarative-a-kubernetes-tutorial-4be66c5d8914).
 
-## MOOCs & Learning Vidoes
+<br>
+
+##### MOOCs & Learning Vidoes
 
 
 * [Learn Kubernetes Youtube series](https://www.youtube.com/playlist?list=PL34sAs7_26wNBRWM6BDhnonoA5FMERax0).
 * [Scalable Microservices with Kubernetes at Udacity](http://in.udacity.com/course/scalable-microservices-with-kubernetes--ud615).
 * [Introduction to Kubernetes at edX](http://www.edx.org/course/introduction-kubernetes-linuxfoundationx-lfs158x).
 
-## Articles
+<br>
+
+##### Articles
 
 * [Digital Ocean: How we launched our marketplace using k8s](https://blog.digitalocean.com/how-we-launched-our-marketplace-using-digitalocean-kubernetes-part-1/).
 * [Are you Ready to Manage your Infrastructure like Google?](http://blog.jetstack.io/blog/k8s-getting-started-part1/).
@@ -71,7 +103,9 @@ Services objects allow pods to communicate with other pods.
 * [Top Reasons Businesses Should Move to Kubernetes Now](http://supergiant.io/blog/top-reasons-businesses-should-move-to-kubernetes-now) .
 
 
-## Prometheus Operator
+<br>
+
+##### Prometheus Operator
 
 * [Monitor external services with the prometheus operator](https://jpweber.io/blog/monitor-external-services-with-the-prometheus-operator/).
 * [Prometheus Operator — How to monitor an external service](https://devops.college/prometheus-operator-how-to-monitor-an-external-service-3cb6ac8d5acb).
