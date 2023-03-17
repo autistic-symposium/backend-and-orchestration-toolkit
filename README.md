@@ -1,4 +1,4 @@
-## ☁️✨ resources on cloud and orchestration
+## ☁️ resources on cloud and orchestration
 
 
 <br>
@@ -18,7 +18,7 @@
 
 ---
 
-### exernal resources
+### resources
 
 <br>
 
@@ -32,4 +32,4 @@
 ##### external
 
 
-* [saw, multi-purpose tool for aws cloudwatch logs](https://github.com/TylerBrock/saw)
+* [saw, a multi-purpose tool for aws cloudwatch logs](https://github.com/TylerBrock/saw)
