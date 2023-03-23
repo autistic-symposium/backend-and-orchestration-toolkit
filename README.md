@@ -7,7 +7,8 @@
 
 <br>
 
-* [kafka](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/kafka-and-streaming)
+
+* [docker](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/docker)
 * [kubernetes](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/kubernetes)
   * [spin up a node server example](kubernetes/node-server-example)
   * [using kustomize for deployment](kubernetes/kustomize)
@@ -15,7 +16,7 @@
 * [aws](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/aws)
 * [gcp](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/gcp)
 * [chef](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/chef)
-* [docker](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/docker)
+* [kafka](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/kafka-and-streaming)
 
 <br>
 
