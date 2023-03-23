@@ -2,7 +2,7 @@
 
 <br>
 
-* 👉🏼 [docker hints and tricks]()
+* 👉🏼 [docker hints and tricks](tricks.md)
 
 
 <br>
