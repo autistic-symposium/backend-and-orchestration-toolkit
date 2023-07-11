@@ -12,7 +12,7 @@ python-dateutil==2.5.3
 python-dotenv==0.9.1
 python-lambda==3.2.2
 PyYAML==5.4
-requests==2.20.0
+requests==2.31.0
 s3transfer==0.1.13
 six==1.10.0
 urllib3==1.26.5
