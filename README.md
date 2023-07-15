@@ -1,39 +1,45 @@
-## ☁️ resources on cloud and orchestration
+## ☁️🧰 master orchestration && backend engineering 
 
 
 <br>
 
-### in this repo
+### fundamentals
+
+<br>
+
+* **[communication](communication/)**
+* **[protocols](protocols/)**
+* **[HTTP](https/)**
+* **[execution](execution/)**
+* **[proxy](proxy)**
+* **[load balance](load_balance)**
+
+
+<br>
+
+---
+### source code and snippets
 
 <br>
 
 
-* [docker](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/docker)
-* [kubernetes](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/kubernetes)
-  * [spin up a node server example](kubernetes/node-server-example)
-  * [using kustomize for deployment](kubernetes/kustomize)
-  * [using python cdk for deployment](kubernetes/python-cdk)
-* [aws](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/aws)
-* [gcp](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/gcp)
-* [chef](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/chef)
-* [kafka](https://github.com/bt3gl-labs/Scratch-Space-Cloud-and-Orchestration/tree/master/kafka-and-streaming)
+* **[docker](code/docker)**
+* **[kubernetes](code/kubernetes):**
+  * **[spin up a node server](code/kubernetes/node-server-example)**
+  * **[kustomize for deployment](code/kubernetes/kustomize)**
+  * **[python cdk for deployment](code/kubernetes/python-cdk)**
+* **[aws](code/aws)**
+* **[gcp](code/gcp)**
+* **[chef](code/chef)**
+* **[kafka](code/kafka)**
 
 <br>
 
 ---
 
-### resources
+### more resources
 
 <br>
 
-##### go-outside
-
-* [end-to-end pipeline for video edition on AWS SQS + lambda + SNS](https://github.com/go-outside-labs/aws-pipeline-py)
-
-
-<br>
-
-##### external
-
-
-* [saw, a multi-purpose tool for aws cloudwatch logs](https://github.com/TylerBrock/saw)
+* **[my end-to-end pipeline on AWS SQS + lambda + SNS](https://github.com/go-outside-labs/aws-pipeline-py)**
+* **[saw, a multi-purpose tool for aws cloudwatch logs](https://github.com/TylerBrock/saw)**
