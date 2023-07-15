@@ -1,5 +1,11 @@
 ## ☁️🧰 master orchestration && backend engineering 
 
+<br>
+
+<p align="center">
+<img src="https://github.com/go-outside-labs/orchestration-toolkit/assets/1130416/ad6b4bf7-b306-4a57-8f20-62193ee4091d" width="55%" align="center" style="padding:1px;border:1px solid black;"/>
+ </p>
+
 
 <br>
 
