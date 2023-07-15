@@ -13,21 +13,35 @@
 
 <br>
 
-* **[communication](communication/)**
+* **[communication patterns](communication/)**
   * Request Response model
   * Synchronous vs. Asynchronous workloads
   * Push
   * Polling and Long Polling
-  * Server Sent Events
-  * Publish Subscribe (Pub/Sub)
+  * Server-Sent Events
+  * Publish-Subscribe (Pub/Sub)
   * Multiplexing vs. Demultiplexing
   * Stateful vs. Stateless
   * Sidecar Pattern
 
 <br>
 
+* **[execution patterns](execution/)**
+  * backend execution patterns
+  * the process, the thread, the cpu time
+  * reading and sending socket data
+  * the listener, the acceptor, the reader
+  * single listener, acceptor, and reader thread execution pattern
+  * single listener, acceptor, and multiple readers thread execution pattern
+  * single listener, acceptor, readers with message load-balancing execution pattern
+  * multiple accepter threads on a single socket execution pattern
+  * multiple listeners, acceptors, and reader with socket-sharding execution pattern
+  * backend idempotency
+  * nagle's algorithm
+
+  <br>
+
 * **[protocols](protocols/)**
-  * protocol properties
   * protocol properties
   * OSI model
   * internet protocol
@@ -41,7 +55,9 @@
   * gRPC
   * WebRTC
 
+
   <br>
+
 
 * **[HTTP](https/)**
   * https communication 
@@ -51,21 +67,6 @@
   * https over TFO with TLS 1.3
   * https over TCP with TLS 1.3 and ORTT
   * https over QUICK with ORTT
-
-  <br>
-
-* **[execution](execution/)**
-  * backend execution patterns
-  * the process, the thread, the cpu time
-  * reading and sending socket data
-  * the listener, the acceptor, the reader
-  * single listener, acceptor, and reader thread execution pattern
-  * single listener, acceptor, and multiple readers thread execution pattern
-  * single listener, acceptor, reader with message load balancing execution pattern
-  * multiple accepter threads on a single socket execution pattern
-  * multiple listeners, acceptors, and reader with socket sharding execution pattern
-  * backend idempotency
-  * nagle's algorithm
 
   <br>
 
@@ -91,6 +92,7 @@
 * **[gcp](code/gcp)**
 * **[chef](code/chef)**
 * **[kafka](code/kafka)**
+* **[protocol demos](code/protocol_demos/)**
 
 <br>
 

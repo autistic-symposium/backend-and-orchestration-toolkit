@@ -119,12 +119,39 @@ curl -v --trace marinasouza.xyz
 #### Async workload is everywhere
     - async programming (promises, futures)
     - async backend processing
+    - async commits in postgres
+    - async IO in Linux (epoll, io_uring)
+    - async replication
+    - async OS fsync (filesystem cache)
 
 <br>
 
 ----
 
-### Push
+### Push 
+
+<br>
+
+#### pros and coins
+
+    - real time
+    - the client must be online (connected to the server)
+    - the client must be able to handle the load
+    - polling is preferred for light clients
+
+<br>
+
+#### basic idea
+
+    1. client connects to a server
+    2. server sends data to the client
+    3. client doesn't have to request anything
+    4. protocol must be bidirectional
+
+<br>
+#### used in
+
+    - RabbitMQ (clients consume the queues, and the messages are pushed to the clients)
 
 
 <br>
@@ -133,6 +160,11 @@ curl -v --trace marinasouza.xyz
 
 ### Polling
 
+<br>
+
+#### basic idea
+    - when a request takes long time to process (e.g., upload a video)
+    - the backend want to sends notification
 
 <br>
 
