@@ -54,23 +54,6 @@
   * HTTP/3
   * gRPC
   * WebRTC
-
-
-  <br>
-
-
-* **[HTTP](https/)**
-  * https communication 
-  * https over TCP with TLS 1.2
-  * https over TCP with TLS 1.3
-  * https over QUIC (HTTP/3)
-  * https over TFO with TLS 1.3
-  * https over TCP with TLS 1.3 and ORTT
-  * https over QUICK with ORTT
-
-  <br>
-
-* **[proxy and load balance](proxy_and_lb)**
   * proxy vs. reverse proxy
   * Layer 4 vs. Layer 7 load balancers
 

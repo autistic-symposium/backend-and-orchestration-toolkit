@@ -162,9 +162,18 @@ curl -v --trace marinasouza.xyz
 
 <br>
 
+* used when a request takes long time to process (e.g., upload a video) and very simple to build.
+* however, it can be too chatting, use too much network bandwidth and backend resources.
+
+   <br>
 #### basic idea
-    - when a request takes long time to process (e.g., upload a video)
-    - the backend want to sends notification
+ 
+    1. client sends a request
+    2. server responds immediately with a handle
+    3. server continues to process the request
+    4. client uses that handle to check for status
+    5. multiple short request response as polls
+
 
 <br>
 
@@ -175,10 +184,44 @@ curl -v --trace marinasouza.xyz
 
 <br>
 
+* a poll requests where the server only responds when the job is ready (used when a request takes long time to process and it's not real time)
+* used by Kafka
+
+<br>
+
+#### basic idea
+
+<br>
+
+    1. clients sends a request
+    2. server responds immediately with a handle
+    3. server continues to process the request
+    4. client uses that handle to check for status
+    5. server does not reply until has the response (and there are some timeouts)
+
+
+<br>
+
 ---
 
 ### Server Sent Events
 
+
+<br>
+
+* one request with a long response, but the client must be online and be able to handle the response.
+
+<br>
+
+#### basic idea
+
+    1. a response has start and end
+    2. client sends a request
+    3. server sends logical events as part of response
+    4. server never writes the end of the response
+    5. it's still a request but an unending response
+    6. client parses the streams data 
+    7. works with HTTP
 
 <br>
 
