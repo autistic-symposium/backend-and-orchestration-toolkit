@@ -61,27 +61,44 @@
 <br>
 
 ---
-### source code and snippets
+### scripts and snippets
 
 <br>
 
+
+#### services and pubs
 
 * **[docker](code/docker)**
 * **[kubernetes](code/kubernetes):**
   * **[spin up a node server](code/kubernetes/node-server-example)**
   * **[kustomize for deployment](code/kubernetes/kustomize)**
   * **[python cdk for deployment](code/kubernetes/python-cdk)**
+* **[kafka (long pooling)](code/kafka)**
+
+<br>
+
+#### cloud
+
 * **[aws](code/aws)**
 * **[gcp](code/gcp)**
+
+<br>
+#### management
+
 * **[chef](code/chef)**
-* **[kafka](code/kafka)**
+
+
+<br>
+
+#### learning
+
 * **[protocol demos](code/protocol_demos/)**
 
 <br>
 
 ---
 
-### more resources
+### external resources
 
 <br>
 

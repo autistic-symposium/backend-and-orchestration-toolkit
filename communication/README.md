@@ -8,24 +8,24 @@
 
 #### used in
 
-    - the web, HTTP, DNS, SSH
-    - RPC (remote procedure call)
-    - SQL and database protocols
-    - APIs (REST/SOAP/GraphQL)
+- the web, HTTP, DNS, SSH
+- RPC (remote procedure call)
+- SQL and database protocols
+- APIs (REST/SOAP/GraphQL)
 
 <br>
 
 
 #### the basic idea
 
-    1. clients sends a request
-        - the request structure is defined by both client and server and has a boundary.
-    2. server parses the request
+1. clients sends a request
+        - the request structure is defined by both client and server and has a boundary
+2. server parses the request
         - the parsing cost is not cheap (e.g. `json` vs. `xml` vs. protocol buffers)
         - for example, for a large image, chunks can be sent, with a request per chunk
-    3. Server processes the request
-    4. Server sends a response
-    5. Client parse the Response and consume
+3. Server processes the request
+4. Server sends a response
+5. Client parse the Response and consume
 
 <br>
 
@@ -80,49 +80,50 @@ curl -v --trace marinasouza.xyz
 
 #### Synchronous I/O: the basic idea
 
-    1. Caller sends a request and blocks
-    2. Caller cannot execute any code meanwhile
-    3. Receiver responds, Caller unblocks
-    4. Caller and Receiver are in sync
+1. Caller sends a request and blocks
+2. Caller cannot execute any code meanwhile
+3. Receiver responds, Caller unblocks
+4. Caller and Receiver are in sync
 
 
 <br>
 
 ##### example (note the waste!)
 
-    1. program asks OS to read from disk
-    2. program main threads is taken off the CPU
-    3. read is complete and program resume execution (costly)
+1. program asks OS to read from disk
+2. program main threads is taken off the CPU
+3. read is complete and program resume execution (costly)
 
 <br>
 
 #### Asynchronous I/O: the basic idea
 
-    1. caller sends a request
-    2. caller can work until it gets a response
-    3. caller either:
+1. caller sends a request
+2. caller can work until it gets a response
+3. caller either:
         - checks whether the response is ready (epoll)
         - receiver calls back when it's done (io_uring)
         - spins up a new thread that blocks
-    4. caller and receiver not in sync
+4. caller and receiver not in sync
 
 <br>
 
 #### Sync vs. Async in a Request Response
 
-    - synchronicity is a client property
-    - most modern client libraries are async
+- synchronicity is a client property
+- most modern client libraries are async
 
 
 <br>
 
 #### Async workload is everywhere
-    - async programming (promises, futures)
-    - async backend processing
-    - async commits in postgres
-    - async IO in Linux (epoll, io_uring)
-    - async replication
-    - async OS fsync (filesystem cache)
+
+- async programming (promises, futures)
+- async backend processing
+- async commits in postgres
+- async IO in Linux (epoll, io_uring)
+- async replication
+- async OS fsync (filesystem cache)
 
 <br>
 
@@ -134,24 +135,20 @@ curl -v --trace marinasouza.xyz
 
 #### pros and coins
 
-    - real time
-    - the client must be online (connected to the server)
-    - the client must be able to handle the load
-    - polling is preferred for light clients
+- real-time
+- the client must be online (connected to the server)
+- the client must be able to handle the load
+- polling is preferred for light clients.
+- used by  RabbitMQ (clients consume the queues, and the messages are pushed to the clients)
 
 <br>
 
-#### basic idea
+#### the basic idea
 
-    1. client connects to a server
-    2. server sends data to the client
-    3. client doesn't have to request anything
-    4. protocol must be bidirectional
-
-<br>
-#### used in
-
-    - RabbitMQ (clients consume the queues, and the messages are pushed to the clients)
+1. client connects to a server
+2. server sends data to the client
+3. client doesn't have to request anything
+4. protocol must be bidirectional
 
 
 <br>
@@ -162,17 +159,18 @@ curl -v --trace marinasouza.xyz
 
 <br>
 
-* used when a request takes long time to process (e.g., upload a video) and very simple to build.
-* however, it can be too chatting, use too much network bandwidth and backend resources.
+* used when a request takes long time to process (e.g., upload a video) and very simple to build
+* however, it can be too chatting, use too much network bandwidth and backend resources
 
-   <br>
-#### basic idea
+<br>
+
+#### the basic idea
  
-    1. client sends a request
-    2. server responds immediately with a handle
-    3. server continues to process the request
-    4. client uses that handle to check for status
-    5. multiple short request response as polls
+1. client sends a request
+2. server responds immediately with a handle
+3. server continues to process the request
+4. client uses that handle to check for status
+5. multiple short request response as polls
 
 
 <br>
@@ -189,15 +187,15 @@ curl -v --trace marinasouza.xyz
 
 <br>
 
-#### basic idea
+#### the basic idea
 
-<br>
 
-    1. clients sends a request
-    2. server responds immediately with a handle
-    3. server continues to process the request
-    4. client uses that handle to check for status
-    5. server does not reply until has the response (and there are some timeouts)
+
+1. clients sends a request
+2. server responds immediately with a handle
+3. server continues to process the request
+4. client uses that handle to check for status
+5. server does not reply until has the response (and there are some timeouts)
 
 
 <br>
@@ -209,19 +207,19 @@ curl -v --trace marinasouza.xyz
 
 <br>
 
-* one request with a long response, but the client must be online and be able to handle the response.
+* one request with a long response, but the client must be online and be able to handle the response
 
 <br>
 
-#### basic idea
+#### the basic idea
 
-    1. a response has start and end
-    2. client sends a request
-    3. server sends logical events as part of response
-    4. server never writes the end of the response
-    5. it's still a request but an unending response
-    6. client parses the streams data 
-    7. works with HTTP
+1. a response has start and end
+2. client sends a request
+3. server sends logical events as part of response
+4. server never writes the end of the response
+5. it's still a request but an unending response
+6. client parses the streams data 
+7. works with HTTP
 
 <br>
 
@@ -229,12 +227,29 @@ curl -v --trace marinasouza.xyz
 
 ### Publish Subscribe (Pub/Sub)
 
+<br>
+
+* one publisher has many reader (and there can be many publishers)
+* relevant when there are many servers (e.g., upload, compress, format, notification)
+* great for microservices as it scales with multiple receivers
+* loose coupling (clients are not connected to each other and works while clients not running)
+* however, you cannot know if the consumer/subscriber got the message or got it twice, etc.
+* also, it might result on network saturation and extra complexity
+* used by RabbitQ and Kafka
+
+
 
 <br>
 
 ---
 
 ### Multiplexing vs. Demultiplexing
+
+<br>
+
+
+* used by HTTP/2, QUIC, connection pool, MPTCP
+* connection pooling is a technique where you can spin several backend connections and keep them "hot"
 
 
 <br>
@@ -246,9 +261,67 @@ curl -v --trace marinasouza.xyz
 
 <br>
 
+* a very contentious topic: is state stored in the backend? how do you rely on the state of an application, system, or protocol?
+* **stateful backend**: store state about clients in its memory and depends on the information being there
+* **stateless backend**: client is responsible to "transfer the state" with every request (you may store but can safely lose it).
+
+<br>
+
+#### Stateless backends
+
+* stateless backends can still store data somewhere else
+* the backend remain stateless but the system is stateful (can you restart the backend during idle time while the client workflow continues to work?)
+
+<br>
+
+#### Stateful backend
+
+* the server generate a session, store locally, and return to the user
+* the client check if the session is in memory to authenticate and return
+* if the backend is restarted, sessions are empty (it never relied on the databases)
+
+<br>
+
+#### Stateless vs. Stateful protocols
+
+* the protocols can be designed to store date
+* TCP is stateful: sequences, connection file descriptor
+* UDP is stateless: DNS send queryID in UDP to identify queries
+* QUIC is stateful but because it sends connectionID to identify connection, it transfer the state across the protocol
+* you can build a stateless protocol on top of a stateful one and vice versa (e.g., HTTP on top of TCP, with cookies)
+
+<br>
+
+#### Complete stateless systems
+
+* stateless systems are very rare
+* state is carried with every request
+* a backend service that relies completely on the input
+* **JWT (JSON Web Token)**, everything is in the token and you cannot mark it as invalid
+
+
+
+
+<br>
+
 ---
 
 ### Sidecar Pattern
+
+<br>
+
+* every protocol requires a library, but changing the library is hard as the app is entrenched to it and breaking changes backward compatibility
+* sidecar pattern is the idea of delegating communication through a proxy with a rich library (and the client has a thin library)
+* in this case, every client has a sidecar proxy
+* pros: it's language agnostic, provides extra security, service discovery, caching.
+* cons: complexity, latency
+
+<br>
+
+#### Examples
+
+* service mesh proxies (Linkerd, Istio, Envoy)
+* sidecar proxy container (must be layer 7 proxy)
 
 
 <br>
