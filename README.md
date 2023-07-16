@@ -24,38 +24,19 @@
   * Stateful vs. Stateless
   * Sidecar Pattern
 
-<br>
-
-* **[execution patterns](execution/)**
-  * backend execution patterns
-  * the process, the thread, the cpu time
-  * reading and sending socket data
-  * the listener, the acceptor, the reader
-  * single listener, acceptor, and reader thread execution pattern
-  * single listener, acceptor, and multiple readers thread execution pattern
-  * single listener, acceptor, readers with message load-balancing execution pattern
-  * multiple accepter threads on a single socket execution pattern
-  * multiple listeners, acceptors, and reader with socket-sharding execution pattern
-  * backend idempotency
-  * nagle's algorithm
 
   <br>
 
 * **[protocols](protocols/)**
   * protocol properties
-  * OSI model
-  * internet protocol
-  * UDP
-  * TCP
-  * TLS
-  * HTTP/1.1
+  * HTTP/1.1, 2, 3
   * WebSockets
-  * HTTP/2
-  * HTTP/3
   * gRPC
   * WebRTC
   * proxy vs. reverse proxy
   * Layer 4 vs. Layer 7 load balancers
+
+
 
 
 <br>
