@@ -39,7 +39,7 @@
 * you want to build agnostic applications
 * without a standard model, upgrading network equipments become difficult
 * innovations can be done in each layer separately without affecting the rest of the models
-* the OSI model is 7 layers each describing a specific networking component
+* the OSI model is 7 layers, each describing a specific networking component
 
 <br>
 
@@ -79,7 +79,7 @@
 
 <br>
 
-#### What's a HTTP request
+#### What's an HTTP request
 
 * a method (GET, POST, etc.)
 * a path (the URL)
@@ -131,7 +131,7 @@
 
 <br>
 
-* built on top of HTTP/2 (as a hidden implementation) adding several features
+* built on top of HTTP/2 (as a hidden implementation), adding several features
 * any communication protocol needs client library for the language of choice, but with gRPC you only have one client library
 * message format is protocol buffers
 * the gRPC modes are: unary, server streaming, client streaming, and bidirectional streaming
@@ -146,11 +146,11 @@
 
 <br>
 
-* find a p2p path to exchange video and audio in an efficient and low latency manner
+* find a p2p path to exchange video and audio in an efficient and low-latency manner
 * standardized API
 * enables rich communication browsers, mobile, IOT devices
 * **pros**: p2p is great (low latency for high bandwidth content), standardized api
-* **cons**: maintaining STUN and TURN servers, p2p falls apart in case of multiple participants (e.g. discord)
+* **cons**: maintaining STUN and TURN servers, p2p falls apart in case of multiple participants (e.g., discord)
 
 <br>
 
@@ -161,4 +161,50 @@
 3. B finds out all possible ways the public can connect to it
 4. A and B signal this session information via other means (whatsapp, QR, tweet, etc.)
 5. A connects to B via the most optimal path
-6. A and B also exchanges their supported media and security
+6. A and B also exchange their supported media and security
+
+
+<br>
+
+-----
+
+### Proxies
+
+<br>
+
+#### What's a proxy
+
+* a server that makes requests on your behalf (you as a client)
+* this means that your tcp connection is being established not with the server, but with the proxy
+* in other words, the proxy has the role of layer 4, but layer 7 content gets forwarded (there are exceptions when the proxy adds a header such as with `X-Forwarded-For`)
+* **uses**: caching, anonymity, logging, block sites, microservices
+
+<br>
+
+#### What's a reverse proxy
+
+* the client does not know the "final destination server", meaning that the server thar serves the url requested could be a reverse proxy that will forward the request to the underline server
+* **uses**: load balancing, caching, CDN, api gateway/ingress, canary deployment, microservices
+
+
+
+
+<br>
+
+
+#### Layer 4 vs. Layer 7 Load Balancers
+
+<br>
+
+* load balancers, also known as fault tolerant systems, is a reverse proxy talking to many backends
+* a **layer 4 load balancer** starts with several TCP connection and keep them "warm"
+    - when a user starts a connection, this connection will have a state, the LB chooses one server and all segments for that connection go to that server and through ONE connection (layer 4 is stateful)
+    - the LB almost acts like a router
+    - **pros**: simpler load balancing, efficient, more secure, works with any protocol, one TCP connection (NAT)
+    - **cons**: no smart load balancing, NA services, sticky per connection, no caching, protocol unaware (can be risky) bypass rules
+* a **layer 7 load balancer** starts with several TCP connection and keep them "warm", but in this case, when a client connects to the L7 LB, it becomes protocol specific
+    - any logical request will be buffered, parsed, and then forwarded to a new backend server
+    - this could be one or more segments
+    - certificates, private keys, all need to live in the load balancer
+    - **pros**: smart LB, caching, great for microservices, API gateway logic, authentication
+    - **cons**: expensive (because it's looking at the data), decrypts (terminates TLS), two TCP connections, needs to buffer, needs to understand protocol
