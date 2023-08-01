@@ -68,7 +68,7 @@
 
 #### storage
 
-* **[databases](storage/database/)**
+* **[databases](storage/databases/)**
 
 <br>
 
