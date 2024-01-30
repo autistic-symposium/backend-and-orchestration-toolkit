@@ -88,5 +88,6 @@
 
 <br>
 
+* **[system design in cool pictures](https://github.com/ByteByteGoHq/system-design-101)**
 * **[my end-to-end pipeline on AWS SQS + lambda + SNS](https://github.com/go-outside-labs/aws-pipeline-py)**
 * **[saw, a multi-purpose tool for aws cloudwatch logs](https://github.com/TylerBrock/saw)**
