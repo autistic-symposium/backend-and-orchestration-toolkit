@@ -6,5 +6,5 @@
   "scripts": {
     "locally": "node src/index.js"
   },
-  "author": "Mia von Steinkirch"
+  "author": "Mia Stein"
 }

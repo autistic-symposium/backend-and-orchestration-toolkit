@@ -35,13 +35,13 @@
 * see how it always get the headers firsts:
 
 ```bash
-curl -v --trace marinasouza.xyz
+curl -v --trace souza.xyz
 
 == Info:   Trying 76.76.21.21:80...
-== Info: Connected to marinasouza.xyz (76.76.21.21) port 80 (#0)
+== Info: Connected to souza.xyz (76.76.21.21) port 80 (#0)
 => Send header, 79 bytes (0x4f)
 0000: 47 45 54 20 2f 20 48 54 54 50 2f 31 2e 31 0d 0a GET / HTTP/1.1..
-0010: 48 6f 73 74 3a 20 6d 61 72 69 6e 61 73 6f 75 7a Host: marinasouz
+0010: 48 6f 73 74 3a 20 6d 61 72 69 6e 61 73 6f 75 7a Host: souz
 0020: 61 2e 78 79 7a 0d 0a 55 73 65 72 2d 41 67 65 6e a.xyz..User-Agen
 0030: 74 3a 20 63 75 72 6c 2f 37 2e 38 38 2e 31 0d 0a t: curl/7.88.1..
 0040: 41 63 63 65 70 74 3a 20 2a 2f 2a 0d 0a 0d 0a    Accept: */*....
@@ -55,11 +55,11 @@ curl -v --trace marinasouza.xyz
 0010: 78 74 2f 70 6c 61 69 6e 0d 0a                   xt/plain..
 <= Recv header, 36 bytes (0x24)
 0000: 4c 6f 63 61 74 69 6f 6e 3a 20 68 74 74 70 73 3a Location: https:
-0010: 2f 2f 6d 61 72 69 6e 61 73 6f 75 7a 61 2e 78 79 //marinasouza.xy
+0010: 2f 2f 6d 61 72 69 6e 61 73 6f 75 7a 61 2e 78 79 //souza.xy
 0020: 7a 2f 0d 0a                                     z/..
 <= Recv header, 41 bytes (0x29)
 0000: 52 65 66 72 65 73 68 3a 20 30 3b 75 72 6c 3d 68 Refresh: 0;url=h
-0010: 74 74 70 73 3a 2f 2f 6d 61 72 69 6e 61 73 6f 75 ttps://marinasou
+0010: 74 74 70 73 3a 2f 2f 6d 61 72 69 6e 61 73 6f 75 ttps://sou
 0020: 7a 61 2e 78 79 7a 2f 0d 0a                      za.xyz/..
 <= Recv header, 16 bytes (0x10)
 0000: 73 65 72 76 65 72 3a 20 56 65 72 63 65 6c 0d 0a server: Vercel..

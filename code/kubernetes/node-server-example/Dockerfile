@@ -1,5 +1,5 @@
 FROM node:4.4
-MAINTAINER "Mia von Steinkirch" 
+MAINTAINER "Mia Stein" 
 
 EXPOSE 1337
 
