@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://roitraining.qwiklab.com/focuses/2774/materials -->
+<html class="mdl-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="./Streaming Data Processing _ Qwiklabs + roitraining_files/caff0d62ed"></script><script src="./Streaming Data Processing _ Qwiklabs + roitraining_files/nr-1044.min.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"caff0d62ed","applicationID":"25010137","transactionName":"IQ1XRUEOVV1dFxlRXAEXSlRATkpZVxJpWlIWB0tYUg1K","queueTime":0,"applicationTime":508,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="8Xmvt56S37kcsgttxfMUkxdHKahEOHosaQKPLXHsnHUxq1sF7ahUEpLveXYYP3aDiFfb5CKzOCjzhpeNAhHHpQ==">
+<title>Streaming Data Processing | Qwiklabs + roitraining</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0" name="viewport">
+<meta content="In this lab series, you will use simulate your traffic sensor data into Pub/Sub, to be processed by Dataflow using a streaming pipeline before finally ending up in a BigQuery table for further analysis." name="description">
+<meta content="Learn AWS, AWS Training, AWS Labs, Learn Amazon Web Services, Amazon Web Services Training, Amazon Web Services Labs" name="keywords">
+<meta content="Qwiklabs" name="author">
+<meta content="Streaming Data Processing | Qwiklabs + roitraining" property="og:title">
+<meta content="website" property="og:type">
+<meta content="/favicon.png" property="og:image">
+<meta content="https://www.qwiklabs.com" property="og:url">
+<meta content="Qwiklabs" property="og:site_name">
+<meta content="In this lab series, you will use simulate your traffic sensor data into Pub/Sub, to be processed by Dataflow using a streaming pipeline before finally ending up in a BigQuery table for further analysis." property="og:description">
+<meta content="/qwiklabs_logo_900x887.png" property="og:logo" size="900x887">
+<meta content="/qwiklabs_logo_994x187.png" property="og:logo" size="994x187">
+<meta content="#3681E4" property="msapplication-TileColor">
+<meta content="/favicon-144.png" property="msapplication-TileImage">
+<link href="https://roitraining.qwiklab.com/favicon.ico" rel="shortcut icon">
+<link color="#3681E4" href="https://roitraining.qwiklab.com/favicon-svg.svg" rel="mask-icon">
+<link href="https://roitraining.qwiklab.com/favicon-180.png" rel="apple-touch-icon-precomposed">
+
+<!--[if lt IE 9]>
+<script src='http://html5shim.googlecode.com/svn/trunk/html5.js' type='text/javascript'></script>
+<![endif]-->
+<!--[endif]>  <![endif]-->
+<script>
+//<![CDATA[
+window.gon={};gon.current_user={"firstname":"","lastname":"","fullname":"mia stein","company":"etsy","email":","origin":"roitraining, direct","subscriptions":0,"id":"12ee659298eb15258fdeb4d43db52cb8","qlCreatedAt":"2017-11-28 14:06:23 UTC","optIn":false};gon.segment=null;gon.deployment="roitraining";
+//]]>
+</script>
+
+
+
+<link rel="stylesheet" media="all" href="./Streaming Data Processing _ Qwiklabs + roitraining_files/application-6460790cbdd89c50da4755d15c7ef68fa373dd59daad1528c39815f8c2c4676d.css">
+<script src="./Streaming Data Processing _ Qwiklabs + roitraining_files/application-965286b1d75b8ed026adfefe5748f3ad70657330c97a79281c8bc1b35d341af9.js"></script>
+</head>
+<body class="focuses focuses-show_materials l-no-padding ilt-mode">
+<div class="header-container">
+<div class="header">
+<a class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect header__button header__button--nav header__side-menu-button js-side-menu-button" data-upgraded=",MaterialButton,MaterialRipple">
+<i class="material-icons">menu</i>
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+<div class="header__title">
+<a class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect header__button header__button--nav" href="https://roitraining.qwiklab.com/materials/252" data-upgraded=",MaterialButton,MaterialRipple"><i class="material-icons">arrow_back</i><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+
+<h1>
+Streaming Data Processing
+</h1>
+</div>
+<div class="header__actions">
+<div class="header__menu header__menu--my-account">
+<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="header_menu" data-upgraded=",MaterialButton,MaterialRipple">
+<i class="material-icons"><img class="avatar " src="./Streaming Data Processing _ Qwiklabs + roitraining_files/a835b0e3b23a9e319e795e2bf1bccaa8.png" alt="A835b0e3b23a9e319e795e2bf1bccaa8"></i>
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+<div class="mdl-menu__container is-upgraded"><div class="mdl-menu__outline mdl-menu--bottom-right"></div><ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect mdl-js-ripple-effect--ignore-events" for="header_menu" data-upgraded=",MaterialMenu,MaterialRipple">
+<li class="mdl-menu__item header__menu__item mdl-js-ripple-effect" tabindex="-1" data-upgraded=",MaterialRipple"><a href="https://roitraining.qwiklab.com/my_account/profile">My Account</a><span class="mdl-menu__item-ripple-container"><span class="mdl-ripple"></span></span></li>
+<li class="mdl-menu__item header__menu__item mdl-js-ripple-effect" tabindex="-1" data-upgraded=",MaterialRipple"><a rel="nofollow" data-method="delete" href="https://roitraining.qwiklab.com/users/sign_out">Sign Out</a><span class="mdl-menu__item-ripple-container"><span class="mdl-ripple"></span></span></li>
+
+</ul></div>
+</div>
+
+</div>
+</div>
+</div>
+<div class="header__search-bar js-header-search-bar">
+<form action="https://roitraining.qwiklab.com/searches/lab" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="8Xmvt56S37kcsgttxfMUkxdHKahEOHosaQKPLXHsnHUxq1sF7ahUEpLveXYYP3aDiFfb5CKzOCjzhpeNAhHHpQ==">
+<input type="text" name="keywords" id="keywords" value="" placeholder="Search for labs">
+</form>
+
+<a class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect header__button" data-upgraded=",MaterialButton,MaterialRipple">
+<i class="material-icons">close</i>
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+</div>
+
+<div class="l-flex">
+<div class="side-menu js-side-menu">
+<div class="side-menu__inner">
+<nav class="side-menu__nav">
+<a class="side-menu__item" href="https://roitraining.qwiklab.com/materials"><div class="side-menu__item__icon">
+<i class="material-icons">view_comfy</i>
+</div>
+<span class="side-menu__item__tooltip">Materials</span>
+<div class="side-menu__item__label">
+Materials
+</div>
+</a>
+<a class="side-menu__item" href="https://roitraining.qwiklab.com/dashboard"><div class="side-menu__item__icon">
+<i class="material-icons">history</i>
+</div>
+<span class="side-menu__item__tooltip">My Learning</span>
+<div class="side-menu__item__label">
+My Learning
+</div>
+</a>
+<hr>
+<a class="side-menu__item" href="https://roitraining.qwiklab.com/my_account/credits"><div class="side-menu__item__icon">
+<i class="material-icons">account_circle</i>
+</div>
+<span class="side-menu__item__tooltip">My Account</span>
+<div class="side-menu__item__label">
+My Account
+</div>
+</a>
+<a class="side-menu__item" href="https://qwiklab.zendesk.com/hc/en-us"><div class="side-menu__item__icon">
+<i class="material-icons">help</i>
+</div>
+<span class="side-menu__item__tooltip">Help</span>
+<div class="side-menu__item__label">
+Help
+</div>
+</a>
+</nav>
+<div class="side-menu__small-links">
+<a href="https://roitraining.qwiklab.com/privacy_policy">Privacy Policy</a>
+<br>
+<a href="https://roitraining.qwiklab.com/terms_of_service">Terms of Service</a>
+</div>
+</div>
+</div>
+<div class="side-menu__overlay js-side-menu-button"></div>
+
+<main>
+<div class="l-alert-wrapper alerts">
+<span class="hidden" id="flash-sibling-before"></span>
+
+</div>
+<div class="l-main-wrapper">
+
+
+
+<div class="l-lab-container js-lab_and_classroom_info" data-classroom-name="Data Engineering on Google Cloud Platform v1.1" data-deployment="roitraining" data-lab-name="Streaming Data Processing" data-label="Streaming Data Processing">
+<div class="l-lab-sidebar js-lab-sidebar-container">
+<div class="lab-sidebar js-lab-sidebar">
+<div class="lab-sidebar__header">
+<div class="lab-sidebar__header-row">
+<span class="small-label">
+480m access
+·
+480m completion
+</span>
+</div>
+<div class="lab-sidebar__header-row">
+<div class="rateit l-mrm" data-rateit-readonly="true" data-rateit-value="4.4286"><div class="rateit-reset" style="display: none;"></div><div class="rateit-range" style="width: 80px; height: 16px;"><div class="rateit-selected" style="height: 16px; width: 70.8576px;"></div><div class="rateit-hover" style="height:16px"></div></div></div>
+
+<a class="small-label l-mrm" data-target="#lab-review-modal" data-toggle="modal">
+Rate Lab
+</a>
+<a class="small-label" data-target="#lab-details-modal" data-toggle="modal">
+Lab Details
+</a>
+</div>
+
+</div>
+<div class="lab-sidebar__tabs">
+<div class="tab-contents tab-contents--lab-sidebar">
+<div class="tab-content is-active">
+<h5 class="l-mbs">
+Connection Details
+</h5>
+<div class="form-row js-form-row">
+<a class="button button--full-width button--secondary is-disabled js-connection-dns-link js-external-window" target="_blank">
+Open Google Console
+</a>
+</div>
+
+<div class="form-row js-form-row">
+<div class="control-group">
+<label class="label--console">
+Username 
+</label>
+<input class="input input--console js-connection-username-0" disabled="disabled" readonly="readonly" value="··········">
+<button class="button button--copy button--copy-input js-copy-input-button" data-clipboard-target=".js-connection-username-0">
+<i class="fa fa-clipboard"></i>
+</button>
+<span style="opacity: 1; left: 274px; top: 18.5px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></div>
+</div>
+
+<div class="form-row js-form-row">
+<div class="control-group">
+<label class="label--console">
+Password
+</label>
+<input class="input input--console js-connection-password" disabled="disabled" readonly="readonly" value="··········">
+<button class="button button--copy button--copy-input js-copy-input-button" data-clipboard-target=".js-connection-password">
+<i class="fa fa-clipboard"></i>
+</button>
+<span style="opacity: 1; left: 274px; top: 18.5px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></div>
+</div>
+
+<div class="form-row js-form-row">
+<div class="control-group">
+<label class="label--console">
+GCP Project ID 
+</label>
+<input class="input input--console js-connection-project-0" disabled="disabled" readonly="readonly" value="··········">
+<button class="button button--copy button--copy-input js-copy-input-button" data-clipboard-target=".js-connection-project-0">
+<i class="fa fa-clipboard"></i>
+</button>
+</div>
+</div>
+
+
+<div class="lab-sidebar__resource lab-sidebar__resource--additional-details l-mtl is-hidden js-cf-connection-output"></div>
+<div class="lab-sidebar__resource lab-sidebar__resource--additional-details l-mtl is-hidden js-additional-connection-info"></div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="lab-sidebar__slider js-sidebar-slider">
+<i class="fa fa-arrow-left"></i>
+<iframe class="l-ie-iframe-fix" kwframeid="1" src="./Streaming Data Processing _ Qwiklabs + roitraining_files/saved_resource.html"></iframe>
+</div>
+
+</div>
+<div class="l-lab-main">
+<div class="l-lab-main-header">
+<header class="lab-header js-lab-header">
+<div class="lab-header__section lab-header__section--flex">
+<div class="lab-header__progress is-hidden js-progress">
+<div class="lab-header__progress__bar js-progress-bar"></div>
+</div>
+</div>
+<div class="lab-header__section lab-header__section--no-border">
+<span class="lab-header__progress-message is-hidden js-progress-message">
+<div class="lab-header__progress-message__indicator js-progress-message-indicator"></div>
+<span class="js-progress-message-incomplete">
+Lab Setting Up
+</span>
+<span class="js-progress-message-complete is-hidden">
+Lab Running
+</span>
+</span>
+</div>
+<div class="lab-header__section">
+<a class="button button--start button--lab js-start-lab-button" data-focus-id="2774" data-lab-access="None" data-lab-instance-id="">
+Start Lab
+</a>
+<a class="button button--wait button--lab js-waiting-lab-button is-hidden">
+<i class="fa fa-spinner fa-pulse"></i>
+</a>
+<a class="button button--end button--lab js-end-lab-button is-hidden">
+End Lab
+</a>
+</div>
+<div class="lab-header__section">
+<h3 class="text--sign js-timer" data-duration="28800">
+ 08:00:00
+</h3>
+</div>
+</header>
+
+</div>
+<div class="l-lab-main-body">
+<div class="lab-content js-lab-content">
+<div class="lab-content__markdown-wrapper">
+<div class="js-markdown-instructions lab-content__markdown markdown-lab-instructions" id="markdown-lab-instructions">
+
+<h1 id="streaming-data-processing">STREAMING DATA PROCESSING</h1>
+
+<h1 id="getting-started-with-gcp-console">GETTING STARTED WITH GCP CONSOLE</h1>
+
+<p>When the lab is ready a green button will appear that looks like this:</p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/2fa0ccada9d929f0.png" alt="2fa0ccada9d929f0.png"></p>
+
+<p>When you are ready to begin, click <strong>Start Lab</strong>. </p>
+
+<h1 id="logging-in-to-google-cloud-platform">Logging in to Google Cloud Platform</h1>
+
+<h2 id="step-1-locate-the-username-password-and-project-id"><strong>Step 1: Locate the Username, Password and Project Id</strong></h2>
+
+<p>Press the green [Start] button to start the lab.  After setup is completed you will see something similar to this on the right side of the Qwiklabs window:</p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/eaa80bb0490b07d0.png" alt="eaa80bb0490b07d0.png"></p>
+
+<h2 id="step-2-browse-to-console"><strong>Step 2: Browse to Console</strong></h2>
+
+<p>Open an Incognito window in your browser. <br>
+And go to <strong><a href="http://console.cloud.google.com/" target="_blank">http://console.cloud.google.com</a></strong></p>
+
+<h2 id="step-3-sign-in-to-console"><strong>Step 3: Sign in to Console</strong></h2>
+
+<p>Log in with the Username and Password provided. The steps below are <em>suggestive</em>. The actual dialog and procedures may vary from this example.</p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/1c492727805af169.png" alt="1c492727805af169.png"></p>
+
+<h2 id="step-4-accept-the-conditions"><strong>Step 4: Accept the conditions</strong></h2>
+
+<p>Accept the new account terms and conditions.</p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/32331ec60c5f6609.png" alt="32331ec60c5f6609.png"></p>
+
+<p>This is a temporary account. You will only have access to the account for this one lab.</p>
+<ul><li>Do not add recovery options</li>
+<li>Do not sign up for free trials</li>
+</ul>
+<h2 id="step-5-don-t-change-the-password"><strong>Step 5: Don't change the password</strong></h2>
+
+<p>If prompted, don't change the password. Just click <strong>[Continue]</strong>.</p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/ef164317a73a66d7.png" alt="ef164317a73a66d7.png"></p>
+
+<h2 id="step-6-agree-to-the-terms-of-service"><strong>Step 6 Agree to the Terms of Service</strong></h2>
+
+<p>Select <strong>(x)</strong> Yes, <strong>(x) _<em>Yes and click _</em>[AGREE AND CONTINUE]</strong>.</p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/e0edec7592d289e1.png" alt="e0edec7592d289e1.png"></p>
+
+<h2 id="step-7-console-opens"><strong>Step 7: Console opens</strong></h2>
+
+<p>The Google Cloud Platform Console opens.</p>
+
+<p>You may see a bar occupying the top part of the Console inviting you to sign up for a free trial. You can click on the __[DISMISS] __button so that the entire Console screen is available.</p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/a1b4bfec239cc863.png" alt="a1b4bfec239cc863.png"></p>
+
+<h2 id="step-8-switch-project-if-necessary"><strong>Step 8: Switch project (if necessary)</strong></h2>
+
+<p>On the top blue horizontal bar, click on the drop down icon to select the correct project (if not already so). You can confirm the project id from your Qwiklabs window (shown in step 1 above).</p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/849103afbf5e9178.png" alt="849103afbf5e9178.png"></p>
+
+<p>Click on "view more projects" if necessary and select the correct project id.</p>
+
+<h1 id="part-1-publish-streaming-data-into-pub-sub">PART 1: PUBLISH STREAMING DATA INTO PUB/SUB</h1>
+
+<h1 id="overview">Overview</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>Google Cloud Pub/Sub is a fully-managed real-time messaging service that allows you to send and receive messages between independent applications. Use Cloud Pub/Sub to publish and subscribe to data from multiple sources, then use Google Cloud Dataflow to understand your data, all in real time.</p>
+
+<p>In this lab you will use simulate your traffic sensor data into a Pubsub topic for later to be processed by Dataflow pipeline before finally ending up in a BigQuery table for further analysis.</p>
+
+<h2 id="what-you-learn"><strong>What you learn</strong></h2>
+
+<p>In this lab, you will learn how to:</p>
+<ul><li>Create a Pubsub topic and subscription</li>
+<li>Simulate your traffic sensor data into Pubsub</li>
+</ul>
+<h1 id="create-pubsub-topic-and-subscription">Create PubSub topic and Subscription</h1>
+
+<h2 id="step-1"><strong>Step 1</strong></h2>
+
+<p>Open a new CloudShell window and navigate to the directory for this lab:</p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~/training-data-analyst/courses/streaming/publish
+</code><button class="button button--copy js-copy-button-0"><i class="fa fa-clipboard"></i></button></pre>
+<p>If this directory doesn't exist, you may need to git clone the repository first:</p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~
+git clone https://github.com/GoogleCloudPlatform/training-data-analyst
+<span class="nb">cd</span> ~/training-data-analyst/courses/streaming/publish
+</code><button class="button button--copy js-copy-button-1"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-2"><strong>Step 2</strong></h2>
+
+<p>Run the following command to configure gcloud:</p>
+<pre class="highlight shell"><code>gcloud init
+</code><button class="button button--copy js-copy-button-2"><i class="fa fa-clipboard"></i></button></pre>
+<p>Note: when prompted, select option 1 to Re-initialize the configuration and when further prompted, choose the right account and project ID (look at your Qwiklabs "Connect" tab to confirm).</p>
+
+<p>Install the Cloud SDK beta command component:</p>
+<pre class="highlight shell"><code>gcloud components install beta
+</code><button class="button button--copy js-copy-button-3"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-3"><strong>Step 3</strong></h2>
+
+<p>Create your topic and publish a simple message:</p>
+<pre class="highlight shell"><code>gcloud beta pubsub topics create sandiego
+gcloud beta pubsub topics publish sandiego <span class="s2">"hello"</span>
+</code><button class="button button--copy js-copy-button-4"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-4"><strong>Step 4</strong></h2>
+
+<p>Create a subscription for the topic:</p>
+<pre class="highlight shell"><code>gcloud beta pubsub subscriptions create --topic sandiego mySub1
+</code><button class="button button--copy js-copy-button-5"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-5"><strong>Step 5</strong></h2>
+
+<p>Pull the first message that was published to your topic:</p>
+<pre class="highlight shell"><code>gcloud beta pubsub subscriptions pull --auto-ack mySub1
+</code><button class="button button--copy js-copy-button-6"><i class="fa fa-clipboard"></i></button></pre>
+<p>Do you see any result? If not, why?</p>
+
+<h2 id="step-6"><strong>Step 6</strong></h2>
+
+<p>Try to publish another message and then pull it using the subscription:</p>
+<pre class="highlight shell"><code>gcloud beta pubsub topics publish sandiego <span class="s2">"hello again"</span>
+
+gcloud beta pubsub subscriptions pull --auto-ack mySub1
+</code><button class="button button--copy js-copy-button-7"><i class="fa fa-clipboard"></i></button></pre>
+<p>Did you get any response this time?</p>
+
+<h2 id="step-7"><strong>Step 7</strong></h2>
+
+<p>Cancel your subscription:</p>
+<pre class="highlight shell"><code>gcloud beta pubsub subscriptions delete mySub1
+</code><button class="button button--copy js-copy-button-8"><i class="fa fa-clipboard"></i></button></pre>
+<h1 id="simulate-your-traffic-sensor-data-into-pubsub">Simulate your traffic sensor data into PubSub</h1>
+
+<h2 id="step-1-2"><strong>Step 1</strong></h2>
+
+<p>Explore the python script to simulate San Diego traffic sensor data:</p>
+<pre class="highlight shell"><code>nano send_sensor_data.py
+</code><button class="button button--copy js-copy-button-9"><i class="fa fa-clipboard"></i></button></pre>
+<p>Look at the simulate function. This one lets the script behave as if traffic sensors were sending in data in real time to PubSub. The speedFactor parameter determines how fast the simulation will go.</p>
+
+<h2 id="step-2-2"><strong>Step 2</strong></h2>
+
+<p>Download traffic dataset </p>
+<pre class="highlight shell"><code>./download_data.sh
+</code><button class="button button--copy js-copy-button-10"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-3-2"><strong>Step 3</strong></h2>
+
+<p>To ensure the shell has the right permissions, run the following command:</p>
+<pre class="highlight shell"><code>gcloud auth application-default login
+</code><button class="button button--copy js-copy-button-11"><i class="fa fa-clipboard"></i></button></pre>
+<p>When you run the gcloud command, you will get a confirmation prompt. Enter ‘Y' to continue. Next, you will be given a url, which you need to type in a your browser tab. </p>
+
+<table>
+<tbody><tr><td colspan="1" rowspan="1"><p><img style="max-width: 168.00px" src="./Streaming Data Processing _ Qwiklabs + roitraining_files/8607bd755f84b437.png"></p>
+</td><td colspan="1" rowspan="1"><p>→</p>
+</td><td colspan="1" rowspan="1"><p><img style="max-width: 163.00px" src="./Streaming Data Processing _ Qwiklabs + roitraining_files/1a96b5fa54f06242.png"></p>
+</td><td colspan="1" rowspan="1"><p>→</p>
+</td><td colspan="1" rowspan="1"><p><img style="max-width: 193.50px" src="./Streaming Data Processing _ Qwiklabs + roitraining_files/6dec212a4f131dcd.png"></p>
+</td></tr>
+</tbody></table>
+
+<p>You will next be prompted to select the account, and click <strong>Next</strong>. The next page requires you to approve authorization, so click <strong>Allow</strong>. Finally, you get a code which you need to copy and paste it back in shell where you ran the gcloud command where you would be prompted to enter code.</p>
+
+<h2 id="step-4-2"><strong>Step 4</strong></h2>
+
+<p>Once re-authenticated, run the send_sensor_data.py</p>
+<pre class="highlight shell"><code>./send_sensor_data.py --speedFactor<span class="o">=</span>60
+</code><button class="button button--copy js-copy-button-12"><i class="fa fa-clipboard"></i></button></pre>
+<p>This command will send 1 hour of data in 1 minute.</p>
+
+<p><strong>Note</strong>: </p>
+<ul><li>If you get the <strong>google.gax.errors.RetryError: GaxError</strong> OR <strong>"StatusCode.PERMISSION_DENIED, User not authorized to perform this action."</strong>, then simply re-authenticate the shell and run the script again</li>
+</ul><pre class="highlight shell"><code>gcloud auth application-default login
+./send_sensor_data.py --speedFactor<span class="o">=</span>60
+</code><button class="button button--copy js-copy-button-13"><i class="fa fa-clipboard"></i></button></pre><ul><li>If this fails because <strong>google.cloud.pubsub can not be found</strong>, then do the pip install below and run the send_sensor_data.py again:</li>
+</ul><pre class="highlight shell"><code>sudo pip install google-cloud-pubsub
+./send_sensor_data.py --speedFactor<span class="o">=</span>60
+</code><button class="button button--copy js-copy-button-14"><i class="fa fa-clipboard"></i></button></pre><ul><li>If you get a failure that the module <strong>pubsub has no attribute called Client</strong> then you are running into path problems because an older version of pub/sub is installed on your machine.  The solution is to use virtualenv:<br></li>
+</ul><pre class="highlight shell"><code>virtualenv cpb104
+<span class="nb">source </span>cpb104/bin/activate
+pip install google-cloud-pubsub
+gcloud auth application-default login
+</code><button class="button button--copy js-copy-button-15"><i class="fa fa-clipboard"></i></button></pre>
+<p>Then, try the send_sensor_data.py again</p>
+<pre class="highlight shell"><code>./send_sensor_data.py --speedFactor<span class="o">=</span>60
+</code><button class="button button--copy js-copy-button-16"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-5-2"><strong>Step 5</strong></h2>
+
+<p>Create a new tab in Cloud Shell and change into the directory you were working in:</p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~/training-data-analyst/courses/streaming/publish
+</code><button class="button button--copy js-copy-button-17"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-6-2"><strong>Step 6</strong></h2>
+
+<p>Create a subscription for the topic and do a pull to confirm that messages are coming in:</p>
+<pre class="highlight shell"><code>gcloud beta pubsub subscriptions create --topic sandiego mySub2
+gcloud beta pubsub subscriptions pull --auto-ack mySub2
+</code><button class="button button--copy js-copy-button-18"><i class="fa fa-clipboard"></i></button></pre>
+<p>Confirm that you see a message with traffic sensor information.</p>
+
+<h2 id="step-7-2"><strong>Step 7</strong></h2>
+
+<p>Cancel this subscription.</p>
+<pre class="highlight shell"><code>gcloud beta pubsub subscriptions delete mySub2
+</code><button class="button button--copy js-copy-button-19"><i class="fa fa-clipboard"></i></button></pre>
+<p>In the next lab, you will run a Dataflow pipeline to read in all these messages and process them.</p>
+
+<h2 id="step-8"><strong>Step 8</strong></h2>
+
+<p>Go to the Cloud Shell tab with the publisher and type <input readonly="" class="copyable-inline-input" size="6" type="text" value="Ctrl-C"> to stop it.</p>
+
+<table>
+<tbody><tr><td colspan="1" rowspan="1"><p><img style="max-width: 72.00px" src="./Streaming Data Processing _ Qwiklabs + roitraining_files/3ac518b975e3eb26.png"></p>
+</td><td colspan="1" rowspan="1"><p><strong>Stop here if you are done. Wait for instructions from the Instructor before going into the next section</strong></p>
+</td></tr>
+</tbody></table>
+
+<h1 id="part-2-streaming-data-pipelines">PART 2: STREAMING DATA PIPELINES</h1>
+
+<h1 id="overview-2">Overview</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>In this lab you will use Dataflow to collect traffic events from simulated traffic sensor data made available through Google Cloud PubSub, process them into an actionable average, and store the raw data in BigQuery for later analysis. You will learn how to start a Dataflow pipeline, monitor it, and, lastly, optimize it. </p>
+
+<h2 id="what-you-learn-2"><strong>What you learn</strong></h2>
+
+<p>In this lab, you will learn how to:</p>
+<ul><li>Launch Dataflow and run a Dataflow job</li>
+<li>Understand how data elements flow through the transformations of a Dataflow pipeline</li>
+<li>Connect Dataflow to Pub/Sub and BigQuery</li>
+<li>Observe and understand how Dataflow autoscaling adjusts compute resources to process input data optimally</li>
+<li>Learn where to find logging information created by Dataflow</li>
+<li>Explore metrics and create alerts and dashboards with Stackdriver Monitoring</li>
+</ul>
+<h1 id="create-bigquery-dataset-and-storage-bucket">Create BigQuery Dataset and Storage bucket</h1>
+
+<p>The Dataflow pipeline we will create later will write into a table in this dataset.</p>
+
+<h2 id="step-1-3"><strong>Step 1</strong></h2>
+
+<p>Open the  <a href="http://console.cloud.google.com/" target="_blank">Google Cloud Console</a> (in the incognito window) and using the menu, navigate into BigQuery web UI</p>
+
+<h2 id="step-2-3"><strong>Step 2</strong></h2>
+
+<p>Click the blue arrow to the right of your project name and choose <strong>Create new dataset</strong>.</p>
+
+<h2 id="step-3-3"><strong>Step 3</strong></h2>
+
+<p>In the ‘Create Dataset' dialog, for <strong>Dataset ID</strong>, type <strong>demos</strong> and then click <strong>OK</strong>.</p>
+
+<h2 id="step-4-3"><strong>Step 4</strong></h2>
+
+<p>If you don't already have a bucket on Cloud Storage, create one from the  <a href="http://console.cloud.google.com/storage" target="_blank">Storage section of the GCP console</a>. Bucket names have to be globally unique.</p>
+
+<h1 id="simulate-your-traffic-sensor-data-into-pubsub-2">Simulate your traffic sensor data into PubSub</h1>
+
+<h2 id="step-1-4"><strong>Step 1</strong></h2>
+
+<p>In Cloud Shell, start the script to read from the csv data and publish to PubSub</p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~/training-data-analyst/courses/streaming/publish
+
+./send_sensor_data.py --speedFactor<span class="o">=</span>60
+</code><button class="button button--copy js-copy-button-20"><i class="fa fa-clipboard"></i></button></pre>
+<p>This command will send 1 hour of data in 1 minute.</p>
+
+<p><strong>Note</strong>: </p>
+<ul><li>If you get the <strong>google.gax.errors.RetryError: GaxError</strong> OR <strong>"StatusCode.PERMISSION_DENIED, User not authorized to perform this action."</strong>, then simply re-authenticate the shell and run the script again</li>
+</ul><pre class="highlight shell"><code>gcloud auth application-default login
+./send_sensor_data.py --speedFactor<span class="o">=</span>60
+</code><button class="button button--copy js-copy-button-21"><i class="fa fa-clipboard"></i></button></pre><ul><li>If this fails because <strong>google.cloud.pubsub can not be found</strong>, then do the pip install below and run the send_sensor_data.py again:</li>
+</ul><pre class="highlight shell"><code>sudo pip install google-cloud-pubsub
+./send_sensor_data.py --speedFactor<span class="o">=</span>60
+</code><button class="button button--copy js-copy-button-22"><i class="fa fa-clipboard"></i></button></pre><ul><li>If you get a failure that the module <strong>pubsub has no attribute called Client</strong> then you are running into path problems because an older version of pub/sub is installed on your machine.  The solution is to use virtualenv:<br></li>
+</ul><pre class="highlight shell"><code>virtualenv cpb104
+<span class="nb">source </span>cpb104/bin/activate
+pip install google-cloud-pubsub
+gcloud auth application-default login
+</code><button class="button button--copy js-copy-button-23"><i class="fa fa-clipboard"></i></button></pre>
+<p>Then, try the send_sensor_data.py again</p>
+<pre class="highlight shell"><code>./send_sensor_data.py --speedFactor<span class="o">=</span>60
+</code><button class="button button--copy js-copy-button-24"><i class="fa fa-clipboard"></i></button></pre>
+<h1 id="launch-dataflow-pipeline">Launch Dataflow Pipeline</h1>
+
+<p><em>Duration is 9 min</em></p>
+
+<h2 id="step-1-5"><strong>Step 1</strong></h2>
+
+<p>Open a new CloudShell window and navigate to the directory for this lab:</p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~/training-data-analyst/courses/streaming/process/sandiego
+</code><button class="button button--copy js-copy-button-25"><i class="fa fa-clipboard"></i></button></pre>
+<p>If this directory doesn't exist, you may need to git clone the repository first:</p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~
+git clone https://github.com/GoogleCloudPlatform/training-data-analyst
+<span class="nb">cd</span> ~/training-data-analyst/courses/streaming/process/sandiego
+</code><button class="button button--copy js-copy-button-26"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-2-4"><strong>Step 2</strong></h2>
+
+<p>Explore the scripts that create and run a Dataflow pipeline in the cloud:</p>
+<pre class="highlight shell"><code>nano run_oncloud.sh
+</code><button class="button button--copy js-copy-button-27"><i class="fa fa-clipboard"></i></button></pre>
+<p>The script takes 3 required arguments: project id, bucket name, classname and possibly a 4th argument: options. We will cover the options argument in a later part of the lab.</p>
+
+<p><em>project id</em> : this is your GCP project</p>
+
+<p><em>bucket name</em> : this your Cloud Storage bucket you created earlier</p>
+
+<p>*classname *:  we have 4 java files that you can choose from, each reads the traffic data rom Pub/Sub and runs different aggregations/computations. Go into the java directory and explore one of the files we will be using:</p>
+<pre class="highlight shell"><code><span class="nb">cd </span>src/main/java/com/google/cloud/training/dataanalyst/sandiego 
+nano AverageSpeeds.java
+</code><button class="button button--copy js-copy-button-28"><i class="fa fa-clipboard"></i></button></pre>
+<p>What does the script do?</p>
+
+<h2 id="step-3-4"><strong>Step 3</strong></h2>
+
+<p>Run the Dataflow pipeline to read from PubSub and write into BigQuery</p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~/training-data-analyst/courses/streaming/process/sandiego
+./run_oncloud.sh yourproject yourbucket AverageSpeeds
+</code><button class="button button--copy js-copy-button-29"><i class="fa fa-clipboard"></i></button></pre>
+<p>Note: make sure to plug in your project id and bucket name for the first and second arguments respectively.</p>
+
+<p>Note: If you are on a free trial account, you might get an error about insufficient quota(s) to execute this workflow with 3 instances.  If so, add <input readonly="" class="copyable-inline-input" size="17" type="text" value="--maxNumWorkers=2"> to the command-line in <input readonly="" class="copyable-inline-input" size="14" type="text" value="run_oncloud.sh"> so as to keep the Dataflow pipeline under quota. If you do this, though, you will not be able to observe autoscaling.</p>
+
+<h1 id="explore-the-pipeline">Explore the pipeline</h1>
+
+<p><em>Duration is 4 min</em></p>
+
+<p>In this activity, you will learn more about the pipeline that you launched in the previous steps. </p>
+
+<p>This Dataflow pipeline:</p>
+<ul><li>reads messages from a Pub/Sub topic, </li>
+<li>parses the Json of the input message and produces one main output</li>
+<li>and writes into BigQuery.</li>
+</ul>
+<h2 id="step-1-6"><strong>Step 1</strong></h2>
+
+<p>Go to the  <a href="https://console.cloud.google.com/dataflow" target="_blank">Dataflow Jobs</a> page in the Cloud Console.</p>
+
+<h2 id="step-2-5"><strong>Step 2</strong></h2>
+
+<p>Click on the pipeline you created in the lab, it will have your username in the pipeline name.</p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/de43819cb53af15f.png" alt="de43819cb53af15f.png"></p>
+
+<h2 id="step-4-4"><strong>Step 4</strong></h2>
+
+<p>Compare the code you saw earlier of the pipeline (<em>AverageSpeeds.java</em>) and the pipeline graph in the Cloud Console.</p>
+
+<h2 id="step-5-3"><strong>Step 5</strong></h2>
+
+<p>Find the "GetMessages" pipeline step in the graph, and then find the corresponding code snippet in the <em>AverageSpeeds.java</em> file. This is the pipeline step that reads from the Pub/Sub topic. It creates a collection of Strings - the read Pub/Sub messages. </p>
+
+<p>Do you see a subscription created? </p>
+
+<p>How does the code pull messages from Pub/Sub?</p>
+
+<h2 id="step-6-3"><strong>Step 6</strong></h2>
+
+<p>Find the "Time Window" pipeline step in the graph and in code. In this pipeline step we create a window of a duration specified in the pipeline parameters (sliding window in this case). This window will accumulate the traffic data from the previous step until end of window, and pass it to the next steps for further transforms.</p>
+
+<p>What is the window interval ? How often is a new window created?</p>
+
+<h2 id="step-7-3"><strong>Step 7</strong></h2>
+
+<p>Find the "BySensor" and "AvgBySensor" pipeline steps in the graph, and then find the corresponding code snippet in the <em>AverageSpeeds.java</em> file. This "BySensor" does a grouping of all events in the window by sensor id, while "AvgBySensor" will then compute the mean speed for each grouping.</p>
+
+<h2 id="step-8-2"><strong>Step 8</strong></h2>
+
+<p>Find the "ToBQRow" pipeline step in the graph and in code. In this step we simply create a "row" with the average computed from previous step together with the lane information. In this step, you can do other interesting things like maybe compare the calculated mean against a predefined threshold and log the results of the comparison, which you can later search for in Stackdriver Logging. In the later steps, we use the predefined metrics and look at the logging info.</p>
+
+<h2 id="step-9"><strong>Step 9</strong></h2>
+
+<p>Lastly, find the "BigQueryIO.Write" in both the pipeline graph and in source code. In this step we are writing the row out of the pipeline into a BigQuery table. Because we chose the WriteDisposition.WRITE_APPEND write disposition, new records will be appended to the table.</p>
+
+<h1 id="determine-throughput-rates">Determine throughput rates</h1>
+
+<p><em>Duration is 3 min</em></p>
+
+<p>One common activity when monitoring and improving Dataflow pipelines is figuring out how many elements the pipeline processes per second, what the system lag is, and how many data elements have been processed so far. In this activity you will learn where in the Cloud Console one can find information about processed elements and time.</p>
+
+<h2 id="step-1-7"><strong>Step 1</strong></h2>
+
+<p>Go to the  <a href="https://console.cloud.google.com/dataflow" target="_blank">Dataflow Jobs</a> page in the Cloud Console.</p>
+
+<h2 id="step-2-6"><strong>Step 2</strong></h2>
+
+<p>Click on the pipeline you created in the lab.</p>
+
+<h2 id="step-3-5"><strong>Step 3</strong></h2>
+
+<p>Select the "GetMessages" pipeline node in the graph and look at the step metrics on the right.</p>
+<ul><li><strong>System Lag</strong> is an important metric for streaming pipelines. It represents the amount of time data elements are waiting to be processed since they "arrived" in the input of the transformation step. </li>
+<li><strong>Elements Added</strong> metric under output collections tells you how many data elements exited this step (for the "Read PubSub Msg" step of our pipeline it also represents the number of Pub/Sub messages read from the topic by the Pub/Sub IO connector)</li>
+</ul>
+<p>Another important metric is the <strong>Step Throughput</strong>, measured in data elements per second. You will find it inside step nodes in the pipeline graph.</p>
+
+<h2 id="step-4-5"><strong>Step 4</strong></h2>
+
+<p>Select the next pipeline node in the graph -  "Time Window". Observe how the Elements Added metric under the Input Collections of the "Time Window" step matches the Elements Added metric under the Output Collections of the previous step "GetMessages". Generally speaking, output of Step N will be equal to the input of the next Step N+1.</p>
+
+<h1 id="review-bigquery-output">Review BigQuery output</h1>
+
+<p><em>Duration is 4 min</em></p>
+
+<p>Find the output tables in BigQuery and run commands to view written records.</p>
+
+<h2 id="step-1-8"><strong>Step 1</strong></h2>
+
+<p>Open the  <a href="http://console.cloud.google.com/" target="_blank">Google Cloud Console</a> (in the incognito window) and using the menu, navigate into BigQuery web UI, and explore the <strong>demos</strong> dataset.  Note that streaming tables may not show up immediately. You can still query the tables though.</p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/c19c88068984ec7c.png" alt="c19c88068984ec7c.png"></p>
+
+<h2 id="step-2-7"><strong>Step 2</strong></h2>
+
+<p>Use the following query to observe the output from your  Dataflow job. </p>
+<pre class="highlight plaintext"><code>SELECT * 
+FROM [&lt;PROJECTID&gt;:demos.average_speeds] 
+ORDER BY timestamp DESC
+LIMIT 100
+</code><button class="button button--copy js-copy-button-30"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-3-6">Step 3</h2>
+
+<p>Find the last update to the table by running the following SQL:</p>
+<pre class="highlight plaintext"><code>SELECT
+  MAX(timestamp)
+FROM
+  [&lt;PROJECTID&gt;:demos.average_speeds]
+</code><button class="button button--copy js-copy-button-31"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-4-6">Step 4</h2>
+
+<p>Use the BigQuery Table Decorator to look at results in the last 10 minutes:</p>
+<pre class="highlight plaintext"><code>SELECT
+  *
+FROM
+  [&lt;PROJECTID&gt;:demos.average_speeds@-600000]
+ORDER BY
+  timestamp DESC
+</code><button class="button button--copy js-copy-button-32"><i class="fa fa-clipboard"></i></button></pre>
+<p>Use the <strong>BigQuery Invalid Snapshot Time</strong>, try reducing the 60000 to perhaps 10000.</p>
+
+<h1 id="observe-and-understand-autoscaling">Observe and understand autoscaling</h1>
+
+<p><em>Duration is 4 min</em></p>
+
+<p>In this activity, we will observe how Dataflow scales the number of workers to process the backlog of incoming Pub/Sub messages.</p>
+
+<h2 id="step-1-9"><strong>Step 1</strong></h2>
+
+<p>Go to the  <a href="https://console.cloud.google.com/dataflow" target="_blank">Dataflow Jobs</a> page in the Cloud Console.</p>
+
+<h2 id="step-2-8"><strong>Step 2</strong></h2>
+
+<p>Click on the pipeline you created in the lab. Find the Summary panel on the right, and review the Autoscaling panel. Check how many workers are currently being used to process messages in the Pub/Sub topic.</p>
+
+<h2 id="step-3-7"><strong>Step 3</strong></h2>
+
+<p>Click on "See More History" link and review how many workers were used at different points in time during the pipeline execution.</p>
+
+<h2 id="step-4-7">Step 4</h2>
+
+<p>The data from a traffic sensor simulator started at the beginning of the lab creates hundreds of messages per second in the Pub/Sub topic.  This will cause Dataflow to increase the number of workers in order to keep the system lag of the pipeline at optimal levels. </p>
+
+<p>In the "Worker History" screen, observe how Dataflow changed the number of workers, and the rationale for these decisions in the history table.</p>
+
+<h1 id="monitor-pipelines">Monitor pipelines</h1>
+
+<p><em>Duration is 2 min</em></p>
+
+<p><strong>Note:</strong> Dataflow / Stackdriver Monitoring Integration is currently available as part of an Early Access Program (EAP). Features and behavior are not final and will change as we move towards General Availability.</p>
+
+<p>Dataflow integration with Stackdriver Monitoring allows users to access Dataflow job metrics such as System Lag (for streaming jobs), Job Status (Failed, Successful), Element Counts, and User Counters from within Stackdriver. </p>
+
+<p>You can also employ Stackdriver alerting capabilities to get notified of a variety of conditions such as long streaming system lag or failed jobs.</p>
+
+<p>Dataflow / Stackdriver Monitoring Integration allows you to:</p>
+<ul><li><strong>Explore Dataflow Metrics:</strong> Browse through available Dataflow pipeline metrics (see next section for a list of metrics) and visualize them in charts.</li>
+<li><strong>Chart Dataflow metrics in Stackdriver Dashboards:</strong> Create Dashboards and chart time series of Dataflow metrics.</li>
+<li><strong>Configure Alerts:</strong> Define thresholds on job or resource group-level metrics and alert when these metrics reach specified values.</li>
+<li><strong>Monitor User-Defined Metrics:</strong> In addition to Dataflow metrics, Dataflow exposes user-defined metrics (SDK Aggregators) as Stackdriver custom counters in the Monitoring UI, available for charting and alerting.</li>
+</ul>
+<h1 id="monitor-pipelines-cont-d">Monitor pipelines (cont'd)</h1>
+
+<p><em>Duration is 2 min</em></p>
+
+<p><strong>What Dataflow pipeline metrics are available in Stackdriver?</strong></p>
+
+<p>Some of the more important metrics Dataflow provides are:</p>
+<ul><li><strong>Job status</strong>: Job status (Failed, Successful), reported as an enum every 30 secs and on update. </li>
+<li><strong>Elapsed time</strong>: Job elapsed time (measured in seconds), reported every 30 secs.</li>
+<li><strong>System lag</strong>: Max lag across the entire pipeline, reported in seconds.</li>
+<li><strong>Current vCPU count</strong>: Current # of virtual CPUs used by job and updated on value change.</li>
+<li><strong>Estimated byte count</strong>: Number of bytes processed per PCollection. Note: This is a per-PCollection metric, not a job-level metric, so it is not yet available for alerting.</li>
+</ul>
+<p><strong>What are user-defined metrics?</strong></p>
+
+<p>Any Aggregator defined in a Dataflow pipeline will be reported to Stackdriver as a custom metric. Dataflow will define a new custom metric on behalf of the user and report incremental updates to Stackdriver approximately every 30 secs. </p>
+
+<h1 id="explore-metrics">Explore metrics</h1>
+
+<p><em>Duration is 3 min</em></p>
+
+<h2 id="step-1-10"><strong>Step 1</strong></h2>
+
+<p>Navigate to  <a href="https://console.cloud.google.com/monitoring" target="_blank">Stackdriver Monitoring</a> and go to Resources &gt; Metrics Explorer</p>
+
+<p>Note: If this is your first time trying out Stackdriver for this project, you may need to set up for your account. Just follow the prompts to activate 30-day trial.</p>
+
+<h2 id="step-2-9"><strong>Step 2</strong></h2>
+
+<p>In the Metrics Explorer, find and select the dataflow_job resource type. You should now see a list of Dataflow-related metrics you can choose from. </p>
+
+<h2 id="step-3-8"><strong>Step 3</strong></h2>
+
+<p>Select a metric you want to observe for one of your jobs. The pipeline you launched at the beginning of the lab is a streaming pipeline, and one of the more important metrics of streaming pipelines is System Lag. Select System Lag as the metric to observe the system lag of the streaming pipeline you launched.</p>
+
+<h2 id="step-4-8"><strong>Step 4</strong></h2>
+
+<p>Stackdriver will populate a list of jobs running in our lab project on the right side of the page. Select your pipeline and observe the progress of the metric over time. </p>
+
+<h1 id="create-alerts">Create alerts</h1>
+
+<p><em>Duration is 4 min</em></p>
+
+<p>If you want to be notified when a certain metric crosses a specified threshold (for example, when System Lag of our lab streaming pipeline increases above a predefined value), you could use the Alerting mechanisms of Stackdriver to accomplish that.</p>
+
+<h2 id="step-1-11"><strong>Step 1</strong></h2>
+
+<p>On the  <a href="https://console.cloud.google.com/monitoring" target="_blank">Stackdriver Monitoring</a> page, navigate to the Alerting menu and select Policies Overview.</p>
+
+<h2 id="step-2-10"><strong>Step 2</strong></h2>
+
+<p>Click on Add Policy.</p>
+
+<h2 id="step-3-9"><strong>Step 3</strong></h2>
+
+<p>The "Create new Alerting Policy" page allows you to define the alerting conditions and the channels of communication for alerts. For example, to set an alert on the System Lag for our lab pipeline group, do the following:</p>
+<ul><li>click on "Add Condition", </li>
+<li>click on "Select" under Metric Threshold, </li>
+<li>select "Dataflow Job" in the Resource Type dropdown, </li>
+<li>select "Single" in the "Applies To" dropdown, </li>
+<li>select the group you created in the previous step,</li>
+<li>select "Any Member Violates" in the "Condition Triggers If" dropdown, </li>
+<li>select "System Lag" in the "If Metric" dropdown, and</li>
+<li>select Condition "above" a Threshold of "5" seconds. </li>
+</ul>
+<p>Click on Save Condition to save the alert.</p>
+
+<h2 id="step-4-9"><strong>Step 4</strong></h2>
+
+<p>Add a Notifications channel, give the policy a name, and click on "Save Policy".</p>
+
+<h2 id="step-5-4"><strong>Step 5</strong></h2>
+
+<p>After you created an Alert, you can review the Events related to Dataflow in the Alerting&gt;Events page. Every time an alert is triggered by a Metric Threshold condition, an Incident and a corresponding Event are created in Stackdriver. If you specified a notification mechanism in the alert (email, SMS, pager, etc), you will also receive a notification. </p>
+
+<h1 id="set-up-dashboards">Set up dashboards</h1>
+
+<p><em>Duration is 5 min</em></p>
+
+<p>You can easily build dashboards with the most relevant Dataflow-related charts with Stackdriver Monitoring Dashboards. </p>
+
+<h2 id="step-1-12"><strong>Step 1</strong></h2>
+
+<p>On the  <a href="https://console.cloud.google.com/monitoring" target="_blank">Stackdriver Monitoring</a> page, go to the Dashboards menu and select "Create Dashboard".</p>
+
+<h2 id="step-2-11"><strong>Step 2</strong></h2>
+
+<p>Click on Add Chart.</p>
+
+<h2 id="step-3-10"><strong>Step 3</strong></h2>
+
+<p>On the Add Chart page:</p>
+<ul><li>select "Dataflow Job" as the Resource Type, </li>
+<li>select a metric you want to chart in the Metric Type field (e.g. System Lag), </li>
+<li>in the Filter panel, select a group that you created in one of the previous steps and that contains your Dataflow pipeline,</li>
+<li>click "Save".</li>
+</ul>
+<p>You can add more charts to the dashboard, if you would like, for example, PubSub publish rates on the topic, or subscription backlog (which is a signal to the Dataflow auto-scaler).</p>
+
+<h1 id="launch-another-streaming-pipeline">Launch another streaming pipeline</h1>
+
+<p><em>Duration is 9 min</em></p>
+
+<h2 id="step-1-13"><strong>Step 1</strong></h2>
+
+<p>Go back to the CloudShell where you ran the first Dataflow pipeline.</p>
+
+<p>Run the CurrentConditions java code in a new Dataflow pipeline; this script is simpler in the sense that it does not do many transforms like AverageSpeeds. We will use the results in the next lab to build dashboards and run some transforms (functions) while retrieving the data from BigQuery</p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~/training-data-analyst/courses/streaming/process/sandiego
+./run_oncloud.sh yourproject yourbucket CurrentConditions
+</code><button class="button button--copy js-copy-button-33"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-2-12"><strong>Step 2</strong></h2>
+
+<p>Go to the  <a href="https://console.cloud.google.com/dataflow" target="_blank">Dataflow Jobs</a> page in the Cloud Console and confirm you see the pipeline job listed. Further ensure that it is running (no errors).</p>
+
+<table>
+<tbody><tr><td colspan="1" rowspan="1"><p><img style="max-width: 72.00px" src="./Streaming Data Processing _ Qwiklabs + roitraining_files/3ac518b975e3eb26.png"></p>
+</td><td colspan="1" rowspan="1"><p><strong>Stop here if you are done. Wait for instructions from the Instructor before going into the next section</strong></p>
+</td></tr>
+</tbody></table>
+
+<h1 id="part-3-streaming-analytics-and-dashboards">PART 3:  STREAMING ANALYTICS AND DASHBOARDS</h1>
+
+<h1 id="overview-3">Overview</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>Data visualization tools can help you make sense of your BigQuery data and help you analyze the data interactively. You can use visualization tools to help you identify trends, respond to them, and make predictions using your data. In this lab, you use Google Data Studio to visualize data in the BigQuery table populated by your Dataflow pipeline in the previous exercise.</p>
+
+<h2 id="what-you-learn-3"><strong>What you learn</strong></h2>
+
+<p>In this lab, you:</p>
+<ul><li>Connect to a BigQuery data source</li>
+<li>Create reports and charts to visualize BigQuery data</li>
+</ul>
+<h1 id="creating-a-data-source">Creating a data source</h1>
+
+<p><em>Duration is 10 min</em></p>
+
+<p>In this section of the lab, you use Google Data Studio to visualize data in BigQuery using the BigQuery connector. You create a data source, a report, and charts that visualize data in the sample table.</p>
+
+<p>The first step in creating a report in Data Studio is to create a data source for the report. A report may contain one or more data sources. When you create a BigQuery data source, Data Studio uses the BigQuery connector.</p>
+
+<p>You must have the appropriate permissions in order to add a BigQuery data source to a Data Studio report. In addition, the permissions applied to BigQuery datasets will apply to the reports, charts, and dashboards you create in Data Studio. When a Data Studio report is shared, the report components are visible only to users who have appropriate permissions.</p>
+
+<p>To create a data source: </p>
+
+<h2 id="step-1-14"><strong>Step 1</strong></h2>
+
+<p>Open  <a href="https://datastudio.google.com/" target="_blank">Google Data Studio</a>. </p>
+
+<h2 id="step-2-13"><strong>Step 2</strong></h2>
+
+<p>On the <strong>Reports</strong> page, in the <strong>Start a new report</strong> section, click the <strong>Blank</strong> template. This creates a new untitled report.</p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/a8eaa86ffbba3009.png" alt="a8eaa86ffbba3009.png"></p>
+
+<h2 id="step-3-11"><strong>Step 3</strong></h2>
+
+<p>If prompted, click <strong>I accept the terms and conditions</strong> and then click <strong>Accept</strong>. You may need to click the Blank template again after agreeing to the terms and conditions.</p>
+
+<h2 id="step-4-10"><strong>Step 4</strong></h2>
+
+<p>In the <strong>Add a data source</strong> window, click <strong>Create new data source</strong>.</p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/b83dada2910eec15.png" alt="b83dada2910eec15.png"></p>
+
+<h2 id="step-5-5"><strong>Step 5</strong></h2>
+
+<p>For <strong>Connectors</strong>, click <strong>BigQuery</strong>.</p>
+
+<h2 id="step-6-4"><strong>Step 6</strong></h2>
+
+<p>For <strong>Authorization</strong>, click <strong>Authorize</strong>. This allows Data Studio access to your GCP project.</p>
+
+<h2 id="step-7-4"><strong>Step 7</strong></h2>
+
+<p>In the <strong>Request for permission</strong> dialog, click <strong>Allow</strong> to give Data Studio the ability to view data in BigQuery. You may not receive this prompt if you previously used Data Studio.</p>
+
+<h2 id="step-8-3"><strong>Step 8</strong></h2>
+
+<p>Select <strong>My Projects</strong>, then click on your project name</p>
+
+<h2 id="step-9-2"><strong>Step 9</strong></h2>
+
+<p>For <strong>Dataset</strong>, click <strong>demos</strong>.</p>
+
+<h2 id="step-10"><strong>Step 10</strong></h2>
+
+<p>For <strong>Table</strong>, click <strong>current_conditions</strong>.</p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/84dd048f8bb50540.png" alt="84dd048f8bb50540.png"></p>
+
+<h2 id="step-11"><strong>Step 11</strong></h2>
+
+<p>If you need to specify a <strong>Billing Project</strong>, then select your GCP project.</p>
+
+<h2 id="step-12"><strong>Step 12</strong></h2>
+
+<p>In the upper right corner of the window, click <strong>Connect</strong>.</p>
+
+<h2 id="step-13"><strong>Step 13</strong></h2>
+
+<p>Once Data Studio has connected to the BigQuery data source, the table's fields are displayed. You can use this page to adjust the field properties or to create new calculated fields. Click <strong>Create report</strong>.</p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/355461df703fdef5.png" alt="355461df703fdef5.png"></p>
+
+<h2 id="step-14"><strong>Step 14</strong></h2>
+
+<p>When prompted, click <strong>Add to report</strong>.</p>
+
+<h2 id="step-15"><strong>Step 15</strong></h2>
+
+<p>In the <strong>Request for permission</strong> dialog, click <strong>Allow</strong> to give Data Studio the ability to view and manage files in Google Drive. You may not receive this prompt if you previously used Data Studio.</p>
+
+<h1 id="creating-a-bar-chart-using-a-calculated-field">Creating a bar chart using a calculated field</h1>
+
+<p><em>Duration is 15 min</em></p>
+
+<p><strong>Introduction</strong></p>
+
+<p>Once you have added the current_conditions data source to the report, the next step is to create a visualization. Begin by creating a bar chart. The bar chart displays the total number of vehicles captured for each highway. To display this, you create a calculated field as follows:</p>
+
+<h2 id="step-1-15"><strong>Step 1</strong></h2>
+
+<p>(Optional) At the top of the page, click <strong>Untitled Report</strong> to change the report name. For example, type <strong><em><projectid></projectid></em></strong><strong>-report1-</strong><strong><em>yourname</em></strong><em>.</em></p>
+
+<h2 id="step-2-14"><strong>Step 2</strong></h2>
+
+<p>When the report editor loads, click <strong>Insert &gt; Bar chart</strong>. </p>
+
+<h2 id="step-3-12"><strong>Step 3</strong></h2>
+
+<p>Using the handle, draw a rectangle on the report to display the chart.</p>
+
+<h2 id="step-4-11"><strong>Step 4</strong></h2>
+
+<p>In the <strong>Bar chart properties</strong> window, on the <strong>Data</strong> tab, notice the value for Data Source (current_conditions) and the default values for Dimension and Metric.</p>
+
+<h2 id="step-5-6"><strong>Step 5</strong></h2>
+
+<p>If Dimension is not set to <input readonly="" class="copyable-inline-input" size="7" type="text" value="highway"> , then change Dimension to <input readonly="" class="copyable-inline-input" size="7" type="text" value="highway">. In the <strong>Dimension</strong> section, click the existing dimension.</p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/38ab1ca54f8d67b7.png" alt="38ab1ca54f8d67b7.png"></p>
+
+<h2 id="step-6-5"><strong>Step 6</strong></h2>
+
+<p>In the <strong>Dimension picker</strong>, select <strong>highway</strong>. </p>
+
+<h2 id="step-7-5"><strong>Step 7</strong></h2>
+
+<p>Click the back arrow  <img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/1e6c7195ed36171.png" alt="1e6c7195ed36171.png"> to close the Dimension picker.</p>
+
+<h2 id="step-8-4"><strong>Step 8</strong></h2>
+
+<p>In the <strong>Metric</strong> section, click the existing metric.</p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/38ab1ca54f8d67b7.png" alt="38ab1ca54f8d67b7.png"></p>
+
+<h2 id="step-9-3"><strong>Step 9</strong></h2>
+
+<p>In the <strong>Metric picker</strong>, click <strong>Create new metric</strong>.</p>
+
+<h2 id="step-10-2"><strong>Step 10</strong></h2>
+
+<p>Click  <img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/d4c82cbdef400df2.png" alt="d4c82cbdef400df2.png"> (<strong>Create a calculated field</strong>). To display a count of the number of vehicles using each highway, create a calculated field. For this lab, you count the entries in the <input readonly="" class="copyable-inline-input" size="8" type="text" value="sensorId"> field. The value is irrespective, we just need the number of occurrences.</p>
+
+<h2 id="step-11-2"><strong>Step 11</strong></h2>
+
+<p>For <strong>Name</strong>, type <strong>vehicles</strong>.</p>
+
+<h2 id="step-12-2"><strong>Step 12</strong></h2>
+
+<p>Leave the ID unchanged.</p>
+
+<h2 id="step-13-2"><strong>Step 13</strong></h2>
+
+<p>For <strong>Formula</strong>, type the following (or use the formula assistant): <strong>COUNT(sensorId)</strong>.</p>
+
+<h2 id="step-14-2"><strong>Step 14</strong></h2>
+
+<p>Click <strong>Create field</strong>.</p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/a9b0ebd82a9beb86.png" alt="a9b0ebd82a9beb86.png"></p>
+
+<h2 id="step-15-2"><strong>Step 15</strong></h2>
+
+<p>Click <strong>Done</strong>.</p>
+
+<h2 id="step-16"><strong>Step 16</strong></h2>
+
+<p>In the <strong>Metric picker</strong>, select vehicles.</p>
+
+<p><strong>Step 17</strong></p>
+
+<p>Click the back arrow to close the Metric picker. The Dimension should be set to highway and the Metric should be set to vehicles. Notice the chart is sorted in Descending order by default. The highway with the most vehicles are displayed first.</p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/8220855e9c967fa8.png" alt="8220855e9c967fa8.png"></p>
+
+<h2 id="step-18"><strong>Step 18</strong></h2>
+
+<p>To enhance the chart, change the bar labels. In the <strong>Bar chart properties</strong> window, click the <strong>Style</strong> tab.</p>
+
+<h2 id="step-19"><strong>Step 19</strong></h2>
+
+<p>In the <strong>Bar chart</strong> section, check <strong>Show data labels</strong>.</p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/a64a68e7b215691f.png" alt="a64a68e7b215691f.png"></p>
+
+<p>The total number of vehicles is displayed above each bar in the chart.</p>
+
+<h1 id="creating-a-chart-using-a-custom-query">Creating a chart using a custom query</h1>
+
+<p><em>Duration is 15 min</em></p>
+
+<p><strong>Introduction</strong></p>
+
+<p>Because Data Studio does not allow aggregations on metrics, some report components are easier to generate using a custom SQL query. The Custom Query option also lets you leverage BigQuery's full query capabilities such as joins, unions, and analytical functions.</p>
+
+<p>Alternatively, you can leverage BigQuery's full query capabilities by creating a  <a href="https://cloud.google.com/bigquery/querying-data#views" target="_blank">view</a>. A view is a virtual table defined by a SQL query. You can query data in a view by adding the dataset containing the view as a data source. </p>
+
+<p>When you specify a SQL query as your BigQuery data source, the results of the query are in table format, which becomes the field definition (schema) for your data source. When you use a custom query as a data source, Data Studio uses your SQL as an inner select statement for each generated query to BigQuery. For more information on custom queries in Data Studio, consult the  <a href="https://support.google.com/360suite/datastudio/?hl=en#topic=6267740" target="_blank">online help</a>.</p>
+
+<p>To add a bar chart to your report that uses a custom query data source:</p>
+
+<h2 id="step-1-16"><strong>Step 1</strong></h2>
+
+<p>Click <strong>Insert &gt; Bar chart</strong>.</p>
+
+<h2 id="step-2-15"><strong>Step 2</strong></h2>
+
+<p>Using the handle, draw a rectangle on the report to display the chart.</p>
+
+<h2 id="step-3-13"><strong>Step 3</strong></h2>
+
+<p>In the <strong>Bar chart properties</strong> window, on the <strong>Data</strong> tab, notice the value for Data Source (natality) and the default values for Dimension and Metric are the same as the previous chart. In the <strong>Data Source</strong> section, click  <img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/691cfe3a6f7dc4b6.png" alt="691cfe3a6f7dc4b6.png"> (<strong>Select data source</strong>).</p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/b3fd0f90481c54bb.png" alt="b3fd0f90481c54bb.png"></p>
+
+<h2 id="step-4-12"><strong>Step 4</strong></h2>
+
+<p>Click <strong>Create new data source</strong>.</p>
+
+<h2 id="step-5-7"><strong>Step 5</strong></h2>
+
+<p>For <strong>Connectors</strong>, click <strong>BigQuery</strong>.</p>
+
+<h2 id="step-6-6"><strong>Step 6</strong></h2>
+
+<p>For <strong>My Projects</strong>, click <strong>Custom query</strong>.</p>
+
+<h2 id="step-7-6"><strong>Step 7</strong></h2>
+
+<p>For <strong>Project</strong>, select your GCP project.</p>
+
+<h2 id="step-8-5"><strong>Step 8</strong></h2>
+
+<p>Type the following in the <strong>Enter custom query</strong> window:</p>
+<pre class="highlight shell"><code>SELECT max<span class="o">(</span>speed<span class="o">)</span> as maxspeed, min<span class="o">(</span>speed<span class="o">)</span> as minspeed, avg<span class="o">(</span>speed<span class="o">)</span> as avgspeed, highway FROM <span class="o">[</span>&lt;PROJECTID&gt;:demos.current_conditions] group by highway
+</code><button class="button button--copy js-copy-button-34"><i class="fa fa-clipboard"></i></button></pre>
+<p>This query uses max/min/avg functions to give you the same for each highway..</p>
+
+<h2 id="step-9-4"><strong>Step 9</strong></h2>
+
+<p>At the top of the window, click <strong>Untitled data source</strong>, and change the data source name to <strong>San Diego highway traffic summary</strong>.</p>
+
+<h2 id="step-10-3"><strong>Step 10</strong></h2>
+
+<p>In the upper right corner of the window, click <strong>Connect</strong>. Once Data Studio has connected to the BigQuery data source, the results of the query are used to determine the table schema.</p>
+
+<h2 id="step-11-3"><strong>Step 11</strong></h2>
+
+<p>When the schema is displayed, notice the type and aggregation for each field. </p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/479c1d487aacc182.png" alt="479c1d487aacc182.png"></p>
+
+<h2 id="step-12-3"><strong>Step 12</strong></h2>
+
+<p>Click <strong>Add to report</strong>.</p>
+
+<h2 id="step-13-3"><strong>Step 13</strong></h2>
+
+<p>When prompted, click <strong>Add to report</strong>.</p>
+
+<h2 id="step-14-3"><strong>Step 14</strong></h2>
+
+<p>Data Studio may be unable to determine the appropriate Dimension and Metrics for the chart. This results in the error: <input readonly="" class="copyable-inline-input" size="63" type="text" value="Configuration incomplete - Invalid dimension or metric selected">. In the <strong>Bar chart properties</strong>, on the <strong>Data</strong> tab, in the <strong>Dimension</strong> section, click <strong>Invalid metric</strong>.</p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/d1cd361fae2c033e.png" alt="d1cd361fae2c033e.png"></p>
+
+<h2 id="step-15-3"><strong>Step 15</strong></h2>
+
+<p>In the <strong>Metric picker</strong>, select <strong>maxspeed</strong>.</p>
+
+<h2 id="step-16-2"><strong>Step 16</strong></h2>
+
+<p>Click the back arrow to close the Metric picker.</p>
+
+<h2 id="step-17"><strong>Step 17</strong></h2>
+
+<p>In the <strong>Metric</strong> section, click <strong>Add a metric</strong>.</p>
+
+<h2 id="step-18-2"><strong>Step 18</strong></h2>
+
+<p>In the <strong>Metric picker</strong>, select <strong>minspeed</strong>.</p>
+
+<h2 id="step-19-2"><strong>Step 19</strong></h2>
+
+<p>Click the back arrow to close the Metric picker.</p>
+
+<h2 id="step-20"><strong>Step 20</strong></h2>
+
+<p>In the <strong>Metric</strong> section, click <strong>Add a metric</strong>.</p>
+
+<h2 id="step-21"><strong>Step 21</strong></h2>
+
+<p>In the <strong>Metric picker</strong>, select <strong>avgspeed</strong>.</p>
+
+<h2 id="step-22"><strong>Step 22</strong></h2>
+
+<p>Click the back arrow to close the Metric picker. Your chart now displays the max speed, minimum speed and average speed for each highway.</p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/bad3d793f601daaa.png" alt="bad3d793f601daaa.png"></p>
+
+<h2 id="step-23"><strong>Step 23</strong></h2>
+
+<p>For readability, change the chart styles. In the <strong>Bar chart properties</strong>, click the <strong>Style</strong> tab.</p>
+
+<h2 id="step-24"><strong>Step 24</strong></h2>
+
+<p>In the <strong>Bar chart __section, *deselect *</strong>Single color__.</p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/7bd8a09db9ac3e4.png" alt="7bd8a09db9ac3e4.png"></p>
+
+<h2 id="step-25"><strong>Step 25</strong></h2>
+
+<p>Notice each bar has a default color based on the order the metrics were added to the chart. </p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/6482fcba53715260.png" alt="6482fcba53715260.png"></p>
+
+<h1 id="viewing-your-query-history">Viewing your query history</h1>
+
+<p><em>Duration is 3 min</em></p>
+
+<h2 id="introduction"><strong>Introduction</strong></h2>
+
+<p>You can view queries submitted via the BigQuery Connector by examining your query history in the BigQuery web interface. Using the query history, you can estimate query costs, and you can save queries for use in other scenarios.</p>
+
+<p>To examine your query history:</p>
+
+<h2 id="step-1-17"><strong>Step 1</strong></h2>
+
+<p>In the   <a href="http://console.cloud.google.com/" target="_blank">Google Cloud Console</a>, using the menu, navigate into BigQuery web UI, click <strong>Query History</strong>. (Note: you may need to refresh the BigQuery Web UI).</p>
+
+<h2 id="step-2-16"><strong>Step 2</strong></h2>
+
+<p>The list of queries is displayed with the most recent queries first. Click Open Query to view details on the query such as Job ID and Bytes Processed.</p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/a17b00121caebd9f.png" alt="a17b00121caebd9f.png"></p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/3381eeb97bcde1a0.png" alt="3381eeb97bcde1a0.png"></p>
+
+<table>
+<tbody><tr><td colspan="1" rowspan="1"><p><img style="max-width: 72.00px" src="./Streaming Data Processing _ Qwiklabs + roitraining_files/3ac518b975e3eb26.png"></p>
+</td><td colspan="1" rowspan="1"><p><strong>Stop here if you are done. Wait for instructions from the Instructor before going into the next section</strong></p>
+</td></tr>
+</tbody></table>
+
+<h1 id="part-4-streaming-data-pipelines-into-bigtable">PART 4: STREAMING DATA PIPELINES INTO BIGTABLE</h1>
+
+<h1 id="overview-4">Overview</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>In this lab you will use Dataflow to collect traffic events from simulated traffic sensor data made available through Google Cloud PubSub, and write them into a Bigtable table.</p>
+
+<h2 id="what-you-learn-4"><strong>What you learn</strong></h2>
+
+<p>In this lab, you will learn how to:</p>
+<ul><li>Launch Dataflow pipeline to read from PubSub and write into Bigtable</li>
+<li>Open an HBase shell to query the Bigtable data</li>
+</ul>
+<h1 id="simulate-your-traffic-sensor-data-into-pubsub-3">Simulate your traffic sensor data into PubSub</h1>
+
+<h2 id="step-1-18"><strong>Step 1</strong></h2>
+
+<p>In Cloud Shell, run the script to download and unzip the quickstart files (you will later use these to run the HBase shell)</p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~/training-data-analyst/courses/streaming/process/sandiego
+./install_quickstart.sh
+</code><button class="button button--copy js-copy-button-35"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-2-17"><strong>Step 2</strong></h2>
+
+<p>In Cloud Shell, start the script to read from the csv data and publish to PubSub</p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~/training-data-analyst/courses/streaming/publish
+./send_sensor_data.py --speedFactor<span class="o">=</span>30
+</code><button class="button button--copy js-copy-button-36"><i class="fa fa-clipboard"></i></button></pre>
+<p>This command will send 1 hour of data in 2 minutes</p>
+
+<p><strong>Note</strong>: </p>
+<ul><li>If you get the <strong>google.gax.errors.RetryError: GaxError</strong> OR <strong>"StatusCode.PERMISSION_DENIED, User not authorized to perform this action."</strong>, then simply re-authenticate the shell and run the script again</li>
+</ul><pre class="highlight shell"><code>gcloud auth application-default login
+./send_sensor_data.py --speedFactor<span class="o">=</span>30
+</code><button class="button button--copy js-copy-button-37"><i class="fa fa-clipboard"></i></button></pre><ul><li>If this fails because <strong>google.cloud.pubsub can not be found</strong>, then do the pip install below and run the send_sensor_data.py again:</li>
+</ul><pre class="highlight shell"><code>sudo pip install google-cloud-pubsub
+./send_sensor_data.py --speedFactor<span class="o">=</span>30
+</code><button class="button button--copy js-copy-button-38"><i class="fa fa-clipboard"></i></button></pre><ul><li>If you get a failure that the module <strong>pubsub has no attribute called Client</strong> then you are running into path problems because an older version of pub/sub is installed on your machine.  The solution is to use virtualenv:<br></li>
+</ul><pre class="highlight shell"><code>virtualenv cpb104
+<span class="nb">source </span>cpb104/bin/activate
+pip install google-cloud-pubsub
+gcloud auth application-default login
+</code><button class="button button--copy js-copy-button-39"><i class="fa fa-clipboard"></i></button></pre>
+<p>Then, try the send_sensor_data.py again</p>
+<pre class="highlight shell"><code>./send_sensor_data.py --speedFactor<span class="o">=</span>30
+</code><button class="button button--copy js-copy-button-40"><i class="fa fa-clipboard"></i></button></pre>
+<h1 id="launch-dataflow-pipeline-2">Launch Dataflow Pipeline</h1>
+
+<p><em>Duration is 9 min</em></p>
+
+<h2 id="step-1-19"><strong>Step 1</strong></h2>
+
+<p>Open a new CloudShell window and navigate to the directory for this lab:</p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~/training-data-analyst/courses/streaming/process/sandiego
+</code><button class="button button--copy js-copy-button-41"><i class="fa fa-clipboard"></i></button></pre>
+<p>If this directory doesn't exist, you may need to git clone the repository first:</p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~
+git clone https://github.com/GoogleCloudPlatform/training-data-analyst
+<span class="nb">cd</span> ~/training-data-analyst/courses/streaming/process/sandiego
+</code><button class="button button--copy js-copy-button-42"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-2-18"><strong>Step 2</strong></h2>
+
+<p>Ensure to authenticate shell to have the right permissions for the pipeline later</p>
+<pre class="highlight shell"><code>gcloud auth application-default login
+</code><button class="button button--copy js-copy-button-43"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-3-14"><strong>Step 3</strong></h2>
+
+<p>Explore the scripts that create and run a Dataflow pipeline in the cloud:</p>
+<pre class="highlight shell"><code>nano run_oncloud.sh
+</code><button class="button button--copy js-copy-button-44"><i class="fa fa-clipboard"></i></button></pre>
+<p>The script takes 3 required arguments: project id, bucket name, classname and possibly a 4th argument: options. In this part of the lab, we will use the <em><input readonly="" class="copyable-inline-input" size="10" type="text" value="--bigtable"></em> option which will direct the pipeline to write into Cloud Bigtable.</p>
+
+<p>Example: <strong><em>./run_on_cloud.sh qwiklabs-gcp-123456 my-bucket1 CurrentConditions --bigtable</em></strong></p>
+<pre class="highlight shell"><code><span class="nb">cd </span>src/main/java/com/google/cloud/training/dataanalyst/sandiego 
+nano CurrentConditions.java
+</code><button class="button button--copy js-copy-button-45"><i class="fa fa-clipboard"></i></button></pre>
+<p>What does the script do?</p>
+
+<h2 id="step-4-13"><strong>Step 4</strong></h2>
+
+<p>Run the script below to create the Bigtable instance</p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~/training-data-analyst/courses/streaming/process/sandiego
+./create_cbt.sh
+</code><button class="button button--copy js-copy-button-46"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-5-8"><strong>Step 5</strong></h2>
+
+<p>Run the Dataflow pipeline to read from PubSub and write into Cloud Bigtable</p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~/training-data-analyst/courses/streaming/process/sandiego
+./run_oncloud.sh yourproject yourbucket CurrentConditions --bigtable
+</code><button class="button button--copy js-copy-button-47"><i class="fa fa-clipboard"></i></button></pre>
+<p>Note: make sure to plug in your project id and bucket name for the first and second arguments respectively.</p>
+
+<h1 id="explore-the-pipeline-2">Explore the pipeline</h1>
+
+<p><em>Duration is 4 min</em></p>
+
+<p>In this activity, you will learn more about the pipeline you just launched that writes into Bigtable</p>
+
+<h2 id="step-1-20"><strong>Step 1</strong></h2>
+
+<p>Go to the  <a href="https://console.cloud.google.com/dataflow" target="_blank">Dataflow Jobs</a> page in the Cloud Console.</p>
+
+<h2 id="step-2-19"><strong>Step 2</strong></h2>
+
+<p>Click on the pipeline you created in the lab, it will have "<em>currentconditions"</em> followed by your username in the pipeline name.</p>
+
+<p><img src="./Streaming Data Processing _ Qwiklabs + roitraining_files/de43819cb53af15f.png" alt="de43819cb53af15f.png"></p>
+
+<h2 id="step-3-15"><strong>Step 3</strong></h2>
+
+<p>Find the "write:cbt" step in the pipeline graph, and click on the down arrow on the right to see the writer in action. Review the <em>Bigtable options</em> in the step summary.</p>
+
+<h1 id="query-bigtable-data">Query Bigtable data</h1>
+
+<h2 id="step-1-21"><strong>Step 1</strong></h2>
+
+<p>Back at the cloud shell, run the quickstart.sh script to launch the HBase shell:</p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~/training-data-analyst/courses/streaming/process/sandiego/quickstart
+./quickstart.sh
+</code><button class="button button--copy js-copy-button-48"><i class="fa fa-clipboard"></i></button></pre>
+<p>If the script runs successfully, you would be in a HBase shell prompt that looks something like:</p>
+
+<p><input readonly="" class="copyable-inline-input" size="18" type="text" value="hbase(main):001:0&gt;"></p>
+
+<h2 id="step-2-20"><strong>Step 2</strong></h2>
+
+<p>At the HBase shell prompt, type the following query to retrieve 2 rows from your Bigtable table that was populated by the pipeline.</p>
+<pre class="highlight shell"><code>scan <span class="s1">'current_conditions'</span>, <span class="o">{</span><span class="s1">'LIMIT'</span> <span class="o">=</span>&gt; 2<span class="o">}</span>
+</code><button class="button button--copy js-copy-button-49"><i class="fa fa-clipboard"></i></button></pre>
+<p>Review the output. Notice each row is broken into column,timestamp,value combinations.</p>
+
+<h2 id="step-3-16"><strong>Step 3</strong></h2>
+
+<p>Lets run another query. This time we only look at the <em>lane:speed</em> column, and limit to 10 rows, and also specify rowid patterns for start and end rows to scan over.</p>
+<pre class="highlight shell"><code>scan <span class="s1">'current_conditions'</span>, <span class="o">{</span><span class="s1">'LIMIT'</span> <span class="o">=</span>&gt; 10, STARTROW <span class="o">=</span>&gt; <span class="s1">'15#S#1'</span>, ENDROW <span class="o">=</span>&gt; <span class="s1">'15#S#999'</span>, COLUMN <span class="o">=</span>&gt; <span class="s1">'lane:speed'</span><span class="o">}</span>
+</code><button class="button button--copy js-copy-button-50"><i class="fa fa-clipboard"></i></button></pre>
+<p>Review the output. Notice that you see 10 of the column,timestamp,value combinations, all of which correspond to Highway 15. Also notice that column is restricted to lane:speed.</p>
+
+<h2 id="step-4-14"><strong>Step 4</strong></h2>
+
+<p>Feel free to run other queries if you are familiar with the syntax. Once you're satisfied, ‘quit' to exit the shell.</p>
+<pre class="highlight shell"><code>quit
+</code><button class="button button--copy js-copy-button-51"><i class="fa fa-clipboard"></i></button></pre>
+<h1 id="cleanup">Cleanup</h1>
+
+<h2 id="step-1-22"><strong>Step 1</strong></h2>
+
+<p>Run the script to delete your Bigtable instance</p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~/training-data-analyst/courses/streaming/process/sandiego
+./delete_cbt.sh
+</code><button class="button button--copy js-copy-button-52"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-2-21"><strong>Step 2</strong></h2>
+
+<p>On your Dataflow page in your Cloud Console, click on the pipeline job name and click the ‘stop job' on the right panel.</p>
+
+<h2 id="step-3-17"><strong>Step 3</strong></h2>
+
+<p>Go back to the first Cloud Shell tab with the publisher and type <input readonly="" class="copyable-inline-input" size="6" type="text" value="Ctrl-C"> to stop it.</p>
+
+<h2 id="step-4-15"><strong>Step 4</strong></h2>
+
+<p>Go to the BigQuery console and delete the dataset <input readonly="" class="copyable-inline-input" size="5" type="text" value="demos">.</p>
+
+<p><a href="https://docs.google.com/forms/d/11o8tVDrCnJm3v1eKMaIGNH4ODBY_bFpmCYqwm_g3Dm8/viewform" target="_blank">Provide Feedback on this Lab</a></p>
+
+</div>
+
+<div class="lab-content__outline js-lab-content-outline">
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-1-locate-the-username-password-and-project-id"><strong>Step 1: Locate the Username, Password and Project Id</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-2-browse-to-console"><strong>Step 2: Browse to Console</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-3-sign-in-to-console"><strong>Step 3: Sign in to Console</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-4-accept-the-conditions"><strong>Step 4: Accept the conditions</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-5-don-t-change-the-password"><strong>Step 5: Don't change the password</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-6-agree-to-the-terms-of-service"><strong>Step 6 Agree to the Terms of Service</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-7-console-opens"><strong>Step 7: Console opens</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-8-switch-project-if-necessary"><strong>Step 8: Switch project (if necessary)</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#what-you-learn"><strong>What you learn</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-1"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-2"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-3"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-4"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-5"><strong>Step 5</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-6"><strong>Step 6</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-7"><strong>Step 7</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-1-2"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-2-2"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-3-2"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-4-2"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-5-2"><strong>Step 5</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-6-2"><strong>Step 6</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-7-2"><strong>Step 7</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-8"><strong>Step 8</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#what-you-learn-2"><strong>What you learn</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-1-3"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-2-3"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-3-3"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-4-3"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-1-4"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-1-5"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-2-4"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-3-4"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-1-6"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-2-5"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-4-4"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-5-3"><strong>Step 5</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-6-3"><strong>Step 6</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-7-3"><strong>Step 7</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-8-2"><strong>Step 8</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-9"><strong>Step 9</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-1-7"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-2-6"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-3-5"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-4-5"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-1-8"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-2-7"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-3-6">Step 3</a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-4-6">Step 4</a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-1-9"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-2-8"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-3-7"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-4-7">Step 4</a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-1-10"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-2-9"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-3-8"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-4-8"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-1-11"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-2-10"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-3-9"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-4-9"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-5-4"><strong>Step 5</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-1-12"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-2-11"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-3-10"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-1-13"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-2-12"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#what-you-learn-3"><strong>What you learn</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-1-14"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-2-13"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-3-11"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-4-10"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-5-5"><strong>Step 5</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-6-4"><strong>Step 6</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-7-4"><strong>Step 7</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-8-3"><strong>Step 8</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-9-2"><strong>Step 9</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-10"><strong>Step 10</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-11"><strong>Step 11</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-12"><strong>Step 12</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-13"><strong>Step 13</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-14"><strong>Step 14</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-15"><strong>Step 15</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-1-15"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-2-14"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-3-12"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-4-11"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-5-6"><strong>Step 5</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-6-5"><strong>Step 6</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-7-5"><strong>Step 7</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-8-4"><strong>Step 8</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-9-3"><strong>Step 9</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-10-2"><strong>Step 10</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-11-2"><strong>Step 11</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-12-2"><strong>Step 12</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-13-2"><strong>Step 13</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-14-2"><strong>Step 14</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-15-2"><strong>Step 15</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-16"><strong>Step 16</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-18"><strong>Step 18</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-19"><strong>Step 19</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-1-16"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-2-15"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-3-13"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-4-12"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-5-7"><strong>Step 5</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-6-6"><strong>Step 6</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-7-6"><strong>Step 7</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-8-5"><strong>Step 8</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-9-4"><strong>Step 9</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-10-3"><strong>Step 10</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-11-3"><strong>Step 11</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-12-3"><strong>Step 12</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-13-3"><strong>Step 13</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-14-3"><strong>Step 14</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-15-3"><strong>Step 15</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-16-2"><strong>Step 16</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-17"><strong>Step 17</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-18-2"><strong>Step 18</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-19-2"><strong>Step 19</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-20"><strong>Step 20</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-21"><strong>Step 21</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-22"><strong>Step 22</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-23"><strong>Step 23</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-24"><strong>Step 24</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-25"><strong>Step 25</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#introduction"><strong>Introduction</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-1-17"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-2-16"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#what-you-learn-4"><strong>What you learn</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-1-18"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-2-17"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-1-19"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-2-18"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-3-14"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-4-13"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-5-8"><strong>Step 5</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-1-20"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-2-19"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-3-15"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-1-21"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-2-20"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-3-16"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-4-14"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-1-22"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-2-21"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-3-17"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2774/materials#step-4-15"><strong>Step 4</strong></a>
+
+</div>
+
+</div>
+</div>
+
+<div class="lab-resource js-lab-resource-area">
+<div class="lab-resource__close js-lab-resource-area-close">
+×
+</div>
+<div class="js-lab-resource"></div>
+</div>
+<div class="lab-resource__background js-lab-resource-background">
+<iframe class="l-ie-iframe-fix" kwframeid="2" src="./Streaming Data Processing _ Qwiklabs + roitraining_files/saved_resource(1).html"></iframe>
+</div>
+
+</div>
+</div>
+<div class="lab-buttons">
+<a class="mdl-button mdl-js-button mdl-button--fab mdl-button--large-fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--8dp help-button" data-target="#lab-help-modal" data-toggle="modal" data-upgraded=",MaterialButton,MaterialRipple">
+<i class="material-icons">help</i>
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+</div>
+</div>
+<div class="modal fade" id="lab-help-modal">
+<div class="modal-container">
+<div class="mdl-shadow--24dp modal-content">
+<h4 class="modal-header">Get Help</h4>
+<form action="https://roitraining.qwiklab.com/contact_support" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="8Xmvt56S37kcsgttxfMUkxdHKahEOHosaQKPLXHsnHUxq1sF7ahUEpLveXYYP3aDiFfb5CKzOCjzhpeNAhHHpQ==">
+<div class="modal-body">
+<div class="control-group l-mbl">
+<label for="Question">Question</label>
+<input type="text" name="question" id="question" placeholder="Briefly describe your question">
+</div>
+<div class="control-group l-mbl">
+<label for="Details">Details</label>
+<textarea name="description" id="description" rows="5" placeholder="Fill in the details here. Please try to be as specific as possible.
+"></textarea>
+</div>
+<div class="control-group l-mbl">
+<label for="Your_Name">Your name</label>
+<input type="text" name="name" id="name" value="mia stein">
+</div>
+<div class="control-group l-mbl">
+<label for="Your_Email">Your email</label>
+<input type="text" name="email" id="email" value=">
+</div>
+<div class="control-group l-mbl">
+<label for="Severity">Severity</label>
+<select name="severity" id="severity"><option value="0">-</option>
+<option value="severity_1">Severity 1 (Highest)</option>
+<option value="severity_2">Severity 2</option>
+<option value="severity_3">Severity 3</option>
+<option value="severity_4">Severity 4</option>
+<option value="severity_5">Severity 5 (Lowest)</option></select>
+</div>
+<div class="control-group">
+<div class="control-label"></div>
+We will get back to you within 24 hours.
+</div>
+</div>
+<div class="modal-actions">
+<a class="mdl-button mdl-button--primary mdl-js-button mdl-js-ripple-effect" data-dismiss="modal" data-upgraded=",MaterialButton,MaterialRipple">
+Cancel
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+<input type="submit" name="commit" value="Submit" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary" data-upgraded=",MaterialButton,MaterialRipple"><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></input>
+</div>
+</form>
+
+
+
+</div>
+</div>
+<iframe class="l-ie-iframe-fix" kwframeid="3" src="./Streaming Data Processing _ Qwiklabs + roitraining_files/saved_resource(2).html"></iframe>
+</div>
+<div class="modal fade" id="lab-details-modal">
+<div class="modal-container">
+<div class="modal-content mdl-shadow--24dp">
+<a class="modal-close" data-dismiss="modal">×</a>
+<h4 class="modal-header">Streaming Data Processing</h4>
+<div class="modal-body">
+<p class="l-mbm">
+In this lab series, you will use simulate your traffic sensor data into Pub/Sub, to be processed by Dataflow using a streaming pipeline before finally ending up in a BigQuery table for further analysis.
+</p>
+<p class="small-label l-mbs">
+<strong>
+Duration:
+</strong>
+0m setup
+·
+480m access
+·
+480m completion
+</p>
+<p class="small-label l-mbs">
+
+</p>
+<p class="small-label">
+<span><strong>Levels: <a href="https://roitraining.qwiklab.com/tags/introductory/level">introductory</a></strong></span>
+</p>
+</div>
+<div class="modal-actions">
+<a class="mdl-button mdl-button--primary mdl-js-button mdl-js-ripple-effect" data-dismiss="modal" data-upgraded=",MaterialButton,MaterialRipple">
+Got It
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+</div>
+
+</div>
+</div>
+<iframe class="l-ie-iframe-fix" kwframeid="4" src="./Streaming Data Processing _ Qwiklabs + roitraining_files/saved_resource(3).html"></iframe>
+</div>
+
+<div class="modal fade" id="lab-review-modal">
+<div class="modal-container">
+<div class="modal-content mdl-shadow--24dp">
+<a class="modal-close" data-dismiss="modal">×</a>
+<h4 class="modal-header">Rate Lab</h4>
+<form class="simple_form js-lab-review-form" id="new_lab_review" action="https://roitraining.qwiklab.com/lab_reviews" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><div class="modal-body">
+<p class="label">
+How satisfied are you with this lab?
+</p>
+<div class="rateit js-rateit" data-rateit-max="5" data-rateit-min="0" data-rateit-resetable="false" data-rateit-step="1" data-rateit-value="0"><div class="rateit-reset" style="display: none;"></div><div class="rateit-range" style="width: 80px; height: 16px;"><div class="rateit-selected" style="height: 16px; width: 0px;"></div><div class="rateit-hover" style="height:16px"></div></div></div>
+<div class="l-mtm">
+
+<div class="control-group hidden lab_review_user_id"><div class="controls"><input class="hidden" type="hidden" value="942" name="lab_review[user_id]" id="lab_review_user_id"></div></div>
+<div class="control-group hidden lab_review_classroom_id"><div class="controls"><input class="hidden" type="hidden" value="252" name="lab_review[classroom_id]" id="lab_review_classroom_id"></div></div>
+<div class="control-group hidden lab_review_lab_id"><div class="controls"><input class="hidden" type="hidden" value="52" name="lab_review[lab_id]" id="lab_review_lab_id"></div></div>
+<div class="control-group hidden lab_review_focus_id"><div class="controls"><input class="hidden" type="hidden" value="2774" name="lab_review[focus_id]" id="lab_review_focus_id"></div></div>
+<div class="control-group hidden lab_review_rating"><div class="controls"><input class="hidden js-rating-input" type="hidden" name="lab_review[rating]" id="lab_review_rating"></div></div>
+<div class="control-group text optional lab_review_comment"><label class="text optional control-label" for="lab_review_comment">Comment</label><div class="controls"><textarea class="text optional" name="lab_review[comment]" id="lab_review_comment"></textarea></div></div>
+</div>
+</div>
+<div class="modal-actions">
+<a class="mdl-button mdl-button--primary mdl-js-button mdl-js-ripple-effect" data-dismiss="modal" data-upgraded=",MaterialButton,MaterialRipple">
+Cancel
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+<input type="submit" name="commit" value="Submit" class="btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary" data-upgraded=",MaterialButton,MaterialRipple"><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></input>
+</div>
+</form>
+
+</div>
+</div>
+<iframe class="l-ie-iframe-fix" kwframeid="5" src="./Streaming Data Processing _ Qwiklabs + roitraining_files/saved_resource(4).html"></iframe>
+</div>
+
+<div class="modal fade" id="lab-access-modal">
+<div class="modal-container">
+<div class="modal-content mdl-shadow--24dp">
+<a class="modal-close" data-dismiss="modal">×</a>
+<h4 class="modal-header">Lab Access</h4>
+<form class="js-lab-access-form" action="https://roitraining.qwiklab.com/lab_onetime_coupons/activate" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓">
+<div class="modal-body">
+<div class="lab-access-modal">
+<input type="hidden" name="id" id="id" value="2774">
+<input type="hidden" name="classroom_id" id="classroom_id" value="252">
+<input type="hidden" name="user_id" id="user_id" value="942">
+<input type="hidden" name="launch_with_credits" id="launch_with_credits" value="0" class="js-launch-with-credits-input">
+<input type="hidden" name="launch_with_subs" id="launch_with_subs" value="0" class="js-launch-with-subscription-input">
+<div class="lab-access-modal__method">
+<p>
+Enter Lab Access Code:
+</p>
+<div class="lab-access-modal__code js-access-code">
+<input type="text" name="uuid_1" id="uuid_1" value="" maxlength="4" placeholder="1234">
+<input type="text" name="uuid_2" id="uuid_2" value="" maxlength="4" placeholder="1234">
+<input type="text" name="uuid_3" id="uuid_3" value="" maxlength="4" placeholder="1234">
+<input type="text" name="uuid_4" id="uuid_4" value="" maxlength="4" placeholder="1234">
+</div>
+<a class="button js-launch-with-access-code-button">
+Launch with Access Code
+</a>
+</div>
+</div>
+</div>
+</form>
+
+
+</div>
+</div>
+<iframe class="l-ie-iframe-fix" kwframeid="6" src="./Streaming Data Processing _ Qwiklabs + roitraining_files/saved_resource(5).html"></iframe>
+</div>
+
+
+
+</div>
+</main>
+<div class="bottom-menu">
+<a class="side-menu__item" href="https://roitraining.qwiklab.com/materials"><div class="side-menu__item__icon">
+<i class="material-icons">view_comfy</i>
+</div>
+<span class="side-menu__item__tooltip">Materials</span>
+<div class="side-menu__item__label">
+Materials
+</div>
+</a>
+<a class="side-menu__item" href="https://roitraining.qwiklab.com/dashboard"><div class="side-menu__item__icon">
+<i class="material-icons">history</i>
+</div>
+<span class="side-menu__item__tooltip">My Learning</span>
+<div class="side-menu__item__label">
+My Learning
+</div>
+</a>
+<a class="side-menu__item" href="https://roitraining.qwiklab.com/my_account/credits"><div class="side-menu__item__icon">
+<i class="material-icons">account_circle</i>
+</div>
+<span class="side-menu__item__tooltip">My Account</span>
+<div class="side-menu__item__label">
+My Account
+</div>
+</a>
+<a class="side-menu__item js-side-menu-button">
+<div class="side-menu__item__icon">
+<i class="material-icons">menu</i>
+</div>
+<span class="side-menu__item__tooltip">More</span>
+<div class="side-menu__item__label">
+More
+</div>
+</a>
+</div>
+
+</div>
+
+
+<div class="modal fade" id="support-modal">
+<div class="modal-container">
+<div class="modal-content mdl-shadow--24dp">
+<a class="modal-close" data-dismiss="modal">×</a>
+<h4 class="modal-header">How can we help you?</h4>
+<p class="l-mbl">
+We will get back to you within 24 hours.
+</p>
+<form action="https://roitraining.qwiklab.com/contact_support" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="8Xmvt56S37kcsgttxfMUkxdHKahEOHosaQKPLXHsnHUxq1sF7ahUEpLveXYYP3aDiFfb5CKzOCjzhpeNAhHHpQ==">
+<div class="form-row">
+<div class="control-group">
+<label for="Question">Question</label>
+<input type="text" name="question" id="question" placeholder="Briefly describe your question">
+</div>
+</div>
+<div class="form-row">
+<div class="control-group">
+<label for="Details">Details</label>
+<textarea name="description" id="description" rows="5" placeholder="Fill in the details here. Please try to be as specific as possible.
+"></textarea>
+</div>
+</div>
+<div class="form-row">
+<div class="control-group">
+<label for="Your_Name">Your name</label>
+<input type="text" name="name" id="name" value="mia stein">
+</div>
+<div class="control-group">
+<label for="Your_Email">Your email</label>
+<input type="text" name="email" id="email" value=">
+</div>
+</div>
+<div class="form-row">
+<div class="control-group">
+<input type="submit" name="commit" value="Submit" class="button">
+</div>
+</div>
+</form>
+
+
+</div>
+</div>
+<iframe class="l-ie-iframe-fix" kwframeid="7" src="./Streaming Data Processing _ Qwiklabs + roitraining_files/saved_resource(6).html"></iframe>
+</div>
+
+
+<script>
+  $( function() {
+    ql.initMaterialInputs();
+    initChosen();
+    initSearch();
+    initTabs();
+    initTooltips();
+    initLabSidebar();
+  ql.labOutline.init("2774");
+  initLabContent( );
+  initLabResource();
+  initLabReviewModal();
+  initLabAccessModal();
+  initLabTranslations( {"are_you_sure":"All done? If you end this lab, you will lose all your work. You may not be able to restart the lab if there is a quota limit. Are you sure you want to end this lab?\n","in_progress":"*In Progress*","ending":"*Ending*","starting":"*Starting, please wait*","end_concurrent_labs":"Sorry, you can only run one lab at a time. To start this lab, please confirm that you want all of your existing labs to end.\n","copied":"Copied","no_resource":"Error retrieving resource.","no_support":"No Support :(","mac_press":"Press ⌘-C to copy","thanks_review":"Thanks for reviewing this lab.","windows_press":"Press Ctrl-C to copy","days":"days"} );
+  initLabRun();
+  ql.initHeader();
+  ql.sideMenu.init();
+  
+  });
+</script>
+
+
+</body></html>

@@ -1,0 +1,4 @@
+export AWS_REGION=
+export S3_BUCKET=
+export STACK_NAME=
+export SERVICE_NAME=

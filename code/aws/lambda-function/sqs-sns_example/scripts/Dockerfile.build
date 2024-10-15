@@ -1,0 +1,9 @@
+FROM amazonlinux:1
+
+WORKDIR /opt/app
+
+ADD requirements.txt .
+
+RUN \
+  yum install -y python27-pip && \
+  pip install --target=/opt/app -r requirements.txt

@@ -1,0 +1,1846 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://roitraining.qwiklab.com/focuses/2772/materials -->
+<html class="mdl-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/caff0d62ed"></script><script src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/nr-1044.min.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"caff0d62ed","applicationID":"25010137","transactionName":"IQ1XRUEOVV1dFxlRXAEXSlRATkpZVxJpWlIWB0tYUg1K","queueTime":0,"applicationTime":437,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="kGhyzsY4gEtseM6FHrMWe8lRNT3L7mnuaWle8PQUgO9AKgvfSCFiMjvCIV8/9pkfrUG8nZ4Rp90jvEkyz74DGw==">
+<title>Serverless Data Analysis (Python) | Qwiklabs + roitraining</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0" name="viewport">
+<meta content="In this lab series, you learn how to load data into BigQuery and run complex queries. Next, you will execute a Dataflow pipeline that can carry out Map and Reduce operations, use side inputs and stream into BigQuery" name="description">
+<meta content="Learn AWS, AWS Training, AWS Labs, Learn Amazon Web Services, Amazon Web Services Training, Amazon Web Services Labs" name="keywords">
+<meta content="Qwiklabs" name="author">
+<meta content="Serverless Data Analysis (Python) | Qwiklabs + roitraining" property="og:title">
+<meta content="website" property="og:type">
+<meta content="/favicon.png" property="og:image">
+<meta content="https://www.qwiklabs.com" property="og:url">
+<meta content="Qwiklabs" property="og:site_name">
+<meta content="In this lab series, you learn how to load data into BigQuery and run complex queries. Next, you will execute a Dataflow pipeline that can carry out Map and Reduce operations, use side inputs and stream into BigQuery" property="og:description">
+<meta content="/qwiklabs_logo_900x887.png" property="og:logo" size="900x887">
+<meta content="/qwiklabs_logo_994x187.png" property="og:logo" size="994x187">
+<meta content="#3681E4" property="msapplication-TileColor">
+<meta content="/favicon-144.png" property="msapplication-TileImage">
+<link href="https://roitraining.qwiklab.com/favicon.ico" rel="shortcut icon">
+<link color="#3681E4" href="https://roitraining.qwiklab.com/favicon-svg.svg" rel="mask-icon">
+<link href="https://roitraining.qwiklab.com/favicon-180.png" rel="apple-touch-icon-precomposed">
+
+<!--[if lt IE 9]>
+<script src='http://html5shim.googlecode.com/svn/trunk/html5.js' type='text/javascript'></script>
+<![endif]-->
+<!--[endif]>  <![endif]-->
+<script>
+//<![CDATA[
+window.gon={};gon.current_user={"firstname":"","lastname":"","fullname":"mia stein","company":"etsy","email":","origin":"roitraining, direct","subscriptions":0,"id":"12ee659298eb15258fdeb4d43db52cb8","qlCreatedAt":"2017-11-28 14:06:23 UTC","optIn":false};gon.segment=null;gon.deployment="roitraining";
+//]]>
+</script>
+
+
+
+<link rel="stylesheet" media="all" href="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/application-6460790cbdd89c50da4755d15c7ef68fa373dd59daad1528c39815f8c2c4676d.css">
+<script src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/application-965286b1d75b8ed026adfefe5748f3ad70657330c97a79281c8bc1b35d341af9.js"></script>
+</head>
+<body class="focuses focuses-show_materials l-no-padding ilt-mode">
+<div class="header-container">
+<div class="header">
+<a class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect header__button header__button--nav header__side-menu-button js-side-menu-button" data-upgraded=",MaterialButton,MaterialRipple">
+<i class="material-icons">menu</i>
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+<div class="header__title">
+<a class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect header__button header__button--nav" href="https://roitraining.qwiklab.com/?locale=en" data-upgraded=",MaterialButton,MaterialRipple"><i class="material-icons">arrow_back</i><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+
+<h1>
+Serverless Data Analysis (Python)
+</h1>
+</div>
+<div class="header__actions">
+<div class="header__menu header__menu--my-account">
+<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="header_menu" data-upgraded=",MaterialButton,MaterialRipple">
+<i class="material-icons"><img class="avatar " src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/a835b0e3b23a9e319e795e2bf1bccaa8.png" alt="A835b0e3b23a9e319e795e2bf1bccaa8"></i>
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+<div class="mdl-menu__container is-upgraded"><div class="mdl-menu__outline mdl-menu--bottom-right"></div><ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect mdl-js-ripple-effect--ignore-events" for="header_menu" data-upgraded=",MaterialMenu,MaterialRipple">
+<li class="mdl-menu__item header__menu__item mdl-js-ripple-effect" tabindex="-1" data-upgraded=",MaterialRipple"><a href="https://roitraining.qwiklab.com/my_account/profile">My Account</a><span class="mdl-menu__item-ripple-container"><span class="mdl-ripple"></span></span></li>
+<li class="mdl-menu__item header__menu__item mdl-js-ripple-effect" tabindex="-1" data-upgraded=",MaterialRipple"><a rel="nofollow" data-method="delete" href="https://roitraining.qwiklab.com/users/sign_out">Sign Out</a><span class="mdl-menu__item-ripple-container"><span class="mdl-ripple"></span></span></li>
+
+</ul></div>
+</div>
+
+</div>
+</div>
+</div>
+<div class="header__search-bar js-header-search-bar">
+<form action="https://roitraining.qwiklab.com/searches/lab" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="kGhyzsY4gEtseM6FHrMWe8lRNT3L7mnuaWle8PQUgO9AKgvfSCFiMjvCIV8/9pkfrUG8nZ4Rp90jvEkyz74DGw==">
+<input type="text" name="keywords" id="keywords" value="" placeholder="Search for labs">
+</form>
+
+<a class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect header__button" data-upgraded=",MaterialButton,MaterialRipple">
+<i class="material-icons">close</i>
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+</div>
+
+<div class="l-flex">
+<div class="side-menu js-side-menu">
+<div class="side-menu__inner">
+<nav class="side-menu__nav">
+<a class="side-menu__item" href="https://roitraining.qwiklab.com/materials"><div class="side-menu__item__icon">
+<i class="material-icons">view_comfy</i>
+</div>
+<span class="side-menu__item__tooltip">Materials</span>
+<div class="side-menu__item__label">
+Materials
+</div>
+</a>
+<a class="side-menu__item" href="https://roitraining.qwiklab.com/dashboard"><div class="side-menu__item__icon">
+<i class="material-icons">history</i>
+</div>
+<span class="side-menu__item__tooltip">My Learning</span>
+<div class="side-menu__item__label">
+My Learning
+</div>
+</a>
+<hr>
+<a class="side-menu__item" href="https://roitraining.qwiklab.com/my_account/credits"><div class="side-menu__item__icon">
+<i class="material-icons">account_circle</i>
+</div>
+<span class="side-menu__item__tooltip">My Account</span>
+<div class="side-menu__item__label">
+My Account
+</div>
+</a>
+<a class="side-menu__item" href="https://qwiklab.zendesk.com/hc/en-us"><div class="side-menu__item__icon">
+<i class="material-icons">help</i>
+</div>
+<span class="side-menu__item__tooltip">Help</span>
+<div class="side-menu__item__label">
+Help
+</div>
+</a>
+</nav>
+<div class="side-menu__small-links">
+<a href="https://roitraining.qwiklab.com/privacy_policy">Privacy Policy</a>
+<br>
+<a href="https://roitraining.qwiklab.com/terms_of_service">Terms of Service</a>
+</div>
+</div>
+</div>
+<div class="side-menu__overlay js-side-menu-button"></div>
+
+<main>
+<div class="l-alert-wrapper alerts">
+<span class="hidden" id="flash-sibling-before"></span>
+
+
+</div>
+<div class="l-main-wrapper">
+
+
+
+<div class="l-lab-container js-lab_and_classroom_info" data-classroom-name="Data Engineering on Google Cloud Platform v1.1" data-deployment="roitraining" data-lab-name="Serverless Data Analysis (Python)" data-label="Serverless Data Analysis (Python)">
+<div class="l-lab-sidebar js-lab-sidebar-container">
+<div class="lab-sidebar js-lab-sidebar">
+<div class="lab-sidebar__header">
+<div class="lab-sidebar__header-row">
+<span class="small-label">
+480m access
+·
+480m completion
+</span>
+</div>
+<div class="lab-sidebar__header-row">
+<div class="rateit l-mrm" data-rateit-readonly="true" data-rateit-value="4.125"><div class="rateit-reset" style="display: none;"></div><div class="rateit-range" style="width: 80px; height: 16px;"><div class="rateit-selected" style="height: 16px; width: 66px;"></div><div class="rateit-hover" style="height:16px"></div></div></div>
+
+<a class="small-label l-mrm" data-target="#lab-review-modal" data-toggle="modal">
+Rate Lab
+</a>
+<a class="small-label" data-target="#lab-details-modal" data-toggle="modal">
+Lab Details
+</a>
+</div>
+
+</div>
+<div class="lab-sidebar__tabs">
+<div class="tab-contents tab-contents--lab-sidebar">
+<div class="tab-content is-active">
+<h5 class="l-mbs">
+Connection Details
+</h5>
+<div class="form-row js-form-row">
+<a class="button button--full-width button--secondary is-disabled js-connection-dns-link js-external-window" target="_blank">
+Open Google Console
+</a>
+</div>
+
+<div class="form-row js-form-row">
+<div class="control-group">
+<label class="label--console">
+Username 
+</label>
+<input class="input input--console js-connection-username-0" disabled="disabled" readonly="readonly" value="···········">
+<button class="button button--copy button--copy-input js-copy-input-button" data-clipboard-target=".js-connection-username-0">
+<i class="fa fa-clipboard"></i>
+</button>
+<span style="opacity: 1; left: 274px; top: 18.5px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></div>
+</div>
+
+<div class="form-row js-form-row">
+<div class="control-group">
+<label class="label--console">
+Password
+</label>
+<input class="input input--console js-connection-password" disabled="disabled" readonly="readonly" value="··········">
+<button class="button button--copy button--copy-input js-copy-input-button" data-clipboard-target=".js-connection-password">
+<i class="fa fa-clipboard"></i>
+</button>
+<span style="opacity: 1; left: 274px; top: 18.5px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></div>
+</div>
+
+<div class="form-row js-form-row">
+<div class="control-group">
+<label class="label--console">
+GCP Project ID 
+</label>
+<input class="input input--console js-connection-project-0" disabled="disabled" readonly="readonly" value="··········">
+<button class="button button--copy button--copy-input js-copy-input-button" data-clipboard-target=".js-connection-project-0">
+<i class="fa fa-clipboard"></i>
+</button>
+</div>
+</div>
+
+
+<div class="lab-sidebar__resource lab-sidebar__resource--additional-details l-mtl is-hidden js-cf-connection-output"></div>
+<div class="lab-sidebar__resource lab-sidebar__resource--additional-details l-mtl is-hidden js-additional-connection-info"></div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="lab-sidebar__slider js-sidebar-slider">
+<i class="fa fa-arrow-left"></i>
+<iframe class="l-ie-iframe-fix" kwframeid="2" src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/saved_resource.html"></iframe>
+</div>
+
+</div>
+<div class="l-lab-main">
+<div class="l-lab-main-header">
+<header class="lab-header js-lab-header has-shadow">
+<div class="lab-header__section lab-header__section--flex">
+<div class="lab-header__progress is-hidden js-progress">
+<div class="lab-header__progress__bar js-progress-bar"></div>
+</div>
+</div>
+<div class="lab-header__section lab-header__section--no-border">
+<span class="lab-header__progress-message is-hidden js-progress-message">
+<div class="lab-header__progress-message__indicator js-progress-message-indicator"></div>
+<span class="js-progress-message-incomplete">
+Lab Setting Up
+</span>
+<span class="js-progress-message-complete is-hidden">
+Lab Running
+</span>
+</span>
+</div>
+<div class="lab-header__section">
+<a class="button button--start button--lab js-start-lab-button" data-focus-id="2772" data-lab-access="None" data-lab-instance-id="">
+Start Lab
+</a>
+<a class="button button--wait button--lab js-waiting-lab-button is-hidden">
+<i class="fa fa-spinner fa-pulse"></i>
+</a>
+<a class="button button--end button--lab js-end-lab-button is-hidden" data-lab-instance-id="">
+End Lab
+</a>
+</div>
+<div class="lab-header__section">
+<h3 class="text--sign js-timer" data-duration="28800">
+ 08:00:00
+</h3>
+</div>
+</header>
+
+</div>
+<div class="l-lab-main-body">
+<div class="lab-content js-lab-content">
+<div class="lab-content__markdown-wrapper">
+<div class="js-markdown-instructions lab-content__markdown markdown-lab-instructions" id="markdown-lab-instructions">
+
+<h1 id="serverless-data-analysis">SERVERLESS DATA ANALYSIS</h1>
+
+<h1 id="getting-started-with-gcp-console">GETTING STARTED WITH GCP CONSOLE</h1>
+
+<p>When the lab is ready a green button will appear that looks like this:</p>
+
+<p><img src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/2fa0ccada9d929f0.png" alt="2fa0ccada9d929f0.png"></p>
+
+<p>When you are ready to begin, click <strong>Start Lab</strong>. </p>
+
+<h1 id="logging-in-to-google-cloud-platform">Logging in to Google Cloud Platform</h1>
+
+<h2 id="step-1-locate-the-username-password-and-project-id"><strong>Step 1: Locate the Username, Password and Project Id</strong></h2>
+
+<p>Press the green [Start] button to start the lab.  After setup is completed you will see something similar to this on the right side of the Qwiklabs window:</p>
+
+<p><img src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/eaa80bb0490b07d0.png" alt="eaa80bb0490b07d0.png"></p>
+
+<h2 id="step-2-browse-to-console"><strong>Step 2: Browse to Console</strong></h2>
+
+<p>Open an Incognito window in your browser. <br>
+And go to <strong><a href="http://console.cloud.google.com/" target="_blank">http://console.cloud.google.com</a></strong></p>
+
+<h2 id="step-3-sign-in-to-console"><strong>Step 3: Sign in to Console</strong></h2>
+
+<p>Log in with the Username and Password provided. The steps below are <em>suggestive</em>. The actual dialog and procedures may vary from this example.</p>
+
+<p><img src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/1c492727805af169.png" alt="1c492727805af169.png"></p>
+
+<h2 id="step-4-accept-the-conditions"><strong>Step 4: Accept the conditions</strong></h2>
+
+<p>Accept the new account terms and conditions.</p>
+
+<p><img src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/32331ec60c5f6609.png" alt="32331ec60c5f6609.png"></p>
+
+<p>This is a temporary account. You will only have access to the account for this one lab.</p>
+<ul><li>Do not add recovery options</li>
+<li>Do not sign up for free trials</li>
+</ul>
+<h2 id="step-5-don-t-change-the-password"><strong>Step 5: Don't change the password</strong></h2>
+
+<p>If prompted, don't change the password. Just click <strong>[Continue]</strong>.</p>
+
+<p><img src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/ef164317a73a66d7.png" alt="ef164317a73a66d7.png"></p>
+
+<h2 id="step-6-agree-to-the-terms-of-service"><strong>Step 6 Agree to the Terms of Service</strong></h2>
+
+<p>Select (x) Yes, (x) Yes and click [AGREE AND CONTINUE].</p>
+
+<p><img src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/e0edec7592d289e1.png" alt="e0edec7592d289e1.png"></p>
+
+<h2 id="step-7-console-opens"><strong>Step 7: Console opens</strong></h2>
+
+<p>The Google Cloud Platform Console opens.</p>
+
+<p>You may see a bar occupying the top part of the Console inviting you to sign up for a free trial. You can click on the [<strong>DISMISS</strong>] button so that the entire Console screen is available.</p>
+
+<p><img src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/a1b4bfec239cc863.png" alt="a1b4bfec239cc863.png"></p>
+
+<h2 id="step-8-switch-project-if-necessary"><strong>Step 8: Switch project (if necessary)</strong></h2>
+
+<p>On the top blue horizontal bar, click on the drop down icon to select the correct project (if not already so). You can confirm the project id from your Qwiklabs window (shown in step 1 above).</p>
+
+<p><img src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/849103afbf5e9178.png" alt="849103afbf5e9178.png"></p>
+
+<p>Click on "view more projects" if necessary and select the correct project id.</p>
+
+<h1 id="part-1-build-a-bigquery-query">PART 1: BUILD A BIGQUERY QUERY</h1>
+
+<h1 id="overview">Overview</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>In this lab, you learn how to build up a complex BigQuery using clauses, subqueries, built-in functions and joins.</p>
+
+<h2 id="what-you-learn"><strong>What you learn</strong></h2>
+
+<p>In this lab, you:</p>
+<ul><li>Create and run a query</li>
+<li>Modify the query to add clauses, subqueries, built-in functions and joins.</li>
+</ul>
+<h1 id="introduction">Introduction</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>The goal of this lab is to build up a complex BigQuery using clauses, subqueries, built-in functions and joins, and to run the query.</p>
+
+<h1 id="before-you-begin">Before you begin</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>If you have not started the lab, go ahead and click the green "Start Lab" button. Once done, it will display credentials for this lab.  Repeat the steps in Lab 0 to log into the Cloud console with the credentials provided in this lab.</p>
+
+<p>Here is a quick reference: </p>
+
+<p>Open new incognito window → go to cloud console → login with provided credentials → follow the prompts → switch project if necessary</p>
+
+<h1 id="create-and-run-a-query">Create and run a query</h1>
+
+<p><em>Duration is 3 min</em></p>
+
+<h2 id="step-1"><strong>Step 1</strong></h2>
+
+<p>Open the  <a href="http://console.cloud.google.com/" target="_blank">Google Cloud Console</a> (in the incognito window) and using the menu, navigate into BigQuery web UI, click on the <strong>Compose Query</strong> button on top left, and then click on <strong>Show Options</strong>, and ensure you are using <strong>Standard SQL</strong>.  You are using Standard SQL if the "Use Legacy SQL" checkbox is unchecked.</p>
+
+<p><img src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/beb1dee4f27cf451.png" alt="beb1dee4f27cf451.png"></p>
+
+<h2 id="step-2"><strong>Step 2</strong></h2>
+
+<p>Click <strong>Compose Query</strong>.</p>
+
+<h2 id="step-3"><strong>Step 3</strong></h2>
+
+<p>In the <strong>New Query</strong> window, type (or copy-and-paste) the following query: </p>
+<pre class="highlight shell"><code>SELECT
+  airline,
+  date,
+  departure_delay
+FROM
+  <span class="sb">`</span>bigquery-samples.airline_ontime_data.flights<span class="sb">`</span>
+WHERE
+  departure_delay &gt; 0
+  AND departure_airport <span class="o">=</span> <span class="s1">'LGA'</span>
+LIMIT
+  100
+</code><button class="button button--copy js-copy-button-0"><i class="fa fa-clipboard"></i></button></pre>
+<p>What does this query do? ______________________</p>
+
+<h2 id="step-4"><strong>Step 4</strong></h2>
+
+<p>Click <strong>Run Query</strong>.</p>
+
+<h1 id="aggregate-and-boolean-functions">Aggregate and Boolean functions</h1>
+
+<p><em>Duration is 5 min</em></p>
+
+<h2 id="step-1-2"><strong>Step 1</strong></h2>
+
+<p>To the previous query, add an additional clause to filter by date and group the results by airline.  Because you are grouping the results, the SELECT statement will have to use an aggregate function.  In the <strong>New Query</strong> window, type the following query: </p>
+<pre class="highlight shell"><code>SELECT
+  airline,
+  COUNT<span class="o">(</span>departure_delay<span class="o">)</span>
+FROM
+   <span class="sb">`</span>bigquery-samples.airline_ontime_data.flights<span class="sb">`</span>
+WHERE
+  departure_airport <span class="o">=</span> <span class="s1">'LGA'</span>
+  AND date <span class="o">=</span> <span class="s1">'2008-05-13'</span>
+GROUP BY
+  airline
+ORDER BY airline
+</code><button class="button button--copy js-copy-button-1"><i class="fa fa-clipboard"></i></button></pre>
+<p><strong>Step 2</strong></p>
+
+<p>Click <strong>Run Query</strong>.  What does this query do? ______________________________________________________</p>
+
+<p>What is the number you get for American Airlines (AA)?</p>
+
+<hr>
+
+<h2 id="step-3-2"><strong>Step 3</strong></h2>
+
+<p>Now change the query slightly:</p>
+<pre class="highlight shell"><code>SELECT
+  airline,
+  COUNT<span class="o">(</span>departure_delay<span class="o">)</span>
+FROM
+   <span class="sb">`</span>bigquery-samples.airline_ontime_data.flights<span class="sb">`</span>
+WHERE
+  departure_delay &gt; 0 AND
+  departure_airport <span class="o">=</span> <span class="s1">'LGA'</span>
+  AND date <span class="o">=</span> <span class="s1">'2008-05-13'</span>
+GROUP BY
+  airline
+ORDER BY airline
+</code><button class="button button--copy js-copy-button-2"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-4-2"><strong>Step 4</strong></h2>
+
+<p>Click <strong>Run Query</strong>.  What does this query do? ______________________________________________________</p>
+
+<p>What is the number you get for American Airlines (AA)?</p>
+
+<hr>
+
+<h2 id="step-5"><strong>Step 5</strong></h2>
+
+<p>The first query returns the total number of flights by each airline from La Guardia, and the second query returns the total number of flights that departed late.  (Do you see why?)</p>
+
+<p>How would you get both the number delayed as well as the total number of flights?</p>
+
+<hr>
+
+<hr>
+
+<h2 id="step-6"><strong>Step 6</strong></h2>
+
+<p><strong>Run</strong> this query:</p>
+<pre class="highlight shell"><code>SELECT
+  f.airline,
+  COUNT<span class="o">(</span>f.departure_delay<span class="o">)</span> AS total_flights,
+  SUM<span class="o">(</span>IF<span class="o">(</span>f.departure_delay &gt; 0, 1, 0<span class="o">))</span> AS num_delayed
+FROM
+   <span class="sb">`</span>bigquery-samples.airline_ontime_data.flights<span class="sb">`</span> AS f
+WHERE
+  f.departure_airport <span class="o">=</span> <span class="s1">'LGA'</span> AND f.date <span class="o">=</span> <span class="s1">'2008-05-13'</span>
+GROUP BY
+  f.airline
+</code><button class="button button--copy js-copy-button-3"><i class="fa fa-clipboard"></i></button></pre>
+<h1 id="string-operations">String operations</h1>
+
+<p><em>Duration is 3 min</em></p>
+
+<h2 id="step-1-3"><strong>Step 1</strong></h2>
+
+<p>In the <strong>New Query</strong> window, type the following query: </p>
+<pre class="highlight shell"><code>SELECT
+  CONCAT<span class="o">(</span>CAST<span class="o">(</span>year AS STRING<span class="o">)</span>, <span class="s1">'-'</span>, LPAD<span class="o">(</span>CAST<span class="o">(</span>month AS STRING<span class="o">)</span>,2,<span class="s1">'0'</span><span class="o">)</span>, <span class="s1">'-'</span>, LPAD<span class="o">(</span>CAST<span class="o">(</span>day AS STRING<span class="o">)</span>,2,<span class="s1">'0'</span><span class="o">))</span> AS rainyday
+FROM
+  <span class="sb">`</span>bigquery-samples.weather_geo.gsod<span class="sb">`</span>
+WHERE
+  station_number <span class="o">=</span> 725030
+  AND total_precipitation &gt; 0
+</code><button class="button button--copy js-copy-button-4"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-2-2"><strong>Step 2</strong></h2>
+
+<p>Click <strong>Run Query</strong>. </p>
+
+<h2 id="step-3-3"><strong>Step 3</strong></h2>
+
+<p>How would you do the airline query to aggregate over all these dates instead of just ‘2008-05-13'?</p>
+
+<hr>
+
+<p>You could use a JOIN, as shown next.</p>
+
+<h1 id="join-on-date">Join on Date</h1>
+
+<p><em>Duration is 3 min</em></p>
+
+<h2 id="step-1-4"><strong>Step 1</strong></h2>
+
+<p>In the <strong>New Query</strong> window, type the following query: </p>
+<pre class="highlight shell"><code>SELECT
+  f.airline,
+  SUM<span class="o">(</span>IF<span class="o">(</span>f.arrival_delay &gt; 0, 1, 0<span class="o">))</span> AS num_delayed,
+  COUNT<span class="o">(</span>f.arrival_delay<span class="o">)</span> AS total_flights
+FROM
+  <span class="sb">`</span>bigquery-samples.airline_ontime_data.flights<span class="sb">`</span> AS f
+JOIN <span class="o">(</span>
+  SELECT
+    CONCAT<span class="o">(</span>CAST<span class="o">(</span>year AS STRING<span class="o">)</span>, <span class="s1">'-'</span>, LPAD<span class="o">(</span>CAST<span class="o">(</span>month AS STRING<span class="o">)</span>,2,<span class="s1">'0'</span><span class="o">)</span>, <span class="s1">'-'</span>, LPAD<span class="o">(</span>CAST<span class="o">(</span>day AS STRING<span class="o">)</span>,2,<span class="s1">'0'</span><span class="o">))</span> AS rainyday
+  FROM
+    <span class="sb">`</span>bigquery-samples.weather_geo.gsod<span class="sb">`</span>
+  WHERE
+    station_number <span class="o">=</span> 725030
+    AND total_precipitation &gt; 0<span class="o">)</span> AS w
+ON
+  w.rainyday <span class="o">=</span> f.date
+WHERE f.arrival_airport <span class="o">=</span> <span class="s1">'LGA'</span>
+GROUP BY f.airline
+</code><button class="button button--copy js-copy-button-5"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-2-3"><strong>Step 2</strong></h2>
+
+<p>Click __Run Query.  __How would you get the fraction of flights delayed for each airline?</p>
+
+<p>You could put the entire query above into a subquery and then select from the columns of this result</p>
+
+<h1 id="subquery">Subquery</h1>
+
+<p><em>Duration is 3 min</em></p>
+
+<h2 id="step-1-5"><strong>Step 1</strong></h2>
+
+<p>In the <strong>New Query</strong> window, type the following query:</p>
+<pre class="highlight shell"><code>SELECT
+  airline,
+  num_delayed,
+  total_flights,
+  num_delayed / total_flights AS frac_delayed
+FROM <span class="o">(</span>
+SELECT
+  f.airline AS airline,
+  SUM<span class="o">(</span>IF<span class="o">(</span>f.arrival_delay &gt; 0, 1, 0<span class="o">))</span> AS num_delayed,
+  COUNT<span class="o">(</span>f.arrival_delay<span class="o">)</span> AS total_flights
+FROM
+  <span class="sb">`</span>bigquery-samples.airline_ontime_data.flights<span class="sb">`</span> AS f
+JOIN <span class="o">(</span>
+  SELECT
+    CONCAT<span class="o">(</span>CAST<span class="o">(</span>year AS STRING<span class="o">)</span>, <span class="s1">'-'</span>, LPAD<span class="o">(</span>CAST<span class="o">(</span>month AS STRING<span class="o">)</span>,2,<span class="s1">'0'</span><span class="o">)</span>, <span class="s1">'-'</span>, LPAD<span class="o">(</span>CAST<span class="o">(</span>day AS STRING<span class="o">)</span>,2,<span class="s1">'0'</span><span class="o">))</span> AS rainyday
+  FROM
+    <span class="sb">`</span>bigquery-samples.weather_geo.gsod<span class="sb">`</span>
+  WHERE
+    station_number <span class="o">=</span> 725030
+    AND total_precipitation &gt; 0<span class="o">)</span> AS w
+ON
+  w.rainyday <span class="o">=</span> f.date
+WHERE f.arrival_airport <span class="o">=</span> <span class="s1">'LGA'</span>
+GROUP BY f.airline
+  <span class="o">)</span>
+ORDER BY
+  frac_delayed ASC
+</code><button class="button button--copy js-copy-button-6"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-2-4"><strong>Step 2</strong></h2>
+
+<p>Click <strong>Run Query</strong></p>
+
+<table>
+<tbody><tr><td colspan="1" rowspan="1"><p><img style="max-width: 72.00px" src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/3ac518b975e3eb26.png"></p>
+</td><td colspan="1" rowspan="1"><p><strong>Stop here if you are done. Wait for instructions from the Instructor before going into the next section</strong></p>
+</td></tr>
+</tbody></table>
+
+<h1 id="part-2-loading-and-exporting-data">PART 2: LOADING AND EXPORTING DATA</h1>
+
+<h1 id="overview-2">Overview</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>In this lab you use load data in different formats into BigQuery tables.</p>
+
+<h2 id="what-you-learn-2"><strong>What you learn</strong></h2>
+
+<p>In this lab, you:</p>
+<ul><li>Load a CSV file into a BigQuery table using the web UI </li>
+<li>Load a JSON file into a BigQuery table using the CLI</li>
+</ul>
+<h1 id="introduction-2">Introduction</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>In this lab, you load data into BigQuery in multiple ways. You also transform the data you load, and you query the data.</p>
+
+<h1 id="upload-data-using-the-web-ui">Upload data using the web UI</h1>
+
+<p><em>Duration is 14 min</em></p>
+
+<p>__Task: __In this section of the lab, you upload a CSV file to BigQuery using the BigQuery web UI.</p>
+
+<p>BigQuery supports the following data formats when loading data into tables: CSV, JSON, AVRO, or Cloud Datastore backups. This example focuses on loading a CSV file into BigQuery. </p>
+
+<h2 id="step-1-6"><strong>Step 1</strong></h2>
+
+<p>Open the  <a href="http://console.cloud.google.com/" target="_blank">Google Cloud Console</a> (in the incognito window) and using the menu, navigate into BigQuery web UI.</p>
+
+<h2 id="step-2-5"><strong>Step 2</strong></h2>
+
+<p>Click the blue arrow to the right of your project name and choose <strong>Create new dataset</strong>.</p>
+
+<h2 id="step-3-4"><strong>Step 3</strong></h2>
+
+<p>In the ‘Create Dataset' dialog, for <strong>Dataset ID</strong>, type <strong>cpb101_flight_data</strong> and then click <strong>OK</strong>.</p>
+
+<h2 id="step-4-3"><strong>Step 4</strong></h2>
+
+<p>Download the following file to your local machine. This file contains the data that will populate the first table. </p>
+
+<p><a class="codelabs-downloadbutton" href="https://storage.googleapis.com/cloud-training/CPB200/BQ/lab4/airports.csv" target="_blank">Download airports.csv</a></p>
+
+<h2 id="step-5-2"><strong>Step 5</strong></h2>
+
+<p>Create a new table in the <strong>cpb101_flight_data</strong> dataset to store the data from the CSV file. Click the create table icon (the plus sign) to the right of the <input readonly="" class="copyable-inline-input" size="18" type="text" value="cpb101_flight_data"> dataset. </p>
+
+<h2 id="step-6-2"><strong>Step 6</strong></h2>
+
+<p>On the <strong>Create Table</strong> page, in the <strong>Source Data</strong> section:</p>
+<ul><li>For <strong>Location</strong>, leave <strong>File upload</strong> selected.</li>
+<li>To the right of File upload, click <strong>Choose file</strong>, then browse to and select <strong>airports.csv</strong>.</li>
+<li>Verify <strong>File format</strong> is set to <strong>CSV</strong>.</li>
+</ul>
+<p><strong>Note: __When you have created a table previously, the __Create from Previous Job</strong> option allows you to quickly use your settings to create similar tables. </p>
+
+<h2 id="step-7"><strong>Step 7</strong></h2>
+
+<p>In the <strong>Destination Table</strong> section:</p>
+<ul><li>For <strong>Table name</strong>, leave <strong>cpb101_flight_data</strong> selected.</li>
+<li>For <strong>Destination table name</strong>, type <strong>AIRPORTS</strong>.</li>
+<li>For <strong>Table type</strong>, <strong>Native table</strong> should be selected and unchangeable.</li>
+</ul>
+<h2 id="step-8"><strong>Step 8</strong></h2>
+
+<p>In the <strong>Schema</strong> section:</p>
+<ul><li>Add fields one at a time.  The airports.csv has the following fields: <input readonly="" class="copyable-inline-input" size="4" type="text" value="IATA">, <input readonly="" class="copyable-inline-input" size="7" type="text" value="AIRPORT">, <input readonly="" class="copyable-inline-input" size="4" type="text" value="CITY">, <input readonly="" class="copyable-inline-input" size="5" type="text" value="STATE">, <input readonly="" class="copyable-inline-input" size="7" type="text" value="COUNTRY"> which are of type <input readonly="" class="copyable-inline-input" size="6" type="text" value="STRING"> and <input readonly="" class="copyable-inline-input" size="8" type="text" value="LATITUDE">, <input readonly="" class="copyable-inline-input" size="9" type="text" value="LONGITUDE"> which are of type <input readonly="" class="copyable-inline-input" size="5" type="text" value="FLOAT">. Make all these fields <input readonly="" class="copyable-inline-input" size="8" type="text" value="REQUIRED">.<span style="opacity: 1; left: 195.031px; top: 57027.7px; width: 14px; min-width: 14px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTciIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNyAxMiI+IDxkZWZzPiA8cGF0aCBpZD0iYSIgZD0iTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3oiLz4gPC9kZWZzPiA8dXNlIGZpbGw9IiNiNmI2YjYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEpIiB4bGluazpocmVmPSIjYSIvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span><span style="opacity: 1; left: 259.562px; top: 57027.7px; width: 16px; min-width: 16px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTciIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNyAxMiI+IDxkZWZzPiA8cGF0aCBpZD0iYSIgZD0iTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3oiLz4gPC9kZWZzPiA8dXNlIGZpbGw9IiNiNmI2YjYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEpIiB4bGluazpocmVmPSIjYSIvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span><span style="opacity: 1; left: 338.094px; top: 57027.7px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTciIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNyAxMiI+IDxkZWZzPiA8cGF0aCBpZD0iYSIgZD0iTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3oiLz4gPC9kZWZzPiA8dXNlIGZpbGw9IiNiNmI2YjYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEpIiB4bGluazpocmVmPSIjYSIvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></li>
+</ul>
+<h2 id="step-9"><strong>Step 9</strong></h2>
+
+<p>In the <strong>Options</strong> section:</p>
+<ul><li>For <strong>Field delimiter</strong>, verify <strong>Comma</strong> is selected. </li>
+<li>Since airports.csv contains a single header row, for <strong>Header rows to skip</strong>, type <strong>1</strong>. </li>
+<li>Accept the remaining default values and click <strong>Create Table</strong>. BigQuery creates a load job to create the table and upload data into the table (this may take a few seconds). You can track job progress by clicking <strong>Job History</strong>.</li>
+</ul>
+<h2 id="step-10"><strong>Step 10</strong></h2>
+
+<p>Once the load job is complete, click <strong>cpb101_flight_data &gt; AIRPORTS</strong>. </p>
+
+<h2 id="step-11"><strong>Step 11</strong></h2>
+
+<p>On the <strong>Table Details</strong> page, click <strong>Details</strong> to view the table properties and then click <strong>Preview</strong> to view the table data.</p>
+
+<h1 id="upload-data-using-the-cli">Upload data using the CLI</h1>
+
+<p><em>Duration is 7 min</em></p>
+
+<p>Task: In this section of the lab, you upload multiple JSON files and an associated schema file to BigQuery using the CLI. </p>
+
+<h2 id="step-1-7"><strong>Step 1</strong></h2>
+
+<p>Navigate to the  <a href="https://console.cloud.google.com/" target="_blank">Google Cloud Platform Console</a> and to the right of your project name, click <strong>Activate Google Cloud Shell</strong>. </p>
+
+<h2 id="step-2-6"><strong>Step 2</strong></h2>
+
+<p>Type the following command to download  <a href="https://storage.googleapis.com/cloud-training/CBP200/BQ/lab4/schema_flight_performance.json" target="_blank">schema_flight_performance.json</a> (the schema file for the table in this example) to your working directory.</p>
+<pre class="highlight shell"><code>curl https://storage.googleapis.com/cloud-training/CPB200/BQ/lab4/schema_flight_performance.json -o schema_flight_performance.json
+</code><button class="button button--copy js-copy-button-7"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-3-5"><strong>Step 3</strong></h2>
+
+<p>The JSON files containing the data for your table are stored in a Google Cloud Storage bucket. They have URIs like the following:</p>
+
+<p><input readonly="" class="copyable-inline-input" size="63" type="text" value="gs://cloud-training/CPB200/BQ/lab4/domestic_2014_flights_*.json"></p>
+
+<p>Type the following command to create a table named <strong>flights_2014</strong> in the __cpb101_flight_data __dataset, using data from files in Google Cloud Storage and the schema file stored on your virtual machine. </p>
+
+<p>Note that your Project ID is stored as a variable in Cloud Shell (<input readonly="" class="copyable-inline-input" size="20" type="text" value="$DEVSHELL_PROJECT_ID">) so there's no need for you to remember it. If you require it, you can view your Project ID in the command line to the right of your username (after the @ symbol).<span style="opacity: 1; left: 222.5px; top: 59486.7px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></p>
+<pre class="highlight shell"><code>bq load --source_format<span class="o">=</span>NEWLINE_DELIMITED_JSON <span class="nv">$DEVSHELL_PROJECT_ID</span>:cpb101_flight_data.flights_2014 gs://cloud-training/CPB200/BQ/lab4/domestic_2014_flights_<span class="k">*</span>.json ./schema_flight_performance.json
+</code><button class="button button--copy js-copy-button-8"><i class="fa fa-clipboard"></i></button></pre>
+<p>If you are prompted to select a project to be set as default, choose the Project ID that was setup when you started this qwiklab (Look in the "Connect" tab of your Qwiklabs window, the project id typically looks something like "<strong>qwiklabs-gcp-123xyz</strong>" ).</p>
+
+<div class="codelabs-infobox codelabs-infobox-special"><p><strong>Note</strong></p>
+<p>There are multiple JSON files in the bucket named according to the convention: <strong>domestic_2014_flights_*.json</strong>. The wildcard (*) character is used to include all of the .json files in the bucket. </p>
+</div>
+
+<h2 id="step-4-4"><strong>Step 4</strong></h2>
+
+<p>Once the table is created, type the following command to verify table <strong>flights_2014</strong> exists in dataset <strong>cpb101_flight_data</strong>. </p>
+<pre class="highlight shell"><code>bq ls <span class="nv">$DEVSHELL_PROJECT_ID</span>:cpb101_flight_data
+</code><button class="button button--copy js-copy-button-9"><i class="fa fa-clipboard"></i></button></pre>
+<p>The output should look like the following:</p>
+
+<p><strong><input readonly="" class="copyable-inline-input" size="19" type="text" value="tableId        Type"></strong></p>
+
+<p><strong><input readonly="" class="copyable-inline-input" size="22" type="text" value="-------------- -------"></strong></p>
+
+<p><strong><input readonly="" class="copyable-inline-input" size="20" type="text" value="AIRPORTS       TABLE"></strong></p>
+
+<p><strong><input readonly="" class="copyable-inline-input" size="20" type="text" value="flights_2014   TABLE"></strong></p>
+
+<h1 id="export-table">Export table</h1>
+
+<p><em>Duration is 6 min</em></p>
+
+<p>__Task: __In this section of the lab, you export a BigQuery table using the web UI.</p>
+
+<h2 id="step-1-8"><strong>Step 1</strong></h2>
+
+<p>If you don't already have a bucket on Cloud Storage, create one from the  <a href="http://console.cloud.google.com/storage" target="_blank">Storage section of the GCP console</a>. Bucket names have to be globally unique.</p>
+
+<h2 id="step-2-7"><strong>Step 2</strong></h2>
+
+<p>Back to the  <a href="http://console.cloud.google.com/" target="_blank">Google Cloud Console</a> (in the incognito window) and using the menu, navigate into BigQuery web UI</p>
+
+<h2 id="step-3-6"><strong>Step 3</strong></h2>
+
+<p>Select the AIRPORTS table that you created recently, and using the "down" button to its right, select the option for <strong>Export Table</strong>.</p>
+
+<h2 id="step-4-5"><strong>Step 4</strong></h2>
+
+<p>In the dialog, specify <input readonly="" class="copyable-inline-input" size="39" type="text" value="gs://&lt;your-bucket-name&gt;/bq/airports.csv"> and click _<em>OK. _</em></p>
+
+<h2 id="step-5-3"><strong>Step 5</strong></h2>
+
+<p>Use the CLI to export the table:</p>
+<pre class="highlight shell"><code>bq extract cpb101_flight_data.AIRPORTS gs://&lt;your-bucket-name&gt;/bq/airports2.csv
+</code><button class="button button--copy js-copy-button-10"><i class="fa fa-clipboard"></i></button></pre>
+<p>Remember to change <your-bucket-name> with the bucket you created earlier.</your-bucket-name></p>
+
+<h2 id="step-6-3"><strong>Step 6</strong></h2>
+
+<p>Browse to your bucket and ensure that both .csv files have been created.</p>
+
+<table>
+<tbody><tr><td colspan="1" rowspan="1"><p><img style="max-width: 72.00px" src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/3ac518b975e3eb26.png"></p>
+</td><td colspan="1" rowspan="1"><p><strong>Stop here if you are done. Wait for instructions from the Instructor before going into the next section</strong></p>
+</td></tr>
+</tbody></table>
+
+<h1 id="part-3-advanced-sql-queries">PART 3: ADVANCED SQL QUERIES</h1>
+
+<h1 id="overview-3">Overview</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>In this lab you use some advanced SQL concepts to answer the question: what programming languages do open-source programmers program in on weekends?</p>
+
+<h2 id="what-you-learn-3"><strong>What you learn</strong></h2>
+
+<p>In this lab, you write a query that uses advanced SQL concepts:</p>
+<ul><li>Nested fields</li>
+<li>Regular expressions</li>
+<li>With statement</li>
+<li>Group and Having</li>
+</ul>
+<h1 id="introduction-3">Introduction</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>In this lab, you use some advanced SQL concepts to answer the question: what programming languages do open-source programmers program in on weekends?</p>
+
+<p>To answer this question, we will use a  <a href="https://cloud.google.com/bigquery/public-data/github" target="_blank">BigQuery public dataset</a> that has information on all GitHub commits.</p>
+
+<h1 id="get-information-about-code-commits">Get information about code commits</h1>
+
+<p><em>Duration is 5 min</em></p>
+
+<p>In this section, you will learn how to work with nested fields.</p>
+
+<h2 id="step-1-9"><strong>Step 1</strong></h2>
+
+<p>Open the  <a href="http://console.cloud.google.com/" target="_blank">Google Cloud Console</a> (in the incognito window) and using the menu, navigate into BigQuery web UI.</p>
+
+<h2 id="step-2-8"><strong>Step 2</strong></h2>
+
+<p>Compose a new query, making sure that the "Legacy SQL" option is not checked (you are using Standard SQL).</p>
+<pre class="highlight shell"><code>SELECT
+  author.email,
+  diff.new_path AS path,
+  author.date
+FROM
+  <span class="sb">`</span>bigquery-public-data.github_repos.commits<span class="sb">`</span>,
+  UNNEST<span class="o">(</span>difference<span class="o">)</span> diff
+WHERE
+  EXTRACT<span class="o">(</span>YEAR
+  FROM
+    author.date<span class="o">)=</span>2016
+LIMIT 10
+</code><button class="button button--copy js-copy-button-11"><i class="fa fa-clipboard"></i></button></pre>
+<p><strong>Step 3</strong></p>
+
+<p>Play a little with the query above to understand what it is doing.  For example, instead of <input readonly="" class="copyable-inline-input" size="12" type="text" value="author.email">, try just <input readonly="" class="copyable-inline-input" size="6" type="text" value="author">.  What type of field is author?</p>
+
+<p><strong>Step 4</strong></p>
+
+<p>Change <input readonly="" class="copyable-inline-input" size="13" type="text" value="diff.new_path"> to <input readonly="" class="copyable-inline-input" size="19" type="text" value="difference.new_path">.  Why does it not work?  Replace <input readonly="" class="copyable-inline-input" size="19" type="text" value="difference.new_path"> by <input readonly="" class="copyable-inline-input" size="30" type="text" value="difference[OFFSET(0)].new_path">.  Does this work? Why? What is the <input readonly="" class="copyable-inline-input" size="6" type="text" value="UNNEST"> doing?</p>
+
+<h1 id="extract-programming-language">Extract programming language</h1>
+
+<p><em>Duration is 5 min</em></p>
+
+<p>In this section, you will learn how to use regular expressions.  Let's assume that the filename extension is the programming language, i.e., a file that ends in .py has the language "py".  How will you pull out the extension from the path?</p>
+
+<h2 id="step-1-10"><strong>Step 1</strong></h2>
+
+<p>Type the following query:</p>
+<pre class="highlight shell"><code>SELECT
+  author.email,
+  LOWER<span class="o">(</span>REGEXP_EXTRACT<span class="o">(</span>diff.new_path, r<span class="s1">'\.([^\./\(~_ \- #]*)$'</span><span class="o">))</span> lang,
+  diff.new_path AS path,
+  author.date
+FROM
+  <span class="sb">`</span>bigquery-public-data.github_repos.commits<span class="sb">`</span>,
+  UNNEST<span class="o">(</span>difference<span class="o">)</span> diff
+WHERE
+  EXTRACT<span class="o">(</span>YEAR
+  FROM
+    author.date<span class="o">)=</span>2016
+LIMIT
+  10
+</code><button class="button button--copy js-copy-button-12"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-2-9"><strong>Step 2</strong></h2>
+
+<p>Modify the query above to only use lang if the language consists purely of letters and has a length that is fewer than 8 characters.</p>
+
+<h2 id="step-3-7"><strong>Step 3</strong></h2>
+
+<p>Modify the query above to group by language and list in descending order of the number of commits.  Here's a potential solution:</p>
+<pre class="highlight shell"><code>WITH
+  commits AS <span class="o">(</span>
+  SELECT
+    author.email,
+    LOWER<span class="o">(</span>REGEXP_EXTRACT<span class="o">(</span>diff.new_path, r<span class="s1">'\.([^\./\(~_ \- #]*)$'</span><span class="o">))</span> lang,
+    diff.new_path AS path,
+    author.date
+  FROM
+    <span class="sb">`</span>bigquery-public-data.github_repos.commits<span class="sb">`</span>,
+    UNNEST<span class="o">(</span>difference<span class="o">)</span> diff
+  WHERE
+    EXTRACT<span class="o">(</span>YEAR
+    FROM
+      author.date<span class="o">)=</span>2016 <span class="o">)</span>
+SELECT
+  lang,
+  COUNT<span class="o">(</span>path<span class="o">)</span> AS numcommits
+FROM
+  commits
+WHERE
+  LENGTH<span class="o">(</span>lang<span class="o">)</span> &lt; 8
+  AND lang IS NOT NULL
+  AND REGEXP_CONTAINS<span class="o">(</span>lang, <span class="s1">'[a-zA-Z]'</span><span class="o">)</span>
+GROUP BY
+  lang
+HAVING
+  numcommits &gt; 100
+ORDER BY
+  numcommits DESC
+</code><button class="button button--copy js-copy-button-13"><i class="fa fa-clipboard"></i></button></pre>
+<h1 id="weekend-or-weekday">Weekend or weekday?</h1>
+
+<p><em>Duration is 5 min</em></p>
+
+<p>Now, group the commits based on whether or not it happened on a weekend. How would you do it?</p>
+
+<h2 id="step-1-11"><strong>Step 1</strong></h2>
+
+<p>Modify the query above to extract the day of the week from author.date.  Days 2 to 6 are weekdays.</p>
+
+<h2 id="step-2-10"><strong>Step 2</strong></h2>
+
+<p>Here's a potential solution:</p>
+<pre class="highlight shell"><code>WITH
+  commits AS <span class="o">(</span>
+  SELECT
+    author.email,
+    EXTRACT<span class="o">(</span>DAYOFWEEK
+    FROM
+      author.date<span class="o">)</span> BETWEEN 2
+    AND 6 is_weekday,
+    LOWER<span class="o">(</span>REGEXP_EXTRACT<span class="o">(</span>diff.new_path, r<span class="s1">'\.([^\./\(~_ \- #]*)$'</span><span class="o">))</span> lang,
+    diff.new_path AS path,
+    author.date
+  FROM
+    <span class="sb">`</span>bigquery-public-data.github_repos.commits<span class="sb">`</span>,
+    UNNEST<span class="o">(</span>difference<span class="o">)</span> diff
+  WHERE
+    EXTRACT<span class="o">(</span>YEAR
+    FROM
+      author.date<span class="o">)=</span>2016<span class="o">)</span>
+SELECT
+  lang,
+  is_weekday,
+  COUNT<span class="o">(</span>path<span class="o">)</span> AS numcommits
+FROM
+  commits
+WHERE
+  LENGTH<span class="o">(</span>lang<span class="o">)</span> &lt; 8
+  AND lang IS NOT NULL
+  AND REGEXP_CONTAINS<span class="o">(</span>lang, <span class="s1">'[a-zA-Z]'</span><span class="o">)</span>
+GROUP BY
+  lang,
+  is_weekday
+HAVING
+  numcommits &gt; 100
+ORDER BY
+  numcommits DESC
+</code><button class="button button--copy js-copy-button-14"><i class="fa fa-clipboard"></i></button></pre>
+<p>Ignoring file extensions that do not correspond to programming languages, it appears that the most popular weekend programming languages are JavaScript, PHP and C.</p>
+
+<p><strong>Acknowledgment</strong>:  This section of lab  (and query) is based on an article by Felipe Hoffa:  <a href="https://medium.com/@hoffa/the-top-weekend-languages-according-to-githubs-code-6022ea2e33e8#.8oj2rp804" target="_blank">https://medium.com/@hoffa/the-top-weekend-languages-according-to-githubs-code-6022ea2e33e8#.8oj2rp804</a>  </p>
+
+<table>
+<tbody><tr><td colspan="1" rowspan="1"><p><img style="max-width: 72.00px" src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/3ac518b975e3eb26.png"></p>
+</td><td colspan="1" rowspan="1"><p><strong>Stop here if you are done. Wait for instructions from the Instructor before going into the next section</strong></p>
+</td></tr>
+</tbody></table>
+
+<h1 id="part-4-a-simple-dataflow-pipeline">PART 4: A SIMPLE DATAFLOW PIPELINE</h1>
+
+<h1 id="overview-4">Overview</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>In this lab, you learn how to write a simple Dataflow pipeline and run it both locally and on the cloud.</p>
+
+<h2 id="what-you-learn-4"><strong>What you learn</strong></h2>
+
+<p>In this lab, you learn how to:</p>
+<ul><li>Setup a Java Dataflow project using Maven</li>
+<li>Write a simple pipeline in Java</li>
+<li>Execute the query on the local machine</li>
+<li>Execute the query on the cloud</li>
+</ul>
+<h1 id="introduction-4">Introduction</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>The goal of this lab is to become familiar with the structure of a Dataflow project and learn how to execute a Dataflow pipeline.</p>
+
+<h1 id="open-dataflow-project">Open Dataflow project</h1>
+
+<p><em>Duration is 3 min</em></p>
+
+<h2 id="step-1-12"><strong>Step 1</strong></h2>
+
+<p>Start CloudShell and navigate to the directory for this lab:</p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~/training-data-analyst/courses/data_analysis/lab2/python
+</code><button class="button button--copy js-copy-button-15"><i class="fa fa-clipboard"></i></button></pre>
+<p>If this directory doesn't exist, you may need to git clone the repository first:</p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~
+git clone https://github.com/GoogleCloudPlatform/training-data-analyst
+<span class="nb">cd</span> ~/training-data-analyst/courses/data_analysis/lab2/python
+</code><button class="button button--copy js-copy-button-16"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-2-11"><strong>Step 2</strong></h2>
+
+<p>Install the necessary dependencies for Python dataflow:</p>
+<pre class="highlight shell"><code>sudo ./install_packages.sh
+</code><button class="button button--copy js-copy-button-17"><i class="fa fa-clipboard"></i></button></pre>
+<p>Verify that you have the right version of pip (should be &gt; 8.0):</p>
+<pre class="highlight shell"><code>pip -V
+</code><button class="button button--copy js-copy-button-18"><i class="fa fa-clipboard"></i></button></pre>
+<p>If not, open a new CloudShell tab and it should pick up the updated pip.</p>
+
+<h1 id="pipeline-filtering">Pipeline filtering</h1>
+
+<p><em>Duration is 5 min</em></p>
+
+<h2 id="step-1-13"><strong>Step 1</strong></h2>
+
+<p>View the source code for the pipeline using nano: </p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~/training-data-analyst/courses/data_analysis/lab2/python
+nano grep.py
+</code><button class="button button--copy js-copy-button-19"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-2-12"><strong>Step 2</strong></h2>
+
+<p>What files are being read? _____________________________________________________</p>
+
+<p>What is the search term? ______________________________________________________</p>
+
+<p>Where does the output go? ___________________________________________________</p>
+
+<p>There are three transforms in the pipeline:</p>
+<ol start="1"><li>What does the transform do? _________________________________</li>
+<li>What does the second transform do? ______________________________</li>
+</ol><ul><li>Where does its input come from? ________________________</li>
+<li>What does it do with this input? __________________________</li>
+<li>What does it write to its output? __________________________</li>
+<li>Where does the output go to? ____________________________</li>
+</ul><ol start="1"><li>What does the third transform do? _____________________</li>
+</ol>
+<h1 id="execute-the-pipeline-locally">Execute the pipeline locally</h1>
+
+<p><em>Duration is 2 min</em></p>
+
+<h2 id="step-1-14"><strong>Step 1</strong></h2>
+
+<p>Execute locally: </p>
+<pre class="highlight shell"><code>python grep.py
+</code><button class="button button--copy js-copy-button-20"><i class="fa fa-clipboard"></i></button></pre>
+<p>Note: if you see an error that says "<input readonly="" class="copyable-inline-input" size="77" type="text" value="No handlers could be found for logger &quot;oauth2client.contrib.multistore_file&quot;,"> you may ignore it. The error is simply saying that logging from the oauth2 library will go to stderr.</p>
+
+<h2 id="step-2-13"><strong>Step 2</strong></h2>
+
+<p>Examine the output file:</p>
+<pre class="highlight shell"><code>cat /tmp/output-<span class="k">*</span>
+</code><button class="button button--copy js-copy-button-21"><i class="fa fa-clipboard"></i></button></pre>
+<p>Does the output seem logical?  ______________________</p>
+
+<h1 id="execute-the-pipeline-on-the-cloud">Execute the pipeline on the cloud</h1>
+
+<p><em>Duration is 10 min</em></p>
+
+<h2 id="step-1-15"><strong>Step 1</strong></h2>
+
+<p>If you don't already have a bucket on Cloud Storage, create one from the  <a href="http://console.cloud.google.com/storage" target="_blank">Storage section of the GCP console</a>. Bucket names have to be globally unique.</p>
+
+<h2 id="step-2-14"><strong>Step 2</strong></h2>
+
+<p>Copy some Java files to the cloud (make sure to replace <input readonly="" class="copyable-inline-input" size="18" type="text" value="&lt;YOUR-BUCKET-NAME&gt;"> with the bucket name you created in the previous step):</p>
+<pre class="highlight shell"><code>gsutil cp ../javahelp/src/main/java/com/google/cloud/training/dataanalyst/javahelp/<span class="k">*</span>.java gs://&lt;YOUR-BUCKET-NAME&gt;/javahelp
+</code><button class="button button--copy js-copy-button-22"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-3-8"><strong>Step 3</strong></h2>
+
+<p>Edit the Dataflow pipeline in <input readonly="" class="copyable-inline-input" size="8" type="text" value="grepc.py"> by opening up in nano:</p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~/training-data-analyst/courses/data_analysis/lab2/python
+nano grepc.py
+</code><button class="button button--copy js-copy-button-23"><i class="fa fa-clipboard"></i></button></pre>
+<p>and changing the PROJECT and BUCKET variables appropriately.</p>
+
+<h2 id="step-4-6"><strong>Step 4</strong></h2>
+
+<p>Submit the Dataflow to the cloud:</p>
+<pre class="highlight shell"><code>python grepc.py
+</code><button class="button button--copy js-copy-button-24"><i class="fa fa-clipboard"></i></button></pre>
+<p>Because this is such a small job, running on the cloud will take significantly longer than running it locally (on the order of 2-3 minutes).</p>
+
+<h2 id="step-5-4"><strong>Step 5</strong></h2>
+
+<p>On your  <a href="https://console.cloud.google.com/" target="_blank">Cloud Console</a>, navigate to the Dataflow section (from the 3 bars on the top-left menu), and look at the Jobs.  Select your job and monitor its progress. You will see something like this:</p>
+
+<p><img src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/8826f7db15d23f15.png" alt="8826f7db15d23f15.png"></p>
+
+<h2 id="step-6-4"><strong>Step 6</strong></h2>
+
+<p>Wait for the job status to turn to <strong>Succeeded</strong>. At this point, your CloudShell will display a command-line prompt.  In CloudShell, examine the output:</p>
+<pre class="highlight shell"><code>gsutil cat gs://&lt;YOUR-BUCKET-NAME&gt;/javahelp/output-<span class="k">*</span>
+</code><button class="button button--copy js-copy-button-25"><i class="fa fa-clipboard"></i></button></pre>
+<table>
+<tbody><tr><td colspan="1" rowspan="1"><p><img style="max-width: 72.00px" src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/3ac518b975e3eb26.png"></p>
+</td><td colspan="1" rowspan="1"><p><strong>Stop here if you are done. Wait for instructions from the Instructor before going into the next section</strong></p>
+</td></tr>
+</tbody></table>
+
+<h1 id="part-5-mapreduce-in-dataflow">PART 5: MAPREDUCE IN DATAFLOW</h1>
+
+<h1 id="overview-5">Overview</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>In this lab, you learn how to use pipeline options and carry out Map and Reduce operations in Dataflow.</p>
+
+<h2 id="what-you-learn-5"><strong>What you learn</strong></h2>
+
+<p>In this lab, you learn how to:</p>
+<ul><li>Use pipeline options in Dataflow</li>
+<li>Carry out mapping transformations</li>
+<li>Carry out reduce aggregations</li>
+</ul>
+<h1 id="introduction-5">Introduction</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>The goal of this lab is to learn how to write MapReduce operations using Dataflow.</p>
+
+<h1 id="identify-map-and-reduce-operations">Identify Map and Reduce operations</h1>
+
+<p><em>Duration is 5 min</em></p>
+
+<h2 id="step-1-16"><strong>Step 1</strong></h2>
+
+<p>Start CloudShell and navigate to the directory for this lab:</p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~/training-data-analyst/courses/data_analysis/lab2
+</code><button class="button button--copy js-copy-button-26"><i class="fa fa-clipboard"></i></button></pre>
+<p>If this directory doesn't exist, you may need to git clone the repository:</p>
+<pre class="highlight shell"><code>git clone https://github.com/GoogleCloudPlatform/training-data-analyst
+</code><button class="button button--copy js-copy-button-27"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-2-15"><strong>Step 2</strong></h2>
+
+<p>View the source code for the pipeline using nano: </p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~/training-data-analyst/courses/data_analysis/lab2/python
+nano is_popular.py
+</code><button class="button button--copy js-copy-button-28"><i class="fa fa-clipboard"></i></button></pre>
+<p><strong>Step 3</strong></p>
+
+<p>What custom arguments are defined? ____________________</p>
+
+<p>What is the default output prefix?  _________________________________________</p>
+
+<p>How is the variable output_prefix in main() set? _____________________________</p>
+
+<p>How are the pipeline arguments such as --runner set? ______________________</p>
+
+<p><strong>Step 4</strong></p>
+
+<p>What are the key steps in the pipeline?     _____________________________________________________________________________</p>
+
+<p>Which of these steps happen in parallel? ____________________________________</p>
+
+<p>Which of these steps are aggregations? _____________________________________</p>
+
+<h1 id="execute-the-pipeline">Execute the pipeline</h1>
+
+<p><em>Duration is 2 min</em></p>
+
+<h2 id="step-1-17"><strong>Step 1</strong></h2>
+
+<p>Install the necessary dependencies for Python dataflow:</p>
+<pre class="highlight shell"><code>sudo ./install_packages.sh
+</code><button class="button button--copy js-copy-button-29"><i class="fa fa-clipboard"></i></button></pre>
+<p>Verify that you have the right version of pip (should be &gt; 8.0):</p>
+<pre class="highlight shell"><code>pip -V
+</code><button class="button button--copy js-copy-button-30"><i class="fa fa-clipboard"></i></button></pre>
+<p>If not, open a new CloudShell tab and it should pick up the updated pip.</p>
+
+<h2 id="step-2-16"><strong>Step 2</strong></h2>
+
+<p>Run the pipeline locally: </p>
+<pre class="highlight shell"><code>./is_popular.py
+</code><button class="button button--copy js-copy-button-31"><i class="fa fa-clipboard"></i></button></pre>
+<p>Note: if you see an error that says "<input readonly="" class="copyable-inline-input" size="77" type="text" value="No handlers could be found for logger &quot;oauth2client.contrib.multistore_file&quot;,"> you may ignore it. The error is simply saying that logging from the oauth2 library will go to stderr.</p>
+
+<p><strong>Step 3</strong></p>
+
+<p>Examine the output file:</p>
+<pre class="highlight shell"><code>cat /tmp/output-<span class="k">*</span>
+</code><button class="button button--copy js-copy-button-32"><i class="fa fa-clipboard"></i></button></pre>
+<h1 id="use-command-line-parameters">Use command line parameters</h1>
+
+<p><em>Duration is 2 min</em></p>
+
+<h2 id="step-1-18"><strong>Step 1</strong></h2>
+
+<p>Change the output prefix from the default value: </p>
+<pre class="highlight shell"><code>./is_popular.py --output_prefix<span class="o">=</span>/tmp/myoutput
+</code><button class="button button--copy js-copy-button-33"><i class="fa fa-clipboard"></i></button></pre>
+<p>What will be the name of the new file that is written out?</p>
+
+<p><strong>Step 2</strong></p>
+
+<p>Note that we now have a new file in the /tmp directory:</p>
+<pre class="highlight shell"><code>ls -lrt /tmp/myoutput<span class="k">*</span>
+</code><button class="button button--copy js-copy-button-34"><i class="fa fa-clipboard"></i></button></pre>
+<table>
+<tbody><tr><td colspan="1" rowspan="1"><p><img style="max-width: 72.00px" src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/3ac518b975e3eb26.png"></p>
+</td><td colspan="1" rowspan="1"><p><strong>Stop here if you are done. Wait for instructions from the Instructor before going into the next section</strong></p>
+</td></tr>
+</tbody></table>
+
+<h1 id="part-6-side-inputs">PART 6: SIDE INPUTS</h1>
+
+<h1 id="overview-6">Overview</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>In this lab, you learn how to use BigQuery as a data source into Dataflow, and how to use the results of a pipeline as a side input to another pipeline.</p>
+
+<h2 id="what-you-learn-6"><strong>What you learn</strong></h2>
+
+<p>In this lab, you learn how to:</p>
+<ul><li>Read data from BigQuery into Dataflow</li>
+<li>Use the output of a pipeline as a side-input to another pipeline</li>
+</ul>
+<h1 id="introduction-6">Introduction</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>The goal of this lab is to learn how to use BigQuery as a data source into Dataflow, and how to use the result of a pipeline as a side input to another pipeline.</p>
+
+<h1 id="try-out-bigquery-query">Try out BigQuery query</h1>
+
+<p><em>Duration is 4 min</em></p>
+
+<h2 id="step-1-19"><strong>Step 1</strong></h2>
+
+<p>Open the  <a href="http://console.cloud.google.com/" target="_blank">Google Cloud Console</a> (in the incognito window) and using the menu, navigate into BigQuery web UI, and click on <strong>Compose Query.</strong></p>
+
+<h2 id="step-2-17"><strong>Step 2</strong></h2>
+
+<p>Copy-and-paste this query: </p>
+<pre class="highlight shell"><code>SELECT
+  content
+FROM
+  <span class="o">[</span>fh-bigquery:github_extracts.contents_java_2016]
+LIMIT
+  10
+</code><button class="button button--copy js-copy-button-35"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-3-9"><strong>Step 3</strong></h2>
+
+<p>Click on <strong>Run Query</strong>.</p>
+
+<p>What is being returned? _______________________________ ____________________</p>
+
+<p>The BigQuery table <input readonly="" class="copyable-inline-input" size="46" type="text" value="fh-bigquery:github_extracts.contents_java_2016"> contains  the content (and some metadata) of all the Java files present in github in 2016. </p>
+
+<h2 id="step-4-7"><strong>Step 4</strong></h2>
+
+<p>To find out how many Java files this table has, type the following query and click Run Query:</p>
+<pre class="highlight shell"><code>SELECT
+  COUNT<span class="o">(</span><span class="k">*</span><span class="o">)</span>
+FROM
+  <span class="o">[</span>fh-bigquery:github_extracts.contents_java_2016]
+</code><button class="button button--copy js-copy-button-36"><i class="fa fa-clipboard"></i></button></pre>
+<p>The reason zero bytes are processed is that this is table metadata.</p>
+
+<p>How many files are there in this dataset? __________________________________</p>
+
+<p>Is this a dataset you want to process locally or on the cloud? ______________</p>
+
+<h1 id="explore-the-pipeline-code">Explore the pipeline code</h1>
+
+<p><em>Duration is 10 min</em></p>
+
+<h2 id="step-1-20"><strong>Step 1</strong></h2>
+
+<p>On your  <a href="https://console.cloud.google.com/" target="_blank">Cloud Console</a>, start CloudShell and navigate to the directory for this lab:</p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~/training-data-analyst/courses/data_analysis/lab2 
+</code><button class="button button--copy js-copy-button-37"><i class="fa fa-clipboard"></i></button></pre>
+<p>If this directory doesn't exist, you may need to git clone the repository:</p>
+<pre class="highlight shell"><code>git clone https://github.com/GoogleCloudPlatform/training-data-analyst
+</code><button class="button button--copy js-copy-button-38"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-2-18"><strong>Step 2</strong></h2>
+
+<p>View the pipeline code using nano and answer the following questions:</p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~/training-data-analyst/courses/data_analysis/lab2/javahelp
+nano src/main/java/com/google/cloud/training/dataanalyst/javahelp/JavaProjectsThatNeedHelp.java
+</code><button class="button button--copy js-copy-button-39"><i class="fa fa-clipboard"></i></button></pre>
+<p>The pipeline looks like this (refer to this diagram as you read the code):</p>
+
+<p><img src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/56694328f3596edc.png" alt="56694328f3596edc.png"></p>
+
+<h2 id="step-3-10"><strong>Step 3</strong></h2>
+
+<p>Looking at the class documentation at the very top, what is the purpose of this pipeline? __________________________________________________________ </p>
+
+<p>Where does GetJava get Java content from? _______________________________</p>
+
+<p>What does ToLines do? (Hint: look at the content field of the BigQuery result) ____________________________________________________</p>
+
+<h2 id="step-4-8"><strong>Step 4</strong></h2>
+
+<p>Why is the result of ToLines stored in a named PCollection instead of being directly passed to another apply()? ________________________________________________</p>
+
+<p>What are the two actions carried out on javaContent? ____________________________</p>
+
+<h2 id="step-5-5"><strong>Step 5</strong></h2>
+
+<p>If a file has 3 FIXMEs and 2 TODOs in its content (on different lines), how many calls for help are associated with it? __________________________________________________</p>
+
+<p>If a file is in the package com.google.devtools.build, what are the packages that it is associated with? ____________________________________________________</p>
+
+<p>Why is the numHelpNeeded variable not enough? Why do we need to do Sum.integersPerKey()? ___________________________________  (Hint: there are multiple files in a package)</p>
+
+<p>Why is this converted to a View? ___________________________________________</p>
+
+<h2 id="step-6-5"><strong>Step 6</strong></h2>
+
+<p>Which operation uses the View as a side input? _____________________________</p>
+
+<p>Instead of simply ParDo.of(), this operation uses ____________________________</p>
+
+<p>Besides c.element() and c.output(), this operation also makes use of what method in ProcessContext? __________________________________________________________</p>
+
+<h1 id="execute-the-pipeline-2">Execute the pipeline</h1>
+
+<p><em>Duration is 5 min</em></p>
+
+<h2 id="step-1-21"><strong>Step 1</strong></h2>
+
+<p>If you don't already have a bucket on Cloud Storage, create one from the  <a href="http://console.cloud.google.com/storage" target="_blank">Storage section of the GCP console</a>. Bucket names have to be globally unique.</p>
+
+<h2 id="step-2-19"><strong>Step 2</strong></h2>
+
+<p>Execute the pipeline by typing in (make sure to replace <input readonly="" class="copyable-inline-input" size="18" type="text" value="&lt;YOUR-BUCKET-NAME&gt;"> with the bucket name you created in the previous step): </p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~/training-data-analyst/courses/data_analysis/lab2/javahelp
+./run_oncloud3.sh &lt;PROJECT&gt; &lt;YOUR-BUCKET-NAME&gt; JavaProjectsThatNeedHelp
+</code><button class="button button--copy js-copy-button-40"><i class="fa fa-clipboard"></i></button></pre>
+<p>Monitor the job from the GCP console from the Dataflow section.</p>
+
+<h2 id="step-3-11"><strong>Step 3</strong></h2>
+
+<p>Once the pipeline has finished executing, download and view the output:</p>
+<pre class="highlight shell"><code>gsutil cp gs://&lt;YOUR-BUCKET-NAME&gt;/javahelp/output.csv .
+head output.csv
+</code><button class="button button--copy js-copy-button-41"><i class="fa fa-clipboard"></i></button></pre>
+<table>
+<tbody><tr><td colspan="1" rowspan="1"><p><img style="max-width: 72.00px" src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/3ac518b975e3eb26.png"></p>
+</td><td colspan="1" rowspan="1"><p><strong>Stop here if you are done. Wait for instructions from the Instructor before going into the next section</strong></p>
+</td></tr>
+</tbody></table>
+
+<h1 id="part-7-streaming-into-bigquery">PART 7: STREAMING INTO BIGQUERY</h1>
+
+<h1 id="overview-7">Overview</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>In this lab, you learn how to use Dataflow to aggregate records received in real-time in Cloud Pub/Sub. The aggregate statistics will then be streamed into BigQuery and analyzed even as the data are streaming in.</p>
+
+<h2 id="what-you-learn-7"><strong>What you learn</strong></h2>
+
+<p>In this lab, you learn how to:</p>
+<ul><li>Create Cloud Pub/Sub topic</li>
+<li>Read from Pub/Sub in Dataflow</li>
+<li>Compute windowed aggregates</li>
+<li>Stream into BigQuery</li>
+</ul>
+<h1 id="introduction-7">Introduction</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>The goal of this lab is to learn how to use Pub/Sub as a real-time streaming source into Dataflow and BigQuery as a streaming sink.</p>
+
+<p><img src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/246cac282f5e8b2b.png" alt="246cac282f5e8b2b.png"></p>
+
+<h1 id="set-up-bigquery-and-pub-sub">Set up BigQuery and Pub/Sub</h1>
+
+<p><em>Duration is 3 min</em></p>
+
+<h2 id="step-1-22"><strong>Step 1</strong></h2>
+
+<p>Open the  <a href="http://console.cloud.google.com/" target="_blank">Google Cloud Console</a> (in the incognito window) and using the menu, navigate into BigQuery web UI. Next click on the blue arrow next to your project name (on the left-hand panel) and click on <strong>Create new dataset</strong> and if you do not have a dataset named <input readonly="" class="copyable-inline-input" size="5" type="text" value="demos">, please create one.</p>
+
+<p><img src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/59c77bc988898ac5.png" alt="59c77bc988898ac5.png"></p>
+
+<h2 id="step-2-20"><strong>Step 2</strong></h2>
+
+<p>Back on you  <a href="https://console.cloud.google.com/" target="_blank">Cloud Console</a>, visit the  <a href="http://console.cloud.google.com/cloudpubsub" target="_blank">Pub/Sub section of GCP Console</a> and click on <strong>Create Topic</strong>.  Give your new topic the name <input readonly="" class="copyable-inline-input" size="10" type="text" value="streamdemo"> and select <strong>Create</strong>.</p>
+
+<h1 id="explore-the-pipeline-code-2">Explore the pipeline code</h1>
+
+<p><em>Duration is 10 min</em></p>
+
+<h2 id="step-1-23"><strong>Step 1</strong></h2>
+
+<p>Start CloudShell and navigate to the directory for this lab:</p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~/training-data-analyst/courses/data_analysis/lab2 
+</code><button class="button button--copy js-copy-button-42"><i class="fa fa-clipboard"></i></button></pre>
+<p>If this directory doesn't exist, you may need to git clone the repository:</p>
+<pre class="highlight shell"><code>git clone https://github.com/GoogleCloudPlatform/training-data-analyst
+</code><button class="button button--copy js-copy-button-43"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-2-21"><strong>Step 2</strong></h2>
+
+<p>View the pipeline code using nano and answer the following questions:</p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~/training-data-analyst/courses/data_analysis/lab2/javahelp
+nano src/main/java/com/google/cloud/training/dataanalyst/javahelp/StreamDemoConsumer.java
+</code><button class="button button--copy js-copy-button-44"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-3-12"><strong>Step 3</strong></h2>
+
+<p>What are the fields in the BigQuery table?  _______________________________</p>
+
+<h2 id="step-4-9"><strong>Step 4</strong></h2>
+
+<p>What is the pipeline source? ________________________________________________</p>
+
+<h2 id="step-5-6"><strong>Step 5</strong></h2>
+
+<p>How often will aggregates be computed? ___________________________________________</p>
+
+<p>Aggregates will be computed over what time period? _________________________________ </p>
+
+<h2 id="step-6-6"><strong>Step 6</strong></h2>
+
+<p>What aggregate is being computed in this pipeline? ____________________________</p>
+
+<p>How would you change it to compute the average number of words in each message over the time period? ____________________________</p>
+
+<h2 id="step-7-2"><strong>Step 7</strong></h2>
+
+<p>What is the output sink for the pipeline? ____________________________</p>
+
+<h1 id="execute-the-pipeline-3">Execute the pipeline</h1>
+
+<p><em>Duration is 3 min</em></p>
+
+<h2 id="step-1-24"><strong>Step 1</strong></h2>
+
+<p>If you don't already have a bucket on Cloud Storage, create one from the  <a href="http://console.cloud.google.com/storage" target="_blank">Storage section of the GCP console</a>. Bucket names have to be globally unique.</p>
+
+<h2 id="step-2-22"><strong>Step 2</strong></h2>
+
+<p>Execute the pipeline by typing in (make sure to replace <input readonly="" class="copyable-inline-input" size="18" type="text" value="&lt;YOUR-BUCKET-NAME&gt;"> with the bucket name you created in the previous step):</p>
+<pre class="highlight shell"><code><span class="nb">cd</span> ~/training-data-analyst/courses/data_analysis/lab2/javahelp
+./run_oncloud4.sh &lt;PROJECT&gt; &lt;YOUR-BUCKET-NAME&gt;
+</code><button class="button button--copy js-copy-button-45"><i class="fa fa-clipboard"></i></button></pre>
+<p>Monitor the job from the  <a href="http://console.cloud.google.com/dataflow" target="_blank">GCP console from the Dataflow</a> section.  Note that this pipeline will not exit.</p>
+
+<h2 id="step-3-13"><strong>Step 3</strong></h2>
+
+<p>Visit the  <a href="http://console.cloud.google.com/cloudpubsub" target="_blank">Pub/Sub section of GCP Console</a> and click on your streamdemo topic.  Notice that it has a Dataflow subscription.  Click on the Publish button and type in a message (any message) and click <strong>Publish</strong>:</p>
+
+<p><img src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/54513e6524bf166a.png" alt="54513e6524bf166a.png"></p>
+
+<h2 id="step-4-10"><strong>Step 4</strong></h2>
+
+<p>Publish a few more messages.</p>
+
+<h1 id="carry-out-streaming-analytics">Carry out streaming analytics</h1>
+
+<p><em>Duration is 3 min</em></p>
+
+<h2 id="step-1-25"><strong>Step 1</strong></h2>
+
+<p>Open the  <a href="http://console.cloud.google.com/" target="_blank">Google Cloud Console</a> (in the incognito window) and using the menu, navigate into BigQuery web UI. Compose a new query and type in (change your PROJECTID appropriately):</p>
+<pre class="highlight shell"><code>SELECT timestamp, num_words from <span class="o">[</span>PROJECTID:demos.streamdemo] LIMIT 10
+</code><button class="button button--copy js-copy-button-46"><i class="fa fa-clipboard"></i></button></pre>
+<h1 id="clean-up">Clean up</h1>
+
+<p><em>Duration is 3 min</em></p>
+
+<h2 id="step-1-26"><strong>Step 1</strong></h2>
+
+<p>Cancel the job from the  <a href="http://console.cloud.google.com/dataflow" target="_blank">GCP console from the Dataflow</a> section.</p>
+
+<h2 id="step-2-23"><strong>Step 2</strong></h2>
+
+<p>Delete the <input readonly="" class="copyable-inline-input" size="10" type="text" value="streamdemo"> topic from the  <a href="http://console.cloud.google.com/cloudpubsub" target="_blank">Pub/Sub section of GCP Console</a> </p>
+
+<h2 id="step-3-14"><strong>Step 3</strong></h2>
+
+<p>Delete the <input readonly="" class="copyable-inline-input" size="10" type="text" value="streamdemo"> table from the left-panel of  <a href="https://bigquery.cloud.google.com/" target="_blank">BigQuery console</a> </p>
+
+<p>©Google, Inc. or its affiliates. All rights reserved. Do not distribute.</p>
+
+<p><a href="https://docs.google.com/forms/d/11o8tVDrCnJm3v1eKMaIGNH4ODBY_bFpmCYqwm_g3Dm8/viewform" target="_blank">Provide Feedback on this Lab</a></p>
+
+</div>
+
+<div class="lab-content__outline js-lab-content-outline">
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-1-locate-the-username-password-and-project-id" class=""><strong>Step 1: Locate the Username, Password and Project Id</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-2-browse-to-console" class=""><strong>Step 2: Browse to Console</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-3-sign-in-to-console" class=""><strong>Step 3: Sign in to Console</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-4-accept-the-conditions" class=""><strong>Step 4: Accept the conditions</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-5-don-t-change-the-password" class=""><strong>Step 5: Don't change the password</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-6-agree-to-the-terms-of-service" class=""><strong>Step 6 Agree to the Terms of Service</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-7-console-opens"><strong>Step 7: Console opens</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-8-switch-project-if-necessary" class=""><strong>Step 8: Switch project (if necessary)</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#what-you-learn" class=""><strong>What you learn</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-1" class=""><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-2" class=""><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-3" class=""><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-4" class=""><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-1-2" class="is-active"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-3-2"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-4-2" class=""><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-5"><strong>Step 5</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-6"><strong>Step 6</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-1-3" class=""><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-2-2"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-3-3"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-1-4" class=""><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-2-3"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-1-5"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-2-4" class=""><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#what-you-learn-2"><strong>What you learn</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-1-6"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-2-5"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-3-4"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-4-3" class=""><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-5-2"><strong>Step 5</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-6-2"><strong>Step 6</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-7"><strong>Step 7</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-8"><strong>Step 8</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-9" class=""><strong>Step 9</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-10"><strong>Step 10</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-11" class=""><strong>Step 11</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-1-7"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-2-6"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-3-5"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-4-4" class=""><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-1-8"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-2-7"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-3-6"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-4-5"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-5-3"><strong>Step 5</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-6-3" class=""><strong>Step 6</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#what-you-learn-3" class=""><strong>What you learn</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-1-9"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-2-8" class=""><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-1-10" class=""><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-2-9"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-3-7" class=""><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-1-11" class=""><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-2-10" class=""><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#what-you-learn-4" class=""><strong>What you learn</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-1-12" class=""><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-2-11" class=""><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-1-13" class=""><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-2-12" class=""><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-1-14"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-2-13"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-1-15"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-2-14"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-3-8"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-4-6"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-5-4"><strong>Step 5</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-6-4" class=""><strong>Step 6</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#what-you-learn-5" class=""><strong>What you learn</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-1-16"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-2-15"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-1-17" class=""><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-2-16" class=""><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-1-18" class=""><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#what-you-learn-6" class=""><strong>What you learn</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-1-19" class=""><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-2-17" class=""><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-3-9" class=""><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-4-7"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-1-20"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-2-18"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-3-10"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-4-8"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-5-5"><strong>Step 5</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-6-5"><strong>Step 6</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-1-21"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-2-19"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-3-11"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#what-you-learn-7"><strong>What you learn</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-1-22"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-2-20"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-1-23"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-2-21"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-3-12"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-4-9"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-5-6"><strong>Step 5</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-6-6"><strong>Step 6</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-7-2"><strong>Step 7</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-1-24"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-2-22"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-3-13"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-4-10"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-1-25"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-1-26"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-2-23"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2772/materials#step-3-14"><strong>Step 3</strong></a>
+
+</div>
+
+</div>
+</div>
+
+<div class="lab-resource js-lab-resource-area">
+<div class="lab-resource__close js-lab-resource-area-close">
+×
+</div>
+<div class="js-lab-resource"></div>
+</div>
+<div class="lab-resource__background js-lab-resource-background">
+<iframe class="l-ie-iframe-fix" kwframeid="3" src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/saved_resource(1).html"></iframe>
+</div>
+
+</div>
+</div>
+<div class="lab-buttons">
+<a class="mdl-button mdl-js-button mdl-button--fab mdl-button--large-fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--8dp help-button" data-target="#lab-help-modal" data-toggle="modal" data-upgraded=",MaterialButton,MaterialRipple">
+<i class="material-icons">help</i>
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+</div>
+</div>
+<div class="modal fade" id="lab-help-modal">
+<div class="modal-container">
+<div class="mdl-shadow--24dp modal-content">
+<h4 class="modal-header">Get Help</h4>
+<form action="https://roitraining.qwiklab.com/contact_support" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="kGhyzsY4gEtseM6FHrMWe8lRNT3L7mnuaWle8PQUgO9AKgvfSCFiMjvCIV8/9pkfrUG8nZ4Rp90jvEkyz74DGw==">
+<div class="modal-body">
+<div class="control-group l-mbl">
+<label for="Question">Question</label>
+<input type="text" name="question" id="question" placeholder="Briefly describe your question">
+</div>
+<div class="control-group l-mbl">
+<label for="Details">Details</label>
+<textarea name="description" id="description" rows="5" placeholder="Fill in the details here. Please try to be as specific as possible.
+"></textarea>
+</div>
+<div class="control-group l-mbl">
+<label for="Your_Name">Your name</label>
+<input type="text" name="name" id="name" value="mia stein">
+</div>
+<div class="control-group l-mbl">
+<label for="Your_Email">Your email</label>
+<input type="text" name="email" id="email" value=">
+</div>
+<div class="control-group l-mbl">
+<label for="Severity">Severity</label>
+<select name="severity" id="severity"><option value="0">-</option>
+<option value="severity_1">Severity 1 (Highest)</option>
+<option value="severity_2">Severity 2</option>
+<option value="severity_3">Severity 3</option>
+<option value="severity_4">Severity 4</option>
+<option value="severity_5">Severity 5 (Lowest)</option></select>
+</div>
+<div class="control-group">
+<div class="control-label"></div>
+We will get back to you within 24 hours.
+</div>
+</div>
+<div class="modal-actions">
+<a class="mdl-button mdl-button--primary mdl-js-button mdl-js-ripple-effect" data-dismiss="modal" data-upgraded=",MaterialButton,MaterialRipple">
+Cancel
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+<input type="submit" name="commit" value="Submit" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary" data-upgraded=",MaterialButton,MaterialRipple"><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></input>
+</div>
+</form>
+
+
+
+</div>
+</div>
+<iframe class="l-ie-iframe-fix" kwframeid="4" src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/saved_resource(2).html"></iframe>
+</div>
+<div class="modal fade" id="lab-details-modal">
+<div class="modal-container">
+<div class="modal-content mdl-shadow--24dp">
+<a class="modal-close" data-dismiss="modal">×</a>
+<h4 class="modal-header">Serverless Data Analysis (Python)</h4>
+<div class="modal-body">
+<p class="l-mbm">
+In this lab series, you learn how to load data into BigQuery and run complex queries. Next, you will execute a Dataflow pipeline that can carry out Map and Reduce operations, use side inputs and stream into BigQuery
+</p>
+<p class="small-label l-mbs">
+<strong>
+Duration:
+</strong>
+0m setup
+·
+480m access
+·
+480m completion
+</p>
+<p class="small-label l-mbs">
+
+</p>
+<p class="small-label">
+<span><strong>Levels: <a href="https://roitraining.qwiklab.com/tags/advanced/level">advanced</a></strong></span>
+</p>
+</div>
+<div class="modal-actions">
+<a class="mdl-button mdl-button--primary mdl-js-button mdl-js-ripple-effect" data-dismiss="modal" data-upgraded=",MaterialButton,MaterialRipple">
+Got It
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+</div>
+
+</div>
+</div>
+<iframe class="l-ie-iframe-fix" kwframeid="5" src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/saved_resource(3).html"></iframe>
+</div>
+
+<div class="modal fade" id="lab-review-modal">
+<div class="modal-container">
+<div class="modal-content mdl-shadow--24dp">
+<a class="modal-close" data-dismiss="modal">×</a>
+<h4 class="modal-header">Rate Lab</h4>
+<form class="simple_form js-lab-review-form" id="new_lab_review" action="https://roitraining.qwiklab.com/lab_reviews" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><div class="modal-body">
+<p class="label">
+How satisfied are you with this lab?
+</p>
+<div class="rateit js-rateit" data-rateit-max="5" data-rateit-min="0" data-rateit-resetable="false" data-rateit-step="1" data-rateit-value="0"><div class="rateit-reset" style="display: none;"></div><div class="rateit-range" style="width: 80px; height: 16px;"><div class="rateit-selected" style="height: 16px; width: 0px;"></div><div class="rateit-hover" style="height:16px"></div></div></div>
+<div class="l-mtm">
+
+<div class="control-group hidden lab_review_user_id"><div class="controls"><input class="hidden" type="hidden" value="942" name="lab_review[user_id]" id="lab_review_user_id"></div></div>
+<div class="control-group hidden lab_review_classroom_id"><div class="controls"><input class="hidden" type="hidden" value="252" name="lab_review[classroom_id]" id="lab_review_classroom_id"></div></div>
+<div class="control-group hidden lab_review_lab_id"><div class="controls"><input class="hidden" type="hidden" value="50" name="lab_review[lab_id]" id="lab_review_lab_id"></div></div>
+<div class="control-group hidden lab_review_focus_id"><div class="controls"><input class="hidden" type="hidden" value="2772" name="lab_review[focus_id]" id="lab_review_focus_id"></div></div>
+<div class="control-group hidden lab_review_rating"><div class="controls"><input class="hidden js-rating-input" type="hidden" name="lab_review[rating]" id="lab_review_rating"></div></div>
+<div class="control-group text optional lab_review_comment"><label class="text optional control-label" for="lab_review_comment">Comment</label><div class="controls"><textarea class="text optional" name="lab_review[comment]" id="lab_review_comment"></textarea></div></div>
+</div>
+</div>
+<div class="modal-actions">
+<a class="mdl-button mdl-button--primary mdl-js-button mdl-js-ripple-effect" data-dismiss="modal" data-upgraded=",MaterialButton,MaterialRipple">
+Cancel
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+<input type="submit" name="commit" value="Submit" class="btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary" data-upgraded=",MaterialButton,MaterialRipple"><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></input>
+</div>
+</form>
+
+</div>
+</div>
+<iframe class="l-ie-iframe-fix" kwframeid="6" src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/saved_resource(4).html"></iframe>
+</div>
+
+<div class="modal fade" id="lab-access-modal">
+<div class="modal-container">
+<div class="modal-content mdl-shadow--24dp">
+<a class="modal-close" data-dismiss="modal">×</a>
+<h4 class="modal-header">Lab Access</h4>
+<form class="js-lab-access-form" action="https://roitraining.qwiklab.com/lab_onetime_coupons/activate" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓">
+<div class="modal-body">
+<div class="lab-access-modal">
+<input type="hidden" name="id" id="id" value="2772">
+<input type="hidden" name="classroom_id" id="classroom_id" value="252">
+<input type="hidden" name="user_id" id="user_id" value="942">
+<input type="hidden" name="launch_with_credits" id="launch_with_credits" value="0" class="js-launch-with-credits-input">
+<input type="hidden" name="launch_with_subs" id="launch_with_subs" value="0" class="js-launch-with-subscription-input">
+<div class="lab-access-modal__method">
+<p>
+Enter Lab Access Code:
+</p>
+<div class="lab-access-modal__code js-access-code">
+<input type="text" name="uuid_1" id="uuid_1" value="" maxlength="4" placeholder="1234">
+<input type="text" name="uuid_2" id="uuid_2" value="" maxlength="4" placeholder="1234">
+<input type="text" name="uuid_3" id="uuid_3" value="" maxlength="4" placeholder="1234">
+<input type="text" name="uuid_4" id="uuid_4" value="" maxlength="4" placeholder="1234">
+</div>
+<a class="button js-launch-with-access-code-button">
+Launch with Access Code
+</a>
+</div>
+</div>
+</div>
+</form>
+
+
+</div>
+</div>
+<iframe class="l-ie-iframe-fix" kwframeid="7" src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/saved_resource(5).html"></iframe>
+</div>
+
+
+
+</div>
+</main>
+<div class="bottom-menu">
+<a class="side-menu__item" href="https://roitraining.qwiklab.com/materials"><div class="side-menu__item__icon">
+<i class="material-icons">view_comfy</i>
+</div>
+<span class="side-menu__item__tooltip">Materials</span>
+<div class="side-menu__item__label">
+Materials
+</div>
+</a>
+<a class="side-menu__item" href="https://roitraining.qwiklab.com/dashboard"><div class="side-menu__item__icon">
+<i class="material-icons">history</i>
+</div>
+<span class="side-menu__item__tooltip">My Learning</span>
+<div class="side-menu__item__label">
+My Learning
+</div>
+</a>
+<a class="side-menu__item" href="https://roitraining.qwiklab.com/my_account/credits"><div class="side-menu__item__icon">
+<i class="material-icons">account_circle</i>
+</div>
+<span class="side-menu__item__tooltip">My Account</span>
+<div class="side-menu__item__label">
+My Account
+</div>
+</a>
+<a class="side-menu__item js-side-menu-button">
+<div class="side-menu__item__icon">
+<i class="material-icons">menu</i>
+</div>
+<span class="side-menu__item__tooltip">More</span>
+<div class="side-menu__item__label">
+More
+</div>
+</a>
+</div>
+
+</div>
+
+
+<div class="modal fade" id="support-modal">
+<div class="modal-container">
+<div class="modal-content mdl-shadow--24dp">
+<a class="modal-close" data-dismiss="modal">×</a>
+<h4 class="modal-header">How can we help you?</h4>
+<p class="l-mbl">
+We will get back to you within 24 hours.
+</p>
+<form action="https://roitraining.qwiklab.com/contact_support" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="kGhyzsY4gEtseM6FHrMWe8lRNT3L7mnuaWle8PQUgO9AKgvfSCFiMjvCIV8/9pkfrUG8nZ4Rp90jvEkyz74DGw==">
+<div class="form-row">
+<div class="control-group">
+<label for="Question">Question</label>
+<input type="text" name="question" id="question" placeholder="Briefly describe your question">
+</div>
+</div>
+<div class="form-row">
+<div class="control-group">
+<label for="Details">Details</label>
+<textarea name="description" id="description" rows="5" placeholder="Fill in the details here. Please try to be as specific as possible.
+"></textarea>
+</div>
+</div>
+<div class="form-row">
+<div class="control-group">
+<label for="Your_Name">Your name</label>
+<input type="text" name="name" id="name" value="mia stein">
+</div>
+<div class="control-group">
+<label for="Your_Email">Your email</label>
+<input type="text" name="email" id="email" value=">
+</div>
+</div>
+<div class="form-row">
+<div class="control-group">
+<input type="submit" name="commit" value="Submit" class="button">
+</div>
+</div>
+</form>
+
+
+</div>
+</div>
+<iframe class="l-ie-iframe-fix" kwframeid="8" src="./Serverless Data Analysis (Python) _ Qwiklabs + roitraining_files/saved_resource(6).html"></iframe>
+</div>
+
+
+<script>
+  $( function() {
+    ql.initMaterialInputs();
+    initChosen();
+    initSearch();
+    initTabs();
+    initTooltips();
+    initLabSidebar();
+  ql.labOutline.init("2772");
+  initLabContent( );
+  initLabResource();
+  initLabReviewModal();
+  initLabAccessModal();
+  initLabTranslations( {"are_you_sure":"All done? If you end this lab, you will lose all your work. You may not be able to restart the lab if there is a quota limit. Are you sure you want to end this lab?\n","in_progress":"*In Progress*","ending":"*Ending*","starting":"*Starting, please wait*","end_concurrent_labs":"Sorry, you can only run one lab at a time. To start this lab, please confirm that you want all of your existing labs to end.\n","copied":"Copied","no_resource":"Error retrieving resource.","no_support":"No Support :(","mac_press":"Press ⌘-C to copy","thanks_review":"Thanks for reviewing this lab.","windows_press":"Press Ctrl-C to copy","days":"days"} );
+  initLabRun();
+  ql.initHeader();
+  ql.sideMenu.init();
+  
+  });
+</script>
+
+
+</body></html>

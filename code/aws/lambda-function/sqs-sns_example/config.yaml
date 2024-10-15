@@ -1,0 +1,4 @@
+region: us-west-1
+function_name: ffmpeg-trimmer
+handler: service.handler
+description: Lambda function for creating camera clips by two NTP UTC timestamps.

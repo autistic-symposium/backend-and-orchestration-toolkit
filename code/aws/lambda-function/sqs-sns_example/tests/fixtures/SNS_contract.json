@@ -1,0 +1,19 @@
+
+{
+  "clipId": "11111111111",
+  "cameraId": "11111111111",
+  "startTimestampInMs": 1534305591000,
+  "endTimestampInMs": 1534305611000,
+  "status": "CLIP_AVAILABLE",
+  "bucket": "sl-cam-clip-archive-prod",
+  "clip": {
+    "url": "https://test.mp4",
+    "key": "/583499c4e411dc743a5d5296/11111111111.mp4"
+  },
+  "thumbnail": {
+    "url": "https://test_{size}.png",
+    "key": "/11111111111/1111111111_{size}.png",
+    "sizes": [300, 640, 1500, 3000]
+  }
+}
+

@@ -1,0 +1,10 @@
+[
+  {
+    "startDate":"2018-08-25T19:20:16.000Z",
+    "endDate":"2018-08-25T19:30:16.000Z",
+    "thumbLargeUrl":"https://test_full.jpg",
+    "recordingUrl":"https://test.mp4",
+    "thumbSmallUrl":"https://test_small.jpg",
+    "alias":"test"
+ }
+]

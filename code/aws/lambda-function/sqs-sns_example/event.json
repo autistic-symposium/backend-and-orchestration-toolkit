@@ -1,0 +1,20 @@
+{
+  "Records": [
+    {
+      "attributes": {
+        "ApproximateFirstReceiveTimestamp": "XXXXXXXXXXXXXXXXXXX",
+        "ApproximateReceiveCount": "1",
+        "SenderId": "XXXXXXXXXXXXXXXXXXX",
+        "SentTimestamp": "1543318636000"
+      },
+      "awsRegion": "us-west-1",
+      "body": "{'clipId': '5bc67ace8e9c352780437d2c','retryTimestamps': [],'cameraId': '582356e81ee905c72145623e','startTimestampInMs': '1543318156000','endTimestampInMs': '1543318636000'}",
+      "eventSource": "aws:sqs",
+      "eventSourceARN": "XXXXXXXXXXXXXXXXXXX",
+      "md5OfBody": "XXXXXXXXXXXXXXXXXXX",
+      "messageAttributes": {},
+      "messageId": "XXXXXXXXXXXXXXXXXXX",
+      "receiptHandle": "XXXXXXXXXXXXXXXXXXX"
+    }
+  ]
+}

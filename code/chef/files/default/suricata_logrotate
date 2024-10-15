@@ -1,0 +1,33 @@
+/var/log/suricata/*.log
+{
+    weekly
+    missingok
+    create
+    sharedscripts
+    postrotate
+            /bin/kill -HUP $(cat /var/run/suricata.pid)
+    endscript
+    delaycompress
+    copytruncate
+    compresscmd /usr/bin/pigz
+    compress
+    dateext
+    notifempty
+}
+
+/var/log/suricata/eve.json
+{
+    weekly
+    missingok
+    create
+    sharedscripts
+    postrotate
+            /bin/kill -HUP $(cat /var/run/suricata.pid)
+    endscript
+    rotate 32
+    delaycompress
+    compresscmd /usr/bin/pigz
+    compress
+    dateext
+    notifempty
+}
