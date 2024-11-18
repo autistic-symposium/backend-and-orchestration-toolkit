@@ -1,0 +1,14 @@
+attrs==19.1.0
+aws-cdk.aws-cloudwatch==1.10.0
+aws-cdk.aws-ec2==1.10.0
+aws-cdk.aws-iam==1.10.0
+aws-cdk.aws-ssm==1.10.0
+aws-cdk.core==1.10.0
+aws-cdk.cx-api==1.10.0
+aws-cdk.region-info==1.10.0
+cattrs==0.9.0
+jsii==0.17.1
+publication==0.0.3
+python-dateutil==2.8.0
+six==1.12.0
+typing-extensions==3.7.4

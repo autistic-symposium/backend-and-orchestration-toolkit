@@ -1,0 +1,11 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: Monitoring test lambda
+Resources:
+  MonitoringTest:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs8.10
+      Description: Monitoring test lambda
+      MemorySize: 256

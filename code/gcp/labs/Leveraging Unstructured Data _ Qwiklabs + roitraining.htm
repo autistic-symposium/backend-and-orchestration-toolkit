@@ -1,0 +1,1704 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://roitraining.qwiklab.com/focuses/2770/materials -->
+<html class="mdl-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/caff0d62ed"></script><script src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/nr-1044.min.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"caff0d62ed","applicationID":"25010137","transactionName":"IQ1XRUEOVV1dFxlRXAEXSlRATkpZVxJpWlIWB0tYUg1K","queueTime":0,"applicationTime":689,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="wNClU1SbTvSUkJHvMsVCRNcl7DQltDVAF2ZjJTqRIioAAlHhJ6HFXxrN4/TvCSBUSDUeeEM/d0SN4nuFSWx5+g==">
+<title>Leveraging Unstructured Data | Qwiklabs + roitraining</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0" name="viewport">
+<meta content="In this lab series, you create and manage Dataproc Clusters to run Spark and Pig jobs. Next, create iPython notebooks that integrate with BigQuery and storage and utilize Spark. Finally, you integrate the machine learning APIs into your data analysis" name="description">
+<meta content="Learn AWS, AWS Training, AWS Labs, Learn Amazon Web Services, Amazon Web Services Training, Amazon Web Services Labs" name="keywords">
+<meta content="Qwiklabs" name="author">
+<meta content="Leveraging Unstructured Data | Qwiklabs + roitraining" property="og:title">
+<meta content="website" property="og:type">
+<meta content="/favicon.png" property="og:image">
+<meta content="https://www.qwiklabs.com" property="og:url">
+<meta content="Qwiklabs" property="og:site_name">
+<meta content="In this lab series, you create and manage Dataproc Clusters to run Spark and Pig jobs. Next, create iPython notebooks that integrate with BigQuery and storage and utilize Spark. Finally, you integrate the machine learning APIs into your data analysis" property="og:description">
+<meta content="/qwiklabs_logo_900x887.png" property="og:logo" size="900x887">
+<meta content="/qwiklabs_logo_994x187.png" property="og:logo" size="994x187">
+<meta content="#3681E4" property="msapplication-TileColor">
+<meta content="/favicon-144.png" property="msapplication-TileImage">
+<link href="https://roitraining.qwiklab.com/favicon.ico" rel="shortcut icon">
+<link color="#3681E4" href="https://roitraining.qwiklab.com/favicon-svg.svg" rel="mask-icon">
+<link href="https://roitraining.qwiklab.com/favicon-180.png" rel="apple-touch-icon-precomposed">
+
+<!--[if lt IE 9]>
+<script src='http://html5shim.googlecode.com/svn/trunk/html5.js' type='text/javascript'></script>
+<![endif]-->
+<!--[endif]>  <![endif]-->
+<script>
+//<![CDATA[
+window.gon={};gon.current_user={"firstname":"","lastname":"mia stein","fullname":"mia stein","company":"etsy","email":","origin":"roitraining, direct","subscriptions":0,"id":"12ee659298eb15258fdeb4d43db52cb8","qlCreatedAt":"2017-11-28 14:06:23 UTC","optIn":false};gon.segment=null;gon.deployment="roitraining";
+//]]>
+</script>
+
+
+
+<link rel="stylesheet" media="all" href="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/application-6460790cbdd89c50da4755d15c7ef68fa373dd59daad1528c39815f8c2c4676d.css">
+<script src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/application-965286b1d75b8ed026adfefe5748f3ad70657330c97a79281c8bc1b35d341af9.js"></script>
+</head>
+<body class="focuses focuses-show_materials l-no-padding ilt-mode">
+<div class="header-container">
+<div class="header">
+<a class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect header__button header__button--nav header__side-menu-button js-side-menu-button" data-upgraded=",MaterialButton,MaterialRipple">
+<i class="material-icons">menu</i>
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+<div class="header__title">
+<a class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect header__button header__button--nav" href="https://roitraining.qwiklab.com/materials/252" data-upgraded=",MaterialButton,MaterialRipple"><i class="material-icons">arrow_back</i><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+
+<h1>
+Leveraging Unstructured Data
+</h1>
+</div>
+<div class="header__actions">
+<div class="header__menu header__menu--my-account">
+<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="header_menu" data-upgraded=",MaterialButton,MaterialRipple">
+<i class="material-icons"><img class="avatar " src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/a835b0e3b23a9e319e795e2bf1bccaa8.png" alt="A835b0e3b23a9e319e795e2bf1bccaa8"></i>
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+<div class="mdl-menu__container is-upgraded"><div class="mdl-menu__outline mdl-menu--bottom-right"></div><ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect mdl-js-ripple-effect--ignore-events" for="header_menu" data-upgraded=",MaterialMenu,MaterialRipple">
+<li class="mdl-menu__item header__menu__item mdl-js-ripple-effect" tabindex="-1" data-upgraded=",MaterialRipple"><a href="https://roitraining.qwiklab.com/my_account/profile">My Account</a><span class="mdl-menu__item-ripple-container"><span class="mdl-ripple"></span></span></li>
+<li class="mdl-menu__item header__menu__item mdl-js-ripple-effect" tabindex="-1" data-upgraded=",MaterialRipple"><a rel="nofollow" data-method="delete" href="https://roitraining.qwiklab.com/users/sign_out">Sign Out</a><span class="mdl-menu__item-ripple-container"><span class="mdl-ripple"></span></span></li>
+
+</ul></div>
+</div>
+
+</div>
+</div>
+</div>
+<div class="header__search-bar js-header-search-bar">
+<form action="https://roitraining.qwiklab.com/searches/lab" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="wNClU1SbTvSUkJHvMsVCRNcl7DQltDVAF2ZjJTqRIioAAlHhJ6HFXxrN4/TvCSBUSDUeeEM/d0SN4nuFSWx5+g==">
+<input type="text" name="keywords" id="keywords" value="" placeholder="Search for labs">
+</form>
+
+<a class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect header__button" data-upgraded=",MaterialButton,MaterialRipple">
+<i class="material-icons">close</i>
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+</div>
+
+<div class="l-flex">
+<div class="side-menu js-side-menu">
+<div class="side-menu__inner">
+<nav class="side-menu__nav">
+<a class="side-menu__item" href="https://roitraining.qwiklab.com/materials"><div class="side-menu__item__icon">
+<i class="material-icons">view_comfy</i>
+</div>
+<span class="side-menu__item__tooltip">Materials</span>
+<div class="side-menu__item__label">
+Materials
+</div>
+</a>
+<a class="side-menu__item" href="https://roitraining.qwiklab.com/dashboard"><div class="side-menu__item__icon">
+<i class="material-icons">history</i>
+</div>
+<span class="side-menu__item__tooltip">My Learning</span>
+<div class="side-menu__item__label">
+My Learning
+</div>
+</a>
+<hr>
+<a class="side-menu__item" href="https://roitraining.qwiklab.com/my_account/credits"><div class="side-menu__item__icon">
+<i class="material-icons">account_circle</i>
+</div>
+<span class="side-menu__item__tooltip">My Account</span>
+<div class="side-menu__item__label">
+My Account
+</div>
+</a>
+<a class="side-menu__item" href="https://qwiklab.zendesk.com/hc/en-us"><div class="side-menu__item__icon">
+<i class="material-icons">help</i>
+</div>
+<span class="side-menu__item__tooltip">Help</span>
+<div class="side-menu__item__label">
+Help
+</div>
+</a>
+</nav>
+<div class="side-menu__small-links">
+<a href="https://roitraining.qwiklab.com/privacy_policy">Privacy Policy</a>
+<br>
+<a href="https://roitraining.qwiklab.com/terms_of_service">Terms of Service</a>
+</div>
+</div>
+</div>
+<div class="side-menu__overlay js-side-menu-button"></div>
+
+<main>
+<div class="l-alert-wrapper alerts">
+<span class="hidden" id="flash-sibling-before"></span>
+
+</div>
+<div class="l-main-wrapper">
+
+
+
+<div class="l-lab-container js-lab_and_classroom_info" data-classroom-name="Data Engineering on Google Cloud Platform v1.1" data-deployment="roitraining" data-lab-name="Leveraging Unstructured Data" data-label="Leveraging Unstructured Data">
+<div class="l-lab-sidebar js-lab-sidebar-container">
+<div class="lab-sidebar js-lab-sidebar">
+<div class="lab-sidebar__header">
+<div class="lab-sidebar__header-row">
+<span class="small-label">
+480m access
+·
+480m completion
+</span>
+</div>
+<div class="lab-sidebar__header-row">
+<div class="rateit l-mrm" data-rateit-readonly="true" data-rateit-value="3.6429"><div class="rateit-reset" style="display: none;"></div><div class="rateit-range" style="width: 80px; height: 16px;"><div class="rateit-selected" style="height: 16px; width: 58.2864px;"></div><div class="rateit-hover" style="height:16px"></div></div></div>
+
+<a class="small-label l-mrm" data-target="#lab-review-modal" data-toggle="modal">
+Rate Lab
+</a>
+<a class="small-label" data-target="#lab-details-modal" data-toggle="modal">
+Lab Details
+</a>
+</div>
+
+</div>
+<div class="lab-sidebar__tabs">
+<div class="tab-contents tab-contents--lab-sidebar">
+<div class="tab-content is-active">
+<h5 class="l-mbs">
+Connection Details
+</h5>
+<div class="form-row js-form-row">
+<a class="button button--full-width button--secondary is-disabled js-connection-dns-link js-external-window" target="_blank">
+Open Google Console
+</a>
+</div>
+
+<div class="form-row js-form-row">
+<div class="control-group">
+<label class="label--console">
+Username 
+</label>
+<input class="input input--console js-connection-username-0" disabled="disabled" readonly="readonly" value="········">
+<button class="button button--copy button--copy-input js-copy-input-button" data-clipboard-target=".js-connection-username-0">
+<i class="fa fa-clipboard"></i>
+</button>
+<span style="opacity: 1; left: 274px; top: 18.5px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></div>
+</div>
+
+<div class="form-row js-form-row">
+<div class="control-group">
+<label class="label--console">
+Password
+</label>
+<input class="input input--console js-connection-password" disabled="disabled" readonly="readonly" value="·········">
+<button class="button button--copy button--copy-input js-copy-input-button" data-clipboard-target=".js-connection-password">
+<i class="fa fa-clipboard"></i>
+</button>
+<span style="opacity: 1; left: 274px; top: 18.5px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></div>
+</div>
+
+<div class="form-row js-form-row">
+<div class="control-group">
+<label class="label--console">
+GCP Project ID 
+</label>
+<input class="input input--console js-connection-project-0" disabled="disabled" readonly="readonly" value="········">
+<button class="button button--copy button--copy-input js-copy-input-button" data-clipboard-target=".js-connection-project-0">
+<i class="fa fa-clipboard"></i>
+</button>
+</div>
+</div>
+
+
+<div class="lab-sidebar__resource lab-sidebar__resource--additional-details l-mtl is-hidden js-cf-connection-output"></div>
+<div class="lab-sidebar__resource lab-sidebar__resource--additional-details l-mtl is-hidden js-additional-connection-info"></div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="lab-sidebar__slider js-sidebar-slider">
+<i class="fa fa-arrow-left"></i>
+<iframe class="l-ie-iframe-fix" kwframeid="1" src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/saved_resource.html"></iframe>
+</div>
+
+</div>
+<div class="l-lab-main">
+<div class="l-lab-main-header">
+<header class="lab-header js-lab-header has-shadow">
+<div class="lab-header__section lab-header__section--flex">
+<div class="lab-header__progress is-hidden js-progress">
+<div class="lab-header__progress__bar js-progress-bar"></div>
+</div>
+</div>
+<div class="lab-header__section lab-header__section--no-border">
+<span class="lab-header__progress-message is-hidden js-progress-message">
+<div class="lab-header__progress-message__indicator js-progress-message-indicator"></div>
+<span class="js-progress-message-incomplete">
+Lab Setting Up
+</span>
+<span class="js-progress-message-complete is-hidden">
+Lab Running
+</span>
+</span>
+</div>
+<div class="lab-header__section">
+<a class="button button--start button--lab js-start-lab-button" data-focus-id="2770" data-lab-access="None" data-lab-instance-id="">
+Start Lab
+</a>
+<a class="button button--wait button--lab js-waiting-lab-button is-hidden">
+<i class="fa fa-spinner fa-pulse"></i>
+</a>
+<a class="button button--end button--lab js-end-lab-button is-hidden">
+End Lab
+</a>
+</div>
+<div class="lab-header__section">
+<h3 class="text--sign js-timer" data-duration="28800">
+ 08:00:00
+</h3>
+</div>
+</header>
+
+</div>
+<div class="l-lab-main-body">
+<div class="lab-content js-lab-content">
+<div class="lab-content__markdown-wrapper">
+<div class="js-markdown-instructions lab-content__markdown markdown-lab-instructions" id="markdown-lab-instructions">
+
+<h1 id="leveraging-unstructured-data">LEVERAGING UNSTRUCTURED DATA</h1>
+
+<h1 id="getting-started-with-gcp-console">GETTING STARTED WITH GCP CONSOLE</h1>
+
+<p>When the lab is ready a green button will appear that looks like this:</p>
+
+<p><img src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/2fa0ccada9d929f0.png" alt="2fa0ccada9d929f0.png"></p>
+
+<p>When you are ready to begin, click <strong>Start Lab</strong>. </p>
+
+<h1 id="logging-in-to-google-cloud-platform">Logging in to Google Cloud Platform</h1>
+
+<h2 id="step-1-locate-the-username-password-and-project-id"><strong>Step 1: Locate the Username, Password and Project Id</strong></h2>
+
+<p>Press the green [Start] button to start the lab.  After setup is completed you will see something similar to this on the right side of the Qwiklabs window:</p>
+
+<p><img src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/eaa80bb0490b07d0.png" alt="eaa80bb0490b07d0.png"></p>
+
+<h2 id="step-2-browse-to-console"><strong>Step 2: Browse to Console</strong></h2>
+
+<p>Open an Incognito window in your browser. <br>
+And go to <strong><a href="http://console.cloud.google.com/" target="_blank">http://console.cloud.google.com</a></strong></p>
+
+<h2 id="step-3-sign-in-to-console"><strong>Step 3: Sign in to Console</strong></h2>
+
+<p>Log in with the Username and Password provided. The steps below are <em>suggestive</em>. The actual dialog and procedures may vary from this example.</p>
+
+<p><img src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/1c492727805af169.png" alt="1c492727805af169.png"></p>
+
+<h2 id="step-4-accept-the-conditions"><strong>Step 4: Accept the conditions</strong></h2>
+
+<p>Accept the new account terms and conditions.</p>
+
+<p><img src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/32331ec60c5f6609.png" alt="32331ec60c5f6609.png"></p>
+
+<p>This is a temporary account. You will only have access to the account for this one lab.</p>
+<ul><li>Do not add recovery options</li>
+<li>Do not sign up for free trials</li>
+</ul>
+<h2 id="step-5-don-t-change-the-password"><strong>Step 5: Don't change the password</strong></h2>
+
+<p>If prompted, don't change the password. Just click <strong>[Continue]</strong>.</p>
+
+<p><img src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/ef164317a73a66d7.png" alt="ef164317a73a66d7.png"></p>
+
+<h2 id="step-6-agree-to-the-terms-of-service"><strong>Step 6 Agree to the Terms of Service</strong></h2>
+
+<p>Select <strong>(x)</strong> Yes, <strong>(x) _<em>Yes and click _</em>[AGREE AND CONTINUE]</strong>.</p>
+
+<p><img src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/e0edec7592d289e1.png" alt="e0edec7592d289e1.png"></p>
+
+<h2 id="step-7-console-opens"><strong>Step 7: Console opens</strong></h2>
+
+<p>The Google Cloud Platform Console opens.</p>
+
+<p>You may see a bar occupying the top part of the Console inviting you to sign up for a free trial. You can click on the [<strong>DISMISS</strong>] button so that the entire Console screen is available.</p>
+
+<p><img src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/a1b4bfec239cc863.png" alt="a1b4bfec239cc863.png"></p>
+
+<h2 id="step-8-switch-project-if-necessary"><strong>Step 8: Switch project (if necessary)</strong></h2>
+
+<p>On the top blue horizontal bar, click on the drop down icon to select the correct project (if not already so). You can confirm the project id from your Qwiklabs window (shown in step 1 above).</p>
+
+<p><img src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/849103afbf5e9178.png" alt="849103afbf5e9178.png"></p>
+
+<p>Click on "view more projects" if necessary and select the correct project id.</p>
+
+<h1 id="part-1-creating-dataproc-clusters">PART 1: CREATING DATAPROC CLUSTERS</h1>
+
+<h1 id="overview">Overview</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>In this lab, you will create, customize and delete Dataproc clusters using the Web console and the command line interface (CLI).  You will also connect to the cluster using SSH, and run a couple simple jobs.  You will also access the cluster's Hadoop and HDFS services from the browser.</p>
+
+<h2 id="what-you-learn"><strong>What you learn</strong></h2>
+
+<p>In this lab, you:</p>
+<ul><li>Create a Dataproc cluster from the Web console</li>
+<li>SSH into the cluster and run PySpark jobs</li>
+<li>Add a firewall rule that allows access to your cluster from the browser</li>
+<li>Create, manage and delete Dataproc clusters from the CLI</li>
+</ul>
+<h1 id="introduction">Introduction</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>Dataproc is a managed service for creating clusters of computers that can be used to run Hadoop and Spark applications.  Dataproc clusters are pre-configured with software commonly used in Hadoop ecosystems like Python, Java, PySpark, Pig and Hive.  Dataproc clusters are also pre-configured with HDFS.    </p>
+
+<p>Dataproc clusters can easily be created in just a couple minutes and clusters can be easily configured to run jobs both big and small.  Because clusters can be created so quickly, they can also be deleted as soon and jobs are complete.  With Google's per-minute billing, this allows jobs to be run at a minimal cost.</p>
+
+<p>Dataproc requires no upfront payment.  You only pay for the resources used for the time the clusters are running.</p>
+
+<h1 id="before-you-begin">Before you begin</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>If you have not started the lab, go ahead and click the green "Start Lab" button. Once done, it will display credentials for this lab.  Repeat the steps in Lab 0 to log into the Cloud console with the credentials provided in this lab.</p>
+
+<p>Here is a quick reference: </p>
+
+<p>Open new incognito window → go to cloud console → login with provided credentials → follow the prompts → switch project if necessary</p>
+
+<h1 id="create-clusters-with-the-web-console">Create Clusters with the Web Console</h1>
+
+<p><em>Duration is 10 min</em></p>
+
+<p>You will first create a cluster using the Google Cloud Platform Web Console.</p>
+
+<h2 id="step-1"><strong>Step 1</strong></h2>
+
+<p>Open the  <a href="https://console.cloud.google.com/" target="_blank">Cloud Platform Console</a> and navigate to the project you are using for this course.</p>
+
+<div class="codelabs-infobox codelabs-infobox-special"><p><strong>Note</strong>: If a different project is selected, click the project name to the right of Google Cloud Platform in the title bar and choose the right one<strong>. </strong></p>
+</div>
+
+<h2 id="step-2"><strong>Step 2</strong></h2>
+
+<p>Click the menu on the left and select <strong>Compute Engine</strong>. This ensures that any necessary fraud checks are carried out and APIs are enabled.  It will reduce the wait times associated with later steps if you do this now.</p>
+
+<h2 id="step-3"><strong>Step 3</strong></h2>
+
+<p>Click the menu icon on the left corner of the Google Cloud Platform Web Console, scroll down to the <strong>Big Data</strong> section and select <strong>Dataproc</strong>.</p>
+
+<p>Note: If you get an "Enable API" popup, go ahead and click Enable.</p>
+
+<h2 id="step-4"><strong>Step 4</strong></h2>
+
+<p>Click the <strong>Create cluster</strong> button.  This opens the Create a cluster page. </p>
+
+<h2 id="step-5"><strong>Step 5</strong></h2>
+
+<p>You will create the smallest possible cluster.</p>
+<ul><li>Name your cluster <strong>my-first-cluster</strong>.</li>
+<li>Select the zone <strong>us-central1-a</strong>.</li>
+<li>In the <strong>Master node | Machine type</strong> drop-down select the first machine <strong>n1-standard1(1vCPU, 3.75GB memory)</strong>.</li>
+<li>Change the master node's primary disk size to 10 GB.</li>
+<li>In the <strong>Worker nodes | Machine type</strong> drop-down also select the first machine <strong>n1-standard1(1vCPU, 3.75GB memory)</strong>.<br></li>
+<li>Leave the number of worker nodes at the default of 2.</li>
+<li>Also change the worker node's primary disk size to 10 GB.</li>
+</ul>
+<h2 id="step-6"><strong>Step 6</strong></h2>
+
+<p>Click the <strong>Create</strong> button at the bottom on the page.  <em>It will take a couple minutes for the cluster to be ready.</em></p>
+
+<h1 id="accessing-the-cluster-master-with-ssh">Accessing the Cluster Master with SSH</h1>
+
+<p><em>Duration is 15 min</em></p>
+
+<p>You will SSH into the master node and and discover what is installed and run a simple job.</p>
+
+<h2 id="step-1-2"><strong>Step 1</strong></h2>
+
+<p>When you see a green check next to the cluster you just created click on the cluster name.  This opens the <strong>Cluster details</strong> page.</p>
+
+<p><img src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/8b7a99b7a9f13fec.png" alt="8b7a99b7a9f13fec.png"></p>
+
+<h2 id="step-2-2"><strong>Step 2</strong></h2>
+
+<p>Click the <strong>VM Instances</strong> tab to see a list of machines in your cluster.  Click on the master node (<strong>my-first-cluster-m</strong>), to see that machine's details.</p>
+
+<h2 id="step-3-2"><strong>Step 3</strong></h2>
+
+<p>Click the <strong>SSH</strong> button to connect to that machine.  This will open a new window or tab in your browser with a terminal window that is connected to your master node machine.</p>
+
+<p><img src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/3d2672578e8efc6e.png" alt="3d2672578e8efc6e.png"></p>
+
+<h2 id="step-4-2"><strong>Step 4</strong></h2>
+
+<p>Type the following command to see what version of Python is installed.</p>
+<pre class="highlight shell"><code>python --version
+</code><button class="button button--copy js-copy-button-0"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-5-2"><strong>Step 5</strong></h2>
+
+<p>Enter the following commands as well to see some of the programs that are pre-installed on the machine.</p>
+<pre class="highlight shell"><code>java -version
+
+scala -version
+
+pyspark --version
+
+pig --version
+
+hive --version
+</code><button class="button button--copy js-copy-button-1"><i class="fa fa-clipboard"></i></button></pre>
+<h1 id="accessing-the-cluster-master-with-the-browser">Accessing the Cluster Master with the Browser</h1>
+
+<p><em>Duration is 10 min</em></p>
+
+<h2 id="step-1-3"><strong>Step 1</strong></h2>
+
+<p>In the Google Cloud Platform Web Console, click the menu on the left and select <strong>VPC Network</strong> &gt; <strong>Firewall rules</strong> from the Networking  section.</p>
+
+<h2 id="step-2-3"><strong>Step 2</strong></h2>
+
+<p>You are going to allow access to your Dataproc cluster, but only to your machine.  To do this, you will need to know your IP Address.  Go to the following URL to find out what it is:</p>
+
+<p><a href="http://ip4.me/" target="_blank">http://ip4.me/</a></p>
+
+<h2 id="step-3-3"><strong>Step 3</strong></h2>
+
+<p>Click <strong>Firewall rules</strong> in the left-hand navigation pane. Click on the <strong>Create Firewall Rule</strong> button. Then, Enter the following:</p>
+<ul><li>Name the rule <strong><input readonly="" class="copyable-inline-input" size="29" type="text" value="default-allow-dataproc-access"></strong>.</li>
+<li>For <strong>Targets</strong>, select "All instances in the network"</li>
+<li>Select <strong>IP ranges</strong> from the <strong>Source filter</strong> dropdown.</li>
+<li>In the source IP ranges text box enter your ip address followed by /32.  So if your IP address is 1.2.3.4 then the text box would read 1.2.3.4/32.</li>
+<li>For <strong>Protocols and ports</strong>, select "Specified Protocols and ports", and enter the following in the text box:</li>
+</ul>
+<p><input readonly="" class="copyable-inline-input" size="26" type="text" value="tcp:8088;tcp:9870;tcp:8080"></p>
+
+<p><img src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/7e8f56804afdc372.png" alt="7e8f56804afdc372.png"></p>
+
+<p>Once you have confirmed your entries, click <strong>Create</strong>.</p>
+
+<div class="codelabs-infobox codelabs-infobox-special"><p><strong>Note</strong>: This firewall rule allows access to tcp port 8088 which is Hadoop, 9870 which is HDFS and 8080 which is Datalab.  We will install Datalab later in the course.</p>
+</div>
+
+<h2 id="step-4-3"><strong>Step 4</strong></h2>
+
+<p>In the Web Console go back to the <strong>Dataproc</strong> service.  Click on your cluster to open its details.  Then, click on <strong>VM Instances</strong>, then click on your master node to see its details. </p>
+
+<p>Scroll down and find your master node's external ip address, select it and copy it to your clipboard.  </p>
+
+<p>You could also find the master node's IP address from the Compute Engine service.   All the nodes in the Dataproc cluster are really Compute Engine virtual machines.  Go to the <strong>Products and Services</strong> menu and select <strong>Compute Engine</strong>.  Find your master node, it should be named <strong>my-first-cluster-m</strong>.  You can copy the external IP address from the machine's details.</p>
+
+<h2 id="step-5-3"><strong>Step 5</strong></h2>
+
+<p>Open a new tab in your browser and paste in the ip address of your master and then type :8088 to access Hadoop.  It should open a page that looks like the one below.</p>
+
+<p><img src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/d46461be5babfd8e.png" alt="d46461be5babfd8e.png"></p>
+
+<h2 id="step-6-2"><strong>Step 6</strong></h2>
+
+<p>Click on the various links on the left and explore the information.</p>
+
+<h2 id="step-7"><strong>Step 7</strong></h2>
+
+<p>Now, open another browser tab, paste in the master node's IP address, followed by the port <strong>9870</strong>.  This opens a site with information about your HDFS cluster similar to as shown below.  Explore this as well.</p>
+
+<p><img src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/4cf8b1cc09c73465.png" alt="4cf8b1cc09c73465.png"></p>
+
+<h2 id="step-7-2"><strong>Step 7</strong></h2>
+
+<p>Close the Hadoop and HDFS browser tabs.  Go back to the window with the console and close it as well.</p>
+
+<h2 id="step-8"><strong>Step 8</strong></h2>
+
+<p>In the Web Console, return to the <strong>Dataproc</strong> service home page.  Select the checkbox next to your cluster and click the <strong>Delete</strong> button.</p>
+
+<p><img src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/cbd1d76f1142c4c5.png" alt="cbd1d76f1142c4c5.png"></p>
+
+<h1 id="managing-clusters-with-the-cli">Managing Clusters with the CLI</h1>
+
+<p><em>Duration is 10 min</em></p>
+
+<p>You will now create a cluster using the command line interface (CLI).</p>
+
+<h2 id="step-1-4"><strong>Step 1</strong></h2>
+
+<p>In the Google Cloud Platform Web Console, use the menu to navigate to the <strong>Dataproc</strong> service.</p>
+
+<h2 id="step-2-4"><strong>Step 2</strong></h2>
+
+<p>Now, click on the <strong>Activate Google Cloud Shell</strong> icon on the right side of the toolbar.  This will open a Cloud Shell terminal window on the bottom of your browser.</p>
+
+<p><img src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/ec9e03355c83c22a.png" alt="ec9e03355c83c22a.png"></p>
+
+<h2 id="step-3-4"><strong>Step 3</strong></h2>
+
+<p>Paste the following command into cloud shell and hit Enter.  This command creates a Dataproc cluster named <strong>my-second-cluster</strong> in the <strong>us-central1-a</strong> zone.  It creates a master node with 1 CPU and a 50 GB disk and 2 worker nodes with the same resources.</p>
+<pre class="highlight shell"><code>gcloud dataproc clusters create my-second-cluster --zone us-central1-a <span class="se">\</span>
+        --master-machine-type n1-standard-1 --master-boot-disk-size 50 <span class="se">\</span>
+        --num-workers 2 --worker-machine-type n1-standard-1 <span class="se">\</span>
+        --worker-boot-disk-size 50 
+</code><button class="button button--copy js-copy-button-2"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-4-4"><strong>Step 4</strong></h2>
+
+<p>Notice, on the Dataproc home screen at the top of your browser that a cluster is being created (if you do not see it, click the <em>Refresh</em> link on your Clusters page).  When the green check appears, click on the cluster and explore its details.</p>
+<ul><li>What machine type is used for the master and worker nodes?</li>
+<li>How many workers nodes were created?</li>
+</ul>
+<h2 id="step-5-4"><strong>Step 5</strong></h2>
+
+<p>Paste the following command into cloud shell and hit Enter.  This command deletes the cluster you just created.  When prompted, confirm that you want to delete your cluster.</p>
+<pre class="highlight shell"><code>gcloud dataproc clusters delete my-second-cluster
+</code><button class="button button--copy js-copy-button-3"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-6-3"><strong>Step 6</strong></h2>
+
+<p>Wait for your cluster to go away in the Web console (you may need to click on <em>Clusters</em> on the menu on the left, and click <em>Refresh</em>).  Then click the <strong>Create cluster</strong> button.  Fill in the form with the following settings, but <strong>do not</strong> click the Create button.</p>
+<ul><li>Name the cluster <strong>my-third-cluster</strong>.</li>
+<li>Set the zone to one near you (<em>whichever one you wish</em>).</li>
+<li>Set master node machine type to the smallest machine available.</li>
+<li>Set the worker nodes machine type to the smallest machine available.</li>
+<li>Specify 2 worker nodes</li>
+</ul>
+<p>Below the Create and Cancel buttons, click the link which reads <strong>command line</strong>.  This pops up a window with a command that uses the settings you've specified.  Copy this command to the clipboard, close the window and then paste it into the Cloud Shell and run it.</p>
+
+<p>Click the <strong>Cancel</strong> button on the <em>Create a cluster</em> page.  Notice another cluster is being created.</p>
+
+<h2 id="step-7-3"><strong>Step 7</strong></h2>
+
+<p>When the cluster is done initializing, explore its details and make sure it was created as you expected.</p>
+
+<h2 id="step-8-2"><strong>Step 8</strong></h2>
+
+<p>Using the Web Console <strong>Products and Services</strong> menu, go to the <strong>Compute Engine</strong> service.  Notice the master and worker nodes are really Compute Engine virtual machines.</p>
+
+<h1 id="cleanup">Cleanup</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>There's no need to keep any clusters.</p>
+
+<h2 id="step-1-5"><strong>Step 1</strong></h2>
+
+<p>Navigate to the <strong>Dataproc</strong> service using the Web Console.  Delete any clusters that you created in this exercise.</p>
+
+<table>
+<tbody><tr><td colspan="1" rowspan="1"><p><img style="max-width: 72.00px" src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/3ac518b975e3eb26.png"></p>
+</td><td colspan="1" rowspan="1"><p><strong>Stop here if you are done. Wait for instructions from the Instructor before going into the next section</strong></p>
+</td></tr>
+</tbody></table>
+
+<h1 id="part-2-running-pig-and-spark-jobs">PART 2: RUNNING PIG AND SPARK JOBS</h1>
+
+<h1 id="overview-2">Overview</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>In this lab, you will run Pig and Spark programs on a Dataproc cluster.</p>
+
+<h2 id="what-you-learn-2"><strong>What you learn</strong></h2>
+
+<p>In this lab, you:</p>
+<ul><li>SSH into the cluster to run Pig and Spark job</li>
+<li>Create a Cloud Storage bucket to store job input files</li>
+<li>Work with HDFS</li>
+</ul>
+<h1 id="introduction-2">Introduction</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>Google Cloud Dataproc supports running jobs written in Apache Pig, Apache Hive, Apache Spark, and other tools commonly used in the Apache Hadoop ecosystem. </p>
+
+<p>For development purposes, you can SSH into the cluster master and execute jobs using the PySpark Read-Evaluate-Process-Loop (REPL) interpreter.</p>
+
+<p>Let's take a look at how this works.</p>
+
+<h1 id="creating-a-dataproc-cluster-and-storage-bucket">Creating a Dataproc Cluster and storage bucket</h1>
+
+<p><em>Duration is 5 min</em></p>
+
+<p>You will create a cluster and also create a storage bucket that will hold some files that you will use to submit jobs.</p>
+
+<h2 id="step-1-6"><strong>Step 1</strong></h2>
+
+<p>If you did not create a firewall rule called <input readonly="" class="copyable-inline-input" size="29" type="text" value="default-allow-dataproc-access"> in the previous section, please do so now. You will have to find your IP address using  <a href="http://ip4.me/" target="_blank">http://ip4.me/</a> and then go to the Networking section of the GCP console. Select <strong>VPC Network</strong> &gt; <strong>Firewall rules</strong>. Click on the <strong>Create Firewall Rule</strong> button. Then, Enter the following:</p>
+<ul><li>Name the rule <strong>default-allow-dataproc-access</strong>.</li>
+<li>For <strong>Targets</strong>, select "All instances in the network"</li>
+<li>Select <strong>IP ranges</strong> from the <strong>Source filter</strong> dropdown.</li>
+<li>In the source IP ranges text box enter your ip address followed by /32.  So if your IP address is 1.2.3.4 then the text box would read 1.2.3.4/32.</li>
+<li>For <strong>Protocols and ports</strong>, select "Specified Protocols and ports", and enter the following in the text box:</li>
+</ul>
+<p><input readonly="" class="copyable-inline-input" size="26" type="text" value="tcp:8088;tcp:9870;tcp:8080"></p>
+
+<p>If you created the firewall rule in the previous lab, but you are connecting from a different network IP address, modify the <input readonly="" class="copyable-inline-input" size="29" type="text" value="default-allow-dataproc-access"> firewall rule in the networking section to add your new IP address.</p>
+
+<h2 id="step-2-5"><strong>Step 2</strong></h2>
+
+<p>In <strong>Google Cloud Shell</strong>, enter the following command to create a cluster:</p>
+<pre class="highlight shell"><code>gcloud dataproc clusters create my-cluster --zone us-central1-a <span class="se">\</span>
+        --master-machine-type n1-standard-1 --master-boot-disk-size 50 <span class="se">\</span>
+        --num-workers 2 --worker-machine-type n1-standard-1 <span class="se">\</span>
+        --worker-boot-disk-size 50 --network<span class="o">=</span>default
+</code><button class="button button--copy js-copy-button-4"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-3-5"><strong>Step 3</strong></h2>
+
+<p>In __Google Cloud Shell, __enter the following command to create a Cloud Storage bucket with the same name as your project ID in the same region as your cluster.  <em>Both Cloud Storage buckets and Project ID's have to be unique, so unless you are very unlucky your project ID would not have been previously used for a bucket name.</em></p>
+<pre class="highlight shell"><code>gsutil mb -c regional -l us-central1 gs://<span class="nv">$DEVSHELL_PROJECT_ID</span>
+</code><button class="button button--copy js-copy-button-5"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-4-5"><strong>Step 4</strong></h2>
+
+<p>Use the menu in the Web Console to navigate to the <strong>Storage</strong> service.  Confirm that your bucket was  created.</p>
+
+<h1 id="copy-code-and-files-to-bucket">Copy code and files to bucket</h1>
+
+<h2 id="step-1-7"><strong>Step 1</strong></h2>
+
+<p>Open __Google Cloud Shell __and enter the commands below to copy some pre-created files into your bucket (make sure to plug in your bucket name). </p>
+<pre class="highlight shell"><code>git clone https://github.com/GoogleCloudPlatform/training-data-analyst
+<span class="nb">cd </span>training-data-analyst/courses/unstructured
+./replace_and_upload.sh &lt;YOUR-BUCKET-NAME&gt;
+</code><button class="button button--copy js-copy-button-6"><i class="fa fa-clipboard"></i></button></pre>
+<h1 id="developing-using-pyspark-repl">Developing using PySpark REPL</h1>
+
+<p><em>Duration is 15 min</em></p>
+
+<p>You will SSH into the master node and and run the Python Spark Read-Evaluate-Process-Loop (REPL) interpreter.</p>
+
+<h2 id="step-1-8"><strong>Step 1</strong></h2>
+
+<p>Navigate to your Dataproc cluster and click on the cluster name.  This opens the <strong>Cluster details</strong> page.</p>
+
+<p><img src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/8b7a99b7a9f13fec.png" alt="8b7a99b7a9f13fec.png"></p>
+
+<h2 id="step-2-6"><strong>Step 2</strong></h2>
+
+<p>Click the <strong>VM Instances</strong> tab to see a list of machines in your cluster.  Click on the master node (<strong>my-cluster-m</strong>), to see that machine's details.</p>
+
+<h2 id="step-3-6"><strong>Step 3</strong></h2>
+
+<p>Click the <strong>SSH</strong> button to connect to that machine.  This will open a new window or tab in your browser with a terminal window that is connected to your master node machine.</p>
+
+<p><img src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/3d2672578e8efc6e.png" alt="3d2672578e8efc6e.png"></p>
+
+<h2 id="step-4-6"><strong>Step 4</strong></h2>
+
+<p>Type <strong>pyspark</strong> at the command prompt to open the PySpark shell.</p>
+
+<h2 id="step-5-5"><strong>Step 5</strong></h2>
+
+<p>Enter the following code and then hit <strong>Enter</strong> to run a simple PySpark job.</p>
+<pre class="highlight shell"><code>data <span class="o">=</span> <span class="o">[</span>0, 1, 2, 3, 4, 5]  <span class="c"># range(6)</span>
+distData <span class="o">=</span> sc.parallelize<span class="o">(</span>data<span class="o">)</span>
+squares <span class="o">=</span> distData.map<span class="o">(</span>lambda x : x<span class="k">*</span>x<span class="o">)</span>
+res <span class="o">=</span> squares.reduce<span class="o">(</span>lambda a, b : a + b<span class="o">)</span>
+print res
+</code><button class="button button--copy js-copy-button-7"><i class="fa fa-clipboard"></i></button></pre>
+<p>What does this program do?</p>
+
+<h2 id="step-6-4"><strong>Step 6</strong></h2>
+
+<p>This step is <strong>optional</strong> -- please feel free to skip this step. Write a PySpark program to compute the square root of the sum of the first 1000 terms of this series starting at k=0:</p>
+<pre class="highlight shell"><code>8.0/<span class="o">((</span>2k+1<span class="o">)(</span>2k+1<span class="o">))</span>
+</code><button class="button button--copy js-copy-button-8"><i class="fa fa-clipboard"></i></button></pre>
+<p>i.e. compute:</p>
+
+<p><img src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/f7946c282c099cf4.png" alt="f7946c282c099cf4.png"></p>
+
+<p>What is the result?  (one potential solution is shown below)</p>
+<pre class="highlight shell"><code>import numpy as np
+data <span class="o">=</span> range<span class="o">(</span>1000<span class="o">)</span>
+distData <span class="o">=</span> sc.parallelize<span class="o">(</span>data<span class="o">)</span>
+terms <span class="o">=</span> distData.map<span class="o">(</span>lambda k : 8.0/<span class="o">((</span>2<span class="k">*</span>k+1<span class="o">)</span><span class="k">*</span><span class="o">(</span>2<span class="k">*</span>k+1<span class="o">)))</span>
+res <span class="o">=</span> np.sqrt<span class="o">(</span>terms.sum<span class="o">())</span>
+print res
+</code><button class="button button--copy js-copy-button-9"><i class="fa fa-clipboard"></i></button></pre>
+<p>It's your favorite irrational number!</p>
+
+<h2 id="step-7-4"><strong>Step 7</strong></h2>
+
+<p>Exit Spark by typing:</p>
+<pre class="highlight shell"><code>quit<span class="o">()</span>
+</code><button class="button button--copy js-copy-button-10"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-8-3"><strong>Step 8</strong></h2>
+
+<p>While you could develop and run PySpark programs using the REPL, a more common way to develop PySpark programs is to use a Python notebook, and a more common way to execute PySpark programs to submit a Python file.  You will do both of these in subsequent sections and labs.</p>
+
+<h1 id="pig-job-that-reads-from-hdfs">Pig Job that reads from HDFS</h1>
+
+<p><em>Duration is 15 min</em></p>
+
+<p>You will now execute a Pig job and view its results.   You will also use the HDFS cluster provided by Google Cloud Dataproc</p>
+
+<h2 id="step-1-9"><strong>Step 1</strong></h2>
+
+<p>If you don't have the SSH terminal to the cluster master still available, navigate to the <strong>Dataproc</strong> service in the Web console and click on the <strong>Clusters</strong> link.  Click on your cluster (<em>it should be named *__*my-cluster</em><strong>) to see its details, then click the __VM Instances</strong> tab, and then click on the master node to view its details.  Finally, click the <strong>SSH</strong> button to connect to the master.</p>
+
+<h2 id="step-2-7"><strong>Step 2</strong></h2>
+
+<p>Enter the following command to create a directory for this exercise and move into it:</p>
+<pre class="highlight shell"><code>mkdir lab2
+<span class="nb">cd </span>lab2
+</code><button class="button button--copy js-copy-button-11"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-3-7"><strong>Step 3</strong></h2>
+
+<p>Enter the following command to copy a data file and a pig script into the folder you just created. Make sure to plug in your actual bucket name.</p>
+<pre class="highlight shell"><code>gsutil -m cp gs://&lt;YOUR-BUCKET-NAME&gt;/unstructured/pet-details.<span class="k">*</span> .
+</code><button class="button button--copy js-copy-button-12"><i class="fa fa-clipboard"></i></button></pre>
+<p>Two files were copied from Cloud Storage to the cluster.  You can view them by entering the following commands.</p>
+<pre class="highlight shell"><code>cat pet-details.txt
+</code><button class="button button--copy js-copy-button-13"><i class="fa fa-clipboard"></i></button></pre>
+<p>This just shows a simple data file we will copy into HDFS and then transform using Pig.  Enter the following command to see the Pig script you will run, and take a minute to study it.</p>
+<pre class="highlight shell"><code>cat pet-details.pig
+</code><button class="button button--copy js-copy-button-14"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-4-7"><strong>Step 4</strong></h2>
+
+<p>Now let's copy the text file into HDFS.  Use the following code.</p>
+<pre class="highlight shell"><code>hadoop fs -mkdir /pet-details
+hadoop fs -put pet-details.txt /pet-details
+</code><button class="button button--copy js-copy-button-15"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-5-6"><strong>Step 5</strong></h2>
+
+<p>Go back to the Web console and the details of your master node.  Find the master node's external IP address and copy it to the clipboard.  Then, open a new tab in your browser, paste in the ip address and then add <strong>:9870</strong>.  This will  open the Hadoop management site.  From the <strong>Utilities</strong> menu on the right select <strong>Browse the file system</strong>.</p>
+
+<p>Verify that you have a folder called <strong>pet-details</strong> and inside it you should have a file called <strong>pet-details.txt</strong>.</p>
+
+<h2 id="step-6-5"><strong>Step 6</strong></h2>
+
+<p>In your SSH window, run the following command to run Pig:</p>
+<pre class="highlight shell"><code>pig &lt; pet-details.pig
+</code><button class="button button--copy js-copy-button-16"><i class="fa fa-clipboard"></i></button></pre>
+<p>Click <strong>Submit</strong> to start the job.  It will take about a minute to run.  Wait until it completes.</p>
+
+<h2 id="step-7-5"><strong>Step 7</strong></h2>
+
+<p>Go back to the tab with the Hadoop management site and again browse the file system.  The output from this Pig job should be in a folder called <strong>GroupedByType</strong>.  If you look in that folder you should see a file named <strong>part-r-00000</strong>.</p>
+
+<h2 id="step-8-4"><strong>Step 8</strong></h2>
+
+<p>Let's look at the output file.  </p>
+
+<p>First you have to get the file off the HDFS file system.  Go back to your SSH session where you are connected to the master node.  You should currently be in the folder <strong>lab2</strong>.  Make a directory below it and move into by entering the following commands.</p>
+<pre class="highlight shell"><code>mkdir ~/lab2/output
+<span class="nb">cd</span> ~/lab2/output
+</code><button class="button button--copy js-copy-button-17"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-9"><strong>Step 9</strong></h2>
+
+<p>Enter the following command to get the output file from HDFS and copy it into this folder.</p>
+<pre class="highlight shell"><code>hadoop fs -get /GroupedByType/part<span class="k">*</span> .
+</code><button class="button button--copy js-copy-button-18"><i class="fa fa-clipboard"></i></button></pre>
+<p>Finally, enter the following command to view the results.  </p>
+<pre class="highlight shell"><code>cat <span class="k">*</span>
+</code><button class="button button--copy js-copy-button-19"><i class="fa fa-clipboard"></i></button></pre>
+<p>Compare the original data file, the Pig script and the final output.  Try to figure out why the output is the way it is.</p>
+
+<h1 id="cleanup-2">Cleanup</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>There's no need to keep any clusters.</p>
+
+<h2 id="step-1-10"><strong>Step 1</strong></h2>
+
+<p>Close the hadoop tab as well as the SSH window.</p>
+
+<h2 id="step-2-8"><strong>Step 2</strong></h2>
+
+<p>Navigate to the <strong>Dataproc</strong> service using the Web Console.  Delete any clusters that you created in this exercise.</p>
+
+<table>
+<tbody><tr><td colspan="1" rowspan="1"><p><img style="max-width: 72.00px" src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/3ac518b975e3eb26.png"></p>
+</td><td colspan="1" rowspan="1"><p><strong>Stop here if you are done. Wait for instructions from the Instructor before going into the next section</strong></p>
+</td></tr>
+</tbody></table>
+
+<h1 id="part-3-submitting-dataproc-jobs">PART 3: SUBMITTING DATAPROC JOBS</h1>
+
+<h1 id="overview-3">Overview</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>In this lab, you will create a Dataproc cluster.  You will then submit some jobs to the cluster using the Web Console and the CLI.  You will also monitor job progress, view job details and view the results of jobs.</p>
+
+<h2 id="what-you-learn-3"><strong>What you learn</strong></h2>
+
+<p>In this lab, you:</p>
+<ul><li>Create a Cloud Storage bucket to store job input, output and application files</li>
+<li>Submit jobs using the Web Console</li>
+<li>Submit jobs using the CLI</li>
+<li>Monitor job progress and view results</li>
+</ul>
+<h1 id="introduction-3">Introduction</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>Jobs can be submitted easily using the Web console and you can easily view job status and results in the console as well.  </p>
+
+<p>You can also submit jobs programmatically using the CLI.  This would be likely in a real-world scenario where you were trying to automate big-data processing jobs.</p>
+
+<p>Let's take a look at how this works.</p>
+
+<h1 id="creating-a-dataproc-cluster">Creating a Dataproc Cluster</h1>
+
+<p><em>Duration is 5 min</em></p>
+
+<p>You will create a cluster and also create a storage bucket that will hold some files that you will use to submit jobs.</p>
+
+<h2 id="step-1-11"><strong>Step 1</strong></h2>
+
+<p>In <strong>Google Cloud Shell</strong>, enter the following command to create a cluster:</p>
+<pre class="highlight shell"><code>gcloud dataproc clusters create my-cluster --zone us-central1-a <span class="se">\</span>
+        --master-machine-type n1-standard-1 --master-boot-disk-size 50 <span class="se">\</span>
+        --num-workers 2 --worker-machine-type n1-standard-1 <span class="se">\</span>
+        --worker-boot-disk-size 50 --network<span class="o">=</span>default
+</code><button class="button button--copy js-copy-button-20"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-2-9"><strong>Step 2</strong></h2>
+
+<p>If you skipped the previous lab, open __Google Cloud Shell __and enter the commands below to create a bucket and copy some pre-created files into your bucket (make sure to plug in your bucket name). </p>
+<pre class="highlight shell"><code>gsutil mb -c regional -l us-central1 gs://<span class="nv">$DEVSHELL_PROJECT_ID</span>
+</code><button class="button button--copy js-copy-button-21"><i class="fa fa-clipboard"></i></button></pre><pre class="highlight shell"><code>git clone https://github.com/GoogleCloudPlatform/training-data-analyst
+<span class="nb">cd </span>training-data-analyst/courses/unstructured
+./replace_and_upload.sh &lt;YOUR-BUCKET-NAME&gt;
+</code><button class="button button--copy js-copy-button-22"><i class="fa fa-clipboard"></i></button></pre>
+<h1 id="submitting-pyspark-jobs">Submitting PySpark Jobs</h1>
+
+<p><em>Duration is 10 min</em></p>
+
+<p>In previous lab, you ran code after logging into the cluster. In the case of Pig, you copied data over to the cluster's HDFS before you ran it. In this section, you will submit a Spark job and view its results without copying anything (code or data) to the cluster.</p>
+
+<h2 id="step-1-12"><strong>Step 1</strong></h2>
+
+<p>In the  <a href="https://console.cloud.google.com/" target="_blank">Cloud Console</a>, navigate to Storage and click on your bucket.  It should have some files in the <strong>unstructured</strong> folder.  Click on the file, <em>lab2-input.txt</em> and view its contents.  This file contains a comma separated list of keys and values.</p>
+
+<p>Also view the contents of the file, <em>lab2.py</em>.  This is a PySpark job that organizes the input file by key and the total number for each type of pet.  Notice that both the code and data are on Cloud Storage.  We have not copied either of these to the cluster.</p>
+
+<h2 id="step-2-10"><strong>Step 2</strong></h2>
+
+<p>Navigate to the <strong>Dataproc</strong> service in the Web Console.</p>
+
+<h2 id="step-3-8"><strong>Step 3</strong></h2>
+
+<p>In the left-hand navigation pane select <strong>Jobs</strong>.  Then click the <strong>Submit job</strong> button.</p>
+
+<h2 id="step-4-8"><strong>Step 4</strong></h2>
+
+<p>At this point you should have one cluster called <strong>my-cluster</strong>.  Make sure it is selected in the Cluster dropdown. </p>
+
+<p>In the <strong>Job type</strong> dropdown, select <strong>PySpark</strong>.</p>
+
+<p>In the <strong>Main python file</strong> text box enter the path to the PySpark file <em>lab2.py</em> that is in your bucket.  It should be in the form shown below, but replace <your-bucket-name> with the name of your bucket .</your-bucket-name></p>
+
+<p><input readonly="" class="copyable-inline-input" size="44" type="text" value="gs://&lt;YOUR-BUCKET-NAME&gt;/unstructured/lab2.py"></p>
+
+<h2 id="step-5-7"><strong>Step 5</strong></h2>
+
+<p>No other options are required, so click <strong>Submit</strong> button at the bottom of the form.</p>
+
+<h2 id="step-6-6"><strong>Step 6</strong></h2>
+
+<p>Wait for the job to succeed and then click on the Job ID to see its details.  Take a look at the job output to see the results.</p>
+
+<h2 id="step-7-6"><strong>Step 7</strong></h2>
+
+<p>To run the job again click the <strong>Clone</strong> button and the top, then <strong>Submit</strong> the job a second time.</p>
+
+<h2 id="step-8-5"><strong>Step 8</strong></h2>
+
+<p>To run the job using the CLI, go back to the Google Cloud Shell and paste in the following command.  Don't forget to replace <your-bucket-name> with the name of your bucket.</your-bucket-name></p>
+<pre class="highlight shell"><code>gcloud dataproc <span class="nb">jobs </span>submit pyspark <span class="se">\</span>
+      --cluster my-cluster gs://&lt;YOUR-BUCKET-NAME&gt;/unstructured/lab2.py
+</code><button class="button button--copy js-copy-button-23"><i class="fa fa-clipboard"></i></button></pre>
+<h1 id="cleanup-3">Cleanup</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>There's no need to keep any clusters.</p>
+
+<h2 id="step-1-13"><strong>Step 1</strong></h2>
+
+<p>Navigate to the <strong>Dataproc</strong> service using the Web Console.  Delete any clusters that you created in this exercise.</p>
+
+<table>
+<tbody><tr><td colspan="1" rowspan="1"><p><img style="max-width: 72.00px" src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/3ac518b975e3eb26.png"></p>
+</td><td colspan="1" rowspan="1"><p><strong>Stop here if you are done. Wait for instructions from the Instructor before going into the next section</strong></p>
+</td></tr>
+</tbody></table>
+
+<h1 id="part-4-leveraging-google-cloud-platform-services">PART 4: LEVERAGING GOOGLE CLOUD PLATFORM SERVICES</h1>
+
+<h1 id="overview-4">Overview</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>In this lab, you will create a Dataproc cluster that includes Datalab and the Google Python Client API.  You will then create iPython notebooks that integrate with BigQuery and storage and utilize Spark.</p>
+
+<h2 id="what-you-learn-4"><strong>What you learn</strong></h2>
+
+<p>In this lab, you:</p>
+<ul><li>Create a Dataproc cluster with an Initialization Action that installs Google Cloud Datalab</li>
+<li>Run Jupyter Notebooks on the Dataproc cluster using Google Cloud Datalab</li>
+<li>Create Python and PySpark jobs that utilize Google Cloud Storage, BigQuery and Spark.</li>
+</ul>
+<h1 id="introduction-4">Introduction</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>Additional software can be added to Dataproc clusters, and clusters can be customized using initialization actions.  Initialization actions are simply executables that are run when the cluster is being created.</p>
+
+<p>You will use a pre-built initialization action to install Datalab and a custom one to install the Google Client Python API.</p>
+
+<p>Datalab allows you to write interactive Python and PySpark notebooks that are useful in data analysis.  You will create a couple of notebooks in this exercise that make use of our Dataproc cluster and also integrate with Google BigQuery and Google Cloud Storage.</p>
+
+<h1 id="creating-an-initialization-action">Creating an Initialization Action</h1>
+
+<p><em>Duration is 10 min</em></p>
+
+<p>You will create a custom initialization action to install a Python package.</p>
+
+<h2 id="step-1-14"><strong>Step 1</strong></h2>
+
+<p>Open the  <a href="https://console.cloud.google.com/" target="_blank">Cloud Platform Console</a> and navigate to your project.  </p>
+
+<h2 id="step-2-11"><strong>Step 2</strong></h2>
+
+<p>Open <strong>Cloud Shell,</strong>  git clone the course repository, and upload the custom initialization script to GCS.  Change the bucket name as necessary.</p>
+<pre class="highlight shell"><code>git clone https://github.com/GoogleCloudPlatform/training-data-analyst
+<span class="nb">cd </span>training-data-analyst/courses/unstructured/
+bash replace_and_upload.sh &lt;YOUR-BUCKET-NAME&gt;
+</code><button class="button button--copy js-copy-button-24"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-3-9"><strong>Step 3</strong></h2>
+
+<p>View the custom initialization script. Change the bucket name as necessary.</p>
+<pre class="highlight shell"><code>gsutil cat gs://&lt;YOUR-BUCKET-NAME&gt;/unstructured/init-script.sh
+</code><button class="button button--copy js-copy-button-25"><i class="fa fa-clipboard"></i></button></pre>
+<p>What does this initialization action do on all nodes? What does it do only on the master node?</p>
+
+<hr>
+
+<h1 id="creating-a-dataproc-cluster-with-an-initialization-action">Creating a Dataproc Cluster with an Initialization Action</h1>
+
+<p><em>Duration is 10 min</em></p>
+
+<p>You will create a cluster that will include two initialization actions: (1) a pre-built action from Google to install Datalab, and (2) a custom initialization action to install a Python package.</p>
+
+<h2 id="step-1-15"><strong>Step 1</strong></h2>
+
+<p>Use the <strong>Products and Services</strong> menu to navigate to the <strong>Dataproc</strong> service.  If you have any clusters currently running, you can delete them.</p>
+
+<h2 id="step-2-12"><strong>Step 2</strong></h2>
+
+<p>Click the <strong>Create cluster</strong> button and set the following parameters.</p>
+<ul><li>Name your cluster <strong>my-cluster</strong>.</li>
+<li>Select the zone <strong>us-central1-a</strong>.</li>
+<li>In the <strong>Master node | Machine type</strong> drop-down select the first machine <strong>n1-standard1(1vCPU, 3.75GB memory)</strong>.</li>
+<li>In the <strong>Worker nodes | Machine type</strong> drop-down also select the first machine <strong>n1-standard1(1vCPU, 3.75GB memory)</strong>.<br></li>
+<li>Leave the number of worker nodes at the default of 2.</li>
+</ul>
+<p>Click on the link shown below to expand more options.  </p>
+
+<p><img src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/94eced3341d083d2.png" alt="94eced3341d083d2.png"></p>
+
+<p>Copy and paste the following script URL into the <strong>Initialization actions</strong> text box and press <strong>Enter</strong>.  (<em>This script installs Google Cloud Datalab on your cluster's master node</em>.)</p>
+<pre class="highlight shell"><code>gs://dataproc-initialization-actions/datalab/datalab.sh
+</code><button class="button button--copy js-copy-button-26"><i class="fa fa-clipboard"></i></button></pre>
+<p>Copy and paste this second initialization action into the <strong>Initialization actions</strong> text box and press <strong>Enter</strong>.  Change the bucket name appropriately. (<em>This script installs the Google Python Client API on all the machines in the cluster and clones the course repository to the Master node, so that Datalab will have access to the notebooks that are in the repository.</em>)</p>
+<pre class="highlight shell"><code>gs://&lt;YOUR-BUCKET-NAME&gt;/unstructured/init-script.sh
+</code><button class="button button--copy js-copy-button-27"><i class="fa fa-clipboard"></i></button></pre>
+<p>Check the <strong>Project access</strong> box as shown below to allow your cluster to access other Google Cloud Platform services..</p>
+
+<p><img src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/1a1ca1c75bff15ad.png" alt="1a1ca1c75bff15ad.png"></p>
+
+<h2 id="step-3-10"><strong>Step 3</strong></h2>
+
+<p>To create the cluster, either click the <strong>Create</strong> button or click on the <strong>Command line</strong> link and copy the command onto your clipboard and then run it from Google Cloud Shell.</p>
+
+<h2 id="step-4-9"><strong>Step 4</strong></h2>
+
+<p>It will take a little longer for your cluster to be created this time, because the scripts have to run.  While you are waiting, browse to the following github site where you will find many other initialization actions that have been written for you.</p>
+
+<p><a href="https://github.com/GoogleCloudPlatform/dataproc-initialization-actions" target="_blank">https://github.com/GoogleCloudPlatform/dataproc-initialization-actions</a></p>
+
+<div class="codelabs-infobox codelabs-infobox-special"><p><strong>Note</strong>: Initialization actions are really just executables that run when a cluster is being creating.  They are used to install additional software or customize your cluster as required by your programs.  You can include one or more initialization actions when creating Dataproc clusters.</p>
+</div>
+
+<h2 id="step-5-8"><strong>Step 5</strong></h2>
+
+<p>If you did not create a firewall rule called <input readonly="" class="copyable-inline-input" size="29" type="text" value="default-allow-dataproc-access"> in the previous section, please do so now. You will have to find your IP address using  <a href="http://ip4.me/" target="_blank">http://ip4.me/</a> and then go to the Networking section of the GCP console. Select <strong>VPC Network</strong> &gt; <strong>Firewall rules</strong>. Click on the <strong>Create Firewall Rule</strong> button. Then, Enter the following:</p>
+<ul><li>Name the rule <strong>default-allow-dataproc-access</strong>.</li>
+<li>For <strong>Targets</strong>, select "All instances in the network"</li>
+<li>Select <strong>IP ranges</strong> from the <strong>Source filter</strong> dropdown.</li>
+<li>In the source IP ranges text box enter your ip address followed by /32.  So if your IP address is 1.2.3.4 then the text box would read 1.2.3.4/32.</li>
+<li>For <strong>Protocols and ports</strong>, select "Specified Protocols and ports", and enter the following in the text box:</li>
+</ul>
+<p><input readonly="" class="copyable-inline-input" size="26" type="text" value="tcp:8088;tcp:9870;tcp:8080"></p>
+
+<p>If you created the firewall rule in the previous lab, but you are connecting from a different network IP address, modify the <input readonly="" class="copyable-inline-input" size="29" type="text" value="default-allow-dataproc-access"> firewall rule in the networking section to add your new IP address.</p>
+
+<h2 id="step-6-7"><strong>Step 6</strong></h2>
+
+<p>When your cluster is finished initializing, click on its name to go to its details page, then click on the VM Instances tab, and finally click on the master node to view its details.</p>
+
+<p>Scroll down and find the master node's external IP address and copy it to your clipboard.  </p>
+
+<p>Open a new browser tab, paste in this IP address and then add <strong>:8080</strong> after the address.  This opens Datalab.  You will be redirected to the Datalab main screen as shown below:</p>
+
+<p><img src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/2fca668442685519.png" alt="2fca668442685519.png"></p>
+
+<div class="codelabs-infobox codelabs-infobox-warning"><p><strong>Important:</strong> The reason you can browse to this port is because earlier you created a firewall rule that opened port 8080 to your machine.  Be careful when opening this port.  You would not want to create a rule that allowed everyone access to Datalab.  If you did, then your cluster could be easily hacked.</p>
+</div>
+
+<h1 id="creating-a-simple-datalab-notebook">Creating a Simple Datalab Notebook</h1>
+
+<p><em>Duration is 5 min</em></p>
+
+<p>Let's just create a simple Python Notebook and make sure everything is working.</p>
+
+<h2 id="step-1-16"><strong>Step 1</strong></h2>
+
+<p>On the left side of the Datalab home page click the <strong>+ Notebook</strong> button.</p>
+
+<h2 id="step-2-13"><strong>Step 2</strong></h2>
+
+<p>In the first cell, just enter the following Python code. </p>
+<pre class="highlight shell"><code>temp <span class="o">=</span> 212.0
+
+def toCelsius<span class="o">(</span>fahrenheit<span class="o">)</span>:
+    <span class="k">return</span> <span class="o">(</span>fahrenheit - 32<span class="o">)</span> <span class="k">*</span> 5.0 / 9.0
+
+print toCelsius<span class="o">(</span>temp<span class="o">)</span>
+</code><button class="button button--copy js-copy-button-28"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-3-11"><strong>Step 3</strong></h2>
+
+<p>Click the <strong>Run</strong> button in the toolbar and examine the results.  It should look as shown below.  (<em>It might take a little while for the notebook to start</em>.)</p>
+
+<p><img src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/f34b5b10f532c60d.png" alt="f34b5b10f532c60d.png"></p>
+
+<h1 id="running-a-bigquery-query">Running a BigQuery Query</h1>
+
+<p><em>Duration is 10 min</em></p>
+
+<p>The Python package Pandas comes with support to run BigQuery queries.</p>
+
+<h2 id="step-1-17"><strong>Step 1</strong></h2>
+
+<p>In the second code block add the following code and click <strong>Run</strong>.  These import statements will allow you to run a BigQuery query.</p>
+<pre class="highlight shell"><code>import pandas as pd
+from pandas.io import gbq
+
+print <span class="s2">"Imports run."</span>
+</code><button class="button button--copy js-copy-button-29"><i class="fa fa-clipboard"></i></button></pre>
+<h2 id="step-2-14"><strong>Step 2</strong></h2>
+
+<p>In the next code block, add the following code changing the <strong>projectId</strong> variable to your project id.  </p>
+
+<p>(You can find your project id in the Google Cloud Platform Web Console.  Select Home from the Cloud Console menu.)</p>
+<pre class="highlight shell"><code>projectId <span class="o">=</span> <span class="s2">"YOUR-PROJECT-ID-HERE"</span> <span class="c"># CHANGE</span>
+sql <span class="o">=</span> <span class="s2">"""
+SELECT
+  year,
+  AVG(weight_pounds) AS avg_weight
+FROM
+  publicdata.samples.natality
+GROUP BY
+  year
+ORDER BY
+  year ASC
+"""</span>
+
+print <span class="s1">'Running query...'</span>
+data <span class="o">=</span> gbq.read_gbq<span class="o">(</span>sql, <span class="nv">project_id</span><span class="o">=</span>projectId<span class="o">)</span>
+
+data[:5]
+</code><button class="button button--copy js-copy-button-30"><i class="fa fa-clipboard"></i></button></pre>
+<p>Click the <strong>Run</strong> button.  The BigQuery query is run and the results put into a Pandas DataFrame.  The last line just outputs the first 5 records.  The results are shown below </p>
+
+<p><img src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/5fc020bee71d39f7.png" alt="5fc020bee71d39f7.png"></p>
+
+<h2 id="step-3-12"><strong>Step 3</strong></h2>
+
+<p>In the next code block, add the following code to plot a graph using Pandas</p>
+<pre class="highlight shell"><code>data.plot<span class="o">(</span><span class="nv">x</span><span class="o">=</span><span class="s1">'year'</span>, <span class="nv">y</span><span class="o">=</span><span class="s1">'avg_weight'</span><span class="o">)</span>;
+</code><button class="button button--copy js-copy-button-31"><i class="fa fa-clipboard"></i></button></pre>
+<p>You should get a graph that looks like this:</p>
+
+<p><img src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/77fb532d406a0b90.png" alt="77fb532d406a0b90.png"></p>
+
+<h2 id="step-4-10"><strong>Step 4</strong></h2>
+
+<p>In the Datalab menu bar, select <strong>Notebook | Rename</strong>.  Name the notebook <strong>BigQuery-Test</strong> and then click OK.  You can then close that tab and return to the Datalab Home page.</p>
+
+<h2 id="step-5-9"><strong>Step 5</strong></h2>
+
+<p>Back at the Datalab home page in the upper right corner of the toolbar are 4 icons.  Hover over the second one (<em>the one that looks like a stack of progress bars</em>) and the resulting tooltip should read <strong>Running Sessions</strong>.  Click on that icon.  </p>
+
+<p><img src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/cb862110c67c1877.png" alt="cb862110c67c1877.png"></p>
+
+<p>On the resulting page you should see one active notebook, the BigQuery-Test notebook you just created.   </p>
+
+<p>Click the <strong>Shutdown</strong> button on the right side and then close this tab.</p>
+
+<h1 id="using-pyspark-in-a-datalab-notebook">Using PySpark in a Datalab Notebook</h1>
+
+<p><em>Duration is 10 min</em></p>
+
+<p>The last notebook didn't run anything in parallel on your Dataproc cluster.  This time, let's get a notebook from the GitHub repository and execute it. This notebook uses PySpark and makes use of your Spark cluster.</p>
+
+<h2 id="step-1-18"><strong>Step 1</strong></h2>
+
+<p>Back at the Datalab home page in the upper right corner of the toolbar are 4 icons.  Hover over the first one (<em>the one that looks like a fork in the road</em>) and the resulting tooltip should read <strong>Open ungit</strong>.  Click on that icon.  </p>
+
+<p><img src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/cb862110c67c1877.png" alt="cb862110c67c1877.png"></p>
+
+<h2 id="step-2-15"><strong>Step 2</strong></h2>
+
+<p>Fill out the form to clone the github repository corresponding to the course:</p>
+<pre class="highlight shell"><code>https://github.com/GoogleCloudPlatform/training-data-analyst
+</code><button class="button button--copy js-copy-button-32"><i class="fa fa-clipboard"></i></button></pre>
+<p><img src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/e6314216113096f8.png" alt="e6314216113096f8.png"></p>
+
+<p>Then click on <strong>Clone repository</strong></p>
+
+<h2 id="step-3-13"><strong>Step 3</strong></h2>
+
+<p>Back on the Datalab home page click the <strong>Home</strong> icon and navigate to datalab/notebooks/training-data-analyst/courses/unstructured.  Click on <strong>PySpark-Test-Solution.ipynb</strong> to open that notebook.</p>
+
+<h2 id="step-4-11"><strong>Step 4</strong></h2>
+
+<p>In the notebook, Click on <strong>Clear | All Cells</strong>.  Now, execute each cell in turn, making sure to change any occurrences of <strong>BUCKET_NAME</strong> to be the name of your bucket.</p>
+
+<h2 id="step-5-10"><strong>Step 5</strong></h2>
+
+<p>You will want to stop this notebook as you did the previous one.  Click the <strong>Running Sessions</strong> link on the right side of the toolbar.  Then, click the <strong>Shutdown</strong> button to the left of the PySpark-Test-Solution notebook.</p>
+
+<p>Close this tab and return to the Datalab home page.</p>
+
+<table>
+<tbody><tr><td colspan="1" rowspan="1"><p><img style="max-width: 72.00px" src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/3ac518b975e3eb26.png"></p>
+</td><td colspan="1" rowspan="1"><p><strong>Stop here if you are done. Wait for instructions from the Instructor before going into the next section</strong></p>
+</td></tr>
+</tbody></table>
+
+<h1 id="part-5-adding-machine-learning-to-big-data-analysis">PART 5: ADDING MACHINE LEARNING TO BIG DATA ANALYSIS</h1>
+
+<h1 id="overview-5">Overview</h1>
+
+<p><em>Duration is 2 min</em></p>
+
+<p>In this lab, you integrate the machine learning APIs into your data analysis.  You will write the code to use the Speech, Vision, Translate and Natural Language APIs.  You will see how to execute these APIs on your Spark clusters.  You will also integrate these services with BigQuery and Storage.</p>
+
+<h2 id="what-you-learn-5"><strong>What you learn</strong></h2>
+
+<p>In this lab, you: ...</p>
+<ul><li>Enable the Google Cloud Platform machine learning APIs</li>
+<li>Find specific text in a corpus of scanned documents</li>
+<li>Translate a book from English to Spanish using the Translate API</li>
+<li>Perform sentiment analysis on text resulting from a BigQuery query</li>
+</ul>
+<h1 id="introduction-5">Introduction</h1>
+
+<p><em>Duration is 5 min</em></p>
+
+<p>Google's machine learning APIs add amazing new capabilities to big data processing.  Using these APIs you can have the computer analyze images, transcribe audio, translate text into other languages and many other things.</p>
+
+<p>Google Cloud Dataproc enables you to build clusters of many computers that enable you to perform these operations quickly, efficiently and at reasonable cost.</p>
+
+<p>In this lab, you will create a Datalab notebook that demonstrates running the machine learning APIs on Dataproc clusters using Spark.</p>
+
+<h1 id="opening-datalab-notebook">Opening Datalab Notebook</h1>
+
+<p><em>Duration is 5 min</em></p>
+
+<p>In order to complete this lab you have to have done the previous lab.</p>
+
+<h2 id="step-1-19"><strong>Step 1</strong></h2>
+
+<p>In your browser, navigate to Datalab by pasting the ip address of the cluster master node and then follow it with <strong>:8080</strong>.  On the Datalab home page click the <strong>Home</strong> icon and navigate to <input readonly="" class="copyable-inline-input" size="60" type="text" value="datalab/notebooks/training-data-analyst/courses/unstructured">.  Click on <strong>ML-Tests-Solution.ipynb</strong> to open that notebook.</p>
+
+<h2 id="step-2-16"><strong>Step 2</strong></h2>
+
+<p>Click <strong>Clear | Clear All Cells</strong>.</p>
+
+<p>In the first code block, notice that you need an API key.  Let's get one.</p>
+<pre class="highlight shell"><code><span class="nv">APIKEY</span><span class="o">=</span><span class="s2">"ENTER API KEY HERE"</span>  <span class="c"># CHANGE</span>
+print APIKEY
+</code><button class="button button--copy js-copy-button-33"><i class="fa fa-clipboard"></i></button></pre>
+<h1 id="enabling-machine-learning-apis">Enabling Machine Learning APIs</h1>
+
+<p><em>Duration is 10 min</em></p>
+
+<h2 id="step-1-20"><strong>Step 1</strong></h2>
+
+<p>You have to generate an API key to use the machine learning APIs. In the <strong>Google Cloud Platform Web Console</strong>, from the Products and Services menu, choose <strong>APIs &amp; services</strong>.</p>
+
+<p>In the navigation pane on the left select <strong>Credentials</strong>.  Then, click the <strong>Create credentials</strong> button and select <strong>API key</strong>.  Copy the generated key to your clipboard and then click the <strong>Close</strong> button.</p>
+
+<h2 id="step-2-17"><strong>Step 2</strong></h2>
+
+<p>Go back to your Datalab notebook and paste the API key you just generated over the text <strong>ENTER API KEY HERE</strong>.  </p>
+
+<h2 id="step-3-14"><strong>Step 3</strong></h2>
+
+<p>Go back to the Web Console to the APIs &amp; services page.  Click on the <strong>Library</strong> link in the navigation pane.  In the Search box type <strong>Speech</strong>.  Then, click on the link to the <strong>Google Cloud Speech API</strong>.  Click the __Enable __button on the resulting screen (if not already enabled).</p>
+
+<h2 id="step-4-12"><strong>Step 4</strong></h2>
+
+<p>Go back to the Library page and type <strong>Translate</strong> in the search page.  As you did with the Speech API, enable the <strong>Translation API</strong> (if not already enabled).</p>
+
+<h2 id="step-5-11"><strong>Step 5</strong></h2>
+
+<p>Repeat this process enabling the <strong>Vision</strong> and <strong>Language</strong> APIs.</p>
+
+<h1 id="vision-transate-and-nlp-on-the-spark-cluster">Vision, Transate and NLP on the Spark cluster</h1>
+
+<p><em>Duration is 20 min</em></p>
+
+<h2 id="step-1-21"><strong>Step 1</strong></h2>
+
+<p>Go back to your Datalab notebook and plugin the appropriate PROJECT_ID and BUCKET names.  Then, read the narrative and execute each cell in turn.</p>
+
+<h1 id="testing-large-data-sets">Testing Large Data Sets</h1>
+
+<p><em>Duration is 5 min</em></p>
+
+<h2 id="step-1-22"><strong>Step 1</strong></h2>
+
+<p>Find the block of code that reads in Alice in Wonderland.  Change the filename to <strong>alice-in-wonderland-transformed.txt</strong>.  This will read the entire book.</p>
+
+<h2 id="step-2-18"><strong>Step 2</strong></h2>
+
+<p>In the BigQuery query, change the limit from 10 to 1000.</p>
+
+<h2 id="step-3-15"><strong>Step 3</strong></h2>
+
+<p>Click the drop-down next to the Run button and select <strong>Run all cells</strong>.</p>
+
+<h2 id="step-4-13"><strong>Step 4</strong></h2>
+
+<p>It will take a little while to run.  Examine the results and the code.  Experiment with the code if you like.</p>
+
+<h2 id="step-5-12"><strong>Step 5</strong></h2>
+
+<p>Click on the <strong>Notebook</strong> menu and select <strong>Save and Checkpoint</strong>.  Then you can close the tab with this notebook.</p>
+
+<h1 id="cleaning-up">Cleaning Up</h1>
+
+<p><em>Duration is 5 min</em></p>
+
+<h2 id="step-1-23"><strong>Step 1</strong></h2>
+
+<p>If you would like to, you can download the iPython notebooks you created for later reference.  (The starting notebooks are already in GitHub -- this is only if you wish to save your changes.) Open each notebook and from the <strong>Notebook</strong> menu select <strong>Download</strong>.</p>
+
+<h2 id="step-2-19"><strong>Step 2</strong></h2>
+
+<p>Close all the Datalab tabs and return to the Google Cloud Platform Web Console.  Use the <strong>Products and Services</strong> menu to return to the <strong>Dataproc</strong> service.</p>
+
+<p>Delete any clusters you have created.</p>
+
+<p><a href="https://docs.google.com/forms/d/11o8tVDrCnJm3v1eKMaIGNH4ODBY_bFpmCYqwm_g3Dm8/viewform" target="_blank">Provide Feedback on this Lab</a></p>
+
+</div>
+
+<div class="lab-content__outline js-lab-content-outline">
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-1-locate-the-username-password-and-project-id"><strong>Step 1: Locate the Username, Password and Project Id</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-2-browse-to-console"><strong>Step 2: Browse to Console</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-3-sign-in-to-console"><strong>Step 3: Sign in to Console</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-4-accept-the-conditions"><strong>Step 4: Accept the conditions</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-5-don-t-change-the-password"><strong>Step 5: Don't change the password</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-6-agree-to-the-terms-of-service"><strong>Step 6 Agree to the Terms of Service</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-7-console-opens"><strong>Step 7: Console opens</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-8-switch-project-if-necessary"><strong>Step 8: Switch project (if necessary)</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#what-you-learn"><strong>What you learn</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-1"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-2"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-3"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-4"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-5"><strong>Step 5</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-6"><strong>Step 6</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-1-2"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-2-2"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-3-2"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-4-2"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-5-2"><strong>Step 5</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-1-3"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-2-3"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-3-3"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-4-3"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-5-3"><strong>Step 5</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-6-2"><strong>Step 6</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-7"><strong>Step 7</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-7-2"><strong>Step 7</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-8"><strong>Step 8</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-1-4"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-2-4"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-3-4"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-4-4"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-5-4"><strong>Step 5</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-6-3"><strong>Step 6</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-7-3"><strong>Step 7</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-8-2"><strong>Step 8</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-1-5"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#what-you-learn-2"><strong>What you learn</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-1-6"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-2-5"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-3-5"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-4-5"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-1-7"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-1-8"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-2-6"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-3-6"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-4-6"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-5-5"><strong>Step 5</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-6-4"><strong>Step 6</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-7-4"><strong>Step 7</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-8-3"><strong>Step 8</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-1-9"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-2-7"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-3-7"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-4-7"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-5-6"><strong>Step 5</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-6-5"><strong>Step 6</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-7-5"><strong>Step 7</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-8-4"><strong>Step 8</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-9"><strong>Step 9</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-1-10"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-2-8"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#what-you-learn-3"><strong>What you learn</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-1-11"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-2-9"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-1-12"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-2-10"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-3-8"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-4-8"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-5-7"><strong>Step 5</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-6-6"><strong>Step 6</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-7-6"><strong>Step 7</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-8-5"><strong>Step 8</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-1-13"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#what-you-learn-4"><strong>What you learn</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-1-14"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-2-11"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-3-9"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-1-15"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-2-12"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-3-10"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-4-9"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-5-8"><strong>Step 5</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-6-7"><strong>Step 6</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-1-16"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-2-13"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-3-11"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-1-17"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-2-14"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-3-12"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-4-10"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-5-9"><strong>Step 5</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-1-18"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-2-15"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-3-13"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-4-11"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-5-10"><strong>Step 5</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#what-you-learn-5"><strong>What you learn</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-1-19"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-2-16"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-1-20"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-2-17"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-3-14"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-4-12"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-5-11"><strong>Step 5</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-1-21"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-1-22"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-2-18"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-3-15"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-4-13"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-5-12" class="is-active"><strong>Step 5</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-1-23"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2770/materials#step-2-19"><strong>Step 2</strong></a>
+
+</div>
+
+</div>
+</div>
+
+<div class="lab-resource js-lab-resource-area">
+<div class="lab-resource__close js-lab-resource-area-close">
+×
+</div>
+<div class="js-lab-resource"></div>
+</div>
+<div class="lab-resource__background js-lab-resource-background">
+<iframe class="l-ie-iframe-fix" kwframeid="2" src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/saved_resource(1).html"></iframe>
+</div>
+
+</div>
+</div>
+<div class="lab-buttons">
+<a class="mdl-button mdl-js-button mdl-button--fab mdl-button--large-fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--8dp help-button" data-target="#lab-help-modal" data-toggle="modal" data-upgraded=",MaterialButton,MaterialRipple">
+<i class="material-icons">help</i>
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+</div>
+</div>
+<div class="modal fade" id="lab-help-modal">
+<div class="modal-container">
+<div class="mdl-shadow--24dp modal-content">
+<h4 class="modal-header">Get Help</h4>
+<form action="https://roitraining.qwiklab.com/contact_support" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="wNClU1SbTvSUkJHvMsVCRNcl7DQltDVAF2ZjJTqRIioAAlHhJ6HFXxrN4/TvCSBUSDUeeEM/d0SN4nuFSWx5+g==">
+<div class="modal-body">
+<div class="control-group l-mbl">
+<label for="Question">Question</label>
+<input type="text" name="question" id="question" placeholder="Briefly describe your question">
+</div>
+<div class="control-group l-mbl">
+<label for="Details">Details</label>
+<textarea name="description" id="description" rows="5" placeholder="Fill in the details here. Please try to be as specific as possible.
+"></textarea>
+</div>
+<div class="control-group l-mbl">
+<label for="Your_Name">Your name</label>
+<input type="text" name="name" id="name" value="mia stein">
+</div>
+<div class="control-group l-mbl">
+<label for="Your_Email">Your email</label>
+<input type="text" name="email" id="email" value=">
+</div>
+<div class="control-group l-mbl">
+<label for="Severity">Severity</label>
+<select name="severity" id="severity"><option value="0">-</option>
+<option value="severity_1">Severity 1 (Highest)</option>
+<option value="severity_2">Severity 2</option>
+<option value="severity_3">Severity 3</option>
+<option value="severity_4">Severity 4</option>
+<option value="severity_5">Severity 5 (Lowest)</option></select>
+</div>
+<div class="control-group">
+<div class="control-label"></div>
+We will get back to you within 24 hours.
+</div>
+</div>
+<div class="modal-actions">
+<a class="mdl-button mdl-button--primary mdl-js-button mdl-js-ripple-effect" data-dismiss="modal" data-upgraded=",MaterialButton,MaterialRipple">
+Cancel
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+<input type="submit" name="commit" value="Submit" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary" data-upgraded=",MaterialButton,MaterialRipple"><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></input>
+</div>
+</form>
+
+
+
+</div>
+</div>
+<iframe class="l-ie-iframe-fix" kwframeid="3" src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/saved_resource(2).html"></iframe>
+</div>
+<div class="modal fade" id="lab-details-modal">
+<div class="modal-container">
+<div class="modal-content mdl-shadow--24dp">
+<a class="modal-close" data-dismiss="modal">×</a>
+<h4 class="modal-header">Leveraging Unstructured Data</h4>
+<div class="modal-body">
+<p class="l-mbm">
+In this lab series, you create and manage Dataproc Clusters to run Spark and Pig jobs. Next, create iPython notebooks that integrate with BigQuery and storage and utilize Spark. Finally, you integrate the machine learning APIs into your data analysis
+</p>
+<p class="small-label l-mbs">
+<strong>
+Duration:
+</strong>
+0m setup
+·
+480m access
+·
+480m completion
+</p>
+<p class="small-label l-mbs">
+
+</p>
+<p class="small-label">
+<span><strong>Levels: <a href="https://roitraining.qwiklab.com/tags/introductory/level">introductory</a></strong></span>
+</p>
+</div>
+<div class="modal-actions">
+<a class="mdl-button mdl-button--primary mdl-js-button mdl-js-ripple-effect" data-dismiss="modal" data-upgraded=",MaterialButton,MaterialRipple">
+Got It
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+</div>
+
+</div>
+</div>
+<iframe class="l-ie-iframe-fix" kwframeid="4" src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/saved_resource(3).html"></iframe>
+</div>
+
+<div class="modal fade" id="lab-review-modal">
+<div class="modal-container">
+<div class="modal-content mdl-shadow--24dp">
+<a class="modal-close" data-dismiss="modal">×</a>
+<h4 class="modal-header">Rate Lab</h4>
+<form class="simple_form js-lab-review-form" id="new_lab_review" action="https://roitraining.qwiklab.com/lab_reviews" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><div class="modal-body">
+<p class="label">
+How satisfied are you with this lab?
+</p>
+<div class="rateit js-rateit" data-rateit-max="5" data-rateit-min="0" data-rateit-resetable="false" data-rateit-step="1" data-rateit-value="0"><div class="rateit-reset" style="display: none;"></div><div class="rateit-range" style="width: 80px; height: 16px;"><div class="rateit-selected" style="height: 16px; width: 0px;"></div><div class="rateit-hover" style="height:16px"></div></div></div>
+<div class="l-mtm">
+
+<div class="control-group hidden lab_review_user_id"><div class="controls"><input class="hidden" type="hidden" value="942" name="lab_review[user_id]" id="lab_review_user_id"></div></div>
+<div class="control-group hidden lab_review_classroom_id"><div class="controls"><input class="hidden" type="hidden" value="252" name="lab_review[classroom_id]" id="lab_review_classroom_id"></div></div>
+<div class="control-group hidden lab_review_lab_id"><div class="controls"><input class="hidden" type="hidden" value="48" name="lab_review[lab_id]" id="lab_review_lab_id"></div></div>
+<div class="control-group hidden lab_review_focus_id"><div class="controls"><input class="hidden" type="hidden" value="2770" name="lab_review[focus_id]" id="lab_review_focus_id"></div></div>
+<div class="control-group hidden lab_review_rating"><div class="controls"><input class="hidden js-rating-input" type="hidden" name="lab_review[rating]" id="lab_review_rating"></div></div>
+<div class="control-group text optional lab_review_comment"><label class="text optional control-label" for="lab_review_comment">Comment</label><div class="controls"><textarea class="text optional" name="lab_review[comment]" id="lab_review_comment"></textarea></div></div>
+</div>
+</div>
+<div class="modal-actions">
+<a class="mdl-button mdl-button--primary mdl-js-button mdl-js-ripple-effect" data-dismiss="modal" data-upgraded=",MaterialButton,MaterialRipple">
+Cancel
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+<input type="submit" name="commit" value="Submit" class="btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary" data-upgraded=",MaterialButton,MaterialRipple"><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></input>
+</div>
+</form>
+
+</div>
+</div>
+<iframe class="l-ie-iframe-fix" kwframeid="5" src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/saved_resource(4).html"></iframe>
+</div>
+
+<div class="modal fade" id="lab-access-modal">
+<div class="modal-container">
+<div class="modal-content mdl-shadow--24dp">
+<a class="modal-close" data-dismiss="modal">×</a>
+<h4 class="modal-header">Lab Access</h4>
+<form class="js-lab-access-form" action="https://roitraining.qwiklab.com/lab_onetime_coupons/activate" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓">
+<div class="modal-body">
+<div class="lab-access-modal">
+<input type="hidden" name="id" id="id" value="2770">
+<input type="hidden" name="classroom_id" id="classroom_id" value="252">
+<input type="hidden" name="user_id" id="user_id" value="942">
+<input type="hidden" name="launch_with_credits" id="launch_with_credits" value="0" class="js-launch-with-credits-input">
+<input type="hidden" name="launch_with_subs" id="launch_with_subs" value="0" class="js-launch-with-subscription-input">
+<div class="lab-access-modal__method">
+<p>
+Enter Lab Access Code:
+</p>
+<div class="lab-access-modal__code js-access-code">
+<input type="text" name="uuid_1" id="uuid_1" value="" maxlength="4" placeholder="1234">
+<input type="text" name="uuid_2" id="uuid_2" value="" maxlength="4" placeholder="1234">
+<input type="text" name="uuid_3" id="uuid_3" value="" maxlength="4" placeholder="1234">
+<input type="text" name="uuid_4" id="uuid_4" value="" maxlength="4" placeholder="1234">
+</div>
+<a class="button js-launch-with-access-code-button">
+Launch with Access Code
+</a>
+</div>
+</div>
+</div>
+</form>
+
+
+</div>
+</div>
+<iframe class="l-ie-iframe-fix" kwframeid="6" src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/saved_resource(5).html"></iframe>
+</div>
+
+
+
+</div>
+</main>
+<div class="bottom-menu">
+<a class="side-menu__item" href="https://roitraining.qwiklab.com/materials"><div class="side-menu__item__icon">
+<i class="material-icons">view_comfy</i>
+</div>
+<span class="side-menu__item__tooltip">Materials</span>
+<div class="side-menu__item__label">
+Materials
+</div>
+</a>
+<a class="side-menu__item" href="https://roitraining.qwiklab.com/dashboard"><div class="side-menu__item__icon">
+<i class="material-icons">history</i>
+</div>
+<span class="side-menu__item__tooltip">My Learning</span>
+<div class="side-menu__item__label">
+My Learning
+</div>
+</a>
+<a class="side-menu__item" href="https://roitraining.qwiklab.com/my_account/credits"><div class="side-menu__item__icon">
+<i class="material-icons">account_circle</i>
+</div>
+<span class="side-menu__item__tooltip">My Account</span>
+<div class="side-menu__item__label">
+My Account
+</div>
+</a>
+<a class="side-menu__item js-side-menu-button">
+<div class="side-menu__item__icon">
+<i class="material-icons">menu</i>
+</div>
+<span class="side-menu__item__tooltip">More</span>
+<div class="side-menu__item__label">
+More
+</div>
+</a>
+</div>
+
+</div>
+
+
+<div class="modal fade" id="support-modal">
+<div class="modal-container">
+<div class="modal-content mdl-shadow--24dp">
+<a class="modal-close" data-dismiss="modal">×</a>
+<h4 class="modal-header">How can we help you?</h4>
+<p class="l-mbl">
+We will get back to you within 24 hours.
+</p>
+<form action="https://roitraining.qwiklab.com/contact_support" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="wNClU1SbTvSUkJHvMsVCRNcl7DQltDVAF2ZjJTqRIioAAlHhJ6HFXxrN4/TvCSBUSDUeeEM/d0SN4nuFSWx5+g==">
+<div class="form-row">
+<div class="control-group">
+<label for="Question">Question</label>
+<input type="text" name="question" id="question" placeholder="Briefly describe your question">
+</div>
+</div>
+<div class="form-row">
+<div class="control-group">
+<label for="Details">Details</label>
+<textarea name="description" id="description" rows="5" placeholder="Fill in the details here. Please try to be as specific as possible.
+"></textarea>
+</div>
+</div>
+<div class="form-row">
+<div class="control-group">
+<label for="Your_Name">Your name</label>
+<input type="text" name="name" id="name" value="mia stein">
+</div>
+<div class="control-group">
+<label for="Your_Email">Your email</label>
+<input type="text" name="email" id="email" value=">
+</div>
+</div>
+<div class="form-row">
+<div class="control-group">
+<input type="submit" name="commit" value="Submit" class="button">
+</div>
+</div>
+</form>
+
+
+</div>
+</div>
+<iframe class="l-ie-iframe-fix" kwframeid="7" src="./Leveraging Unstructured Data _ Qwiklabs + roitraining_files/saved_resource(6).html"></iframe>
+</div>
+
+
+<script>
+  $( function() {
+    ql.initMaterialInputs();
+    initChosen();
+    initSearch();
+    initTabs();
+    initTooltips();
+    initLabSidebar();
+  ql.labOutline.init("2770");
+  initLabContent( );
+  initLabResource();
+  initLabReviewModal();
+  initLabAccessModal();
+  initLabTranslations( {"are_you_sure":"All done? If you end this lab, you will lose all your work. You may not be able to restart the lab if there is a quota limit. Are you sure you want to end this lab?\n","in_progress":"*In Progress*","ending":"*Ending*","starting":"*Starting, please wait*","end_concurrent_labs":"Sorry, you can only run one lab at a time. To start this lab, please confirm that you want all of your existing labs to end.\n","copied":"Copied","no_resource":"Error retrieving resource.","no_support":"No Support :(","mac_press":"Press ⌘-C to copy","thanks_review":"Thanks for reviewing this lab.","windows_press":"Press Ctrl-C to copy","days":"days"} );
+  initLabRun();
+  ql.initHeader();
+  ql.sideMenu.init();
+  
+  });
+</script>
+
+
+</body></html>
