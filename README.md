@@ -1,66 +1,60 @@
-# Learning Kubernetes
+## orchestration and backend engineering 
 
-* A Kubernetes cluster consists of **Nodes** (simialr to servers)
+<br>
 
-* Nodes run **Pods**, which are collections of Docker containers. Containers in a Pod share the same network.
+### chapters
 
-* The Kubernetes object responsible for launching and maintaining the desired number of pods is called a **Deployment**. 
+<br>
 
-* Kubernetes provides objects called a **Service** so thart Pods to communicate with other Pods. They are tied to Deployments through Selectors and Labels, and they can be exposed to external clients either by exposing a **NodePort** as a static port on each Kubernetes node or by creating a **LoadBalancer** object/
+#### scripts for services and pubs
 
-* Kubernetes provides the **Secret** object for managing sensitive information such as passwords, API keys, and other credentials.
+* **[docker](code/docker)**
+* **[kubernetes](code/kubernetes):**
+  * **[spin up a node server](code/kubernetes/node-server-example)**
+  * **[kustomize for deployment](code/kubernetes/kustomize)**
+  * **[python cdk for deployment](code/kubernetes/python-cdk)**
+* **[kafka (long pooling)](code/kafka)**
 
+<br>
 
--------------
+#### scripts for cloud infrastructure
 
-## In this Repository
+* **[aws](code/aws)**
+* **[gcp](code/gcp)**
 
-* [Spin up a node server example](https://github.com/bt3gl/Learning_Kubernetes/tree/master/node-server-example).
-* [Use kustomize to organize and combine YAML templates of your services and deployments](https://github.com/bt3gl/Learning_Kubernetes/tree/master/kustomize-example).
+<br>
 
+#### resources for storage systems
 
---------------
-## Tools
+* **[databases](resources/databases/)**
 
-### Minikube
+<br>
 
-[Minikube](https://github.com/kubernetes/minikube) implements a local Kubernetes cluster on macOS, Linux, and Windows. You can install it following [this instructions](https://minikube.sigs.k8s.io/docs/start/).
+#### scripts for cloud management
 
-### Kubectl
+* **[chef](code/chef)**
 
-Kubectl is a command line interface for running commands against Kubernetes clusters. You can install it [here](https://kubernetes.io/docs/tasks/tools/install-kubectl/).
+<br>
 
+#### resources for learning
 
-Checking out pods:
+* **[protocol demos](code/protocol_demos/)**
+* **[data engineering](resources/data_engineering/)**
+  * **[airflow and luigi](resources/data_engineering/airflow_and_luigi.md)**
+  * **[the arrow project](resources/data_engineering/arrow_project.md)**
+  * **[or tools](resources/data_engineering/or_tools.md)**
+* **[what's a protocol](resources/protocols/)**
+* **[what's communication patterns](resources/communication/)**
 
-```
-$ kubectl get pods --namespace=<ns-name>
-```
+<br>
 
-Checking deployments:
+---
 
-```
-$ kubectl get deployments --namespace=<ns-name>
-```
+### cool resources
 
-Checking services:
+<br>
 
-```
-$ kubectl get services --namespace=<ns-name>
-```
+* **[list of public apis](https://github.com/public-apis/public-apis?tab=readme-ov-file)**
+* **[system design in cool pictures](https://github.com/ByteByteGoHq/system-design-101)**
+* **[my e2e surfline-pipeline-aws-py](https://github.com/autistic-symposium/surfline-pipeline-aws-py)**
 
-Get more information about a pod:
-
-```
-$ kubectl describe pod --namespace=<ns-name> <pod name>
-```
-
-
---------
-
-## Learning 
-
-
-* [Google's K8s 101](https://techdevguide.withgoogle.com/paths/cloud/sequence-2/kubernetes-101-pods-nodes-containers-and-clusters/#!).
-* [K8s Bootcamp](https://kubernetesbootcamp.github.io/kubernetes-bootcamp/).
-* [K8s the Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way#labs).

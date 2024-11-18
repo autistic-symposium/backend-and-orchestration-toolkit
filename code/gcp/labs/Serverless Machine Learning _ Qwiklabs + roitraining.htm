@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://roitraining.qwiklab.com/focuses/2773/materials -->
+<html class="mdl-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="./Serverless Machine Learning _ Qwiklabs + roitraining_files/caff0d62ed"></script><script src="./Serverless Machine Learning _ Qwiklabs + roitraining_files/nr-1044.min.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"caff0d62ed","applicationID":"25010137","transactionName":"IQ1XRUEOVV1dFxlRXAEXSlRATkpZVxJpWlIWB0tYUg1K","queueTime":0,"applicationTime":382,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="QagR46dQ6cz/fE7QLGPcaYEmMReiPhvcSK2AVVN0VomR6mjyKUkLtajGoQoNJlMN5Ta4t/fB1e8CeJeXaN7VfQ==">
+<title>Serverless Machine Learning | Qwiklabs + roitraining</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0" name="viewport">
+<meta content="In this series of labs, you go from exploring a taxicab dataset to training and deploying a high-accuracy distributed model with Cloud ML Engine." name="description">
+<meta content="Learn AWS, AWS Training, AWS Labs, Learn Amazon Web Services, Amazon Web Services Training, Amazon Web Services Labs" name="keywords">
+<meta content="Qwiklabs" name="author">
+<meta content="Serverless Machine Learning | Qwiklabs + roitraining" property="og:title">
+<meta content="website" property="og:type">
+<meta content="/favicon.png" property="og:image">
+<meta content="https://www.qwiklabs.com" property="og:url">
+<meta content="Qwiklabs" property="og:site_name">
+<meta content="In this series of labs, you go from exploring a taxicab dataset to training and deploying a high-accuracy distributed model with Cloud ML Engine." property="og:description">
+<meta content="/qwiklabs_logo_900x887.png" property="og:logo" size="900x887">
+<meta content="/qwiklabs_logo_994x187.png" property="og:logo" size="994x187">
+<meta content="#3681E4" property="msapplication-TileColor">
+<meta content="/favicon-144.png" property="msapplication-TileImage">
+<link href="https://roitraining.qwiklab.com/favicon.ico" rel="shortcut icon">
+<link color="#3681E4" href="https://roitraining.qwiklab.com/favicon-svg.svg" rel="mask-icon">
+<link href="https://roitraining.qwiklab.com/favicon-180.png" rel="apple-touch-icon-precomposed">
+
+<!--[if lt IE 9]>
+<script src='http://html5shim.googlecode.com/svn/trunk/html5.js' type='text/javascript'></script>
+<![endif]-->
+<!--[endif]>  <![endif]-->
+<script>
+//<![CDATA[
+window.gon={};gon.current_user={"firstname":"","lastname":"","fullname":"mia stein","company":"etsy","email":","origin":"roitraining, direct","subscriptions":0,"id":"12ee659298eb15258fdeb4d43db52cb8","qlCreatedAt":"2017-11-28 14:06:23 UTC","optIn":false};gon.segment=null;gon.deployment="roitraining";
+//]]>
+</script>
+
+
+
+<link rel="stylesheet" media="all" href="./Serverless Machine Learning _ Qwiklabs + roitraining_files/application-6460790cbdd89c50da4755d15c7ef68fa373dd59daad1528c39815f8c2c4676d.css">
+<script src="./Serverless Machine Learning _ Qwiklabs + roitraining_files/application-965286b1d75b8ed026adfefe5748f3ad70657330c97a79281c8bc1b35d341af9.js"></script>
+</head>
+<body class="focuses focuses-show_materials l-no-padding ilt-mode">
+<div class="header-container">
+<div class="header">
+<a class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect header__button header__button--nav header__side-menu-button js-side-menu-button" data-upgraded=",MaterialButton,MaterialRipple">
+<i class="material-icons">menu</i>
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+<div class="header__title">
+<a class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect header__button header__button--nav" href="https://roitraining.qwiklab.com/materials/252" data-upgraded=",MaterialButton,MaterialRipple"><i class="material-icons">arrow_back</i><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+
+<h1>
+Serverless Machine Learning
+</h1>
+</div>
+<div class="header__actions">
+<div class="header__menu header__menu--my-account">
+<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="header_menu" data-upgraded=",MaterialButton,MaterialRipple">
+<i class="material-icons"><img class="avatar " src="./Serverless Machine Learning _ Qwiklabs + roitraining_files/a835b0e3b23a9e319e795e2bf1bccaa8.png" alt="A835b0e3b23a9e319e795e2bf1bccaa8"></i>
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+<div class="mdl-menu__container is-upgraded"><div class="mdl-menu__outline mdl-menu--bottom-right"></div><ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect mdl-js-ripple-effect--ignore-events" for="header_menu" data-upgraded=",MaterialMenu,MaterialRipple">
+<li class="mdl-menu__item header__menu__item mdl-js-ripple-effect" tabindex="-1" data-upgraded=",MaterialRipple"><a href="https://roitraining.qwiklab.com/my_account/profile">My Account</a><span class="mdl-menu__item-ripple-container"><span class="mdl-ripple"></span></span></li>
+<li class="mdl-menu__item header__menu__item mdl-js-ripple-effect" tabindex="-1" data-upgraded=",MaterialRipple"><a rel="nofollow" data-method="delete" href="https://roitraining.qwiklab.com/users/sign_out">Sign Out</a><span class="mdl-menu__item-ripple-container"><span class="mdl-ripple"></span></span></li>
+
+</ul></div>
+</div>
+
+</div>
+</div>
+</div>
+<div class="header__search-bar js-header-search-bar">
+<form action="https://roitraining.qwiklab.com/searches/lab" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="QagR46dQ6cz/fE7QLGPcaYEmMReiPhvcSK2AVVN0VomR6mjyKUkLtajGoQoNJlMN5Ta4t/fB1e8CeJeXaN7VfQ==">
+<input type="text" name="keywords" id="keywords" value="" placeholder="Search for labs">
+</form>
+
+<a class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect header__button" data-upgraded=",MaterialButton,MaterialRipple">
+<i class="material-icons">close</i>
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+</div>
+
+<div class="l-flex">
+<div class="side-menu js-side-menu">
+<div class="side-menu__inner">
+<nav class="side-menu__nav">
+<a class="side-menu__item" href="https://roitraining.qwiklab.com/materials"><div class="side-menu__item__icon">
+<i class="material-icons">view_comfy</i>
+</div>
+<span class="side-menu__item__tooltip">Materials</span>
+<div class="side-menu__item__label">
+Materials
+</div>
+</a>
+<a class="side-menu__item" href="https://roitraining.qwiklab.com/dashboard"><div class="side-menu__item__icon">
+<i class="material-icons">history</i>
+</div>
+<span class="side-menu__item__tooltip">My Learning</span>
+<div class="side-menu__item__label">
+My Learning
+</div>
+</a>
+<hr>
+<a class="side-menu__item" href="https://roitraining.qwiklab.com/my_account/credits"><div class="side-menu__item__icon">
+<i class="material-icons">account_circle</i>
+</div>
+<span class="side-menu__item__tooltip">My Account</span>
+<div class="side-menu__item__label">
+My Account
+</div>
+</a>
+<a class="side-menu__item" href="https://qwiklab.zendesk.com/hc/en-us"><div class="side-menu__item__icon">
+<i class="material-icons">help</i>
+</div>
+<span class="side-menu__item__tooltip">Help</span>
+<div class="side-menu__item__label">
+Help
+</div>
+</a>
+</nav>
+<div class="side-menu__small-links">
+<a href="https://roitraining.qwiklab.com/privacy_policy">Privacy Policy</a>
+<br>
+<a href="https://roitraining.qwiklab.com/terms_of_service">Terms of Service</a>
+</div>
+</div>
+</div>
+<div class="side-menu__overlay js-side-menu-button"></div>
+
+<main>
+<div class="l-alert-wrapper alerts">
+<span class="hidden" id="flash-sibling-before"></span>
+
+</div>
+<div class="l-main-wrapper">
+
+
+
+<div class="l-lab-container js-lab_and_classroom_info" data-classroom-name="Data Engineering on Google Cloud Platform v1.1" data-deployment="roitraining" data-lab-name="Serverless Machine Learning" data-label="Serverless Machine Learning">
+<div class="l-lab-sidebar js-lab-sidebar-container">
+<div class="lab-sidebar js-lab-sidebar">
+<div class="lab-sidebar__header">
+<div class="lab-sidebar__header-row">
+<span class="small-label">
+4m setup
+·
+2880m access
+·
+2880m completion
+</span>
+</div>
+<div class="lab-sidebar__header-row">
+<div class="rateit l-mrm" data-rateit-readonly="true" data-rateit-value="3.3333"><div class="rateit-reset" style="display: none;"></div><div class="rateit-range" style="width: 80px; height: 16px;"><div class="rateit-selected" style="height: 16px; width: 53.3328px;"></div><div class="rateit-hover" style="height:16px"></div></div></div>
+
+<a class="small-label l-mrm" data-target="#lab-review-modal" data-toggle="modal">
+Rate Lab
+</a>
+<a class="small-label" data-target="#lab-details-modal" data-toggle="modal">
+Lab Details
+</a>
+</div>
+
+</div>
+<div class="lab-sidebar__tabs">
+<div class="tab-contents tab-contents--lab-sidebar">
+<div class="tab-content is-active">
+<h5 class="l-mbs">
+Connection Details
+</h5>
+<div class="form-row js-form-row">
+<a class="button button--full-width button--secondary js-connection-dns-link js-external-window" target="_blank" href="https://roitraining.qwiklab.com/lab_instances/run/6383">
+Open Google Console
+</a>
+</div>
+
+<div class="form-row js-form-row">
+<div class="control-group">
+<label class="label--console">
+Username 
+</label>
+<input class="input input--console js-connection-username-0" readonly="readonly" value="············">
+<button class="button button--copy button--copy-input js-copy-input-button" data-clipboard-target=".js-connection-username-0">
+<i class="fa fa-clipboard"></i>
+</button>
+<span style="opacity: 1; left: 274px; top: 18.5px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></div>
+</div>
+
+<div class="form-row js-form-row">
+<div class="control-group">
+<label class="label--console">
+Password
+</label>
+<input class="input input--console js-connection-password" readonly="readonly" value="·············">
+<button class="button button--copy button--copy-input js-copy-input-button" data-clipboard-target=".js-connection-password">
+<i class="fa fa-clipboard"></i>
+</button>
+<span style="opacity: 1; left: 274px; top: 18.5px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></div>
+</div>
+
+<div class="form-row js-form-row">
+<div class="control-group">
+<label class="label--console">
+GCP Project ID 
+</label>
+<input class="input input--console js-connection-project-0" readonly="readonly" value="···········">
+<button class="button button--copy button--copy-input js-copy-input-button" data-clipboard-target=".js-connection-project-0">
+<i class="fa fa-clipboard"></i>
+</button>
+</div>
+</div>
+
+
+<div class="form-row js-form-row" style="display: none;">
+<div class="control-group">
+<label class="label--console">
+Username
+</label>
+<input class="input input--console js-connection-username" disabled="disabled" readonly="readonly" value="··········" style="">
+<button class="button button--copy button--copy-input js-copy-input-button" data-clipboard-target=".js-connection-username">
+<i class="fa fa-clipboard"></i>
+</button>
+<span style="opacity: 1; left: 0px; top: -6.5px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: none; visibility: visible; z-index: auto;"></span></div>
+</div>
+
+<div class="form-row js-form-row">
+<div class="control-group">
+<label class="label--console">
+Password
+</label>
+<input class="input input--console js-connection-password" readonly="readonly" value="·········">
+<button class="button button--copy button--copy-input js-copy-input-button" data-clipboard-target=".js-connection-password">
+<i class="fa fa-clipboard"></i>
+</button>
+<span style="opacity: 1; left: 274px; top: 18.5px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></div>
+</div>
+
+<div class="form-row js-form-row" style="display: none;">
+<div class="control-group">
+<label class="label--console">
+Endpoint
+</label>
+<input class="input input--console js-connection-endpoint" disabled="disabled" readonly="readonly" value="··············">
+<button class="button button--copy button--copy-input js-copy-input-button" data-clipboard-target=".js-connection-endpoint">
+<i class="fa fa-clipboard"></i>
+</button>
+</div>
+</div>
+
+
+<div class="lab-sidebar__resource lab-sidebar__resource--additional-details l-mtl is-hidden js-cf-connection-output"></div>
+<div class="lab-sidebar__resource lab-sidebar__resource--additional-details l-mtl is-hidden js-additional-connection-info"></div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="lab-sidebar__slider js-sidebar-slider">
+<i class="fa fa-arrow-left"></i>
+<iframe class="l-ie-iframe-fix" kwframeid="1" src="./Serverless Machine Learning _ Qwiklabs + roitraining_files/saved_resource.html"></iframe>
+</div>
+
+</div>
+<div class="l-lab-main">
+<div class="l-lab-main-header">
+<header class="lab-header js-lab-header has-shadow">
+<div class="lab-header__section lab-header__section--flex">
+<div class="lab-header__progress js-progress is-hidden">
+<div class="lab-header__progress__bar js-progress-bar" style="width: 100%;"></div>
+</div>
+</div>
+<div class="lab-header__section lab-header__section--no-border">
+<span class="lab-header__progress-message js-progress-message">
+<div class="lab-header__progress-message__indicator js-progress-message-indicator is-complete"></div>
+<span class="js-progress-message-incomplete is-hidden">
+Lab Setting Up
+</span>
+<span class="js-progress-message-complete">
+Lab Running
+</span>
+</span>
+</div>
+<div class="lab-header__section">
+<a class="button button--start button--lab js-start-lab-button is-hidden" data-focus-id="2773" data-lab-access="None" data-lab-instance-id="">
+Start Lab
+</a>
+<a class="button button--wait button--lab js-waiting-lab-button is-hidden">
+<i class="fa fa-spinner fa-pulse"></i>
+</a>
+<a class="button button--end button--lab js-end-lab-button" data-lab-instance-id="6383">
+End Lab
+</a>
+</div>
+<div class="lab-header__section">
+<h3 class="text--sign js-timer" data-duration="172800">1 days</h3>
+</div>
+</header>
+
+</div>
+<div class="l-lab-main-body">
+<div class="lab-content js-lab-content">
+<div class="lab-content__markdown-wrapper">
+<div class="js-markdown-instructions lab-content__markdown markdown-lab-instructions" id="markdown-lab-instructions">
+
+<h1 id="serverless-machine-learning">Serverless Machine Learning</h1>
+
+<h1 id="overview">Overview</h1>
+
+<p><em>Duration is 1 min</em></p>
+
+<p>In this lab, you go from exploring a taxicab dataset to training and deploying a high-accuracy distributed model with Cloud ML Engine.</p>
+
+<h2 id="what-you-need"><strong>What you need</strong></h2>
+
+<h3 id="what-you-ll-need">What you'll need</h3>
+
+<p>To complete this lab, you'll need:</p>
+<ul><li>Access to a standard internet browser (Chrome browser recommended).</li>
+<li>Time. Note the lab's <strong>Duration</strong> in the <strong>Lab Details</strong> tab in Qwiklabs, which is an estimate of the time it should take to complete all steps.  Plan your schedule so you have time to complete the lab. Once you start the lab, you will not be able to pause and return later (you begin at step 1 every time you start a lab). </li>
+<li>You do NOT need a Google Cloud Platform account or project. An account, project and associated resources are provided to you as part of this lab.</li>
+<li>If you already have your own GCP account, make sure you do not use it for this lab. </li>
+<li>If your lab prompts you to log into the console, <strong>use only the student account provided to you by the lab</strong>. This prevents you from incurring charges for lab activities in your personal GCP account.</li>
+</ul>
+<div class="codelabs-infobox codelabs-infobox-warning"><p>Before accessing the Cloud Console, <strong>log out of all other Google / Gmail accounts you may be logged in with.</strong>  If this is not possible, <strong>use a new Incognito window (Chrome)</strong> or another browser for the Qwiklabs session.</p>
+</div>
+
+<h3 id="start-your-lab">Start your lab</h3>
+
+<p>Note the <strong>Setup time</strong> in the <strong>Lab Details</strong> tab in Qwiklabs.  That's how long it will take for the lab account to build its resources. You can track your lab's progress with the status bar at the top of your screen. </p>
+
+<p>When you are ready, click <strong>Start Lab</strong>. </p>
+
+<p><img src="./Serverless Machine Learning _ Qwiklabs + roitraining_files/5e5165bd940f65c.png" alt="5e5165bd940f65c.png"></p>
+
+<div class="codelabs-infobox codelabs-infobox-warning"><p><strong>Important</strong>:  What is happening during this time?</p>
+<p>Your lab is spinning up GCP resources for you behind the scenes, including an account, a project, resources within the project, and permission for you to control the resources you will need to run the lab. This means that instead of spending time manually setting up a project and building resources from scratch as part of your lab, you can more quickly begin learning.</p>
+</div>
+
+<h3 id="find-your-lab-s-gcp-username-and-password">Find Your Lab's GCP Username and Password</h3>
+
+<p>To access the resources and console for this lab, locate the Connection Details panel in Qwiklabs.  Here you will find the account ID and password for the account you will use to log in to the Google Cloud Platform:</p>
+
+<p><img src="./Serverless Machine Learning _ Qwiklabs + roitraining_files/56aa1b525796849d.png" alt="56aa1b525796849d.png"></p>
+
+<p>If your lab provides other resource identifiers or connection-related information, it will appear on this panel as well.</p>
+
+<h2 id="what-you-learn"><strong>What you learn</strong></h2>
+
+<p>In this series of labs, you go from exploring a taxicab dataset to training and deploying a high-accuracy distributed model with Cloud ML Engine.</p>
+
+<h1 id="setup">Setup</h1>
+
+<h3 id="activate-google-cloud-shell">Activate Google Cloud Shell</h3>
+
+<p>From the GCP Console click the icon (as depicted below) on the top right toolbar:</p>
+
+<p><img src="./Serverless Machine Learning _ Qwiklabs + roitraining_files/5f504766b9b3be17.png" alt="5f504766b9b3be17.png"></p>
+
+<p>Then click "Start Cloud Shell" as shown here:</p>
+
+<p><img src="./Serverless Machine Learning _ Qwiklabs + roitraining_files/c0726a5e7bd6ec39.png" alt="c0726a5e7bd6ec39.png"></p>
+
+<p>It should only take a few moments to provision and connect to the environment: <img src="./Serverless Machine Learning _ Qwiklabs + roitraining_files/718b09ed50d1e90.png" alt="718b09ed50d1e90.png"></p>
+
+<p>This virtual machine is loaded with all the development tools you'll need. It offers a persistent 5GB home directory, and runs on the Google Cloud, greatly enhancing network performance and authentication.   Much if not all of your work in this lab can be done with simply a browser or your Google Chromebook.</p>
+
+<p>Once connected to the cloud shell, you should see that you are already authenticated and that the project is already set to your <em>PROJECT_ID</em>:</p>
+<pre class="highlight shell"><code>gcloud auth list
+</code><button class="button button--copy js-copy-button-0"><i class="fa fa-clipboard"></i></button></pre>
+<p><strong>Command output</strong></p>
+<pre class="highlight shell"><code>Credentialed accounts:
+ - &lt;myaccount&gt;@&lt;mydomain&gt;.com <span class="o">(</span>active<span class="o">)</span>
+</code><button class="button button--copy js-copy-button-1"><i class="fa fa-clipboard"></i></button></pre>
+<div class="codelabs-infobox codelabs-infobox-special"><p><strong>Note: </strong><code>gcloud</code> is the powerful and unified command-line tool for Google Cloud Platform. Full documentation is available from <a href="https://cloud.google.com/sdk/gcloud/" target="_blank">https://cloud.google.com/sdk/gcloud</a>. It comes pre-installed on CloudShell and you will surely enjoy its support for tab-completion.</p>
+</div>
+<pre class="highlight shell"><code>gcloud config list project
+</code><button class="button button--copy js-copy-button-2"><i class="fa fa-clipboard"></i></button></pre>
+<p><strong>Command output</strong></p>
+<pre class="highlight shell"><code><span class="o">[</span>core]
+project <span class="o">=</span> &lt;PROJECT_ID&gt;
+</code><button class="button button--copy js-copy-button-3"><i class="fa fa-clipboard"></i></button></pre>
+<p>If it is not, you can set it with this command:</p>
+<pre class="highlight shell"><code>gcloud config <span class="nb">set </span>project &lt;PROJECT_ID&gt;
+</code><button class="button button--copy js-copy-button-4"><i class="fa fa-clipboard"></i></button></pre>
+<p><strong>Command output</strong></p>
+<pre class="highlight shell"><code>Updated property <span class="o">[</span>core/project].
+</code><button class="button button--copy js-copy-button-5"><i class="fa fa-clipboard"></i></button></pre>
+<h1 id="launch-cloud-datalab">Launch Cloud Datalab</h1>
+
+<p><em>Duration is 2 min</em></p>
+
+<p>To launch Cloud Datalab:</p>
+
+<h2 id="step-1"><strong>Step 1</strong></h2>
+
+<p>In Cloud Shell, type:</p>
+<pre class="highlight shell"><code>gcloud compute zones list
+</code><button class="button button--copy js-copy-button-6"><i class="fa fa-clipboard"></i></button></pre>
+<p>Pick a zone in a geographically closeby region.</p>
+
+<h2 id="step-2"><strong>Step 2</strong></h2>
+
+<p>In Cloud Shell, type:</p>
+<pre class="highlight shell"><code>datalab create dataengvm --zone &lt;ZONE&gt;
+</code><button class="button button--copy js-copy-button-7"><i class="fa fa-clipboard"></i></button></pre>
+<p>Datalab will take about 5 minutes to start.</p>
+
+<p><input readonly="" class="copyable-inline-input" size="45" type="text" value="Note: follow the prompts during this process."></p>
+
+<p>If you are not yet familiar with Datalab, what follows is a graphical cheat sheet for the main Datalab functionality:</p>
+
+<p><img src="./Serverless Machine Learning _ Qwiklabs + roitraining_files/369bf7e045b084ed.png" alt="369bf7e045b084ed.png"></p>
+
+<p><strong>Move on to the next step</strong>.</p>
+
+<h1 id="checkout-notebook-into-cloud-datalab">Checkout notebook into Cloud Datalab</h1>
+
+<p><em>Duration is 5 min</em></p>
+
+<h2 id="step-1-2"><strong>Step 1</strong></h2>
+
+<p>If necessary, wait for Datalab to finish launching. Datalab is ready when you see a message prompting you to do a "Web Preview".</p>
+
+<h2 id="step-2-2"><strong>Step 2</strong></h2>
+
+<p>Click on the <strong>Web Preview</strong> icon on the top-left corner of the Cloud Shell ribbon.  Switch to port <strong>8081</strong>.</p>
+
+<p><img src="./Serverless Machine Learning _ Qwiklabs + roitraining_files/7eb159ad9b4d3d2d.png" alt="7eb159ad9b4d3d2d.png"></p>
+
+<p><input readonly="" class="copyable-inline-input" size="242" type="text" value="Note: The connection to your Datalab instance remains open for as long as the datalab command is active. If the cloud shell used for running the datalab command is closed or interrupted, the connection to your Cloud Datalab VM will terminate."></p>
+
+<h2 id="step-3"><strong>Step 3</strong></h2>
+
+<p>In Datalab, click on the icon for <strong>"Open ungit"</strong> in the top-right ribbon.</p>
+
+<h2 id="part-"><img src="./Serverless Machine Learning _ Qwiklabs + roitraining_files/fc5c4f63c40f83f.png" alt="fc5c4f63c40f83f.png"></h2>
+
+<h2 id="step-4"><strong>Step 4</strong></h2>
+
+<p>In the Ungit window, select the text that reads /content/datalab/notebooks and remove the notebooks so that it reads <strong>/content/datalab</strong>, then hit enter.</p>
+
+<p><img src="./Serverless Machine Learning _ Qwiklabs + roitraining_files/70652193140af6f3.png" alt="70652193140af6f3.png"></p>
+
+<p>In the panel that comes up, type the following as the GitHub repository to <strong>Clone from</strong>: </p>
+<pre class="highlight shell"><code>https://github.com/GoogleCloudPlatform/training-data-analyst
+</code><button class="button button--copy js-copy-button-8"><i class="fa fa-clipboard"></i></button></pre>
+<p>Then, click on <strong>Clone repository</strong>.</p>
+
+<h1 id="1-explore-dataset-create-ml-datasets-create-benchmark">1. Explore dataset, create ML datasets, create benchmark</h1>
+
+<p><em>Duration is 15 min</em></p>
+
+<p>In this lab, you will:</p>
+<ul><li>Explore a dataset using BigQuery and Datalab</li>
+<li>Sample the dataset and create training, validation, and testing datasets for local development of TensorFlow models</li>
+<li>Create a benchmark to evaluate the performance of ML against</li>
+</ul>
+<h2 id="step-1-3"><strong>Step 1</strong></h2>
+
+<p>In Cloud Datalab, click on the Home icon, and then navigate to <strong>training-data-analyst/courses/machine_learning/datasets/</strong> and open <strong>create_datasets.ipynb</strong>.</p>
+
+<h2 id="step-2-3"><strong>Step 2</strong></h2>
+
+<p>In Datalab, click on <strong>Clear | All Cells (</strong>click on__ Clear_<em>, then in the drop-down menu, select</em>_ All Cells)__. Now, read the narrative and execute each cell in turn.</p>
+
+<h1 id="2a-getting-started-with-tensorflow">2a. Getting Started with TensorFlow</h1>
+
+<p><em>Duration is 15 min</em></p>
+
+<p>In this lab, you will learn how the TensorFlow Python API works:</p>
+<ul><li>Building a graph</li>
+<li>Running a graph</li>
+<li>Feeding values into a graph</li>
+<li>Find area of a triangle using TensorFlow</li>
+</ul>
+<h2 id="step-1-4"><strong>Step 1</strong></h2>
+
+<p>In Cloud Datalab, click on the Home icon, and then navigate to <strong>training-data-analyst/courses/machine_learning/tensorflow</strong> and open <strong>a_tfstart.ipynb</strong></p>
+
+<h2 id="step-2-4"><strong>Step 2</strong></h2>
+
+<p>In Datalab, click on <strong>Clear | All Cells</strong>. Now read the narrative and execute each cell in turn.</p>
+
+<h1 id="2b-machine-learning-using-tf-learn">2b. Machine Learning using tf.learn</h1>
+
+<p><em>Duration is 15 min</em></p>
+
+<p>In this lab, you will implement a simple machine learning model using tf.learn:</p>
+<ul><li>Read .csv data into a Pandas dataframe</li>
+<li>Implement a Linear Regression model in TensorFlow</li>
+<li>Train the model</li>
+<li>Evaluate the model</li>
+<li>Predict with the model</li>
+<li>Repeat with a Deep Neural Network model in TensorFlow</li>
+</ul>
+<h2 id="step-1-5"><strong>Step 1</strong></h2>
+
+<p>In Cloud Datalab, click on the Home icon, and then navigate to <strong>training-data-analyst/courses/machine_learning/tensorflow</strong> and open <strong>b_tflearn.ipynb</strong></p>
+
+<h2 id="step-2-5"><strong>Step 2</strong></h2>
+
+<p>In Datalab, click on <strong>Clear | All Cells</strong>. Now read the narrative and execute each cell in turn.</p>
+
+<h1 id="2c-tensorflow-on-big-data">2c. TensorFlow on Big Data</h1>
+
+<p><em>Duration is 15 min</em></p>
+
+<p>In this lab, you will learn how to:</p>
+<ul><li>Read from a potentially large file in batches</li>
+<li>Do a wildcard match on filenames</li>
+<li>Break the one-to-one relationship between inputs and features</li>
+</ul>
+<h2 id="step-1-6"><strong>Step 1</strong></h2>
+
+<p>In Cloud Datalab, click on the Home icon, and then navigate to <strong>training-data-analyst/courses/machine_learning/tensorflow</strong> and open__ c_batched.ipynb__.</p>
+
+<h2 id="step-2-6"><strong>Step 2</strong></h2>
+
+<p>In Datalab, click on <strong>Clear | All Cells</strong>. Now read the narrative and execute each cell in turn.</p>
+
+<h1 id="2d-refactor-for-distributed-training-and-monitoring">2d. Refactor for Distributed training and monitoring</h1>
+
+<p><em>Duration is 15 min</em></p>
+
+<p>In this lab, you will learn how to:</p>
+<ul><li>Use the Experiment class</li>
+<li>Monitor training using TensorBoard</li>
+</ul>
+<h2 id="step-1-7"><strong>Step 1</strong></h2>
+
+<p>In Cloud Datalab, click on the Home icon, and then navigate to <strong>training-data-analyst/courses/machine_learning/tensorflow</strong> and open <strong>d_experiment.ipynb</strong>.</p>
+
+<h2 id="step-2-7"><strong>Step 2</strong></h2>
+
+<p>In Datalab, click on <strong>Clear | All Cells</strong>. Now read the narrative and execute each cell in turn.</p>
+
+<h1 id="3-getting-started-with-cloud-ml-engine">3. Getting Started with Cloud ML Engine</h1>
+
+<p><em>Duration is 30 min</em></p>
+
+<p>In this lab, you will learn how to:</p>
+<ul><li>Package up TensorFlow model</li>
+<li>Run training locally</li>
+<li>Run training on cloud</li>
+<li>Deploy model to cloud</li>
+<li>Invoke model to carry out predictions</li>
+</ul>
+<h2 id="step-1-8"><strong>Step 1</strong></h2>
+
+<p>If you don't already have a bucket on Cloud Storage, create one from the  <a href="http://console.cloud.google.com/storage" target="_blank">Storage section of the GCP console</a>. Bucket names have to be globally unique.</p>
+
+<h2 id="step-2-8">Step 2</h2>
+
+<p>In Cloud Datalab, click on the Home icon, and then navigate to <strong>training-data-analyst/courses/machine_learning/cloudmle</strong> and open__ cloudmle.ipynb__.</p>
+
+<h2 id="step-3-2"><strong>Step 3</strong></h2>
+
+<p>In Datalab, click on <strong>Clear | All Cells</strong>. Now read the narrative and execute each cell in turn.</p>
+
+<h1 id="4-feature-engineering">4. Feature Engineering</h1>
+
+<p><em>Duration is 30 min</em></p>
+
+<p>In this lab, you will improve the ML model using feature engineering. In the process, you will learn how to:</p>
+<ul><li>Work with feature columns</li>
+<li>Add feature crosses in TensorFlow</li>
+<li>Read data from BigQuery</li>
+<li>Create datasets using Dataflow</li>
+<li>Use a wide-and-deep model</li>
+</ul>
+<h2 id="step-1-9"><strong>Step 1</strong></h2>
+
+<p>In Cloud Datalab, click on the Home icon, and then navigate to <strong>training-data-analyst/courses/machine_learning/feateng</strong> and open__ feateng.ipynb__.</p>
+
+<h2 id="step-2-9"><strong>Step 2</strong></h2>
+
+<p>In Datalab, click on <strong>Clear | All Cells</strong>. Now read the narrative and execute each cell in turn.</p>
+
+<p>Your instructor will demo notebooks that contain hyper-parameter tuning and training on 500 million rows of data. The changes to the model are minor -- essentially just command-line parameters, but the impact on model accuracy is huge:</p>
+
+<p><img src="./Serverless Machine Learning _ Qwiklabs + roitraining_files/21d055d73bf7974e.png" alt="21d055d73bf7974e.png"></p>
+
+<p>©Google, Inc. or its affiliates. All rights reserved. Do not distribute.</p>
+
+<p><a href="https://docs.google.com/forms/d/11o8tVDrCnJm3v1eKMaIGNH4ODBY_bFpmCYqwm_g3Dm8/viewform" target="_blank">Provide Feedback on this Lab</a></p>
+
+</div>
+
+<div class="lab-content__outline js-lab-content-outline">
+<a href="https://roitraining.qwiklab.com/focuses/2773/materials#what-you-need" class=""><strong>What you need</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2773/materials#what-you-learn" class=""><strong>What you learn</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2773/materials#step-1" class=""><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2773/materials#step-2" class=""><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2773/materials#step-1-2" class=""><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2773/materials#step-2-2" class=""><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2773/materials#step-3" class=""><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2773/materials#fc5c4f63c40f83f-png-roitraining-qwiklab-website-prod-s3-amazonaws-com-instructions-documents-963-original-img-fc5c4f63c40f83f-png">![fc5c4f63c40f83f.png](//roitraining-qwiklab-website-prod.s3.amazonaws.com/instructions/documents/963/original/img/fc5c4f63c40f83f.png)</a>
+<a href="https://roitraining.qwiklab.com/focuses/2773/materials#step-4" class="is-active"><strong>Step 4</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2773/materials#step-1-3"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2773/materials#step-2-3"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2773/materials#step-1-4"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2773/materials#step-2-4"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2773/materials#step-1-5"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2773/materials#step-2-5"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2773/materials#step-1-6"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2773/materials#step-2-6"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2773/materials#step-1-7"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2773/materials#step-2-7"><strong>Step 2</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2773/materials#step-1-8"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2773/materials#step-2-8">Step 2</a>
+<a href="https://roitraining.qwiklab.com/focuses/2773/materials#step-3-2"><strong>Step 3</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2773/materials#step-1-9"><strong>Step 1</strong></a>
+<a href="https://roitraining.qwiklab.com/focuses/2773/materials#step-2-9"><strong>Step 2</strong></a>
+
+</div>
+
+</div>
+</div>
+
+<div class="lab-resource js-lab-resource-area">
+<div class="lab-resource__close js-lab-resource-area-close">
+×
+</div>
+<div class="js-lab-resource"></div>
+</div>
+<div class="lab-resource__background js-lab-resource-background">
+<iframe class="l-ie-iframe-fix" kwframeid="2" src="./Serverless Machine Learning _ Qwiklabs + roitraining_files/saved_resource(1).html"></iframe>
+</div>
+
+</div>
+</div>
+<div class="lab-buttons">
+<a class="mdl-button mdl-js-button mdl-button--fab mdl-button--large-fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--8dp help-button" data-target="#lab-help-modal" data-toggle="modal" data-upgraded=",MaterialButton,MaterialRipple">
+<i class="material-icons">help</i>
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+</div>
+</div>
+<div class="modal fade" id="lab-help-modal">
+<div class="modal-container">
+<div class="mdl-shadow--24dp modal-content">
+<h4 class="modal-header">Get Help</h4>
+<form action="https://roitraining.qwiklab.com/contact_support" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="QagR46dQ6cz/fE7QLGPcaYEmMReiPhvcSK2AVVN0VomR6mjyKUkLtajGoQoNJlMN5Ta4t/fB1e8CeJeXaN7VfQ==">
+<div class="modal-body">
+<div class="control-group l-mbl">
+<label for="Question">Question</label>
+<input type="text" name="question" id="question" placeholder="Briefly describe your question">
+</div>
+<div class="control-group l-mbl">
+<label for="Details">Details</label>
+<textarea name="description" id="description" rows="5" placeholder="Fill in the details here. Please try to be as specific as possible.
+"></textarea>
+</div>
+<div class="control-group l-mbl">
+<label for="Your_Name">Your name</label>
+<input type="text" name="name" id="name" value="mia stein">
+</div>
+<div class="control-group l-mbl">
+<label for="Your_Email">Your email</label>
+<input type="text" name="email" id="email" value=">
+</div>
+<div class="control-group l-mbl">
+<label for="Severity">Severity</label>
+<select name="severity" id="severity"><option value="0">-</option>
+<option value="severity_1">Severity 1 (Highest)</option>
+<option value="severity_2">Severity 2</option>
+<option value="severity_3">Severity 3</option>
+<option value="severity_4">Severity 4</option>
+<option value="severity_5">Severity 5 (Lowest)</option></select>
+</div>
+<div class="control-group">
+<div class="control-label"></div>
+We will get back to you within 24 hours.
+</div>
+</div>
+<div class="modal-actions">
+<a class="mdl-button mdl-button--primary mdl-js-button mdl-js-ripple-effect" data-dismiss="modal" data-upgraded=",MaterialButton,MaterialRipple">
+Cancel
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+<input type="submit" name="commit" value="Submit" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary" data-upgraded=",MaterialButton,MaterialRipple"><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></input>
+</div>
+</form>
+
+
+
+</div>
+</div>
+<iframe class="l-ie-iframe-fix" kwframeid="3" src="./Serverless Machine Learning _ Qwiklabs + roitraining_files/saved_resource(2).html"></iframe>
+</div>
+<div class="modal fade" id="lab-details-modal">
+<div class="modal-container">
+<div class="modal-content mdl-shadow--24dp">
+<a class="modal-close" data-dismiss="modal">×</a>
+<h4 class="modal-header">Serverless Machine Learning</h4>
+<div class="modal-body">
+<p class="l-mbm">
+In this series of labs, you go from exploring a taxicab dataset to training and deploying a high-accuracy distributed model with Cloud ML Engine.
+</p>
+<p class="small-label l-mbs">
+<strong>
+Duration:
+</strong>
+4m setup
+·
+2880m access
+·
+2880m completion
+</p>
+<p class="small-label l-mbs">
+
+</p>
+<p class="small-label">
+<span><strong>Levels: <a href="https://roitraining.qwiklab.com/tags/introductory/level">introductory</a></strong></span>
+</p>
+</div>
+<div class="modal-actions">
+<a class="mdl-button mdl-button--primary mdl-js-button mdl-js-ripple-effect" data-dismiss="modal" data-upgraded=",MaterialButton,MaterialRipple">
+Got It
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+</div>
+
+</div>
+</div>
+<iframe class="l-ie-iframe-fix" kwframeid="4" src="./Serverless Machine Learning _ Qwiklabs + roitraining_files/saved_resource(3).html"></iframe>
+</div>
+
+<div class="modal fade" id="lab-review-modal">
+<div class="modal-container">
+<div class="modal-content mdl-shadow--24dp">
+<a class="modal-close" data-dismiss="modal">×</a>
+<h4 class="modal-header">Rate Lab</h4>
+<form class="simple_form js-lab-review-form" id="new_lab_review" action="https://roitraining.qwiklab.com/lab_reviews" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><div class="modal-body">
+<p class="label">
+How satisfied are you with this lab?
+</p>
+<div class="rateit js-rateit" data-rateit-max="5" data-rateit-min="0" data-rateit-resetable="false" data-rateit-step="1" data-rateit-value="0"><div class="rateit-reset" style="display: none;"></div><div class="rateit-range" style="width: 80px; height: 16px;"><div class="rateit-selected" style="height: 16px; width: 0px;"></div><div class="rateit-hover" style="height:16px"></div></div></div>
+<div class="l-mtm">
+
+<div class="control-group hidden lab_review_user_id"><div class="controls"><input class="hidden" type="hidden" value="942" name="lab_review[user_id]" id="lab_review_user_id"></div></div>
+<div class="control-group hidden lab_review_classroom_id"><div class="controls"><input class="hidden" type="hidden" value="252" name="lab_review[classroom_id]" id="lab_review_classroom_id"></div></div>
+<div class="control-group hidden lab_review_lab_id"><div class="controls"><input class="hidden" type="hidden" value="51" name="lab_review[lab_id]" id="lab_review_lab_id"></div></div>
+<div class="control-group hidden lab_review_focus_id"><div class="controls"><input class="hidden" type="hidden" value="2773" name="lab_review[focus_id]" id="lab_review_focus_id"></div></div>
+<div class="control-group hidden lab_review_rating"><div class="controls"><input class="hidden js-rating-input" type="hidden" name="lab_review[rating]" id="lab_review_rating"></div></div>
+<div class="control-group text optional lab_review_comment"><label class="text optional control-label" for="lab_review_comment">Comment</label><div class="controls"><textarea class="text optional" name="lab_review[comment]" id="lab_review_comment"></textarea></div></div>
+</div>
+</div>
+<div class="modal-actions">
+<a class="mdl-button mdl-button--primary mdl-js-button mdl-js-ripple-effect" data-dismiss="modal" data-upgraded=",MaterialButton,MaterialRipple">
+Cancel
+<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+<input type="submit" name="commit" value="Submit" class="btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary" data-upgraded=",MaterialButton,MaterialRipple"><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></input>
+</div>
+</form>
+
+</div>
+</div>
+<iframe class="l-ie-iframe-fix" kwframeid="5" src="./Serverless Machine Learning _ Qwiklabs + roitraining_files/saved_resource(4).html"></iframe>
+</div>
+
+<div class="modal fade" id="lab-access-modal">
+<div class="modal-container">
+<div class="modal-content mdl-shadow--24dp">
+<a class="modal-close" data-dismiss="modal">×</a>
+<h4 class="modal-header">Lab Access</h4>
+<form class="js-lab-access-form" action="https://roitraining.qwiklab.com/lab_onetime_coupons/activate" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓">
+<div class="modal-body">
+<div class="lab-access-modal">
+<input type="hidden" name="id" id="id" value="2773">
+<input type="hidden" name="classroom_id" id="classroom_id" value="252">
+<input type="hidden" name="user_id" id="user_id" value="942">
+<input type="hidden" name="launch_with_credits" id="launch_with_credits" value="0" class="js-launch-with-credits-input">
+<input type="hidden" name="launch_with_subs" id="launch_with_subs" value="0" class="js-launch-with-subscription-input">
+<div class="lab-access-modal__method">
+<p>
+Enter Lab Access Code:
+</p>
+<div class="lab-access-modal__code js-access-code">
+<input type="text" name="uuid_1" id="uuid_1" value="" maxlength="4" placeholder="1234">
+<input type="text" name="uuid_2" id="uuid_2" value="" maxlength="4" placeholder="1234">
+<input type="text" name="uuid_3" id="uuid_3" value="" maxlength="4" placeholder="1234">
+<input type="text" name="uuid_4" id="uuid_4" value="" maxlength="4" placeholder="1234">
+</div>
+<a class="button js-launch-with-access-code-button">
+Launch with Access Code
+</a>
+</div>
+</div>
+</div>
+</form>
+
+
+</div>
+</div>
+<iframe class="l-ie-iframe-fix" kwframeid="6" src="./Serverless Machine Learning _ Qwiklabs + roitraining_files/saved_resource(5).html"></iframe>
+</div>
+
+
+
+</div>
+</main>
+<div class="bottom-menu">
+<a class="side-menu__item" href="https://roitraining.qwiklab.com/materials"><div class="side-menu__item__icon">
+<i class="material-icons">view_comfy</i>
+</div>
+<span class="side-menu__item__tooltip">Materials</span>
+<div class="side-menu__item__label">
+Materials
+</div>
+</a>
+<a class="side-menu__item" href="https://roitraining.qwiklab.com/dashboard"><div class="side-menu__item__icon">
+<i class="material-icons">history</i>
+</div>
+<span class="side-menu__item__tooltip">My Learning</span>
+<div class="side-menu__item__label">
+My Learning
+</div>
+</a>
+<a class="side-menu__item" href="https://roitraining.qwiklab.com/my_account/credits"><div class="side-menu__item__icon">
+<i class="material-icons">account_circle</i>
+</div>
+<span class="side-menu__item__tooltip">My Account</span>
+<div class="side-menu__item__label">
+My Account
+</div>
+</a>
+<a class="side-menu__item js-side-menu-button">
+<div class="side-menu__item__icon">
+<i class="material-icons">menu</i>
+</div>
+<span class="side-menu__item__tooltip">More</span>
+<div class="side-menu__item__label">
+More
+</div>
+</a>
+</div>
+
+</div>
+
+
+<div class="modal fade" id="support-modal">
+<div class="modal-container">
+<div class="modal-content mdl-shadow--24dp">
+<a class="modal-close" data-dismiss="modal">×</a>
+<h4 class="modal-header">How can we help you?</h4>
+<p class="l-mbl">
+We will get back to you within 24 hours.
+</p>
+<form action="https://roitraining.qwiklab.com/contact_support" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="QagR46dQ6cz/fE7QLGPcaYEmMReiPhvcSK2AVVN0VomR6mjyKUkLtajGoQoNJlMN5Ta4t/fB1e8CeJeXaN7VfQ==">
+<div class="form-row">
+<div class="control-group">
+<label for="Question">Question</label>
+<input type="text" name="question" id="question" placeholder="Briefly describe your question">
+</div>
+</div>
+<div class="form-row">
+<div class="control-group">
+<label for="Details">Details</label>
+<textarea name="description" id="description" rows="5" placeholder="Fill in the details here. Please try to be as specific as possible.
+"></textarea>
+</div>
+</div>
+<div class="form-row">
+<div class="control-group">
+<label for="Your_Name">Your name</label>
+<input type="text" name="name" id="name" value="mia stein">
+</div>
+<div class="control-group">
+<label for="Your_Email">Your email</label>
+<input type="text" name="email" id="email" value=">
+</div>
+</div>
+<div class="form-row">
+<div class="control-group">
+<input type="submit" name="commit" value="Submit" class="button">
+</div>
+</div>
+</form>
+
+
+</div>
+</div>
+<iframe class="l-ie-iframe-fix" kwframeid="7" src="./Serverless Machine Learning _ Qwiklabs + roitraining_files/saved_resource(6).html"></iframe>
+</div>
+
+
+<script>
+  $( function() {
+    ql.initMaterialInputs();
+    initChosen();
+    initSearch();
+    initTabs();
+    initTooltips();
+    initLabSidebar();
+  ql.labOutline.init("2773");
+  initLabContent( );
+  initLabResource();
+  initLabReviewModal();
+  initLabAccessModal();
+  initLabTranslations( {"are_you_sure":"All done? If you end this lab, you will lose all your work. You may not be able to restart the lab if there is a quota limit. Are you sure you want to end this lab?\n","in_progress":"*In Progress*","ending":"*Ending*","starting":"*Starting, please wait*","end_concurrent_labs":"Sorry, you can only run one lab at a time. To start this lab, please confirm that you want all of your existing labs to end.\n","copied":"Copied","no_resource":"Error retrieving resource.","no_support":"No Support :(","mac_press":"Press ⌘-C to copy","thanks_review":"Thanks for reviewing this lab.","windows_press":"Press Ctrl-C to copy","days":"days"} );
+  initLabRun();
+  ql.initHeader();
+  ql.sideMenu.init();
+  
+  });
+</script>
+
+
+</body></html>
